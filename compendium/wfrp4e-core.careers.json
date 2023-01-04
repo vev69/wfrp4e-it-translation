@@ -1,0 +1,1126 @@
+{
+	"label": "Carriere",
+	"entries": [
+		{
+			"id": "Abbess",
+			"name": "Badessa",
+			"description": ""
+		},
+		{
+			"id": "Advisor",
+			"name": "Consigliere",
+			"description": ""
+		},
+		{
+			"id": "Agent",
+			"name": "Agente",
+			"description": ""
+		},
+		{
+			"id": "Agitator",
+			"name": "Agitatore",
+			"description": ""
+		},
+		{
+			"id": "Aide",
+			"name": "Attendente",
+			"description": ""
+		},
+		{
+			"id": "Ambassador",
+			"name": "Ambasciatore",
+			"description": ""
+		},
+		{
+			"id": "Apothecary",
+			"name": "Apotecario",
+			"description": "<p>&nbsp;</p>\n<p>&nbsp;</p>"
+		},
+		{
+			"id": "Apothecary's Apprentice",
+			"name": "Apprendista Apotecario",
+			"description": ""
+		},
+		{
+			"id": "Apothecary-General",
+			"name": "Apotecario-Generale",
+			"description": ""
+		},
+		{
+			"id": "Apprentice Artisan",
+			"name": "Apprendista Artigiano",
+			"description": ""
+		},
+		{
+			"id": "Apprentice Artist",
+			"name": "Apprenndista Artista",
+			"description": ""
+		},
+		{
+			"id": "Artisan",
+			"name": "Artigiano",
+			"description": ""
+		},
+		{
+			"id": "Artist",
+			"name": "Artista",
+			"description": ""
+		},
+		{
+			"id": "Assassin",
+			"name": "Assassino"
+		},
+		{
+			"id": "Attendant",
+			"name": "Valletto",
+			"description": ""
+		},
+		{
+			"id": "Bailiff",
+			"name": "Balivo"
+		},
+		{
+			"id": "Bandit King",
+			"name": "Re del Banditi"
+		},
+		{
+			"id": "Barge Master",
+			"name": "Padrone Fluviale"
+		},
+		{
+			"id": "Bargeswain",
+			"name": "Nostromo di Fiume"
+		},
+		{
+			"id": "Barrister",
+			"name": "Giureconsulto",
+			"description": ""
+		},
+		{
+			"id": "Bawd",
+			"name": "Ruffiano"
+		},
+		{
+			"id": "Beggar",
+			"name": "Mendicante",
+			"description": ""
+		},
+		{
+			"id": "Beggar King",
+			"name": "Re dei Mendicanti",
+			"description": ""
+		},
+		{
+			"id": "Black Marketeer",
+			"name": "Trafficante del Mercato Nero"
+		},
+		{
+			"id": "Boat-hand",
+			"name": "Mozzo"
+		},
+		{
+			"id": "Boatman",
+			"name": "Barcaiolo"
+		},
+		{
+			"id": "Boatswain",
+			"name": "Nostromo"
+		},
+		{
+			"id": "Body Snatcher",
+			"name": "Profanatore"
+		},
+		{
+			"id": "Bounty Hunter",
+			"name": "Cacciatore di Taglie"
+		},
+		{
+			"id": "Bounty Hunter General",
+			"name": "Generale dei Cacciatori di Taglie"
+		},
+		{
+			"id": "Braggart",
+			"name": "Spaccone"
+		},
+		{
+			"id": "Brigand",
+			"name": "Brigante"
+		},
+		{
+			"id": "Broker",
+			"name": "Mediatore"
+		},
+		{
+			"id": "Burgomeister",
+			"name": "Borgomastro",
+			"description": ""
+		},
+		{
+			"id": "Busker",
+			"name": "Artista di Strada"
+		},
+		{
+			"id": "Cargo Scavenger",
+			"name": "Avvoltoio"
+		},
+		{
+			"id": "Cat Burglar",
+			"name": "Scassinatore"
+		},
+		{
+			"id": "Cavalryman",
+			"name": "Cavalleggero"
+		},
+		{
+			"id": "Chancellor",
+			"name": "Cancelliere",
+			"description": ""
+		},
+		{
+			"id": "Charlatan",
+			"name": "Ciarlatano"
+		},
+		{
+			"id": "Chartered Engineer",
+			"name": "Dottore in Ingegneria",
+			"description": ""
+		},
+		{
+			"id": "Clerk",
+			"name": "Impiegato",
+			"description": ""
+		},
+		{
+			"id": "Coach Master",
+			"name": "Mastro della Carrozza"
+		},
+		{
+			"id": "Coachman",
+			"name": "Cocchiere"
+		},
+		{
+			"id": "Con Artist",
+			"name": "Artista della Truffa"
+		},
+		{
+			"id": "Councilor",
+			"name": "Consigliere del Villaggio"
+		},
+		{
+			"id": "Counsellor",
+			"name": "Precettore",
+			"description": ""
+		},
+		{
+			"id": "Courier",
+			"name": "Corriere"
+		},
+		{
+			"id": "Courier-Captain",
+			"name": "Capitano-Corriere"
+		},
+		{
+			"id": "Court Physician",
+			"name": "Medico di Corte",
+			"description": ""
+		},
+		{
+			"id": "Crime Lord",
+			"name": "Signore del Crimine"
+		},
+		{
+			"id": "Custodian",
+			"name": "Custode",
+			"description": ""
+		},
+		{
+			"id": "Daemon Slayer",
+			"name": "Sventrademoni"
+		},
+		{
+			"id": "Demagogue",
+			"name": "Demagogo",
+			"description": ""
+		},
+		{
+			"id": "Detective",
+			"name": "Detective",
+			"description": ""
+		},
+		{
+			"id": "Diplomat",
+			"name": "Diplomatico",
+			"description": ""
+		},
+		{
+			"id": "Dock Master",
+			"name": "Capitano di Porto"
+		},
+		{
+			"id": "Dockhand",
+			"name": "Portuale"
+		},
+		{
+			"id": "Doktor",
+			"name": "Dottore",
+			"description": ""
+		},
+		{
+			"id": "Dragon Slayer",
+			"name": "Sventradraghi"
+		},
+		{
+			"id": "Duelist",
+			"name": "Duellante",
+			"description": ""
+		},
+		{
+			"id": "Duelmaster",
+			"name": "Maestro del Duello",
+			"description": ""
+		},
+		{
+			"id": "Engineer",
+			"name": "Ingegnere",
+			"description": ""
+		},
+		{
+			"id": "Entertainer",
+			"name": "Intrattenitore"
+		},
+		{
+			"id": "Envoy",
+			"name": "Legato",
+			"description": ""
+		},
+		{
+			"id": "Explorer",
+			"name": "Esploratore"
+		},
+		{
+			"id": "Exterminator",
+			"name": "Sterminatore",
+			"description": ""
+		},
+		{
+			"id": "Fellow",
+			"name": "Associato",
+			"description": ""
+		},
+		{
+			"id": "Fence",
+			"name": "Ricettatore"
+		},
+		{
+			"id": "Fencer",
+			"name": "Spadaccino",
+			"description": ""
+		},
+		{
+			"id": "First Knight",
+			"name": "Primo Cavaliere"
+		},
+		{
+			"id": "Flagellant",
+			"name": "Flagellante"
+		},
+		{
+			"id": "Foreman",
+			"name": "Caposquadra"
+		},
+		{
+			"id": "Fortune Teller",
+			"name": "Chiromante"
+		},
+		{
+			"id": "Gang Boss",
+			"name": "Boss"
+		},
+		{
+			"id": "Giant Slayer",
+			"name": "Sventragiganti"
+		},
+		{
+			"id": "Governor",
+			"name": "Governatore",
+			"description": ""
+		},
+		{
+			"id": "Grave Robber",
+			"name": "Tombarolo"
+		},
+		{
+			"id": "Greenfish",
+			"name": "Pesce Piccolo"
+		},
+		{
+			"id": "Guard",
+			"name": "Guardia"
+		},
+		{
+			"id": "Guard Officer",
+			"name": "Ufficiale della Guardia"
+		},
+		{
+			"id": "Guide",
+			"name": "Guida"
+		},
+		{
+			"id": "Guildmaster",
+			"name": "Mastro della Gilda",
+			"description": ""
+		},
+		{
+			"id": "Hedge Apprentice",
+			"name": "Apprendista della Soglia"
+		},
+		{
+			"id": "Hedge Master",
+			"name": "Maestro della Soglia"
+		},
+		{
+			"id": "Hedge Witch",
+			"name": "Fattucchiere della Soglia"
+		},
+		{
+			"id": "Hedgewise",
+			"name": "Saggio della Soglia"
+		},
+		{
+			"id": "Herald",
+			"name": "Araldo",
+			"description": ""
+		},
+		{
+			"id": "Herb Gatherer",
+			"name": "Raccoglitore"
+		},
+		{
+			"id": "Herb Master",
+			"name": "Maestro delle Erbe"
+		},
+		{
+			"id": "Herbalist",
+			"name": "Erborista"
+		},
+		{
+			"id": "Herbwise",
+			"name": "Saggio delle Erbe"
+		},
+		{
+			"id": "Hexer",
+			"name": "Maliarda"
+		},
+		{
+			"id": "High Priest",
+			"name": "Alto Sacerdote",
+			"description": ""
+		},
+		{
+			"id": "Hitman",
+			"name": "Sicario"
+		},
+		{
+			"id": "Honor Guard",
+			"name": "Guardia d'Onore"
+		},
+		{
+			"id": "Horseman",
+			"name": "Cavallerizzo"
+		},
+		{
+			"id": "Huffer",
+			"name": "Nocchiere"
+		},
+		{
+			"id": "Hunter",
+			"name": "Cacciatore"
+		},
+		{
+			"id": "Huntsmaster",
+			"name": "Capocaccia"
+		},
+		{
+			"id": "Hustler",
+			"name": "Traffichino"
+		},
+		{
+			"id": "Informer",
+			"name": "Informatore",
+			"description": ""
+		},
+		{
+			"id": "Initiate",
+			"name": "Iniziato",
+			"description": ""
+		},
+		{
+			"id": "Inquisitor",
+			"name": "Inquisitore"
+		},
+		{
+			"id": "Interrogator",
+			"name": "Interrogatore"
+		},
+		{
+			"id": "Investigator",
+			"name": "Investigatore",
+			"description": ""
+		},
+		{
+			"id": "Judge",
+			"name": "Giudice",
+			"description": ""
+		},
+		{
+			"id": "Judicial Champion",
+			"name": "Campione Giudiziario",
+			"description": ""
+		},
+		{
+			"id": "Knight",
+			"name": "Cavaliere"
+		},
+		{
+			"id": "Knight of the Inner Circle",
+			"name": "Cavaliere della Cerchia Interna"
+		},
+		{
+			"id": "Landsman",
+			"name": "Recluta del Mare"
+		},
+		{
+			"id": "Lawyer",
+			"name": "Avvocato",
+			"description": ""
+		},
+		{
+			"id": "Lector",
+			"name": "Lector",
+			"description": ""
+		},
+		{
+			"id": "Light Cavalry Officer",
+			"name": "Ufficiale di Cavalleria"
+		},
+		{
+			"id": "Light Cavalry Sergeant",
+			"name": "Sergente di Cavalleria"
+		},
+		{
+			"id": "Maestro",
+			"name": "Maestro",
+			"description": ""
+		},
+		{
+			"id": "Magistrate",
+			"name": "Magistrato",
+			"description": ""
+		},
+		{
+			"id": "Magnate",
+			"name": "Magnate",
+			"description": ""
+		},
+		{
+			"id": "Master Apothecary",
+			"name": "Mastro Apotecario",
+			"description": ""
+		},
+		{
+			"id": "Master Artisan",
+			"name": "Mastro Artigiano",
+			"description": ""
+		},
+		{
+			"id": "Master Artist",
+			"name": "Mastro di Bottega",
+			"description": ""
+		},
+		{
+			"id": "Master Beggar",
+			"name": "Mastro Mendicante",
+			"description": ""
+		},
+		{
+			"id": "Master Bounty Hunter",
+			"name": "Mastro Cacciatore di Taglie"
+		},
+		{
+			"id": "Master Engineer",
+			"name": "Mastro Ingegnere",
+			"description": ""
+		},
+		{
+			"id": "Master Fence",
+			"name": "Mastro Ricettatore"
+		},
+		{
+			"id": "Master Investigator",
+			"name": "Mastro Investigatore",
+			"description": ""
+		},
+		{
+			"id": "Master Merchant",
+			"name": "Mastro Mercante",
+			"description": ""
+		},
+		{
+			"id": "Master Miner",
+			"name": "Mastro Minatore"
+		},
+		{
+			"id": "Master Pedlar",
+			"name": "Mastro Venditore"
+		},
+		{
+			"id": "Master Pilot",
+			"name": "Mastro Timoniere"
+		},
+		{
+			"id": "Master Smuggler",
+			"name": "Mastro Contrabbandiere"
+		},
+		{
+			"id": "Master Thief",
+			"name": "Mastro Ladro"
+		},
+		{
+			"id": "Master Wizard",
+			"name": "Maestro Mago",
+			"description": ""
+		},
+		{
+			"id": "Menial",
+			"name": "Domestico",
+			"description": ""
+		},
+		{
+			"id": "Merchant",
+			"name": "Mercante",
+			"description": ""
+		},
+		{
+			"id": "Merchant Prince",
+			"name": "Principe Mercante",
+			"description": ""
+		},
+		{
+			"id": "Messenger",
+			"name": "Messaggero"
+		},
+		{
+			"id": "Mine Foreman",
+			"name": "Capomastro"
+		},
+		{
+			"id": "Miner",
+			"name": "Minatore"
+		},
+		{
+			"id": "Mystic",
+			"name": "Mistico"
+		},
+		{
+			"id": "Noble",
+			"name": "Nobile",
+			"description": ""
+		},
+		{
+			"id": "Noble Lord",
+			"name": "Lord",
+			"description": ""
+		},
+		{
+			"id": "OERQpwcRziRTeQRb",
+			"name": "Professo"
+		},
+		{
+			"id": "Novitiate",
+			"name": "Novizia",
+			"description": ""
+		},
+		{
+			"id": "Nun",
+			"name": "Monaca",
+			"description": ""
+		},
+		{
+			"id": "Officer",
+			"name": "Ufficiale"
+		},
+		{
+			"id": "Outlaw",
+			"name": "Fuorilegge"
+		},
+		{
+			"id": "Outlaw Chief",
+			"name": "Capobanda"
+		},
+		{
+			"id": "Pamphleteer",
+			"name": "Libellista",
+			"description": ""
+		},
+		{
+			"id": "Pathfinder",
+			"name": "Pioniere"
+		},
+		{
+			"id": "Pauper",
+			"name": "Accattone",
+			"description": ""
+		},
+		{
+			"id": "Peasant",
+			"name": "Campagnolo"
+		},
+		{
+			"id": "Pedlar",
+			"name": "Venditore Ambulante"
+		},
+		{
+			"id": "Penitent",
+			"name": "Penitente"
+		},
+		{
+			"id": "Physician",
+			"name": "Medico",
+			"description": ""
+		},
+		{
+			"id": "Physician's Apprentice",
+			"name": "Apprendista Medico",
+			"description": ""
+		},
+		{
+			"id": "Pilot",
+			"name": "Timoniere"
+		},
+		{
+			"id": "Pit Champion",
+			"name": "Campione dell'Arena"
+		},
+		{
+			"id": "Pit Fighter",
+			"name": "Gladiatore"
+		},
+		{
+			"id": "Pit Legend",
+			"name": "Legenda dell'Arena"
+		},
+		{
+			"id": "Postilion",
+			"name": "Postiglione"
+		},
+		{
+			"id": "Priest",
+			"name": "Prete",
+			"description": ""
+		},
+		{
+			"id": "Priest Captain",
+			"name": "Prete Capitano"
+		},
+		{
+			"id": "Priest Sergeant",
+			"name": "Prete Sergente"
+		},
+		{
+			"id": "Prioress General",
+			"name": "Priore Generale",
+			"description": ""
+		},
+		{
+			"id": "Procurer",
+			"name": "Magnaccia"
+		},
+		{
+			"id": "Professor",
+			"name": "Professore",
+			"description": ""
+		},
+		{
+			"id": "Prophet of Doom",
+			"name": "Profeta del Fato"
+		},
+		{
+			"id": "Prospector",
+			"name": "Prospettore"
+		},
+		{
+			"id": "Protagonist",
+			"name": "Bravaccio"
+		},
+		{
+			"id": "Prowler",
+			"name": "Ladruncolo"
+		},
+		{
+			"id": "Pugilist",
+			"name": "Pugile"
+		},
+		{
+			"id": "Rabble Rouser",
+			"name": "Sobillatore",
+			"description": ""
+		},
+		{
+			"id": "Racketeer",
+			"name": "Malavitoso"
+		},
+		{
+			"id": "Rat Catcher",
+			"name": "Acchiappatopi",
+			"description": ""
+		},
+		{
+			"id": "Rat Hunter",
+			"name": "Cacciatore di Ratti",
+			"description": ""
+		},
+		{
+			"id": "Recruit",
+			"name": "Recluta"
+		},
+		{
+			"id": "Reeve",
+			"name": "Sovrintendente"
+		},
+		{
+			"id": "Ringleader",
+			"name": "Caporione"
+		},
+		{
+			"id": "River Elder",
+			"name": "Anziana del Fiume"
+		},
+		{
+			"id": "River Pirate",
+			"name": "Pirata di Fiume"
+		},
+		{
+			"id": "River Recruit",
+			"name": "Recluta del Fiume"
+		},
+		{
+			"id": "River Runner",
+			"name": "Corriere di Fiume"
+		},
+		{
+			"id": "Riverguide",
+			"name": "Guida del Fiume"
+		},
+		{
+			"id": "Riverwarden",
+			"name": "Guardafiume"
+		},
+		{
+			"id": "Riverwise",
+			"name": "Saggia del Fiume"
+		},
+		{
+			"id": "Riverwoman",
+			"name": "Donna del Fiume"
+		},
+		{
+			"id": "Road Captain",
+			"name": "Capitano Guardastrada"
+		},
+		{
+			"id": "Road Sergeant",
+			"name": "Sergente Guardastrada"
+		},
+		{
+			"id": "Road Warden",
+			"name": "Guardastrada"
+		},
+		{
+			"id": "Route Master",
+			"name": "Mastro delle Strade"
+		},
+		{
+			"id": "Runner",
+			"name": "Corridore"
+		},
+		{
+			"id": "Sage",
+			"name": "Saggio"
+		},
+		{
+			"id": "Scholar",
+			"name": "Studioso",
+			"description": ""
+		},
+		{
+			"id": "Scion",
+			"name": "Erede",
+			"description": ""
+		},
+		{
+			"id": "Scoundrel",
+			"name": "Filibustiere"
+		},
+		{
+			"id": "Scout",
+			"name": "Scout"
+		},
+		{
+			"id": "Seaman",
+			"name": "Marinaio"
+		},
+		{
+			"id": "Seer",
+			"name": "Veggente"
+		},
+		{
+			"id": "Seneschal",
+			"name": "Siniscalco",
+			"description": ""
+		},
+		{
+			"id": "Sentry",
+			"name": "Sentinella"
+		},
+		{
+			"id": "Sergeant",
+			"name": "Sergente"
+		},
+		{
+			"id": "Servant",
+			"name": "Servitore",
+			"description": ""
+		},
+		{
+			"id": "Sewer Jack",
+			"name": "Fognaiolo",
+			"description": ""
+		},
+		{
+			"id": "Ship's Master",
+			"name": "Comandante"
+		},
+		{
+			"id": "Shipsword",
+			"name": "Spada Nautica"
+		},
+		{
+			"id": "Shipsword Master",
+			"name": "Comandante delle Spade Nautiche"
+		},
+		{
+			"id": "Sleuth",
+			"name": "Segugio",
+			"description": ""
+		},
+		{
+			"id": "Smuggler",
+			"name": "Contrabbandiere"
+		},
+		{
+			"id": "Smuggler King",
+			"name": "Re dei Contrabbandieri"
+		},
+		{
+			"id": "Soldier",
+			"name": "Soldato"
+		},
+		{
+			"id": "Spy",
+			"name": "Spia",
+			"description": ""
+		},
+		{
+			"id": "Spymaster",
+			"name": "Maestro delle Spie",
+			"description": ""
+		},
+		{
+			"id": "Squire",
+			"name": "Scudiero"
+		},
+		{
+			"id": "Stevedore",
+			"name": "Scaricatore"
+		},
+		{
+			"id": "Steward",
+			"name": "Amministratore",
+			"description": ""
+		},
+		{
+			"id": "Student",
+			"name": "Studente",
+			"description": ""
+		},
+		{
+			"id": "Student Engineer",
+			"name": "Studente d'ingegneria",
+			"description": ""
+		},
+		{
+			"id": "Student Lawyer",
+			"name": "Studente di Legge",
+			"description": ""
+		},
+		{
+			"id": "Swindler",
+			"name": "Truffatore"
+		},
+		{
+			"id": "Tax Collector",
+			"name": "Esattore"
+		},
+		{
+			"id": "Thief",
+			"name": "Ladro"
+		},
+		{
+			"id": "Thief-taker",
+			"name": "Acciuffaladri"
+		},
+		{
+			"id": "Thug",
+			"name": "Sgherro"
+		},
+		{
+			"id": "Toll Keeper",
+			"name": "Gabelliere"
+		},
+		{
+			"id": "Tomb Robber",
+			"name": "Ladro di Tombe"
+		},
+		{
+			"id": "Town Councilor",
+			"name": "Consigliere Cittadino",
+			"description": ""
+		},
+		{
+			"id": "Townsman",
+			"name": "Borghese",
+			"description": ""
+		},
+		{
+			"id": "Tracker",
+			"name": "Battitore"
+		},
+		{
+			"id": "Trader",
+			"name": "Venditore",
+			"description": ""
+		},
+		{
+			"id": "Trapper",
+			"name": "Bracconiere"
+		},
+		{
+			"id": "Treasure Hunter",
+			"name": "Cacciatore di Tesori"
+		},
+		{
+			"id": "Troll Slayer",
+			"name": "Sventratroll"
+		},
+		{
+			"id": "Troubadour",
+			"name": "Trovatore"
+		},
+		{
+			"id": "Troupe Leader",
+			"name": "Capocomico"
+		},
+		{
+			"id": "Vagabond",
+			"name": "Vagabondo"
+		},
+		{
+			"id": "Village Elder",
+			"name": "Anziano del Villaggio"
+		},
+		{
+			"id": "Villager",
+			"name": "Villico"
+		},
+		{
+			"id": "Wandering Trader",
+			"name": "Commerciante Girovago"
+		},
+		{
+			"id": "Warden",
+			"name": "Gastaldo",
+			"description": ""
+		},
+		{
+			"id": "Warlock",
+			"name": "Stregone"
+		},
+		{
+			"id": "Warrior Priest",
+			"name": "Prete Guerriero"
+		},
+		{
+			"id": "Watch Captain",
+			"name": "Capitano della Milizia",
+			"description": ""
+		},
+		{
+			"id": "Watch Recruit",
+			"name": "Recluta della Milizia",
+			"description": ""
+		},
+		{
+			"id": "Watch Sergeant",
+			"name": "Sergente della Milizia",
+			"description": ""
+		},
+		{
+			"id": "Watchman",
+			"name": "Miliziano",
+			"description": ""
+		},
+		{
+			"id": "Witch",
+			"name": "Strega"
+		},
+		{
+			"id": "Witch Hunter",
+			"name": "Cacciatore di Streghe"
+		},
+		{
+			"id": "Witchfinder General",
+			"name": "Generale Inquisitore"
+		},
+		{
+			"id": "Wizard",
+			"name": "Mago",
+			"description": ""
+		},
+		{
+			"id": "Wizard Lord",
+			"name": "Signore della Magia",
+			"description": ""
+		},
+		{
+			"id": "Wizard's Apprentice",
+			"name": "Apprendista Mago",
+			"description": ""
+		},
+		{
+			"id": "Wrecker",
+			"name": "Naufragatore"
+		},
+		{
+			"id": "Wrecker Captain",
+			"name": "Capitano Naufragatore"
+		},
+		{
+			"id": "Wyrd",
+			"name": "Indovina"
+		},
+		{
+			"id": "Zealot",
+			"name": "Zelota"
+		}
+	]
+}

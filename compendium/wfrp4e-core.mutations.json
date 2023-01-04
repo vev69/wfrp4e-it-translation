@@ -1,0 +1,200 @@
+{
+	"label": "Mutazioni",
+	"entries": [
+		{
+			"id": "Animalistic Legs",
+			"name": "Gambe Animalesche",
+			"description": ""
+		},
+		{
+			"id": "Awful Cravings",
+			"name": "Orride Voglie",
+			"description": ""
+		},
+		{
+			"id": "Beast Within",
+			"name": "Bestia Interiore",
+			"description": ""
+		},
+		{
+			"id": "Chaotic Dreams",
+			"name": "Sogni Caotici",
+			"description": "<p>Ogni giorno, per le prime 2 ore dopo il risveglio, si subisce 1 <em>Affaticato</em></p>"
+		},
+		{
+			"id": "Corpulent",
+			"name": "Corpulento",
+			"description": ""
+		},
+		{
+			"id": "Crawling Skin",
+			"name": "Pelle d'Oca",
+			"description": ""
+		},
+		{
+			"id": "Distended Digits",
+			"name": "Falangi Allungate",
+			"description": ""
+		},
+		{
+			"id": "Emaciated",
+			"name": "Emaciato",
+			"description": ""
+		},
+		{
+			"id": "Enormous Eye",
+			"name": "Occhio Enorme",
+			"description": ""
+		},
+		{
+			"id": "Erratic Fantasist",
+			"name": "Fantasie Errabonde",
+			"description": ""
+		},
+		{
+			"id": "Extra Leg Joints",
+			"name": "Articolazione Aggiuntiva alle Gambe",
+			"description": ""
+		},
+		{
+			"id": "Extra Mouth",
+			"name": "Bocca Aggiuntiva",
+			"description": "<p>Tirare per determinare la Locazione.</p>"
+		},
+		{
+			"id": "Fearful Concern",
+			"name": "Terribili Timori",
+			"description": ""
+		},
+		{
+			"id": "Fleshy Tentacle",
+			"name": "Tentacoli Carnosi",
+			"description": "<p>Si ottiene il Tratto Tentacoli (vedere pag.343)</p>"
+		},
+		{
+			"id": "Glowing Skin",
+			"name": "Pelle Luminosa",
+			"description": "<p>Luce pari a una candela</p>"
+		},
+		{
+			"id": "Hateful Impulses",
+			"name": "Impulsi d'Odio",
+			"description": "<p><em>Animosità</em> (vedere <strong>Psicologia</strong>) verso ogni altra specie </p>"
+		},
+		{
+			"id": "Hollow Heart",
+			"name": "Cuore Gelido",
+			"description": ""
+		},
+		{
+			"id": "Inhuman Beauty",
+			"name": "Bellezza Inumana ",
+			"description": ""
+		},
+		{
+			"id": "Inverted Face",
+			"name": "Volto Rovesciato",
+			"description": ""
+		},
+		{
+			"id": "Iron Skin",
+			"name": "Pelle di Ferro",
+			"description": ""
+		},
+		{
+			"id": "Jealous Thoughts",
+			"name": "Gelosia",
+			"description": ""
+		},
+		{
+			"id": "Lolling Tongue",
+			"name": "Lingua Pigra",
+			"description": ""
+		},
+		{
+			"id": "Lonely Spirit",
+			"name": "Spirito Melanconico",
+			"description": ""
+		},
+		{
+			"id": "Mental Blocks",
+			"name": "Blocco Mentale",
+			"description": ""
+		},
+		{
+			"id": "Patchy Feathers",
+			"name": "Chiazze di Piume",
+			"description": "<p>Tirare per determinare la Locazione</p>"
+		},
+		{
+			"id": "Profane Urgency",
+			"name": "Bisogno Profano",
+			"description": ""
+		},
+		{
+			"id": "Shaky Morale",
+			"name": "Spirito Debole",
+			"description": ""
+		},
+		{
+			"id": "Short Legs",
+			"name": "Gambe Corte",
+			"description": ""
+		},
+		{
+			"id": "Suspicious Mind",
+			"name": "Sospettoso",
+			"description": ""
+		},
+		{
+			"id": "Thorny Scales",
+			"name": "Scaglie Cornee",
+			"description": ""
+		},
+		{
+			"id": "Thrill Hunter",
+			"name": "Ricerca del Brivido",
+			"description": ""
+		},
+		{
+			"id": "Tortured Visions",
+			"name": "Visioni Terribili",
+			"description": ""
+		},
+		{
+			"id": "Totally Unhinged",
+			"name": "Follia Totale",
+			"description": ""
+		},
+		{
+			"id": "Unending Malice",
+			"name": "Malizia Infinita",
+			"description": ""
+		},
+		{
+			"id": "Uneven Horns",
+			"name": "Corna Irregolari",
+			"description": "<p>+1 Punto Armatura alla Testa; conta come un'Arma Naturale con danno pari al BF (vedere pag.338).</p>"
+		},
+		{
+			"id": "Unholy Rage",
+			"name": "Rabbia Sacrilega",
+			"description": ""
+		},
+		{
+			"id": "Weeping Pus",
+			"name": "Pustola Suppurante",
+			"description": "<p>Tirare per determinare la Locazione</p>"
+		},
+		{
+			"id": "Whiskered Snout",
+			"name": "Naso Peloso",
+			"description": ""
+		},
+		{
+			"id": "Worried Jitters",
+			"name": "Tremiti Nervosi",
+			"description": ""
+		}
+	]
+}
