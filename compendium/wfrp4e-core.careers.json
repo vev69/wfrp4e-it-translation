@@ -1,1126 +1,1295 @@
 {
 	"label": "Carriere",
+	"mapping": {
+		"class": "system.class.value",
+		"careergroup": "system.careergroup.value",
+		"skills": {
+			"path": "system.skills",
+			"converter": "convertSkills"
+		}
+	},
 	"entries": [
 		{
 			"id": "Abbess",
 			"name": "Badessa",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Nun}</p>"
 		},
 		{
 			"id": "Advisor",
 			"name": "Consigliere",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Advisor}</p>"
 		},
 		{
 			"id": "Agent",
 			"name": "Agente",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Spy}</p>"
 		},
 		{
 			"id": "Agitator",
 			"name": "Agitatore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>"
 		},
 		{
 			"id": "Aide",
 			"name": "Attendente",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Advisor}</p>"
 		},
 		{
 			"id": "Ambassador",
 			"name": "Ambasciatore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Envoy}</p>"
 		},
 		{
 			"id": "Apothecary",
 			"name": "Apotecario",
-			"description": "<p>&nbsp;</p>\n<p>&nbsp;</p>"
-		},
-		{
-			"id": "Apothecary's Apprentice",
-			"name": "Apprendista Apotecario",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Apothecary}</p>"
 		},
 		{
 			"id": "Apothecary-General",
 			"name": "Apotecario-Generale",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Apothecary}</p>"
+		},
+		{
+			"id": "Apothecary's Apprentice",
+			"name": "Apprendista Apotecario",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Apothecary}</p>"
 		},
 		{
 			"id": "Apprentice Artisan",
 			"name": "Apprendista Artigiano",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Artisan}</p>"
 		},
 		{
 			"id": "Apprentice Artist",
 			"name": "Apprenndista Artista",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artist}</p>"
 		},
 		{
 			"id": "Artisan",
 			"name": "Artigiano",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Artisan}</p>"
 		},
 		{
 			"id": "Artist",
 			"name": "Artista",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artist}</p>"
 		},
 		{
 			"id": "Assassin",
-			"name": "Assassino"
+			"name": "Assassino",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Protagonist}</p>"
 		},
 		{
 			"id": "Attendant",
 			"name": "Valletto",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Servant}</p>"
 		},
 		{
 			"id": "Bailiff",
-			"name": "Balivo"
+			"name": "Balivo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Bailiff}</p>"
 		},
 		{
 			"id": "Bandit King",
-			"name": "Re del Banditi"
+			"name": "Re del Banditi",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Outlaw}</p>"
 		},
 		{
 			"id": "Barge Master",
-			"name": "Padrone Fluviale"
+			"name": "Padrone Fluviale",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Boatman}</p>"
 		},
 		{
 			"id": "Bargeswain",
-			"name": "Nostromo di Fiume"
+			"name": "Nostromo di Fiume",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Boatman}</p>"
 		},
 		{
 			"id": "Barrister",
 			"name": "Giureconsulto",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Lawyer}</p>"
 		},
 		{
 			"id": "Bawd",
-			"name": "Ruffiano"
+			"name": "Ruffiano",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Bawd}</p>"
 		},
 		{
 			"id": "Beggar",
 			"name": "Mendicante",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Beggar}</p>"
 		},
 		{
 			"id": "Beggar King",
 			"name": "Re dei Mendicanti",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Beggar}</p>"
 		},
 		{
 			"id": "Black Marketeer",
-			"name": "Trafficante del Mercato Nero"
+			"name": "Trafficante del Mercato Nero",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Fence}</p>"
 		},
 		{
 			"id": "Boat-hand",
-			"name": "Mozzo"
+			"name": "Mozzo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Boatman}</p>"
 		},
 		{
 			"id": "Boatman",
-			"name": "Barcaiolo"
+			"name": "Barcaiolo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Boatman}</p>"
 		},
 		{
 			"id": "Boatswain",
-			"name": "Nostromo"
+			"name": "Nostromo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Seaman}</p>"
 		},
 		{
 			"id": "Body Snatcher",
-			"name": "Profanatore"
+			"name": "Profanatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Grave Robber}</p>"
 		},
 		{
 			"id": "Bounty Hunter",
-			"name": "Cacciatore di Taglie"
+			"name": "Cacciatore di Taglie",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Bounty Hunter}</p>"
 		},
 		{
 			"id": "Bounty Hunter General",
-			"name": "Generale dei Cacciatori di Taglie"
+			"name": "Generale dei Cacciatori di Taglie",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Bounty Hunter}</p>"
 		},
 		{
 			"id": "Braggart",
-			"name": "Spaccone"
+			"name": "Spaccone",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Protagonist}</p>"
 		},
 		{
 			"id": "Brigand",
-			"name": "Brigante"
+			"name": "Brigante",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Outlaw}</p>"
 		},
 		{
 			"id": "Broker",
-			"name": "Mediatore"
+			"name": "Mediatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Fence}</p>"
 		},
 		{
 			"id": "Burgomeister",
 			"name": "Borgomastro",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Townsman}</p>"
 		},
 		{
 			"id": "Busker",
-			"name": "Artista di Strada"
+			"name": "Artista di Strada",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Entertainer}</p>"
 		},
 		{
 			"id": "Cargo Scavenger",
-			"name": "Avvoltoio"
+			"name": "Avvoltoio",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Wrecker}</p>"
 		},
 		{
 			"id": "Cat Burglar",
-			"name": "Scassinatore"
+			"name": "Scassinatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Thief}</p>"
 		},
 		{
 			"id": "Cavalryman",
-			"name": "Cavalleggero"
+			"name": "Cavalleggero",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Cavalryman}</p>"
 		},
 		{
 			"id": "Chancellor",
 			"name": "Cancelliere",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Advisor}</p>"
 		},
 		{
 			"id": "Charlatan",
-			"name": "Ciarlatano"
+			"name": "Ciarlatano",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Charlatan}</p>"
 		},
 		{
 			"id": "Chartered Engineer",
 			"name": "Dottore in Ingegneria",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Engineer}</p>"
 		},
 		{
 			"id": "Clerk",
 			"name": "Impiegato",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Townsman}</p>"
 		},
 		{
 			"id": "Coach Master",
-			"name": "Mastro della Carrozza"
+			"name": "Mastro della Carrozza",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Coachman}</p>"
 		},
 		{
 			"id": "Coachman",
-			"name": "Cocchiere"
+			"name": "Cocchiere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Coachman}</p>"
 		},
 		{
 			"id": "Con Artist",
-			"name": "Artista della Truffa"
+			"name": "Artista della Truffa",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Charlatan}</p>"
 		},
 		{
 			"id": "Councilor",
-			"name": "Consigliere del Villaggio"
+			"name": "Consigliere del Villaggio",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Villager}</p>"
 		},
 		{
 			"id": "Counsellor",
 			"name": "Precettore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Advisor}</p>"
 		},
 		{
 			"id": "Courier",
-			"name": "Corriere"
+			"name": "Corriere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Messenger}</p>"
 		},
 		{
 			"id": "Courier-Captain",
-			"name": "Capitano-Corriere"
+			"name": "Capitano-Corriere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Messenger}</p>"
 		},
 		{
 			"id": "Court Physician",
 			"name": "Medico di Corte",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Physician}</p>"
 		},
 		{
 			"id": "Crime Lord",
-			"name": "Signore del Crimine"
+			"name": "Signore del Crimine",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Racketeer}</p>"
 		},
 		{
 			"id": "Custodian",
 			"name": "Custode",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Warden}</p>"
 		},
 		{
 			"id": "Daemon Slayer",
-			"name": "Sventrademoni"
+			"name": "Sventrademoni",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Slayer}</p>"
 		},
 		{
 			"id": "Demagogue",
 			"name": "Demagogo",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>"
 		},
 		{
 			"id": "Detective",
 			"name": "Detective",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Investigator}</p>"
 		},
 		{
 			"id": "Diplomat",
 			"name": "Diplomatico",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Envoy}</p>"
 		},
 		{
 			"id": "Dock Master",
-			"name": "Capitano di Porto"
+			"name": "Capitano di Porto",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Stevedore}</p>"
 		},
 		{
 			"id": "Dockhand",
-			"name": "Portuale"
+			"name": "Portuale",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Stevedore}</p>"
 		},
 		{
 			"id": "Doktor",
 			"name": "Dottore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Physician}</p>"
 		},
 		{
 			"id": "Dragon Slayer",
-			"name": "Sventradraghi"
+			"name": "Sventradraghi",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Slayer}</p>"
 		},
 		{
-			"id": "Duelist",
+			"id": "Duellist",
 			"name": "Duellante",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Duellist}</p>"
 		},
 		{
 			"id": "Duelmaster",
 			"name": "Maestro del Duello",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Duellist}</p>"
 		},
 		{
 			"id": "Engineer",
 			"name": "Ingegnere",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Engineer}</p>"
 		},
 		{
 			"id": "Entertainer",
-			"name": "Intrattenitore"
+			"name": "Intrattenitore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Entertainer}</p>"
 		},
 		{
 			"id": "Envoy",
 			"name": "Legato",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Envoy}</p>"
 		},
 		{
 			"id": "Explorer",
-			"name": "Esploratore"
+			"name": "Esploratore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Scout}</p>"
 		},
 		{
 			"id": "Exterminator",
 			"name": "Sterminatore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Rat Catcher}</p>"
 		},
 		{
 			"id": "Fellow",
 			"name": "Associato",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Scholar}</p>"
 		},
 		{
 			"id": "Fence",
-			"name": "Ricettatore"
+			"name": "Ricettatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Fence}</p>"
 		},
 		{
 			"id": "Fencer",
 			"name": "Spadaccino",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Duellist}</p>"
 		},
 		{
 			"id": "First Knight",
-			"name": "Primo Cavaliere"
+			"name": "Primo Cavaliere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Knight}</p>"
 		},
 		{
 			"id": "Flagellant",
-			"name": "Flagellante"
+			"name": "Flagellante",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Flagellant}</p>"
 		},
 		{
 			"id": "Foreman",
-			"name": "Caposquadra"
+			"name": "Caposquadra",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Stevedore}</p>"
 		},
 		{
 			"id": "Fortune Teller",
-			"name": "Chiromante"
+			"name": "Chiromante",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mystic}</p>"
 		},
 		{
 			"id": "Gang Boss",
-			"name": "Boss"
+			"name": "Boss",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Racketeer}</p>"
 		},
 		{
 			"id": "Giant Slayer",
-			"name": "Sventragiganti"
+			"name": "Sventragiganti",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Slayer}</p>"
 		},
 		{
 			"id": "Governor",
 			"name": "Governatore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Warden}</p>"
 		},
 		{
 			"id": "Grave Robber",
-			"name": "Tombarolo"
+			"name": "Tombarolo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Grave Robber}</p>"
 		},
 		{
 			"id": "Greenfish",
-			"name": "Pesce Piccolo"
+			"name": "Pesce Piccolo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Riverwoman}</p>"
 		},
 		{
 			"id": "Guard",
-			"name": "Guardia"
+			"name": "Guardia",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Guard}</p>"
 		},
 		{
 			"id": "Guard Officer",
-			"name": "Ufficiale della Guardia"
+			"name": "Ufficiale della Guardia",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Guard}</p>"
 		},
 		{
 			"id": "Guide",
-			"name": "Guida"
+			"name": "Guida",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Scout}</p>"
 		},
 		{
 			"id": "Guildmaster",
 			"name": "Mastro della Gilda",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Artisan}</p>"
 		},
 		{
 			"id": "Hedge Apprentice",
-			"name": "Apprendista della Soglia"
+			"name": "Apprendista della Soglia",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Hedge Witch}</p>"
 		},
 		{
 			"id": "Hedge Master",
-			"name": "Maestro della Soglia"
+			"name": "Maestro della Soglia",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Hedge Witch}</p>"
 		},
 		{
 			"id": "Hedge Witch",
-			"name": "Fattucchiere della Soglia"
+			"name": "Fattucchiere della Soglia",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Hedge Witch}</p>"
 		},
 		{
 			"id": "Hedgewise",
-			"name": "Saggio della Soglia"
+			"name": "Saggio della Soglia",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Hedge Witch}</p>"
 		},
 		{
 			"id": "Herald",
 			"name": "Araldo",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Envoy}</p>"
 		},
 		{
 			"id": "Herb Gatherer",
-			"name": "Raccoglitore"
+			"name": "Raccoglitore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Herbalist}</p>"
 		},
 		{
 			"id": "Herb Master",
-			"name": "Maestro delle Erbe"
+			"name": "Maestro delle Erbe",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Herbalist}</p>"
 		},
 		{
 			"id": "Herbalist",
-			"name": "Erborista"
+			"name": "Erborista",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Herbalist}</p>"
 		},
 		{
 			"id": "Herbwise",
-			"name": "Saggio delle Erbe"
+			"name": "Saggio delle Erbe",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Herbalist}</p>"
 		},
 		{
 			"id": "Hexer",
-			"name": "Maliarda"
+			"name": "Maliarda",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Witch}</p>"
 		},
 		{
 			"id": "High Priest",
 			"name": "Alto Sacerdote",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Priest}</p>"
 		},
 		{
 			"id": "Hitman",
-			"name": "Sicario"
+			"name": "Sicari",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Protagonist}</p>"
 		},
 		{
-			"id": "Honor Guard",
-			"name": "Guardia d'Onore"
+			"id": "Honour Guard",
+			"name": "Guardia d'Onore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Guard}</p>"
 		},
 		{
 			"id": "Horseman",
-			"name": "Cavallerizzo"
+			"name": "Cavallerizzo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Cavalryman}</p>"
 		},
 		{
 			"id": "Huffer",
-			"name": "Nocchiere"
+			"name": "Nocchiere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Huffer}</p>"
 		},
 		{
 			"id": "Hunter",
-			"name": "Cacciatore"
+			"name": "Cacciatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Hunter}</p>"
 		},
 		{
 			"id": "Huntsmaster",
-			"name": "Capocaccia"
+			"name": "Capocaccia",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Hunter}</p>"
 		},
 		{
 			"id": "Hustler",
-			"name": "Traffichino"
+			"name": "Traffichino",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Bawd}</p>"
 		},
 		{
 			"id": "Informer",
 			"name": "Informatore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Spy}</p>"
 		},
 		{
 			"id": "Initiate",
 			"name": "Iniziato",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Priest}</p>"
 		},
 		{
 			"id": "Inquisitor",
-			"name": "Inquisitore"
+			"name": "Inquisitore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Witch Hunter}</p>"
 		},
 		{
 			"id": "Interrogator",
-			"name": "Interrogatore"
+			"name": "Interrogatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Witch Hunter}</p>"
 		},
 		{
 			"id": "Investigator",
 			"name": "Investigatore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Investigator}</p>"
 		},
 		{
 			"id": "Judge",
 			"name": "Giudice",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Lawyer}</p>"
 		},
 		{
 			"id": "Judicial Champion",
 			"name": "Campione Giudiziario",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Duellist}</p>"
 		},
 		{
 			"id": "Knight",
-			"name": "Cavaliere"
+			"name": "Cavaliere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Knight}</p>"
 		},
 		{
 			"id": "Knight of the Inner Circle",
-			"name": "Cavaliere della Cerchia Interna"
+			"name": "Cavaliere della Cerchia Interna",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Knight}</p>"
 		},
 		{
 			"id": "Landsman",
-			"name": "Recluta del Mare"
+			"name": "Recluta del Mare",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Seaman}</p>"
 		},
 		{
 			"id": "Lawyer",
 			"name": "Avvocato",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Lawyer}</p>"
 		},
 		{
 			"id": "Lector",
 			"name": "Lector",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Priest}</p>"
 		},
 		{
 			"id": "Light Cavalry Officer",
-			"name": "Ufficiale di Cavalleria"
+			"name": "Ufficiale di Cavalleria",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Cavalryman}</p>"
 		},
 		{
 			"id": "Light Cavalry Sergeant",
-			"name": "Sergente di Cavalleria"
+			"name": "Sergente di Cavalleria",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Cavalryman}</p>"
 		},
 		{
 			"id": "Maestro",
 			"name": "Maestro",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artist}</p>"
 		},
 		{
 			"id": "Magistrate",
 			"name": "Magistrato",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Bailiff}</p>"
 		},
 		{
 			"id": "Magnate",
 			"name": "Magnate",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Noble}</p>"
 		},
 		{
 			"id": "Master Apothecary",
 			"name": "Mastro Apotecario",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Apothecary}</p>"
 		},
 		{
 			"id": "Master Artisan",
 			"name": "Mastro Artigiano",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Artisan}</p>"
 		},
 		{
 			"id": "Master Artist",
 			"name": "Mastro di Bottega",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artist}</p>"
 		},
 		{
 			"id": "Master Beggar",
 			"name": "Mastro Mendicante",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Beggar}</p>"
 		},
 		{
 			"id": "Master Bounty Hunter",
-			"name": "Mastro Cacciatore di Taglie"
+			"name": "Mastro Cacciatore di Taglie",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Bounty Hunter}</p>"
 		},
 		{
 			"id": "Master Engineer",
 			"name": "Mastro Ingegnere",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Engineer}</p>"
 		},
 		{
 			"id": "Master Fence",
-			"name": "Mastro Ricettatore"
+			"name": "Mastro Ricettatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Fence}</p>"
 		},
 		{
 			"id": "Master Investigator",
 			"name": "Mastro Investigatore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Investigator}</p>"
 		},
 		{
 			"id": "Master Merchant",
 			"name": "Mastro Mercante",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Merchant}</p>"
 		},
 		{
 			"id": "Master Miner",
-			"name": "Mastro Minatore"
+			"name": "Mastro Minatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Miner}</p>"
 		},
 		{
 			"id": "Master Pedlar",
-			"name": "Mastro Venditore"
+			"name": "Mastro Venditore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Pedlar}</p>"
 		},
 		{
 			"id": "Master Pilot",
-			"name": "Mastro Timoniere"
+			"name": "Mastro Timoniere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Huffer}</p>"
 		},
 		{
 			"id": "Master Smuggler",
-			"name": "Mastro Contrabbandiere"
+			"name": "Mastro Contrabbandiere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Smuggler}</p>"
 		},
 		{
 			"id": "Master Thief",
-			"name": "Mastro Ladro"
+			"name": "Mastro Ladro",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Thief}</p>"
 		},
 		{
 			"id": "Master Wizard",
 			"name": "Maestro Mago",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Wizard}</p>"
 		},
 		{
 			"id": "Menial",
 			"name": "Domestico",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Servant}</p>"
 		},
 		{
 			"id": "Merchant",
 			"name": "Mercante",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Merchant}</p>"
 		},
 		{
 			"id": "Merchant Prince",
 			"name": "Principe Mercante",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Merchant}</p>"
 		},
 		{
 			"id": "Messenger",
-			"name": "Messaggero"
+			"name": "Messaggero",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Messenger}</p>"
 		},
 		{
 			"id": "Mine Foreman",
-			"name": "Capomastro"
+			"name": "Capomastro",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Miner}</p>"
 		},
 		{
 			"id": "Miner",
-			"name": "Minatore"
+			"name": "Minatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Miner}</p>"
 		},
 		{
 			"id": "Mystic",
-			"name": "Mistico"
+			"name": "Mistico",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mystic}</p>"
 		},
 		{
 			"id": "Noble",
 			"name": "Nobile",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Noble}</p>"
 		},
 		{
 			"id": "Noble Lord",
 			"name": "Lord",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Noble}</p>"
 		},
 		{
-			"id": "OERQpwcRziRTeQRb",
-			"name": "Professo"
+			"id": "Novitiate (Nun)",
+			"name": "Novizia (Monaca)",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Nun}</p>"
 		},
 		{
-			"id": "Novitiate",
-			"name": "Novizia",
-			"description": ""
+			"id": "Novitiate (Warrior Priest)",
+			"name": "Professo (Prete Guerriero)",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Warrior Priest}</p>"
 		},
 		{
 			"id": "Nun",
 			"name": "Monaca",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Nun}</p>"
 		},
 		{
 			"id": "Officer",
-			"name": "Ufficiale"
+			"name": "Ufficiale",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Soldier}</p>"
 		},
 		{
 			"id": "Outlaw",
-			"name": "Fuorilegge"
+			"name": "Fuorilegge",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Outlaw}</p>"
 		},
 		{
 			"id": "Outlaw Chief",
-			"name": "Capobanda"
+			"name": "Capobanda",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Outlaw}</p>"
 		},
 		{
 			"id": "Pamphleteer",
 			"name": "Libellista",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>"
 		},
 		{
 			"id": "Pathfinder",
-			"name": "Pioniere"
+			"name": "Pioniere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Scout}</p>"
 		},
 		{
 			"id": "Pauper",
 			"name": "Accattone",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Beggar}</p>",
+			"careergroup": "Mendicante",
+			"class": "Accattone"
 		},
 		{
 			"id": "Peasant",
-			"name": "Campagnolo"
+			"name": "Campagnolo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Villager}</p>"
 		},
 		{
 			"id": "Pedlar",
-			"name": "Venditore Ambulante"
+			"name": "Venditore Ambulante",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Pedlar}</p>"
 		},
 		{
 			"id": "Penitent",
-			"name": "Penitente"
+			"name": "Penitente",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Flagellant}</p>"
 		},
 		{
 			"id": "Physician",
 			"name": "Medico",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Physician}</p>"
 		},
 		{
 			"id": "Physician's Apprentice",
 			"name": "Apprendista Medico",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Physician}</p>"
 		},
 		{
 			"id": "Pilot",
-			"name": "Timoniere"
+			"name": "Timoniere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Huffer}</p>"
 		},
 		{
 			"id": "Pit Champion",
-			"name": "Campione dell'Arena"
+			"name": "Campione dell'Arena",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Pit Fighter}</p>"
 		},
 		{
 			"id": "Pit Fighter",
-			"name": "Gladiatore"
+			"name": "Gladiatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Pit Fighter}</p>"
 		},
 		{
 			"id": "Pit Legend",
-			"name": "Legenda dell'Arena"
+			"name": "Legenda dell'Arena",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Pit Fighter}</p>"
 		},
 		{
 			"id": "Postilion",
-			"name": "Postiglione"
+			"name": "Postiglione",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Coachman}</p>"
 		},
 		{
 			"id": "Priest",
 			"name": "Prete",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Priest}</p>"
 		},
 		{
 			"id": "Priest Captain",
-			"name": "Prete Capitano"
+			"name": "Prete Capitano",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Warrior Priest}</p>"
 		},
 		{
 			"id": "Priest Sergeant",
-			"name": "Prete Sergente"
+			"name": "Prete Sergente",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Warrior Priest}</p>"
 		},
 		{
 			"id": "Prioress General",
 			"name": "Priore Generale",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Nun}</p>"
 		},
 		{
 			"id": "Procurer",
-			"name": "Magnaccia"
+			"name": "Magnaccia",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Bawd}</p>"
 		},
 		{
 			"id": "Professor",
 			"name": "Professore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Scholar}</p>"
 		},
 		{
 			"id": "Prophet of Doom",
-			"name": "Profeta del Fato"
+			"name": "Profeta del Fato",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Flagellant}</p>"
 		},
 		{
 			"id": "Prospector",
-			"name": "Prospettore"
+			"name": "Prospettore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Miner}</p>"
 		},
 		{
 			"id": "Protagonist",
-			"name": "Bravaccio"
+			"name": "Bravaccio",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Protagonist}</p>"
 		},
 		{
 			"id": "Prowler",
-			"name": "Ladruncolo"
+			"name": "Ladruncolo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Thief}</p>"
 		},
 		{
 			"id": "Pugilist",
-			"name": "Pugile"
+			"name": "Pugile",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Pit Fighter}</p>"
 		},
 		{
 			"id": "Rabble Rouser",
 			"name": "Sobillatore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>"
 		},
 		{
 			"id": "Racketeer",
-			"name": "Malavitoso"
+			"name": "Malavitoso",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Racketeer}</p>"
 		},
 		{
 			"id": "Rat Catcher",
 			"name": "Acchiappatopi",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Rat Catcher}</p>"
 		},
 		{
 			"id": "Rat Hunter",
 			"name": "Cacciatore di Ratti",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Rat Catcher}</p>"
 		},
 		{
 			"id": "Recruit",
-			"name": "Recluta"
+			"name": "Recluta",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Soldier}</p>"
 		},
 		{
 			"id": "Reeve",
-			"name": "Sovrintendente"
+			"name": "Sovrintendente",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Bailiff}</p>"
 		},
 		{
 			"id": "Ringleader",
-			"name": "Caporione"
+			"name": "Caporione",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Bawd}</p>"
 		},
 		{
 			"id": "River Elder",
-			"name": "Anziana del Fiume"
+			"name": "Anziana del Fiume",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Riverwoman}</p>"
 		},
 		{
 			"id": "River Pirate",
-			"name": "Pirata di Fiume"
+			"name": "Pirata di Fiume",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Wrecker}</p>"
 		},
 		{
 			"id": "River Recruit",
-			"name": "Recluta del Fiume"
+			"name": "Recluta del Fiume",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Riverwarden}</p>"
 		},
 		{
 			"id": "River Runner",
-			"name": "Corriere di Fiume"
+			"name": "Corriere di Fiume",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Smuggler}</p>"
 		},
 		{
 			"id": "Riverguide",
-			"name": "Guida del Fiume"
+			"name": "Guida del Fiume",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Huffer}</p>"
 		},
 		{
 			"id": "Riverwarden",
-			"name": "Guardafiume"
+			"name": "Guardafiume",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Riverwarden}</p>"
 		},
 		{
 			"id": "Riverwise",
-			"name": "Saggia del Fiume"
+			"name": "Saggia del Fiume",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Riverwoman}</p>"
 		},
 		{
 			"id": "Riverwoman",
-			"name": "Donna del Fiume"
+			"name": "Donna del Fiume",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Riverwoman}</p>"
 		},
 		{
 			"id": "Road Captain",
-			"name": "Capitano Guardastrada"
+			"name": "Capitano Guardastrada",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Road warden}</p>"
 		},
 		{
 			"id": "Road Sergeant",
-			"name": "Sergente Guardastrada"
+			"name": "Sergente Guardastrada",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Road warden}</p>"
 		},
 		{
 			"id": "Road Warden",
-			"name": "Guardastrada"
+			"name": "Guardastrada",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Road warden}</p>"
 		},
 		{
 			"id": "Route Master",
-			"name": "Mastro delle Strade"
+			"name": "Mastro delle Strade",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Coachman}</p>"
 		},
 		{
 			"id": "Runner",
-			"name": "Corridore"
+			"name": "Corridore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Messenger}</p>"
 		},
 		{
 			"id": "Sage",
-			"name": "Saggio"
+			"name": "Saggio",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mystic}</p>"
 		},
 		{
 			"id": "Scholar",
 			"name": "Studioso",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Scholar}</p>"
 		},
 		{
 			"id": "Scion",
 			"name": "Erede",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Noble}</p>"
 		},
 		{
 			"id": "Scoundrel",
-			"name": "Filibustiere"
+			"name": "Filibustiere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Charlatan}</p>"
 		},
 		{
 			"id": "Scout",
-			"name": "Scout"
+			"name": "Scout",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Scout}</p>"
 		},
 		{
 			"id": "Seaman",
-			"name": "Marinaio"
+			"name": "Marinaio",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Seaman}</p>"
 		},
 		{
 			"id": "Seer",
-			"name": "Veggente"
+			"name": "Veggente",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mystic}</p>"
 		},
 		{
 			"id": "Seneschal",
 			"name": "Siniscalco",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Warden}</p>"
 		},
 		{
 			"id": "Sentry",
-			"name": "Sentinella"
+			"name": "Sentinella",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Guard}</p>"
 		},
 		{
 			"id": "Sergeant",
-			"name": "Sergente"
+			"name": "Sergente",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Soldier}</p>"
 		},
 		{
 			"id": "Servant",
 			"name": "Servitore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Servant}</p>"
 		},
 		{
 			"id": "Sewer Jack",
 			"name": "Fognaiolo",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Rat Catcher}</p>"
 		},
 		{
 			"id": "Ship's Master",
-			"name": "Comandante"
+			"name": "Comandante",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Seaman}</p>"
 		},
 		{
 			"id": "Shipsword",
-			"name": "Spada Nautica"
+			"name": "Spada Nautica",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Riverwarden}</p>"
 		},
 		{
 			"id": "Shipsword Master",
-			"name": "Comandante delle Spade Nautiche"
+			"name": "Comandante delle Spade Nautiche",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Riverwarden}</p>"
 		},
 		{
 			"id": "Sleuth",
 			"name": "Segugio",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Investigator}</p>"
 		},
 		{
 			"id": "Smuggler",
-			"name": "Contrabbandiere"
+			"name": "Contrabbandiere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Smuggler}</p>"
 		},
 		{
 			"id": "Smuggler King",
-			"name": "Re dei Contrabbandieri"
+			"name": "Re dei Contrabbandieri",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Smuggler}</p>"
 		},
 		{
 			"id": "Soldier",
-			"name": "Soldato"
+			"name": "Soldato",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Soldier}</p>"
 		},
 		{
 			"id": "Spy",
 			"name": "Spia",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Spy}</p>"
 		},
 		{
 			"id": "Spymaster",
 			"name": "Maestro delle Spie",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Spy}</p>"
 		},
 		{
 			"id": "Squire",
-			"name": "Scudiero"
+			"name": "Scudiero",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Knight}</p>"
 		},
 		{
 			"id": "Stevedore",
-			"name": "Scaricatore"
+			"name": "Scaricatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Stevedore}</p>"
 		},
 		{
 			"id": "Steward",
 			"name": "Amministratore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Servant}</p>"
 		},
 		{
 			"id": "Student",
 			"name": "Studente",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Scholar}</p>"
 		},
 		{
 			"id": "Student Engineer",
 			"name": "Studente d'ingegneria",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Engineer}</p>"
 		},
 		{
 			"id": "Student Lawyer",
 			"name": "Studente di Legge",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Lawyer}</p>"
 		},
 		{
 			"id": "Swindler",
-			"name": "Truffatore"
+			"name": "Truffatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Charlatan}</p>"
 		},
 		{
 			"id": "Tax Collector",
-			"name": "Esattore"
+			"name": "Esattore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Bailiff}</p>"
 		},
 		{
 			"id": "Thief",
-			"name": "Ladro"
+			"name": "Ladro",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Thief}</p>"
 		},
 		{
 			"id": "Thief-taker",
-			"name": "Acciuffaladri"
+			"name": "Acciuffaladri",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Bounty Hunter}</p>"
 		},
 		{
 			"id": "Thug",
-			"name": "Sgherro"
+			"name": "Sgherr",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Racketeer}</p>"
 		},
 		{
 			"id": "Toll Keeper",
-			"name": "Gabelliere"
+			"name": "Gabelliere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Road warden}</p>"
 		},
 		{
 			"id": "Tomb Robber",
-			"name": "Ladro di Tombe"
+			"name": "Ladro di Tombe",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Grave Robber}</p>"
 		},
 		{
 			"id": "Town Councilor",
 			"name": "Consigliere Cittadino",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Townsman}</p>"
 		},
 		{
 			"id": "Townsman",
 			"name": "Borghese",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Townsman}</p>"
 		},
 		{
 			"id": "Tracker",
-			"name": "Battitore"
+			"name": "Battitore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Hunter}</p>"
 		},
 		{
 			"id": "Trader",
 			"name": "Venditore",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Merchant}</p>"
 		},
 		{
 			"id": "Trapper",
-			"name": "Bracconiere"
+			"name": "Bracconiere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Hunter}</p>"
 		},
 		{
 			"id": "Treasure Hunter",
-			"name": "Cacciatore di Tesori"
+			"name": "Cacciatore di Tesori",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Grave Robber}</p>"
 		},
 		{
 			"id": "Troll Slayer",
-			"name": "Sventratroll"
+			"name": "Sventratroll",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Slayer}</p>"
 		},
 		{
 			"id": "Troubadour",
-			"name": "Trovatore"
+			"name": "Trovatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Entertainer}</p>"
 		},
 		{
 			"id": "Troupe Leader",
-			"name": "Capocomico"
+			"name": "Capocomico",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Entertainer}</p>"
 		},
 		{
 			"id": "Vagabond",
-			"name": "Vagabondo"
+			"name": "Vagabondo",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Pedlar}</p>"
 		},
 		{
 			"id": "Village Elder",
-			"name": "Anziano del Villaggio"
+			"name": "Anziano del Villaggi",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Villager}</p>"
 		},
 		{
 			"id": "Villager",
-			"name": "Villico"
+			"name": "Villico",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Villager}</p>"
 		},
 		{
 			"id": "Wandering Trader",
-			"name": "Commerciante Girovago"
+			"name": "Commerciante Girovago",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Pedlar}</p>"
 		},
 		{
 			"id": "Warden",
 			"name": "Gastaldo",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Warden}</p>"
 		},
 		{
 			"id": "Warlock",
-			"name": "Stregone"
+			"name": "Stregone",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Witch}</p>"
 		},
 		{
 			"id": "Warrior Priest",
-			"name": "Prete Guerriero"
+			"name": "Prete Guerriero",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Warrior Priest}</p>"
 		},
 		{
 			"id": "Watch Captain",
 			"name": "Capitano della Milizia",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Watchman}</p>"
 		},
 		{
 			"id": "Watch Recruit",
 			"name": "Recluta della Milizia",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Watchman}</p>"
 		},
 		{
 			"id": "Watch Sergeant",
 			"name": "Sergente della Milizia",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Watchman}</p>"
 		},
 		{
 			"id": "Watchman",
 			"name": "Miliziano",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Watchman}</p>"
 		},
 		{
 			"id": "Witch",
-			"name": "Strega"
+			"name": "Strega",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Witch}</p>"
 		},
 		{
 			"id": "Witch Hunter",
-			"name": "Cacciatore di Streghe"
+			"name": "Cacciatore di Streghe",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Witch Hunter}</p>"
 		},
 		{
 			"id": "Witchfinder General",
-			"name": "Generale Inquisitore"
+			"name": "Generale Inquisitore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Witch Hunter}</p>"
 		},
 		{
 			"id": "Wizard",
 			"name": "Mago",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Wizard}</p>"
 		},
 		{
 			"id": "Wizard Lord",
 			"name": "Signore della Magia",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Wizard}</p>"
 		},
 		{
 			"id": "Wizard's Apprentice",
 			"name": "Apprendista Mago",
-			"description": ""
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Wizard}</p>"
 		},
 		{
 			"id": "Wrecker",
-			"name": "Naufragatore"
+			"name": "Naufragatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Wrecker}</p>"
 		},
 		{
 			"id": "Wrecker Captain",
-			"name": "Capitano Naufragatore"
+			"name": "Capitano Naufragatore",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Wrecker}</p>"
 		},
 		{
 			"id": "Wyrd",
-			"name": "Indovina"
+			"name": "Indovina",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Witch}</p>"
 		},
 		{
 			"id": "Zealot",
-			"name": "Zelota"
+			"name": "Zelota",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Flagellant}</p>"
 		}
 	]
 }
