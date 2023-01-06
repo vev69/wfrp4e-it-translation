@@ -3,7 +3,8 @@
 	"entries": [
 		{
 			"id": "Abacus",
-			"name": "Abaco"
+			"name": "Abaco",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Ale, Keg",
@@ -12,16 +13,18 @@
 		},
 		{
 			"id": "Ale, pint",
-			"name": "Birra, Pinta"
+			"name": "Birra, Pinta",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Amulet",
-			"name": "Amuleto"
+			"name": "Amuleto",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Animal Trap",
 			"name": "Trappola per Animali",
-			"description": "<p>Usata per catturare piccole prede (vedere pag.129)</p>"
+			"description": "<p>Usata per catturare piccole prede (see @Compendium[wfrp4e-core.skills.os4NKy5Oy6sRt1eh]{Outdoor Survival})</p>"
 		},
 		{
 			"id": "Antitoxin Kit",
@@ -40,7 +43,8 @@
 		},
 		{
 			"id": "Ball",
-			"name": "Palla"
+			"name": "Palla",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Bandage",
@@ -55,17 +59,17 @@
 		{
 			"id": "Bastard Sword",
 			"name": "Spada Bastarda",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
-			"id": "Baton ",
+			"id": "Baton",
 			"name": "Manganello",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
-			"id": "Bedroll ",
+			"id": "Bedroll",
 			"name": "Sacco a Pelo",
-			"description": "<p>Fornisce +20 alle Prove di Tempra per resistere al freddo mentre si dorme (vedere pag.181).</p>"
+			"description": "<p>Fornisce +20 alle Prove di Tempra per resistere al freddo mentre si dorme.</p>"
 		},
 		{
 			"id": "Black Lotus",
@@ -75,35 +79,37 @@
 		{
 			"id": "Blanket",
 			"name": "Coperta",
-			"description": "<p>Fornisce +20 alle Prove di Tempra per resistere al freddo mentre si dorme (vedere pag.181).</p>"
+			"description": "<p>Fornisce +20 alle Prove di Tempra per resistere al freddo mentre si dorme.</p>"
 		},
 		{
 			"id": "Blunderbuss",
 			"name": "Trombone",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Boat Hook",
 			"name": "Gaffa",
-			"description": "Asta di legno, munita sulla cima di un ferro a uncino, che fa parte dell’attrezzatura delle imbarcazioni"
+			"description": "<p>Asta di legno, munita sulla cima di un ferro a uncino, che fa parte dell’attrezzatura delle imbarcazioni.</p>"
 		},
 		{
 			"id": "Boiled Leather Breastplate",
 			"name": "Pettorale in Cuoio Bollito",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Bolas",
-			"name": "Bolas"
+			"name": "Bolas",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Bolt",
 			"name": "Quadrelli",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Bomb",
-			"name": "Bomba"
+			"name": "Bomba",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Book, Apothecary",
@@ -147,51 +153,53 @@
 		},
 		{
 			"id": "Boots",
-			"name": "Stivali"
+			"name": "Stivali",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Bow",
-			"name": "Arco"
+			"name": "Arco",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Bowl",
 			"name": "Scodella",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Brass Penny",
 			"name": "Penny d'Ottone",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Broom",
 			"name": "Scopa",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Bucket",
 			"name": "Secchio",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
-			"id": "Bugman’s XXXXXX Ale, pint ",
+			"id": "Bugman’s XXXXXX Ale, pint",
 			"name": "Birra, Bugman XXXXXX, pinta",
-			"description": "<p>Mercanti di tutto il Vecchio Mondo acquistano questa potente birra Nanica dal famoso birrificio fondato da Josef Burgman e la rivendono nelle grandi città. Un boccale di Burgman's conta come quattro di birra comune ai fini dell'ubriacatura (vedere Reggere Alcolici, pag. 127) e fornisce immunità alle Prove di Paura per 1d10 ore.</p>"
+			"description": "<p>Mercanti di tutto il Vecchio Mondo acquistano questa potente birra Nanica dal famoso birrificio fondato da Josef Burgman e la rivendono nelle grandi città. Un boccale di Burgman's conta come quattro di birra comune ai fini dell'ubriacatura (see @UUID[JournalEntry.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Consume Alcohol}), e fornisce immunità alle Prove di Paura per 1d10 ore.</p>"
 		},
 		{
 			"id": "Bullet and Powder",
 			"name": "Pallottole a Polvere",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Candle",
-			"name": "Candele",
+			"name": "Candela",
 			"description": "<p>Illumina in un raggio di 10 metri.</p>"
 		},
 		{
 			"id": "Canvas Tarp",
 			"name": "Tela Cerata",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Cart",
@@ -206,26 +214,27 @@
 		{
 			"id": "Cavalry Hammer",
 			"name": "Martello da Cavaliere",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Chalk",
 			"name": "Gesso",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Charcoal stick",
 			"name": "Carboncino",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Chicken",
-			"name": "Gallina"
+			"name": "Gallina",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Chisel",
 			"name": "Scalpello",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Cloak",
@@ -235,7 +244,7 @@
 		{
 			"id": "Clothing",
 			"name": "Abiti",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Coach",
@@ -245,17 +254,17 @@
 		{
 			"id": "Coat",
 			"name": "Cappotto",
-			"description": "<p>Protegge dagli elementi e dal freddo estremo; chi è senza un cappotto o altre protezioni simili subisce penalità nel resistere al freddo (vedere pag. 181).</p>"
+			"description": "<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Protegge dagli elementi e dal freddo estremo; chi è senza un cappotto o altre protezioni simili subisce penalità nel resistere al freddo.</p>"
 		},
 		{
 			"id": "Comb",
 			"name": "Pettine",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Cooking Pot",
 			"name": "Pentola",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Coracle",
@@ -263,51 +272,64 @@
 			"description": "<p>Le canoe sono piccole imbarcazioni leggere per una persona, che possono essere trasportate facilmente. Di solito sono fatte di pelli o corteccia tese su una struttura di legno e hanno un solo remo.</p>"
 		},
 		{
-			"id": "Courtly Garb ",
+			"id": "Costume",
+			"name": "Costume",
+			"description": "<p></p>"
+		},
+		{
+			"id": "Courtly Garb",
 			"name": "Abito da Corte",
 			"description": "<p>Quest'abito include decorazioni come polsini in merletto, tessuti di qualità eccessiva e scarpini a punta. Durante banchetti e cerimonie anche i servi li indossano, sebbene le loro giacche e corsetti siano decisamente meno ostentati di quelli degli aristocratici e, di conseguenza, costino la metà.&nbsp;</p>"
 		},
 		{
 			"id": "Crossbow",
 			"name": "Balestra",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Crossbow Pistol",
-			"name": "Balestrino"
+			"name": "Balestrino",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Crowbar",
 			"name": "Piede di Porco",
-			"description": ""
+			"description": "<p></p>"
+		},
+		{
+			"id": "Crutch",
+			"name": "Stampella",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Cup",
 			"name": "Tazza",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Cutlery",
 			"name": "Posate",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Dagger",
-			"name": "Pugnale"
+			"name": "Pugnale",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Dart",
-			"name": "Dardo"
+			"name": "Dardo",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Davrich Lamp",
 			"name": "Lampada Davrich",
-			"description": "<p>Questa lampada di sicurezza, ideata dal Mastro Ingegnere Davrich Stephansson per i minatori del reikland, emette luce pari a una candela. Quando incontra un grisù (gas esplosivo) si illumina violentemente e dopo 1d10 round incendia il gas, dando però tempo di accorgersene.</p>"
+			"description": "<p>Questa lampada di sicurezza, ideata dal Mastro Ingegnere Davrich Stephansson per i minatori del reikland, emette luce pari a una candela. Quando incontra un grisù (gas esplosivo) si illumina violentemente; dopo [[/r 1d10]] Round incendia il gas, dando però tempo di accorgersene.</p>"
 		},
 		{
 			"id": "Deck of Cards",
 			"name": "Mazzo di Carte",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Destrier",
@@ -317,12 +339,12 @@
 		{
 			"id": "Dice",
 			"name": "Dado",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Digestive Tonic",
 			"name": "Tonico Digestivo",
-			"description": "<p>Fornisce +20 Alle Prove per recuperare da problemi come <em>Dissenteria</em> o <em>Diarrea Rossa</em> (vedere pag. 186).</p>"
+			"description": "<p>Fornisce +20 Alle Prove per recuperare da problemi come <em>Dissenteria</em> o <em>Diarrea Rossa</em>.</p>"
 		},
 		{
 			"id": "Disguise Kit",
@@ -331,22 +353,23 @@
 		},
 		{
 			"id": "Dog collar and lead",
-			"name": "Collare e guinzaglio"
+			"name": "Collare e guinzaglio",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Doll",
 			"name": "Bambola",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Draught Horse",
 			"name": "Cavallo da Tiro",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Ear Pick",
 			"name": "Curette per Orecchie",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Earth Root",
@@ -356,11 +379,12 @@
 		{
 			"id": "Elf Arrow",
 			"name": "Freccia Elfica",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Elf Bow",
-			"name": "Arco Elfico"
+			"name": "Arco Elfico",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Engineering Marvel",
@@ -375,7 +399,7 @@
 		{
 			"id": "Face Powder",
 			"name": "Cipria",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "False Eye",
@@ -399,7 +423,8 @@
 		},
 		{
 			"id": "Flail",
-			"name": "Flagello"
+			"name": "Flagello",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Flask",
@@ -408,26 +433,28 @@
 		},
 		{
 			"id": "Flask of Spirits",
-			"name": "Flask of Spirits"
+			"name": "Boccetta di Liquore",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Floor Brush",
 			"name": "Spazzolone",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Foil",
-			"name": "Fioretto"
+			"name": "Fioretto",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Food, groceries/day",
 			"name": "Provviste, giorno",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Gavel",
 			"name": "Martelletto",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Gilded Nose",
@@ -437,16 +464,17 @@
 		{
 			"id": "Gloves",
 			"name": "Guanti",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Gold Crown",
 			"name": "Corona d'Oro",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Grain Flail",
-			"name": "Correggiato"
+			"name": "Correggiato",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Grappling Hook",
@@ -455,7 +483,8 @@
 		},
 		{
 			"id": "Great Axe",
-			"name": "Ascia a 2 Mani"
+			"name": "Ascia a 2 Mani",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Guild License",
@@ -464,27 +493,28 @@
 		},
 		{
 			"id": "Halberd",
-			"name": "Alabarda"
+			"name": "Alabarda",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Hammer",
 			"name": "Martello",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Hand Mirror",
 			"name": "Specchietto",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Hand Weapon",
 			"name": "Arma a una Mano",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Handgun",
 			"name": "Archibugio",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Hat",
@@ -508,49 +538,53 @@
 		},
 		{
 			"id": "Heavy Crossbow",
-			"name": "Balestra Pesante"
+			"name": "Balestra Pesante",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Hochland Long Rifle",
 			"name": "Moschetto Hochland",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Hoe",
 			"name": "Zappa",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Homing Pigeon",
-			"name": "Piccione Viaggiatore"
+			"name": "Piccione Viaggiatore",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Hood",
 			"name": "Cappuccio",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Hook",
 			"name": "Uncino",
-			"description": "<p>Gli uncini vengono legati al posto di una mano mancante e si rivelano strumenti molto duttili una volta imparato a d usarli. Il Personaggio può eliminare la penalità di -20 alle attività che richiedono due mani al costo di 100 PE ogni -5 (rimuovendola completamente con 400 PE). In combattimento un uncino conta come un Pugnale.</p>"
+			"description": "<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"><span style=\"color: #231f20;\">Gli uncini vengono legati al posto di una mano mancante e si rivelano strumenti molto duttili una volta imparato a d usarli. Il Personaggio può eliminare la penalità di -20 alle attività che richiedono due mani al costo di 100 PE ogni -5 (rimuovendola completamente con 400 PE). </span><strong><span style=\"color: #231f20;\">Appendice</span></strong><span style=\"font-weight: bold; color: #231f20;\">: </span><span style=\"color: #231f20;\">In combattimento un uncino conta come un Pugnale.</span></p>"
 		},
 		{
 			"id": "Hunting Dog",
-			"name": "Cane da Caccia"
+			"name": "Cane da Caccia",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Improvised Shot and Powder",
 			"name": "Carica Improvvisata",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Improvised Weapon",
 			"name": "Arma Improvvisata",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Incendiary",
-			"name": "Bomba Incendiaria"
+			"name": "Bomba Incendiaria",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Instrument",
@@ -559,10 +593,11 @@
 		},
 		{
 			"id": "Javelin",
-			"name": "Giavellotto"
+			"name": "Giavellotto",
+			"description": "<p></p>"
 		},
 		{
-			"id": "Jewellry",
+			"id": "Jewellery",
 			"name": "Gioielli",
 			"description": "<p>Il prezzo dipende dalla fattura e dai materiali impiegati. Di solito un semplice anello metallico senza gemme costa 10 monete del tipo corrispondente (Ottone, Argento od Oro), mentre le collane ne costano 20.</p>"
 		},
@@ -574,20 +609,22 @@
 		{
 			"id": "Key",
 			"name": "Chiave",
-			"description": ""
-		},
-		{
-			"id": "Knife",
-			"name": "Coltello"
+			"description": "<p></p>"
 		},
 		{
 			"id": "Knife",
 			"name": "Coltello",
-			"description": ""
+			"description": "<p></p>"
+		},
+		{
+			"id": "Knife",
+			"name": "Coltello",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Knuckledusters",
-			"name": "Tirapugni"
+			"name": "Tirapugni",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Lamp Oil",
@@ -597,7 +634,7 @@
 		{
 			"id": "Lance",
 			"name": "Lancia da Cavaliere",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Lantern",
@@ -606,32 +643,38 @@
 		},
 		{
 			"id": "Lasso",
-			"name": "Lazo"
+			"name": "Lazo",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Lead Bullet",
 			"name": "Proiettili di Piombo",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Leaflet",
-			"name": "Volantino"
+			"name": "Volantino",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Leather Jack",
-			"name": "Giaco di Cuoio"
+			"name": "Giaco di Cuoio",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Leather Jerkin",
-			"name": "Farsetto di Cuoio"
+			"name": "Farsetto di Cuoio",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Leather Leggings",
-			"name": "Gambali di Cuoio"
+			"name": "Gambali di Cuoio",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Leather Skullcap",
-			"name": "Elmetto di Cuoio"
+			"name": "Elmetto di Cuoio",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Legal Document",
@@ -641,7 +684,7 @@
 		{
 			"id": "Light Warhorse",
 			"name": "Cavallo da guerra Leggero",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Lock Picks",
@@ -650,7 +693,8 @@
 		},
 		{
 			"id": "Longbow",
-			"name": "Arco Lungo"
+			"name": "Arco Lungo",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Mad Cap Mushrooms",
@@ -659,23 +703,28 @@
 		},
 		{
 			"id": "Mail Chausses",
-			"name": "Gambali di Maglia"
+			"name": "Gambali di Maglia",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Mail Coat",
-			"name": "Usbergo"
+			"name": "Usbergo",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Mail Coif",
-			"name": "Camaglio"
+			"name": "Camaglio",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Mail Shirt",
-			"name": "Corpetto di Maglia"
+			"name": "Corpetto di Maglia",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Main Gauche",
-			"name": "Daga Mancina"
+			"name": "Daga Mancina",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Manacles",
@@ -689,31 +738,33 @@
 		},
 		{
 			"id": "Map",
-			"name": "Mappa"
+			"name": "Mappa",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Mask",
 			"name": "Maschera",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Match",
 			"name": "Fiammifero",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Meal, inn",
 			"name": "Pasto, Locanda",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Military Flail",
-			"name": "Flagello Militare"
+			"name": "Flagello Militare",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Monkey",
 			"name": "Scimmia",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Moonflower",
@@ -723,7 +774,7 @@
 		{
 			"id": "Mop",
 			"name": "Redazza",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Mule",
@@ -731,9 +782,9 @@
 			"description": "<p>Un Mulo addestrato per la guerra.</p>"
 		},
 		{
-			"id": "Nails ",
+			"id": "Nails",
 			"name": "Chiodi",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Nightshade",
@@ -743,129 +794,132 @@
 		{
 			"id": "Paint Brush",
 			"name": "Pennello",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pan",
 			"name": "Padella",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Parchment/sheet",
-			"name": "Pergamena, Foglio"
+			"name": "Pergamena, Foglio",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Perfume",
 			"name": "Profumo",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pestle & Mortar",
 			"name": "Mortaio e Pestello",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pewter Stein",
 			"name": "Boccale di Peltro",
-			"description": ""
+			"description": "<p>Tazza/boccale di birra in peltro.</p>\n<p>&nbsp;</p>"
 		},
 		{
 			"id": "Pick",
 			"name": "Piccone",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pick",
 			"name": "Piccone",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pike",
-			"name": "Picca"
+			"name": "Picca",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pins",
 			"name": "Forcine",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pipe and Tobacco",
 			"name": "Pipa e Tabacco",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pistol",
 			"name": "Pistola",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Placard",
 			"name": "Cartello",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Plate",
 			"name": "Piatto",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Plate Bracers",
-			"name": "Bracciali"
+			"name": "Bracciali",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Plate Breastplate",
-			"name": "Pettorale"
+			"name": "Pettorale",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Plate Helm",
-			"name": "Elmo Chiuso"
+			"name": "Elmo Chiuso",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Plate Leggings",
-			"name": "Gambali"
+			"name": "Gambali",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Plate Open Helm",
-			"name": "Elmo aperto"
+			"name": "Elmo aperto",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pole (3 yards)",
 			"name": "Palo (3 metri)",
-			"description": "<p>Un lungo palo usato per governare le chiatte, conta come un'Arma Improvvisata.</p>"
+			"description": "<p>Un lungo palo usato per governare le chiatte; conta come un @Compendium[wfrp4e-core.trappings.mRU10yAWWWs5WoKt]{Improvised Weapon}</p>"
 		},
 		{
 			"id": "Pony",
 			"name": "Pony",
-			"description": "<p>Un Pony addestrato per la guerra.</p>"
-		},
-		{
-			"id": "Pony",
-			"name": "Pony",
-			"description": "<p>Un Pony addestrato per la guerra.</p>"
+			"description": "<p></p>"
 		},
 		{
 			"id": "Pouch",
 			"name": "Scarsella",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Quarterstaff",
-			"name": "Bastone"
+			"name": "Bastone",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Quill Pen",
 			"name": "Penna d'Oca",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Rags",
 			"name": "Stracci",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Rake",
 			"name": "Rastrello",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Ranald's Delight",
@@ -875,12 +929,12 @@
 		{
 			"id": "Rapier",
 			"name": "Stocco",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Rations, 1 day",
 			"name": "Razioni, 1 giorno",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Reading Lens",
@@ -890,22 +944,22 @@
 		{
 			"id": "Religious Symbol",
 			"name": "Simbolo Religioso",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Repeater Handgun",
 			"name": "Archibugio a Ripetizione",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Repeater Pistol",
 			"name": "Pistola a Ripetizione",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Riding Horse",
 			"name": "Cavallo da Galoppo",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "River Barge",
@@ -915,11 +969,12 @@
 		{
 			"id": "Robes",
 			"name": "Tunica",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Rock",
-			"name": "Sasso"
+			"name": "Sasso",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Room, common/night",
@@ -934,12 +989,12 @@
 		{
 			"id": "Rope, 10 yards",
 			"name": "Fune, 10 metri",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Row Boat",
 			"name": "Barca a Remi",
-			"description": "<p>Richiede almeno un rematore.</p>"
+			"description": "<p>One rower is standard.</p>"
 		},
 		{
 			"id": "Sack",
@@ -953,12 +1008,13 @@
 		},
 		{
 			"id": "Saddle and Harness",
-			"name": "Sella e Briglie"
+			"name": "Sella e Briglie",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Saddlebags",
 			"name": "Borse da Sella",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Salwort",
@@ -968,7 +1024,7 @@
 		{
 			"id": "Saw",
 			"name": "Sega",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Scepter",
@@ -982,29 +1038,33 @@
 		},
 		{
 			"id": "Shield",
-			"name": "Scudo"
+			"name": "Scudo",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Shield (Buckler)",
-			"name": "Brocchiero"
+			"name": "Brocchiero",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Shield (Large)",
-			"name": "Scudo Grande"
+			"name": "Scudo Grande",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Shoes",
 			"name": "Scarpe",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Shortbow",
-			"name": "Arco Corto"
+			"name": "Arco Corto",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Sickle",
 			"name": "Falce",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Signet Ring",
@@ -1014,11 +1074,12 @@
 		{
 			"id": "Silver Shilling",
 			"name": "Scellino d'Argento",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Sling",
-			"name": "Frombola"
+			"name": "Frombola",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Sling Bag",
@@ -1028,26 +1089,27 @@
 		{
 			"id": "Small shot and Powder",
 			"name": "Carica a Pallini",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Spade",
 			"name": "Pala",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Spear",
 			"name": "Lancia",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Spike",
 			"name": "Spuntone",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Spirits, pint",
-			"name": "Distillato, pinta"
+			"name": "Distillato, pinta",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Spit",
@@ -1056,21 +1118,23 @@
 		},
 		{
 			"id": "Stables/night",
-			"name": "Stallaggio, notte"
+			"name": "Stallaggio, notte",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Staff Sling",
-			"name": "Frombola a Palo"
+			"name": "Frombola a Palo",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Stamp, engraved",
 			"name": "Timbro, inciso",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Stone Bullet",
 			"name": "Sassi",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Storm Lantern",
@@ -1079,59 +1143,63 @@
 		},
 		{
 			"id": "Swordbreaker",
-			"name": "Spezzalama"
+			"name": "Spezzalama",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Tattoo",
 			"name": "Tatuaggio",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Telescope",
 			"name": "Cannocchiale",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Tent",
 			"name": "Tenda",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Throwing Axe",
-			"name": "Ascia da Lancio"
+			"name": "Ascia da Lancio",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Throwing Knife",
-			"name": "Coltello da Lancio"
+			"name": "Coltello da Lancio",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Tinderbox",
 			"name": "Acciarino",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Tongs, steel",
 			"name": "Pinza, acciaio",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Trade Tools (Type)",
-			"name": "Arnesi del Mestiere",
+			"name": "Arnesi del Mestiere (Tipo)",
 			"description": "<p><strong>Apotecario</strong>: Gli Arnesi includono mortaio e pestello, cucchiai, vasi, bilancia e pesi. Un Laboratorio comprende bruciatori a olio e molti scaffali colmi di ingredienti.</p>\n<p>&nbsp;</p>\n<p><strong>Artigiano</strong>: Ci sono diversi tipi di artigiano.</p>\n<p>Per esempio:</p>\n<ul type=\"disc\">\n<li><strong>Carpentiere</strong>:  Martello, chiodi, sega, metro, gesso e filo a piombo. Il Laboratorio comprende tornii, pialle, morse e una scorta di legname.</li>\n</ul>\n<ul type=\"disc\">\n<li><strong>Incisore</strong>: Bulini, punzoni, cera, acquaforte, martello e scalpello. Nel Laboratorio si trovano inchiostro e torchio da stampa.</li>\n</ul>\n<ul type=\"disc\">\n<li><strong>Fabbro</strong>: Martello, molle, punzoni, chiodaia, punte e trapano. Nel Laboratorio si trovano incudine, fornace, blocco da chiodaia, maglio e lingotti di metallo.</li>\n</ul>\n<p>&nbsp;</p>\n<p>Altri Artigiani includono: Armaioli, Birrai, Bottai, Calligrafi, Candelai, Cartografi, Ciabattini, Conciatori, Costruttori d'Archi, Costruttori di Barche, Cuochi, Filatori, Gioiellieri, Imbalsamatori, Imbianchini, Intagliatori del Legno, Muratori, Orafi, Pellettieri, Sarti, Scalpellini, Soffiatori di Vetro, Tagliatori di Gemme, Vasai e Vignaioli.</p>\n<p>&nbsp;</p>\n<p><strong>Artista</strong>: Pennelli e pigmenti, martello e scalpello, lime e raspe. Il Laboratorio include piedistalli, una scorta di tele, legno, argilla o pietra grezza.</p>\n<p><strong>Ingegnere</strong>: Clessidra, metro, miccia, compasso e riga a T. Nel Laboratorio ci sono pulegge, funi e tavoli di legno.</p>\n<p><strong>Erborista</strong>: Mortaio e pestello, piccoli coltelli, cesoie e guanti. Il Laboratorio comprende rastrelliere da essicazione, filtri, alambicchi, tazze e vasi.</p>\n<p><strong>Navigatore</strong>: Quadrante, astrolabio, mappe, bussola, clessidra e scandaglio. Di solito non ci sono Laboratori.</p>\n<p><strong>Medico</strong>: Aghi, filo da sutura, bende, bisturi, aceto, forcipe e divaricatore. I Laboratori includono tavole anatomiche, altri strumenti assortiti e un tavolo operatorio.&nbsp;</p>"
 		},
 		{
 			"id": "Tweezers",
 			"name": "Pinzette",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Unarmed",
-			"name": "Mani Nude"
+			"name": "Mani Nude",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Uniform",
 			"name": "Uniforme",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Vitality Draught",
@@ -1151,7 +1219,7 @@
 		{
 			"id": "Warhammer",
 			"name": "Martello da Guerra",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Waterskin",
@@ -1161,19 +1229,22 @@
 		{
 			"id": "Weirdroot",
 			"name": "Radice Stramba",
-			"description": "<p>E' una delle droghe più comuni nelle strade dell'Impero. Masticarla Provoca un senso di euforia e allucinazioni piacevoli, secondo alcuni legate ai Venti della Magia. Fornisce +10 alle Prove di Resistenza e Volontà, ma -10 a quelle di Agilità, Iniziativa e Intelligenza. <strong>Durata</strong>: Ha un effetto mentre viene masticata e per i 1d10×10 minuti seguenti.</p>"
+			"description": "<p>E' una delle droghe più comuni nelle strade dell'Impero. Masticarla Provoca un senso di euforia e allucinazioni piacevoli, secondo alcuni legate ai Venti della Magia. Fornisce +10 alle Prove di Resistenza e Volontà, ma -10 a quelle di Agilità, Iniziativa e Intelligenza. <strong>Durata</strong>: Ha un effetto mentre viene masticata e per i [[/r 1d10 * 10]] minuti seguenti.</p>"
 		},
 		{
 			"id": "Whip",
-			"name": "Frusta"
+			"name": "Frusta",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Wine & Spirits, drink",
-			"name": "Vini & Liquori, bicchiere"
+			"name": "Vini & Liquori, bicchiere",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Wine, bottle",
-			"name": "Vino, bottiglia"
+			"name": "Vino, bottiglia",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Wooden Teeth",
@@ -1182,12 +1253,13 @@
 		},
 		{
 			"id": "Workshop (Type)",
-			"name": "Laboratorio",
+			"name": "Laboratorio (Tipo)",
 			"description": "<p><strong>Apotecario</strong>: Gli Arnesi includono mortaio e pestello, cucchiai, vasi, bilancia e pesi. Un Laboratorio comprende bruciatori a olio e molti scaffali colmi di ingredienti.</p>\n<p>&nbsp;</p>\n<p><strong>Artigiano</strong>: Ci sono diversi tipi di artigiano.</p>\n<p>Per esempio:</p>\n<ul type=\"disc\">\n<li><strong>Carpentiere</strong>:  Martello, chiodi, sega, metro, gesso e filo a piombo. Il Laboratorio comprende tornii, pialle, morse e una scorta di legname.</li>\n</ul>\n<ul type=\"disc\">\n<li><strong>Incisore</strong>: Bulini, punzoni, cera, acquaforte, martello e scalpello. Nel Laboratorio si trovano inchiostro e torchio da stampa.</li>\n</ul>\n<ul type=\"disc\">\n<li><strong>Fabbro</strong>: Martello, molle, punzoni, chiodaia, punte e trapano. Nel Laboratorio si trovano incudine, fornace, blocco da chiodaia, maglio e lingotti di metallo.</li>\n</ul>\n<p>&nbsp;</p>\n<p>Altri Artigiani includono: Armaioli, Birrai, Bottai, Calligrafi, Candelai, Cartografi, Ciabattini, Conciatori, Costruttori d'Archi, Costruttori di Barche, Cuochi, Filatori, Gioiellieri, Imbalsamatori, Imbianchini, Intagliatori del Legno, Muratori, Orafi, Pellettieri, Sarti, Scalpellini, Soffiatori di Vetro, Tagliatori di Gemme, Vasai e Vignaioli.</p>\n<p>&nbsp;</p>\n<p><strong>Artista</strong>: Pennelli e pigmenti, martello e scalpello, lime e raspe. Il Laboratorio include piedistalli, una scorta di tele, legno, argilla o pietra grezza.</p>\n<p><strong>Ingegnere</strong>: Clessidra, metro, miccia, compasso e riga a T. Nel Laboratorio ci sono pulegge, funi e tavoli di legno.</p>\n<p><strong>Erborista</strong>: Mortaio e pestello, piccoli coltelli, cesoie e guanti. Il Laboratorio comprende rastrelliere da essicazione, filtri, alambicchi, tazze e vasi.</p>\n<p><strong>Navigatore</strong>: Quadrante, astrolabio, mappe, bussola, clessidra e scandaglio. Di solito non ci sono Laboratori.</p>\n<p><strong>Medico</strong>: Aghi, filo da sutura, bende, bisturi, aceto, forcipe e divaricatore. I Laboratori includono tavole anatomiche, altri strumenti assortiti e un tavolo operatorio.&nbsp;</p>"
 		},
 		{
 			"id": "Worms",
-			"name": "Vermi"
+			"name": "Vermi",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Writing Kit",
@@ -1197,7 +1269,7 @@
 		{
 			"id": "Zweihander",
 			"name": "Zweihander",
-			"description": ""
+			"description": "<p></p>"
 		}
 	]
 }
