@@ -6,6 +6,10 @@
 		"skills": {
 			"path": "system.skills",
 			"converter": "convertSkills"
+		},
+		"talents": {
+			"path": "system.talents",
+			"converter": "convertTalents"
 		}
 	},
 	"entries": [

@@ -1,0 +1,292 @@
+{
+	"label": "Tables (Core)",
+	"entries": [
+		{
+			"id": "Beyond the Social Norm",
+			"name": "Beyond the Social Norm",
+			"description": ""
+		},
+		{
+			"id": "Career - Dwarf",
+			"name": "Career - Dwarf",
+			"description": ""
+		},
+		{
+			"id": "Career - Halfling",
+			"name": "Career - Halfling",
+			"description": ""
+		},
+		{
+			"id": "Career - High Elf",
+			"name": "Career - High Elf",
+			"description": ""
+		},
+		{
+			"id": "Career - Human (Reiklander)",
+			"name": "Career - Human (Reiklander)",
+			"description": ""
+		},
+		{
+			"id": "Career - Wood Elf",
+			"name": "Career - Wood Elf",
+			"description": ""
+		},
+		{
+			"id": "Catastrophic Miscast Table (Moo)",
+			"name": "Catastrophic Miscast Table (Moo)",
+			"description": ""
+		},
+		{
+			"id": "Character Ambition",
+			"name": "Character Ambition",
+			"description": ""
+		},
+		{
+			"id": "Character Motivation",
+			"name": "Character Motivation",
+			"description": ""
+		},
+		{
+			"id": "Character Quirk",
+			"name": "Character Quirk",
+			"description": ""
+		},
+		{
+			"id": "Character Trait",
+			"name": "Character Trait",
+			"description": ""
+		},
+		{
+			"id": "Critical Hits - Arm",
+			"name": "Critical Hits - Arm",
+			"description": ""
+		},
+		{
+			"id": "Critical Hits - Body",
+			"name": "Critical Hits - Body",
+			"description": ""
+		},
+		{
+			"id": "Critical Hits - Head",
+			"name": "Critical Hits - Head",
+			"description": ""
+		},
+		{
+			"id": "Critical Hits - Leg",
+			"name": "Critical Hits - Leg",
+			"description": ""
+		},
+		{
+			"id": "Dissolution of Body and Mind - Dwarf",
+			"name": "Dissolution of Body and Mind - Dwarf",
+			"description": ""
+		},
+		{
+			"id": "Dissolution of Body and Mind - Halfling",
+			"name": "Dissolution of Body and Mind - Halfling",
+			"description": ""
+		},
+		{
+			"id": "Dissolution of Body and Mind - High Elf",
+			"name": "Dissolution of Body and Mind - High Elf",
+			"description": ""
+		},
+		{
+			"id": "Dissolution of Body and Mind - Human",
+			"name": "Dissolution of Body and Mind - Human",
+			"description": ""
+		},
+		{
+			"id": "Dissolution of Body and Mind - Wood Elf",
+			"name": "Dissolution of Body and Mind - Wood Elf",
+			"description": ""
+		},
+		{
+			"id": "Dooming",
+			"name": "Dooming",
+			"description": ""
+		},
+		{
+			"id": "Dooming (Alternate)",
+			"name": "Dooming (Alternate)",
+			"description": ""
+		},
+		{
+			"id": "Drive Failure",
+			"name": "Drive Failure",
+			"description": ""
+		},
+		{
+			"id": "Events Table",
+			"name": "Events Table",
+			"description": ""
+		},
+		{
+			"id": "Eye Colour - Dwarf",
+			"name": "Eye Colour - Dwarf",
+			"description": ""
+		},
+		{
+			"id": "Eye Colour - Halfling",
+			"name": "Eye Colour - Halfling",
+			"description": ""
+		},
+		{
+			"id": "Eye Colour - High Elf",
+			"name": "Eye Colour - High Elf",
+			"description": ""
+		},
+		{
+			"id": "Eye Colour - Human",
+			"name": "Eye Colour - Human",
+			"description": ""
+		},
+		{
+			"id": "Eye Colour - Wood Elf",
+			"name": "Eye Colour - Wood Elf",
+			"description": ""
+		},
+		{
+			"id": "Gunpowder Fumble Table (Moo)",
+			"name": "Gunpowder Fumble Table (Moo)",
+			"description": ""
+		},
+		{
+			"id": "Hair Colour - Dwarf",
+			"name": "Hair Colour - Dwarf",
+			"description": ""
+		},
+		{
+			"id": "Hair Colour - Halfling",
+			"name": "Hair Colour - Halfling",
+			"description": ""
+		},
+		{
+			"id": "Hair Colour - High Elf",
+			"name": "Hair Colour - High Elf",
+			"description": ""
+		},
+		{
+			"id": "Hair Colour - Human",
+			"name": "Hair Colour - Human",
+			"description": ""
+		},
+		{
+			"id": "Hair Colour - Wood Elf",
+			"name": "Hair Colour - Wood Elf",
+			"description": ""
+		},
+		{
+			"id": "Hit Location",
+			"name": "Hit Location",
+			"description": ""
+		},
+		{
+			"id": "Hit Location - Snake",
+			"name": "Hit Location - Snake",
+			"description": ""
+		},
+		{
+			"id": "Hit Location - Spider",
+			"name": "Hit Location - Spider",
+			"description": ""
+		},
+		{
+			"id": "How Do I Know You Again?",
+			"name": "How Do I Know You Again?",
+			"description": ""
+		},
+		{
+			"id": "I Need A Job! - What",
+			"name": "I Need A Job! - What",
+			"description": ""
+		},
+		{
+			"id": "I Need A Job! - Who",
+			"name": "I Need A Job! - Who",
+			"description": ""
+		},
+		{
+			"id": "I Need A Job! - Why",
+			"name": "I Need A Job! - Why",
+			"description": ""
+		},
+		{
+			"id": "Major Miscast Table",
+			"name": "Major Miscast Table",
+			"description": ""
+		},
+		{
+			"id": "Major Miscast Table (Moo)",
+			"name": "Major Miscast Table (Moo)",
+			"description": ""
+		},
+		{
+			"id": "Mental Corruption",
+			"name": "Mental Corruption",
+			"description": "A corrupted mind may be less obvious than a sprouting tentacle, but it can be just as devastating to your life. Use the description you roll to build a unique mental mutation that fits your character, taking a little time to create a believable new mindset. This as an opening to portray your character in a new, potentially horrific way, so you can also use your mental mutation as an opportunity to change your Motivation."
+		},
+		{
+			"id": "Minor Miscast Table",
+			"name": "Minor Miscast Table",
+			"description": ""
+		},
+		{
+			"id": "Minor Miscast Table (Moo)",
+			"name": "Minor Miscast Table (Moo)",
+			"description": ""
+		},
+		{
+			"id": "Oops! Table",
+			"name": "Oops! Table",
+			"description": ""
+		},
+		{
+			"id": "Physical Mutation",
+			"name": "Physical Mutation",
+			"description": "Use the descriptions below to help create a unique version of your mutation. Take time to describe how it manifests, adding as many gruesome details as you dare. In all cases, if your mutation is obvious, you not only suffer significant penalties to Fellowship Tests as determined by the circumstance, but people will likely flee from your presence, the Watch will be called, Witch Hunters will descend, and life will swiftly become very difficult."
+		},
+		{
+			"id": "FM6ASUoNX21MHuWa",
+			"name": "Specie",
+			"description": "",
+			"results": {
+				"1-90": "Umano",
+				"91-94": "Nano",
+				"95-98": "Halfling",
+				"99-99": "Alto Elfo",
+				"100-100": "Elfo Silvano"
+			}
+		},
+		{
+			"id": "Stinking Drunk",
+			"name": "Stinking Drunk",
+			"description": "If you fail a @Compendium[wfrp4e-core.skills.R2ytluHiEFF2KQ5e]{Consume Alcohol} a number of times equal to your Toughness Bonus, you are Stinking Drunk. Roll on the following table to see what happens:"
+		},
+		{
+			"id": "Talents - Character Creation",
+			"name": "Talents - Character Creation",
+			"description": ""
+		},
+		{
+			"id": "The Swirling Winds",
+			"name": "The Swirling Winds",
+			"description": ""
+		},
+		{
+			"id": "Travel Table",
+			"name": "Travel Table",
+			"description": ""
+		},
+		{
+			"id": "Wrath of the Gods Table",
+			"name": "Wrath of the Gods Table",
+			"description": ""
+		},
+		{
+			"id": "You Find Yourself In A Tavern - What Happens Next?",
+			"name": "You Find Yourself In A Tavern - What Happens Next?",
+			"description": ""
+		}
+	]
+}

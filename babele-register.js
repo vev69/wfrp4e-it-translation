@@ -152,6 +152,176 @@ var skills = {
 	'Trade (Tanner)': 'Mestiere (Conciatore)',
 };
 
+var talents = {
+	'Accurate Shot': 'Tiro Accurato',
+	'Acute Sense': 'Senso Acuto',
+	'Aethyric Attunement': 'Sintonia Aethyrica',
+	'Alley Cat': 'Randagio',
+	Ambidextrous: 'Ambidestro',
+	'Animal Affinity': 'Affinità Animale',
+	'Arcane Magic': 'Magica Arcana',
+	Argumentative: 'Polemico',
+	Artistic: 'Artista',
+	Attractive: 'Attraente',
+	'Battle Rage': 'Furia da Battaglia',
+	'Beat Blade': 'Botta',
+	'Beneath Notice': 'Insignificante',
+	'Berserk Charge': 'Carica del Berserker',
+	Blather: 'Blaterare',
+	Bless: 'Benedizione',
+	Bookish: 'Topo di Biblioteca',
+	'Break and Enter': 'Sfondare',
+	Briber: 'Corruttore',
+	Cardsharp: 'Baro (Carte)',
+	'Careful Strike': 'Colpo Misurato',
+	Carouser: 'Beone',
+	'Cat-tongued': 'Lingua di Gatto',
+	Catfall: 'Cadere in Piedi',
+	'Chaos Magic': 'Magia del Caos',
+	'Combat Aware': 'Vigile',
+	'Combat Master': 'Veterano',
+	'Combat Reflexes': 'Riflessi da Combattimento',
+	'Commanding Presence': 'Presenza Maestosa',
+	Concoct: 'Mescere',
+	Contortionist: 'Contorsionista',
+	Coolheaded: 'Razionale',
+	'Crack the Whip': 'Schiocco di Frusta',
+	Craftsman: 'Artigiano',
+	Criminal: 'Criminale',
+	'Deadeye Shot': 'Mira Letale',
+	Dealmaker: 'Affarista',
+	'Detect Artefact': 'Percepire Artefatti',
+	Diceman: 'Baro (Dadi)',
+	'Dirty Fighting': 'Gioco Sporco',
+	Disarm: 'Disarmare',
+	Distract: 'Distrarre',
+	Doomed: 'Predestinato',
+	Drilled: 'Addestrato',
+	'Dual Wielder': 'Stile a Doppia Arma',
+	Embezzle: 'Intascare',
+	'Enclosed Fighter': 'Lottatore da Vicolo',
+	Etiquette: 'Etichetta',
+	'Fast Hands': 'Mani Veloci',
+	'Fast Shot': 'Tiro Rapido',
+	Fearless: 'Temerario',
+	Feint: 'Finta',
+	'Field Dressing': 'Pronto Soccorso',
+	Fisherman: 'Pescatore',
+	Flagellant: 'Flagellante',
+	'Flee!': 'Fuga!',
+	'Fleet Footed': 'Piè Veloce',
+	Frenzy: 'Furia',
+	Frightening: 'Spaventoso',
+	'Furious Assault': 'Assalto Furioso',
+	Gregarious: 'Amichevole',
+	Gunner: 'Fuciliere',
+	Hardy: 'Gagliardo',
+	Hatred: 'Odio',
+	'Holy Hatred': 'Odio Sacro',
+	'Holy Visions': 'Visioni Mistiche',
+	"Hunter's Eye": 'Occhio del Cacciatore',
+	'Impassioned Zeal': 'Fervore',
+	Implacable: 'Implacabile',
+	'In-fighter': 'Gioco Stretto',
+	Inspiring: 'Ispiratore',
+	'Instinctive Diction': 'Dizione Istintiva',
+	Invoke: 'Invocazione',
+	'Iron Jaw': 'Mascella di Ferro',
+	'Iron Will': 'Volontà di Ferro',
+	'Jump Up': 'Colpo di Reni',
+	Kingpin: 'Capoccia',
+	'Lightning Reflexes': 'Riflessi Fulminei',
+	Linguistics: 'Linguista',
+	'Lip Reading': 'Leggere le Labbra',
+	Luck: 'Fortunato',
+	'Magic Resistance': 'Resistente alla Magia',
+	'Magical Sense': 'Senso Magico',
+	'Magnum Opus': 'Magnum Opus',
+	Marksman: 'Tiratore',
+	'Master of Disguise': 'Maestro del Travestimento',
+	'Master Orator': 'Abile Oratore',
+	'Master Tradesman': 'Mastro Artigiano',
+	Menacing: 'Minaccioso',
+	Mimic: 'Imitatore',
+	'Night Vision': 'Vista Notturna',
+	'Nimble Fingered': 'Dita Agili',
+	'Noble Blood': 'Sangue Blu',
+	'Nose for Trouble': 'Fiutare Pericolo',
+	Numismatics: 'Numismatico',
+	'Old Salt': 'Lupo di Mare',
+	Orientation: "Senso dell'Orientamento",
+	Panhandle: 'Mendicare',
+	'Perfect Pitch': 'Tono Perfetto',
+	'Petty Magic': 'Magia Minore',
+	Pharmacist: 'Farmacista',
+	Pilot: 'Timoniere',
+	'Public Speaker': 'Oratore',
+	'Pure Soul': 'Anima Pura',
+	'Rapid Reload': 'Ricarica Rapida',
+	'Reaction Strike': 'Colpo Reattivo',
+	'Read/Write': 'Leggere/Scrivere',
+	Relentless: 'Inesorabile',
+	Resistance: 'Resistente',
+	Resolute: 'Risoluto',
+	Reversal: 'Ribaltamento',
+	Riposte: 'Contrattacco',
+	'River Guide': 'Pilota Fluviale',
+	Robust: 'Robusto',
+	Roughrider: 'Nato in Sella',
+	Rover: 'Girovago',
+	Savant: 'Genio',
+	Savvy: 'Buon Senso',
+	'Scale Sheer Surface': 'Scalatore',
+	Schemer: 'Cospiratore',
+	'Sea Legs': 'Gambe da Marinaio',
+	'Seasoned Traveller': 'Viaggiatore Esperto',
+	'Second Sight': 'Seconda Vista',
+	'Secret Identity': 'Identità segreta',
+	Shadow: 'Ombra',
+	Sharp: 'Acuto',
+	Sharpshooter: 'Tiratore Scelto',
+	Shieldsman: 'Esperto con lo Scudo',
+	'Sixth Sense': 'Sesto Senso',
+	Slayer: 'Sventratore',
+	Small: 'Piccolo',
+	Sniper: 'Cecchino',
+	Speedreader: 'Lettura veloce',
+	Sprinter: 'Velocista',
+	'Step Aside': 'Farsi da Parte',
+	'Stone Soup': 'Zuppa di Sasso',
+	'Stout-hearted': 'Cuore Impavido',
+	Strider: 'Passo Lungo',
+	'Strike Mighty Blow': 'Colpo Poderoso',
+	'Strike to Injure': 'Colpo Crudele',
+	'Strike to Stun': 'Colpo Stordente',
+	'Strong Back': 'Spalle Forti',
+	'Strong Legs': 'Gambe Forti',
+	'Strong Swimmer': 'Nuotatore',
+	'Strong-minded': 'Determinato',
+	Sturdy: 'Vigoroso',
+	Suave: 'Cortese',
+	'Super Numerate': 'Genio Matematico',
+	Supportive: 'Solidale',
+	'Sure Shot': 'Mira Sicura',
+	Surgery: 'Chirurgia',
+	Tenacious: 'Tenace',
+	Tinker: 'Trafficone',
+	'Tower of Memories': 'Torre di Memorie',
+	Trapper: 'Esperto in Trappole',
+	'Trick Riding': 'Volteggio in Sella',
+	'Tunnel Rat': 'Topo di Fogna',
+	Unshakable: "Nervi d'Acciaio",
+	'Very Resilient': 'Saldo',
+	'Very Strong': 'Forzuto',
+	'War Leader': 'Condottiero',
+	'War Wizard': 'Mago della Guerra',
+	'Warrior Born': 'Guerriero Nato',
+	Waterman: 'Battelliere',
+	Wealthy: 'Ricco',
+	'Well-prepared': 'Preparato',
+	'Witch!': 'Strega!',
+};
+
 Hooks.once('init', () => {
 	if (typeof Babele !== 'undefined') {
 		Babele.get().register({
@@ -165,49 +335,158 @@ Hooks.once('init', () => {
 				let data = [];
 				values.map((skill) => {
 					data.push(skills[skill] ? skills[skill] : skill);
-					// let skillMapping = new CompendiumMapping('skills', skill);
-					// return function (items, translations) {
-					// 	return items.map((data) => {
-					// 		if (translations) {
-					// 			let translation;
-					// 			if (Array.isArray(translations)) {
-					// 				translation = translations.find(
-					// 					(t) =>
-					// 						t.id === data._id ||
-					// 						t.id === data.name
-					// 				);
-					// 			} else {
-					// 				translation =
-					// 					translations[data._id] ||
-					// 					translations[data.name];
-					// 			}
-					// 			if (translation) {
-					// 				let translatedData = skillMapping.map(
-					// 					data,
-					// 					translation
-					// 				);
-					// 				return mergeObject(
-					// 					data,
-					// 					mergeObject(translatedData, {
-					// 						translated: true,
-					// 					})
-					// 				);
-					// 			}
-					// 		}
-
-					// 		let pack = game.babele.packs.find(
-					// 			(pack) =>
-					// 				pack.translated && pack.hasTranslation(data)
-					// 		);
-					// 		if (pack) {
-					// 			return pack.translate(data);
-					// 		}
-					// 		return data;
-					// 	});
-					// };
+				});
+				return data;
+			},
+			convertTalents: (values) => {
+				let data = [];
+				values.map((talent) => {
+					data.push(talents[talent] ? talents[talent] : talent);
 				});
 				return data;
 			},
 		});
 	}
+});
+
+Hooks.once('setup', () => {
+	// Species
+	WFRP4E.species = {
+		human: 'Umano',
+		dwarf: 'Nano',
+		halfling: 'Halfling',
+		helf: 'Alto Elfo',
+		welf: 'Elfo Silvano',
+	};
+
+	WFRP4E.subspecies = {
+		human: {
+			reiklander: {
+				name: 'Reiklander',
+				skills: [
+					'Animal Care',
+					'Charm',
+					'Cool',
+					'Evaluate',
+					'Gossip',
+					'Haggle',
+					'Language (Bretonnian)',
+					'Language (Wastelander)',
+					'Leadership',
+					'Lore (Reikland)',
+					'Melee (Basic)',
+					'Ranged (Bow)',
+				],
+				talents: ['Doomed', 'Savvy, Suave', 3],
+			},
+		},
+	};
+
+	WFRP4E.speciesSkills = {
+		human: [
+			'Animal Care',
+			'Charm',
+			'Cool',
+			'Evaluate',
+			'Gossip',
+			'Haggle',
+			'Language (Bretonnian)',
+			'Language (Wastelander)',
+			'Leadership',
+			'Lore (Reikland)',
+			'Melee (Basic)',
+			'Ranged (Bow)',
+		],
+		dwarf: [
+			'Consume Alcohol',
+			'Cool',
+			'Endurance',
+			'Entertain (Storytelling)',
+			'Evaluate',
+			'Intimidate',
+			'Language (Khazalid)',
+			'Lore (Dwarfs)',
+			'Lore (Geology)',
+			'Lore (Metallurgy)',
+			'Melee (Basic)',
+			'Trade (any one)',
+		],
+		halfling: [
+			'Charm',
+			'Consume Alcohol',
+			'Dodge',
+			'Gamble',
+			'Haggle',
+			'Intuition',
+			'Language (Mootish)',
+			'Lore (Reikland)',
+			'Perception',
+			'Sleight of Hand',
+			'Stealth (Any)',
+			'Trade (Cook)',
+		],
+		helf: [
+			'Cool',
+			'Entertain (Sing)',
+			'Evaluate',
+			'Language (Eltharin)',
+			'Leadership',
+			'Melee (Basic)',
+			'Navigation',
+			'Perception',
+			'Play (any one)',
+			'Ranged (Bow)',
+			'Sail',
+			'Swim',
+		],
+		welf: [
+			'Athletics',
+			'Climb',
+			'Endurance',
+			'Entertain (Sing)',
+			'Intimidate',
+			'Language (Eltharin)',
+			'Melee (Basic)',
+			'Outdoor Survival',
+			'Perception',
+			'Ranged (Bow)',
+			'Stealth (Rural)',
+			'Track',
+		],
+	};
+
+	WFRP4E.speciesTalents = {
+		human: ['Doomed', 'Savvy, Suave', 3],
+		dwarf: [
+			'Magic Resistance',
+			'Night Vision',
+			'Read/Write, Relentless',
+			'Resolute, Strong-minded',
+			'Sturdy',
+			0,
+		],
+		halfling: [
+			'Acute Sense (Taste)',
+			'Night Vision',
+			'Resistance (Chaos)',
+			'Small',
+			2,
+		],
+		helf: [
+			'Acute Sense (Sight)',
+			'Coolheaded, Savvy',
+			'Night Vision',
+			'Second Sight, Sixth Sense',
+			'Read/Write',
+			0,
+		],
+		welf: [
+			'Acute Sense (Sight)',
+			'Hardy, Second Sight',
+			'Night Vision',
+			'Read/Write, Very Resilient',
+			'Rover',
+			0,
+		],
+	};
 });
