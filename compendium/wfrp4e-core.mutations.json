@@ -1,20 +1,20 @@
 {
-	"label": "Mutazioni",
+	"label": "Mutations",
 	"entries": [
 		{
 			"id": "Animalistic Legs",
 			"name": "Gambe Animalesche",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Awful Cravings",
 			"name": "Orride Voglie",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Beast Within",
 			"name": "Bestia Interiore",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Chaotic Dreams",
@@ -24,52 +24,52 @@
 		{
 			"id": "Corpulent",
 			"name": "Corpulento",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Crawling Skin",
 			"name": "Pelle d'Oca",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Distended Digits",
 			"name": "Falangi Allungate",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Emaciated",
 			"name": "Emaciato",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Enormous Eye",
-			"name": "Occhio Enorme",
-			"description": ""
+			"name": "Occhio Enorm",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Erratic Fantasist",
 			"name": "Fantasie Errabonde",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Extra Leg Joints",
 			"name": "Articolazione Aggiuntiva alle Gambe",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Extra Mouth",
 			"name": "Bocca Aggiuntiva",
-			"description": "<p>Tirare per determinare la Locazione.</p>"
+			"description": "<p>Tirare sulla tabella @Table[hitloc]{Hit Location} per determinare la Locazione.</p>"
 		},
 		{
 			"id": "Fearful Concern",
 			"name": "Terribili Timori",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Fleshy Tentacle",
 			"name": "Tentacoli Carnosi",
-			"description": "<p>Si ottiene il Tratto Tentacoli (vedere pag.343)</p>"
+			"description": "<p>Si ottiene il Tratto @Compendium[wfrp4e-core.traits.4xF7M6ylIiGntekh]{Tentacles}.</p>"
 		},
 		{
 			"id": "Glowing Skin",
@@ -79,122 +79,121 @@
 		{
 			"id": "Hateful Impulses",
 			"name": "Impulsi d'Odio",
-			"description": "<p><em>Animosità</em> (vedere <strong>Psicologia</strong>) verso ogni altra specie </p>"
+			"description": "<p><em>Animosità</em> (vedere <strong>Psicologia</strong>) verso ogni altra specie</p>"
 		},
 		{
 			"id": "Hollow Heart",
-			"name": "Cuore Gelido",
-			"description": ""
+			"name": "Cuore Gelidop>"
 		},
 		{
 			"id": "Inhuman Beauty",
-			"name": "Bellezza Inumana ",
-			"description": ""
+			"name": "Bellezza Inumana",
+			"description": "<p></p>"
 		},
 		{
 			"id": "Inverted Face",
 			"name": "Volto Rovesciato",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Iron Skin",
 			"name": "Pelle di Ferro",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Jealous Thoughts",
 			"name": "Gelosia",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Lolling Tongue",
 			"name": "Lingua Pigra",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Lonely Spirit",
 			"name": "Spirito Melanconico",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Mental Blocks",
 			"name": "Blocco Mentale",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Patchy Feathers",
 			"name": "Chiazze di Piume",
-			"description": "<p>Tirare per determinare la Locazione</p>"
+			"description": "<p>Tirare sulla tabella @Table[hitloc]{Hit Location} per determinare la Locazione</p>"
 		},
 		{
 			"id": "Profane Urgency",
 			"name": "Bisogno Profano",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Shaky Morale",
 			"name": "Spirito Debole",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Short Legs",
 			"name": "Gambe Corte",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Suspicious Mind",
 			"name": "Sospettoso",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Thorny Scales",
 			"name": "Scaglie Cornee",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Thrill Hunter",
 			"name": "Ricerca del Brivido",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Tortured Visions",
 			"name": "Visioni Terribili",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Totally Unhinged",
 			"name": "Follia Totale",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Unending Malice",
 			"name": "Malizia Infinita",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Uneven Horns",
 			"name": "Corna Irregolari",
-			"description": "<p>+1 Punto Armatura alla Testa; conta come un'Arma Naturale con danno pari al BF (vedere pag.338).</p>"
+			"description": "<p>+1 Punto Armatura alla Testa; conta come un @Compendium[wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Weapon} con danno pari al BF; questa mutazione non può essere nascosta.</p>"
 		},
 		{
 			"id": "Unholy Rage",
 			"name": "Rabbia Sacrilega",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Weeping Pus",
 			"name": "Pustola Suppurante",
-			"description": "<p>Tirare per determinare la Locazione</p>"
+			"description": "<p>Tirare sulla tabella @Table[hitloc]{Hit Location} per determinare la Locazione</p>"
 		},
 		{
 			"id": "Whiskered Snout",
 			"name": "Naso Peloso",
-			"description": ""
+			"description": "<p></p>"
 		},
 		{
 			"id": "Worried Jitters",
 			"name": "Tremiti Nervosi",
-			"description": ""
+			"description": "<p></p>"
 		}
 	]
 }

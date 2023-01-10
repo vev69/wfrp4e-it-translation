@@ -1,5 +1,5 @@
 {
-	"label": "Critici",
+	"label": "Criticals",
 	"entries": [
 		{
 			"id": "Arterial Damage",
@@ -68,13 +68,13 @@
 		},
 		{
 			"id": "Carved Shin",
-			"name": "Carved Shin",
-			"description": "<p>The weapon drives clean through your leg by the knee, slicing into bone and through tendons. Gain a @Condition[Stunned] and @Condition[Prone] Condition. Further, suffer a @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Torn Muscle (Major)} and @Compendium[wfrp4e-core.injuries.7mCcI3q7hgWcmbBU]{Broken Bone (Minor)} injury.</p>"
+			"name": "Tibia Intaccata",
+			"description": "<p>L’arma trapassa la gamba intaccando ossa e tendini. Causa 1 @Condition[Stunned] e @Condition[Prone]. Causa anche uno @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Torn Muscle (Major)} e @Compendium[wfrp4e-core.injuries.7mCcI3q7hgWcmbBU]{Broken Bone (Minor)}.</p>"
 		},
 		{
 			"id": "Clean Break",
-			"name": "Clean Break",
-			"description": "<p>An audible crack resounds as the blow strikes your arm. Drop whatever was held in the associated hand and gain a @Compendium[wfrp4e-core.injuries.4lj1ik958mbgAlaF]{Broken Bone (Minor)} injury. Pass a <strong>Difficult (-10) Endurance</strong> Test or gain a @Condition[Stunned] Condition.</p>"
+			"name": "Frattura Netta",
+			"description": "<p>Il colpo causa uno schiocco ben udibile. Si perde quello che si stringeva in mano e si subisce un @Compendium[wfrp4e-core.injuries.4lj1ik958mbgAlaF]{Broken Bone (Minor)}. Superare una <strong>Prova Difficile (-10) di Tempra</strong> per non subire 1 @Condition[Stunned].</p>"
 		},
 		{
 			"id": "Cleft Hand",
@@ -83,323 +83,323 @@
 		},
 		{
 			"id": "Concussive Blow",
-			"name": "Concussive Blow",
-			"description": "<p>Your brain rattles in your skull as blood spurts from your nose and ears. Take 1 @Condition[Deafened], 2 @Condition[Bleeding] , and [[/r 1d10]] @Condition[Stunned] Conditions. Gain a @Condition[Fatigued] Condition that lasts for [[/r 1d10]] days. If you receive another Critical Wound to your head while suffering this Fatigued Condition, make an <strong>Average (+20) Endurance</strong> Test or also gain an @Condition[Unconscious] Condition.</p>"
+			"name": "Concussione",
+			"description": "<p>Il cervello rimbalza dentro la scatola cranica. Causa 1 @Condition[Deafened], 2 @Condition[Bleeding] , e [[/r 1d10]] @Condition[Stunned]. Causa 1 @Condition[Fatigued] che dura per [[/r 1d10]] giorni. Se si subisce un’altra ferita alla testa che provoca <em>Affaticato</em>, effettuare una <strong>Prova Media (+20) di Tempra</strong per non cadere @Condition[Unconscious].</p>"
 		},
 		{
 			"id": "Cracked Ribs",
-			"name": "Cracked Ribs",
-			"description": "<p>The hit cracks one or more ribs. Gain a @Condition[Stunned] Condition. Gain a @Compendium[wfrp4e-core.injuries.QluSTTTq3viHJJUh]{Broken Bone (Minor)} injury.</p>"
+			"name": "Costole Incrinate",
+			"description": "<p>Il colpo incrina una o più costole. Causa 1 @Condition[Stunned] e @Compendium[wfrp4e-core.injuries.QluSTTTq3viHJJUh]{Broken Bone (Minor)}.</p>"
 		},
 		{
 			"id": "Crushed Elbow",
-			"name": "Crushed Elbow",
-			"description": "<p>The blow crushes your elbow, splintering bone and cartilage. You immediately drop whatever was held in that hand and gain a @Compendium[wfrp4e-core.injuries.rlDZZTj5PXjuRXa2]{Broken Bone (Major)} injury.</p>"
+			"name": "Gomito Distrutto",
+			"description": "<p>Il colpo distrugge ossa e cartilagini del gomito. Si perde quello che si stringeva in mano e si subisce @Compendium[wfrp4e-core.injuries.rlDZZTj5PXjuRXa2]{Broken Bone (Major)}.</p>"
 		},
 		{
 			"id": "Crushed Foot",
-			"name": "Crushed Foot",
-			"description": "<p>The blow crushes your foot. Make an <strong>Average (+20) Endurance</strong> Test; if you fail, gain the @Condition[Prone] condition and lose 1 toe, plus 1 additional toe for each SL below 0 &mdash; @Compendium[wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx]{Amputation (Average)}. Gain 2 @Condition[Bleeding] Conditions. If you don't receive Surgery within <strong>[[/r 1d10]]</strong> days, you will lose the foot entirely.</p>"
+			"name": "Piede Schiacciato",
+			"description": "<p>Il piede viene spappolato. Superare una <strong>Prova Media (+20) di Tempra</strong> per non cadere @Condition[Prone] e perdere un dito (più uno per LS sotto 0); @Compendium[wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx]{Amputation (Average)}. Causa 2 @Condition[Bleeding]. Senza una <strong>Chirurgia</strong> entro <strong>[[/r 1d10]]</strong> giorni, si perde il piede.</p>"
 		},
 		{
 			"id": "Cut Tendon",
-			"name": "Cut Tendon",
-			"description": "<p>A major tendon at the back of your leg is cut, causing you to scream out in pain as your leg collapses. Gain 2 @Condition[Bleeding], 2 @Condition[Stunned], and 1 @Condition[Prone] Condition and look on in horror as your leg never works again &mdash; @Compendium[wfrp4e-core.injuries.k00PimCWkff11IA0]{Amputation (Very Hard)}.</p>"
+			"name": "Tendini Recisi",
+			"description": "<p>Uno dei tendini principali viene reciso e la gamba collassa mentre il Personaggio urla di dolore. Causa 2 @Condition[Bleeding], 2 @Condition[Stunned], e 1 @Condition[Prone]. La gamba non funzionerà mai più; @Compendium[wfrp4e-core.injuries.k00PimCWkff11IA0]{Amputation (Very Hard)}.</p>"
 		},
 		{
 			"id": "Damaged Artery",
-			"name": "Damaged Artery",
-			"description": "<p>Gain 4 @Condition[Bleeding] Conditions. Until you receive @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}, every time you take Damage to this Arm Hit Location gain 2 @Condition[Bleeding] Conditions.</p><blockquote class=\"foundry-note\"><p><span style=\"font-style: normal;\">The Active Effect for this item needs your input. Replace <span style=\"font-family: Courier\">ARM_LOCATION_HERE</span> with <span style=\"font-family: Courier\">lArm</span> or <span style=\"font-family: Courier\">rArm</span></span></p></blockquote>"
+			"name": "Arteria Danneggiata",
+			"description": "<p>Causa 4 @Condition[Bleeding]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}, ogni ulteriore colpo al braccio causerà 2 @Condition[Bleeding].</p><blockquote class=\"foundry-note\"><p><span style=\"font-style: normal;\">L'effetto attivo per questo oggetto richiede il tuo contributo. Sostituire <span style=\"font-family: Courier\">ARM_LOCATION_HERE</span> con <span style=\"font-family: Courier\">lArm</span> o <span style=\"font-family: Courier\">rArm</span></span></p></blockquote>"
 		},
 		{
 			"id": "Decapitated",
-			"name": "Decapitated",
-			"description": "<p>Your head is entirely severed from your neck and soars through the air, landing [[/r 1d10]] feet away in a random direction (see @Table[scatter]{Scatter}). Your body collapses, instantly dead.</p>"
+			"name": "Decapitazione",
+			"description": "<p>La testa è recisa e vola nell’aria per [[/r 1d10]]x30cm in direzione casuale (vedere @Table[scatter]{Scatter}). Il corpo collassa privo di vita.</p>"
 		},
 		{
 			"id": "Deep Cut",
-			"name": "Deep Cut",
-			"description": "<p>Gain 2 @Condition[Bleeding] Conditions as your arm is mangled. Gain 1 @Condition[Stunned] Condition and suffer a @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Torn Muscle (Minor)} injury. Take a <strong>Hard (-20) Endurance</strong> Test or gain the @Condition[Unconscious] Condition.</p>"
+			"name": "Taglio Profondo",
+			"description": "<p>Causa 2 @Condition[Bleeding]  1 @Condition[Stunned] e uno @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Torn Muscle (Minor)}. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire 1 @Condition[Unconscious].</p>"
 		},
 		{
 			"id": "Devastated Eye",
-			"name": "Devastated Eye",
-			"description": "<p>A strike to your eye completely bursts it, causing extraordinary pain. Gain 3 @Condition[Blinded], 2 @Condition[Bleeding], and 1 @Condition[Stunned] Condition. Lose your eye &mdash; @Compendium[wfrp4e-core.injuries.weczkAMPlTjX7lqU]{Amputation (Difficult)}.</p>"
+			"name": "Occhio Devastato",
+			"description": "<p>Il colpo cava un occhio con enorme dolore. Causa 3 @Condition[Blinded], 2 @Condition[Bleeding], e 1 @Condition[Stunned]. L’occhio è perso; @Compendium[wfrp4e-core.injuries.weczkAMPlTjX7lqU]{Amputation (Difficult)}.</p>"
 		},
 		{
 			"id": "Disfiguring Blow",
-			"name": "Disfiguring Blow",
-			"description": "<p>The blow smashes your entire face, destroying your eye and nose in a cloud of blood. Gain 3 @Condition[Bleeding], 3 @Condition[Blinded] and 2 @Condition[Stunned] Conditions. Lose your @Compendium[wfrp4e-core.injuries.weczkAMPlTjX7lqU]{eye} and @Compendium[wfrp4e-core.injuries.SpPRZZRHxly7uo2G]{nose} &mdash; <strong>Amputation (Hard).</strong></p>"
+			"name": "Sfigurato",
+			"description": "<p>Il colpo distrugge l’intero volto, compresi un occhio e il naso. Causa 3 @Condition[Bleeding], 3 @Condition[Blinded] e 2 @Condition[Stunned]. Perdi @Compendium[wfrp4e-core.injuries.weczkAMPlTjX7lqU]{eye} e @Compendium[wfrp4e-core.injuries.SpPRZZRHxly7uo2G]{nose} &mdash; <strong>Amputation (Hard).</strong></p>"
 		},
 		{
 			"id": "Dislocated Knee",
-			"name": "Dislocated Knee",
-			"description": "<p>Your knee is wrenched out of its socket. Gain the @Condition[Prone] Condition. Pass a Hard (-20) Endurance Test, or gain the @Condition[Stunned] Condition, which is not removed until you receive Medical Attention. After this initial Medical Attention, an <strong>Extended Average (+20) Heal </strong>Test needing 6 SL is required to reset the knee at which point you regain its use. Movement is halved, and Tests made using this leg suffer a -10 penalty for [[/r d10]] days.</p>"
+			"name": "Ginocchio Slogato",
+			"description": "<p>Il ginocchio esce violentemente di sede. Causa @Condition[Prone]. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire 1 @Condition[Stunned], che può essere rimosso solo con Cure Mediche. Occorrono +6 LS in una <strong>Prova Prolungata Media (+20) di Guarire</strong> per rimettere a posto la gamba. Dopo di che si subirà Movimento dimezzato e -10 alle Prove basate sulla gamba per [[/r d10]] giorni.</p>"
 		},
 		{
 			"id": "Dislocated Shoulder",
-			"name": "Dislocated Shoulder",
-			"description": "<p>Your arm is wrenched out of its socket. Pass a <strong>Hard (-20) Endurance</strong> Test or gain the @Condition[Stunned] and @Condition[Prone] Condition. Drop whatever is held in that hand: the arm is useless and counts as lost (see @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputated Part}). Gain 1 @Condition[Stunned] Condition until you receive Medical Attention. After this initial Medical Attention, an Extended <strong>Average (+20) Heal</strong> Test needing 6 SL is required to reset the arm, at which point you regain its use. Tests made using this arm suffer a -10 penalty for <strong>[[/r 1d10]]</strong> days.</p>"
+			"name": "Spalla Slogata",
+			"description": "<p>Il braccio esce dalla sua sede. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire 1 @Condition[Stunned] e @Condition[Prone]. Si perde quello che si stringeva in mano e l’arto è considerato perso finché non viene rimesso in sede (vedere @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputated Part}). Causa un ulteriore @Condition[Stunned] che può essere rimosso solo con Cure Mediche, dopo di che occorrono +6 LS in una <strong>Prova Prolungata Media (+20) di Guarire</strong> per rimettere a posto il braccio. Dopo di che tutte le Prove che lo coinvolgono subiscono -10 per <strong>[[/r 1d10]]</strong> giorni..</p>"
 		},
 		{
 			"id": "Dramatic Injury",
-			"name": "Dramatic Injury",
-			"description": "<p>A fine wound across the forehead and cheek. Gain 1 @Condition[Bleeding] Condition. Once the wound is healed, the impressive scar it leaves provides a bonus of +1 SL to appropriate social Tests. You can only gain this benefit once.</p>"
+			"name": "Ferita Drammatica",
+			"description": "<p>Un taglio su fronte o guancia. Causa 1 @Condition[Bleeding]. Una volta guarito lascerà una grossa cicatrice, che fornisce +1 LS alle Prove sociali appropriate. Questo bonus può essere ottenuto solo una volta.</p>"
 		},
 		{
 			"id": "Ear Bash",
-			"name": "Ear Bash",
-			"description": "<p>Your ear takes a sickening impact, leaving it ringing. Gain 1 @Condition[Deafened] Condition.</p>"
+			"name": "Colpo all'Orecchio",
+			"description": "<p>Provoca un fischio nell’orecchio. Causa 1 @Condition[Deafened].</p>"
 		},
 		{
 			"id": "Fractured Hip",
-			"name": "Fractured Hip",
-			"description": "<p>Gain a @Condition[Stunned] Condition. Take a <strong>Challenging (+0) Endurance</strong> Test or also gain the @Condition[Prone] Condition. Suffer a @Compendium[wfrp4e-core.injuries.QluSTTTq3viHJJUh]{Broken Bone (Minor)} injury.</p>"
+			"name": "Anca Fratturata",
+			"description": "<p>Causa 1 @Condition[Stunned]. Superare una <strong>Prova Impegnativa (+0) di Tempra</strong> per non cadere @Condition[Prone]. Causa un @Compendium[wfrp4e-core.injuries.QluSTTTq3viHJJUh]{Broken Bone (Minor)}.</p>"
 		},
 		{
 			"id": "Fractured Jaw",
-			"name": "Fractured Jaw",
-			"description": "<p>With a sickening crunch, pain fills your face as the blow fractures your jaw. Gain 2 @Condition[Stunned] Conditions. Suffer a @Compendium[wfrp4e-core.injuries.nbhn2wX35b7Jrcbg]{Broken Bone (Minor)} injury.</p>"
+			"name": "Mascella Fratturata",
+			"description": "<p>Con un terribile scricchiolio, la mascella si frattura. Causa 2 @Condition[Stunned]. Causa un @Compendium[wfrp4e-core.injuries.nbhn2wX35b7Jrcbg]{Broken Bone (Minor)}.</p>"
 		},
 		{
 			"id": "Gaping Arm Wound",
-			"name": "Gaping Arm Wound",
-			"description": "<p>The blow opens a deep, gaping wound. Gain 2 @Condition[Bleeding] Conditions. Until you receive @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery} to stitch up the cut, any associated Arm Damage you receive will also inflict 1 @Condition[Bleeding] Condition as the wound reopens.</p><blockquote class=\"foundry-note\"><p><span style=\"font-style: normal;\">The Active Effect for this item needs your input. Replace <span style=\"font-family: Courier\">ARM_LOCATION_HERE</span> with <span style=\"font-family: Courier\">lArm</span> or <span style=\"font-family: Courier\">rArm</span></span></p></blockquote>"
+			"name": "Ferita Aperta (Braccio)",
+			"description": "<p>Il colpo lascia una grossa ferita aperta. Causa 2 @Condition[Bleeding]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery} ogni ulteriore colpo al braccio la riaprirà causando 1 @Condition[Bleeding].</p><blockquote class=\"foundry-note\"><p><span style=\"font-style: normal;\">L'effetto attivo per questo oggetto richiede il tuo contributo. Sostituire <span style=\"font-family: Courier\">ARM_LOCATION_HERE</span> with <span style=\"font-family: Courier\">lArm</span> o <span style=\"font-family: Courier\">rArm</span></span></p></blockquote>"
 		},
 		{
 			"id": "Gaping Chest Wound",
-			"name": "Gaping Chest Wound",
-			"description": "<p>Take 3 @Condition[Bleeding] Conditions. Until you receive @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}, any Wounds you receive to the Body Hit Location will inflict an additional Bleeding Condition as the cut reopens.</p>"
+			"name": "Ferita Aperta (Torso)",
+			"description": "<p>Causa 3 @Condition[Bleeding]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}, ogni ulteriore colpo al torso la riaprirà causando 1 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Gut Blow",
-			"name": "Gut Blow",
-			"description": "<p>Gain 1 @Condition[Stunned] Condition. Pass an <strong>Easy (+40) Endurance </strong>Test, or vomit, gaining the @Condition[Prone] Condition.</p>"
+			"name": "Colpo al Ventre",
+			"description": "<p>Causa 1 @Condition[Stunned]. Superare una <strong>Prova Facile (+40) di Tempra</em> per non vomitare e finire @Condition[Prone].</p>"
 		},
 		{
 			"id": "Gut Wound",
-			"name": "Gut Wound",
-			"description": "<p>Contract a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound} and gain 2 @Condition[Bleeding] Conditions.</p>"
+			"name": "Ferita all'Addome",
+			"description": "<p>Causa una @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound} e 2 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Hacked Leg",
-			"name": "Hacked Leg",
-			"description": "<p>A cut bites down into the hip. Gain 1 @Condition[Prone] and 2 @Condition[Bleeding] Conditions, and suffer a @Compendium[wfrp4e-core.injuries.7mCcI3q7hgWcmbBU]{Broken Bone (Minor)} injury. Further, take a <strong>Hard (-20) Endurance</strong> Test or also gain a @Condition[Stunned] condition from the pain.</p>"
+			"name": "Gamba Affettata",
+			"description": "<p>Un profondo taglio attraversa l’anca. Causa 1 @Condition[Prone] e 2 @Condition[Bleeding], e un @Compendium[wfrp4e-core.injuries.7mCcI3q7hgWcmbBU]{Broken Bone (Minor)}. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non cadere @Condition[Stunned] per il dolore.</p>"
 		},
 		{
 			"id": "Internal Bleeding",
-			"name": "Internal Bleeding",
-			"description": "<p>Gain a @Condition[Bleeding] Condition that can only be removed through @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}. Contract @Compendium[wfrp4e-core.diseases.M8XyRs9DN12XsFTQ]{Blood Rot}.</p>"
+			"name": "Ferita Interna",
+			"description": "<p>Causa 1 @Condition[Bleeding] che può essere rimosso solo con @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}. Contrai @Compendium[wfrp4e-core.diseases.M8XyRs9DN12XsFTQ]{Blood Rot}.</p>"
 		},
 		{
 			"id": "Jarred Arm",
-			"name": "Jarred Arm",
-			"description": "<p>Your arm is jarred in the attack. Drop whatever was held in that hand.</p>"
+			"name": "Tremore",
+			"description": "<p>Si perde quello che si stringeva in mano.</p>"
 		},
 		{
 			"id": "Lost Footing",
-			"name": "Lost Footing",
-			"description": "<p>In the scuffle you lose your footing. Pass a <strong>Challenging (+0) Endurance</strong> Test or gain the @Condition[Prone] Condition.</p>"
+			"name": "Perdita d'Equilibrio",
+			"description": "<p>Nella foga si perde l’equilibrio. Superare una <strong>Prova Impegnativa (+0) di Tempra</strong> per non cadere @Condition[Prone].</p>"
 		},
 		{
 			"id": "Low Blow!",
-			"name": "Low Blow!",
-			"description": "<p>Make a <strong>Hard (-20) Endurance </strong>Test or gain 3 @Condition[Stunned] Condition.</p>"
+			"name": "Colpo Basso!",
+			"description": "<p>Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire 3 @Condition[Stunned].</p>"
 		},
 		{
 			"id": "Major Chest Wound",
-			"name": "Major Chest Wound",
-			"description": "<p>You take a significant wound to your chest, flensing skin from muscle and sinew. Take 4 @Condition[Bleeding] Conditions. Until you receive @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}, to stitch the wound together, any Wounds you receive to the Body Hit Location will also inflict 2 @Condition[Bleeding] Conditions as the tears reopen.</p>"
+			"name": "Ferita Grave al Petto",
+			"description": "<p>Un colpo grave al petto stacca pelle e carne dalle ossa. Causa 4 @Condition[Bleeding]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}, ogni ulteriore colpo al torso causerà 2 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Major Ear Wound",
-			"name": "Major Ear Wound",
-			"description": "<p>The blow damages your ear, leaving you with permanent hearing loss in one ear. Suffer a -20 penalty on all Tests relating to hearing. If you suffer this result again, your hearing is permanently lost as the second ear falls quiet. Only magic can heal this.</p>"
+			"name": "Ferita Grave all'Orecchio",
+			"description": "<p>Il colpo centra l’orecchio provocando una perdita permanente di udito. Il Personaggio subisce un -20 permanente in tutte le Prove di udito. Subire questo risultato una seconda volta rende sordi. Solo la magia può intervenire.</p>"
 		},
 		{
 			"id": "Major Eye Wound",
-			"name": "Major Eye Wound",
-			"description": "<p>The blow cracks across your eye socket. Gain 1 @Condition[Bleeding] Condition. Also gain 1 @Condition[Blinded] Condition that cannot be removed until you receive Medical Attention.</p>"
+			"name": "Ferita Grave all'Occhio",
+			"description": "<p>L’orbita oculare si frantuma. Causa 1 @Condition[Bleeding] e 1 @Condition[Blinded]. Quest’ultimo non può essere rimosso senza Cure Mediche.</p>"
 		},
 		{
 			"id": "Mangled Ear",
-			"name": "Mangled Ear",
-			"description": "<p>Little is left of your ear as the blow tears it apart. You gain 3 @Condition[Deafened] and 2 @Condition[Bleeding] Conditions. Lose your ear &mdash; @Compendium[wfrp4e-core.injuries.8piWcBKFlQ2J1E3A]{Amputatation (Average)}.</p>"
+			"name": "Orecchio Spappolato",
+			"description": "<p>Rimane ben poco dell’orecchio. Causa 3 @Condition[Deafened] e 2 @Condition[Bleeding]. L’orecchio è perso; @Compendium[wfrp4e-core.injuries.8piWcBKFlQ2J1E3A]{Amputatation (Average)}.</p>"
 		},
 		{
 			"id": "Mangled Hand",
-			"name": "Mangled Hand",
-			"description": "<p>Your hand is left a mauled, bleeding mess. You lose your hand &mdash; @Compendium[wfrp4e-core.injuries.zyocWSzEZEC826NS]{{Amputation (Hard)}. Gain 2 @Condition[Bleeding] Condition. Take a <strong>Hard (-20) Endurance </strong>Test or gain the @Condition[Stunned] and @Condition[Prone] Conditions.</p>"
+			"name": "Mano Maciullata",
+			"description": "<p>a mano è ridotta a una polpetta sanguinolenta. Perdi la mano; @Compendium[wfrp4e-core.injuries.zyocWSzEZEC826NS]{{Amputation (Hard)}. Causa 2 @Condition[Bleeding]. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire @Condition[Stunned] e @Condition[Prone].</p>"
 		},
 		{
 			"id": "Mangled Jaw",
-			"name": "Mangled Jaw",
-			"description": "<p>The blow almost removes your jaw as it utterly destroys your tongue, sending teeth flying in a shower of blood. Gain 4 @Condition[Bleeding] and 3 @Condition[Stunned] Conditions. Make a <strong>Very Hard (-30) Endurance </strong>Test or gain an @Condition[Unconscious] Condition. Suffer a @Compendium[wfrp4e-core.injuries.hCadFsTRvLN9faaY]{Broken Bone (Major)} injury and lose your @Compendium[wfrp4e-core.injuries.rkJA1DlK51QuRlJy]{tongue} and <strong>[[/r 1d10]]</strong> @Compendium[wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1]{teeth}&mdash; <strong>Amputation (Hard).</strong></p>"
+			"name": "Mascella Distrutta",
+			"description": "<p>Il colpo quasi stacca la mascella, distrugge la lingua e i denti in una pioggia di sangue. Causa 4 @Condition[Bleeding] e 3 @Condition[Stunned]. Richiede una Prova Molto Ardua (-30) di Tempra per non cadere @Condition[Unconscious]. Provoca un @Compendium[wfrp4e-core.injuries.hCadFsTRvLN9faaY]{Broken Bone (Major)} e la perdita della @Compendium[wfrp4e-core.injuries.rkJA1DlK51QuRlJy]{tongue} e <strong>[[/r 1d10]]</strong> @Compendium[wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1]{teeth}&mdash; <strong>Amputation (Hard).</strong></p>"
 		},
 		{
 			"id": "Mauled Bicep",
-			"name": "Mauled Bicep",
-			"description": "<p>The blow almost separates bicep and tendon from bone, leaving an ugly wound that sprays blood over you and your opponent. You automatically drop anything held in the associated hand and suffers a @Compendium[wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Torn Muscle (Major)} injury and 2 @Condition[Bleeding] and 1 @Condition[Stunned] Condition.</p>"
+			"name": "Bicipite Spappolato",
+			"description": "<p>Il colpo quasi strappa i muscoli dalle ossa e lascia una orribile ferita che spruzza sangue sui presenti. Si perde quello che si stringeva in mano e si subisce uno @Compendium[wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Torn Muscle (Major)}, 2 @Condition[Bleeding] e 1 @Condition[Stunned].</p>"
 		},
 		{
 			"id": "Minor Arm Cut",
-			"name": "Minor Arm Cut",
-			"description": "<p>Gain a @Condition[Bleeding] Condition as your upper arm is cut badly.</p>"
+			"name": "Taglio Minore (Braccio)",
+			"description": "<p>Un brutto taglio al bicipite. Causa 1 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Minor Head Cut",
-			"name": "Minor Head Cut",
-			"description": "<p>The strike opens your cheek and blood flies everywhere. Gain 1 @Condition[Bleeding] Condition.</p>"
+			"name": "Taglio Minore (Testa)",
+			"description": "<p>Un taglio sulla guancia. Causa 1 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Minor Leg Cut",
-			"name": "Minor Leg Cut",
-			"description": "<p>Gain 1 @Condition[Bleeding] Condition.</p>"
+			"name": "Taglio Minore (Gamba)",
+			"description": "<p>Causa 1 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Painful Cut",
-			"name": "Painful Cut",
-			"description": "<p>Gain 2 @Condition[Bleeding] Conditions and a @Condition[Stunned] Condition. Take a <strong>Hard (-20) Endurance </strong>Test or gain the @Condition[Unconscious] Condition as you black out from the pain. Unless you achieve 4+ SL, you also scream out in agony.</p>"
+			"name": "Taglio Doloroso",
+			"description": "<p>Causa 2 @Condition[Bleeding] e 1 @Condition[Stunned]. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non cadere @Condition[Unconscious] a causa del dolore. Con meno di +4 LS si urlerà per la sofferenza.</p>"
 		},
 		{
 			"id": "Poked Eye",
-			"name": "Poked Eye",
-			"description": "<p>The blow glances across your eye socket. Gain 1 @Condition[Blinded] condition.</p>"
+			"name": "Dito nell'Occhio",
+			"description": "<p>Un colpo vicino all’orbita oculare. Causa 1 @Condition[Blinded].</p>"
 		},
 		{
 			"id": "Pulled Back",
-			"name": "Pulled Back",
-			"description": "<p>Your back turns to white pain as you pull a muscle. Suffer a @Compendium[wfrp4e-core.injuries.eWPN3CV2Eddwz8aM]{Torn Muscle (Major)} injury.</p>"
+			"name": "Strappo alla Schiena",
+			"description": "<p>Il dolore alla schiena è accecante. Causa uno @Compendium[wfrp4e-core.injuries.eWPN3CV2Eddwz8aM]{Torn Muscle (Major)}.</p>"
 		},
 		{
 			"id": "Ragged Wound",
-			"name": "Ragged Wound",
-			"description": "<p>Take 2 @Condition[Bleeding] Conditions.</p>"
+			"name": "Lacerazione",
+			"description": "<p>Causa 2 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Rattling Blow",
-			"name": "Rattling Blow",
-			"description": "<p>The blow floods your vision with spots and flashing lights. Gain 1 @Condition[Stunned] Condition.</p>"
+			"name": "Commozione",
+			"description": "<p>Il sangue sale agli occhi, facendo vedere lampi e macchie. Causa 1 @Condition[Stunned].</p>"
 		},
 		{
 			"id": "Ruptered Ligament",
-			"name": "Ruptered Ligament",
-			"description": "<p>You immediately drop whatever was held in that hand. Suffer a @Compendium[wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Torn Muscle (Major)} injury.</p>"
+			"name": "Legamento Rotto",
+			"description": "<p>Si perde quello che si stringeva in mano e si subisce @Compendium[wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Torn Muscle (Major)}.</p>"
 		},
 		{
 			"id": "Ruptured Tendon",
-			"name": "Ruptured Tendon",
-			"description": "<p>Gain a @Condition[Prone] and @Condition[Stunned] Condition as one of your tendons tears badly. Pass a <strong>Hard (-20) Endurance </strong>Test or gain the @Condition[Unconscious] Condition. Your leg is useless. Suffer a @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Torn Muscle (Major)} injury.</p>"
+			"name": "Tendine Lesionato",
+			"description": "<p>Un tendine è gravemente danneggiato. Causa @Condition[Prone] e 1 @Condition[Stunned]. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non cadere @Condition[Unconscious]. La gamba è inutilizzabile. Causa uno @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Torn Muscle (Major)}.</p>"
 		},
 		{
 			"id": "Severed Finger",
-			"name": "Severed Finger",
-			"description": "<p>You gape in horror as a finger flies &mdash; @Compendium[wfrp4e-core.injuries.SYjWiKDzMS6CtROJ]{Amputation (Average)}. Gain a @Condition[Bleeding] condition.</p>"
+			"name": "Dito Tagliato",
+			"description": "<p>Con orrore un dito vola via; @Compendium[wfrp4e-core.injuries.SYjWiKDzMS6CtROJ]{Amputation (Average)}. Causa 1 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Severed Foot",
-			"name": "Severed Foot",
-			"description": "<p>Your foot is severed at the ankle and lands <strong>[[/r 1d10]]</strong> feet away in a random direction &mdash; @Compendium[wfrp4e-core.injuries.gz2xy41OSVZ8YBgI]{Amputation (Hard)}. You gain 3 @Condition[Bleeding], 2 @Condition[Stunned], and 1 @Condition[Prone] Condition.</p>"
+			"name": "Piede Amputato",
+			"description": "<p>Il piede viene mozzato e cade a <strong>[[/r 1d10]]</strong>×30cm in una direzione casuale; @Compendium[wfrp4e-core.injuries.gz2xy41OSVZ8YBgI]{Amputation (Hard)}. Causa 3 @Condition[Bleeding], 2 @Condition[Stunned], e 1 @Condition[Prone].</p>"
 		},
 		{
 			"id": "Shattered Pelvis",
-			"name": "Shattered Pelvis",
-			"description": "<p>The blow shatters your pelvis, severing one leg then driving through to the next. You die instantly from traumatic shock.</p>"
+			"name": "Bacino Distrutto",
+			"description": "<p>Il colpo frantuma il bacino mutilando entrambe le gambe. Il Personaggio muore per il trauma.</p>"
 		},
 		{
 			"id": "Sliced Ear",
-			"name": "Sliced Ear",
-			"description": "<p>Your side of your head takes a hard blow, cutting deep into your ear. Gain 2 @Condition[Deafened] and 1 @Condition[Bleeding] Condition.</p>"
+			"name": "Taglio all'Orecchio",
+			"description": "<p>Un brutto colpo al lato della testa, che affetta l’orecchio. Causa 2 @Condition[Deafened] e 1 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Sliced Tendons",
-			"name": "Sliced Tendons",
-			"description": "<p>Your tendons are cut by the blow, leaving your arm hanging useless &mdash; @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputation (Very Hard)}. Gain 3 @Condition[Bleeding], 1 @Condition[Prone], and 1 @Condition[Stunned] Condition. Pass a <strong>Hard (-20) Endurance </strong>Test or gain the @Condition[Unconscious] Condition.</p>"
+			"name": "Tendini Recisi",
+			"description": "<p>I tendini vengono recisi, rendendo il braccio inutilizzabile; @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputation (Very Hard)}. Causa 3 @Condition[Bleeding], 1 @Condition[Prone], e 1 @Condition[Stunned]. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non cadere @Condition[Unconscious].</p>"
 		},
 		{
 			"id": "Smashed Mouth",
-			"name": "Smashed Mouth",
-			"description": "<p>With a sickening crunch, your mouth is suddenly filled with broken teeth and blood. Gain 2 @Condition[Bleeding] Conditions. Lose <strong>[[/r 1d10]]</strong> teeth &mdash; @Compendium[wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1]{Amputation (Easy)}.</p>"
+			"name": "Bocca Distrutta",
+			"description": "<p>Con un orribile suono, la bocca si riempie di frammenti di denti e di sangue. Causa 2 @Condition[Bleeding] e la perdita di <strong>[[/r 1d10]]</strong> denti; @Compendium[wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1]{Amputation (Easy)}.</p>"
 		},
 		{
 			"id": "Smashed Rib Cage",
-			"name": "Smashed Rib Cage",
-			"description": "<p>Gain a @Condition[Stunned] Condition that can only be removed through Medical Attention, and suffer a @Compendium[wfrp4e-core.injuries.EaqlLRQigwnsEAXX]{Broken Bone (Major)} injury.</p>"
+			"name": "Clavicola Spezzata",
+			"description": "<p>Causa @Condition[Stunned], che può essere rimosso solo con Cure Mediche, e un @Compendium[wfrp4e-core.injuries.EaqlLRQigwnsEAXX]{Broken Bone (Major)}.</p>"
 		},
 		{
 			"id": "Sprain",
-			"name": "Sprain",
-			"description": "<p>You sprain your arm, suffering a @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Torn Muscle (Minor)} injury.</p>"
+			"name": "Slogatura",
+			"description": "<p>Slogatura al braccio. Causa uno @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Torn Muscle (Minor)}.</p>"
 		},
 		{
 			"id": "Sprained Ankle",
-			"name": "Sprained Ankle",
-			"description": "<p>You sprain your ankle, giving you a @Compendium[wfrp4e-core.injuries.nF5z1OEhpi4t6a6S]{Torn Muscle (Minor)} injury.</p>"
+			"name": "Caviglia Slogata",
+			"description": "<p>Caviglia slogata. Causa uno @Compendium[wfrp4e-core.injuries.nF5z1OEhpi4t6a6S]{Torn Muscle (Minor)}.</p>"
 		},
 		{
 			"id": "Struck Forehead",
-			"name": "Struck Forehead",
-			"description": "<p>A solid blow thumps into the centre of your forehead. Gain 2 @Condition[Bleeding] Conditions and a @Condition[Blinded] Condition that cannot be removed until all Bleeding Conditions are removed.</p>"
+			"name": "Colpo alla Fronte",
+			"description": "<p>Un colpo in mezzo alla fronte. Causa 2 @Condition[Bleeding] e 1 @Condition[Blinded]. Quest’ultimo non può essere rimosso finché rimane <em>Sanguinante</em>.</p>"
 		},
 		{
 			"id": "Stubbed Toe",
-			"name": "Stubbed Toe",
-			"description": "<p>In the scuffle, you stub your toe. Pass a <strong>Average (+20) Endurance </strong>Test or suffer -10 on Agility Tests until the end of the next turn.</p>"
+			"name": "Dito Schiacciato",
+			"description": "<p>Nello scontro un dito viene schiacciato. Superare una <strong>Prova Media (+20) di Tempra</strong> per non subire -10 alle Prove di agilità fino alla fine del Turno seguente.</p>"
 		},
 		{
 			"id": "Thigh Strike",
-			"name": "Thigh Strike",
-			"description": "<p>A painful blow slams into your upper thigh. Gain a @Condition[Bleeding] Condition and take an <strong>Average (+20) Endurance </strong>Test or stumble, gaining the @Condition[Prone] Condition.</p>"
+			"name": "Colpo alla Coscia",
+			"description": "<p>Un colpo molto doloroso alla coscia causa 1 @Condition[Bleeding]. Superare una <strong>Prova Media (+20) di Tempra</strong> per non cadere @Condition[Prone].</p>"
 		},
 		{
 			"id": "Tis But A Scratch!",
-			"name": "Tis But A Scratch!",
-			"description": "<p>Gain 1 @Condition[Bleeding] Condition.</p>"
+			"name": "Un Graffietto!",
+			"description": "<p>Causa 1 @Condition[Bleeding].</p>"
 		},
 		{
 			"id": "Torn Apart",
-			"name": "Torn Apart",
-			"description": "<p>You are hacked in two. The top half lands in a random direction, and all characters within 2 yards are showered in blood.</p>"
+			"name": "Smembrato",
+			"description": "<p>Il Personaggio viene tagliato in due. La metà superiore vola in una direzione casuale e tutti coloro che si trovano entro 2m vengono ricoperti di sangue.</p>"
 		},
 		{
 			"id": "Torn Muscles",
-			"name": "Torn Muscles",
-			"description": "<p>The blow slams into your forearm. Gain a @Condition[Bleeding] Condition and a @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Torn Muscle (Minor)} injury.</p>"
+			"name": "Muscoli Strappati",
+			"description": "<p>Il colpo centra l’avambraccio. Causa 1 @Condition[Bleeding] e uno @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Torn Muscle (Minor)}.</p>"
 		},
 		{
 			"id": "Torn Thigh",
-			"name": "Torn Thigh",
-			"description": "<p>Gain 3 @Condition[Bleeding] Conditions as the weapon opens up your upper thigh. Pass a <strong>Challenging (+0) Endurance </strong>Test or gain the @Condition[Prone] Condition. Until you receive @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery} to stitch up the wound, each time you receive Damage to this Leg, also receive 1 @Condition[Bleeding] Condition.</p><blockquote class=\"foundry-note\"><p>The Active Effect for this item needs your input. Replace <span style=\"font-family: Courier\">LEG_LOCATION HERE</span> with <span style=\"font-family: Courier\">lLeg</span> or <span style=\"font-family: Courier\">rLeg</span></p></blockquote>"
+			"name": "Coscia Lacerata",
+			"description": "<p>L’arma squarcia la coscia. Causa 3 @Condition[Bleeding]. Superare una <strong>Prova Impegnativa (+0) di Tempra</strong> per non cadere @Condition[Prone]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery} ogni ulteriore colpo alla gamba causerà 1 @Condition[Bleeding].</p><blockquote class=\"foundry-note\"><p>L'effetto attivo per questo oggetto richiede il tuo contributo. Sostituire <span style=\"font-family: Courier\">LEG_LOCATION HERE</span> con <span style=\"font-family: Courier\">lLeg</span> o <span style=\"font-family: Courier\">rLeg</span></p></blockquote>"
 		},
 		{
 			"id": "Twisted Ankle",
-			"name": "Twisted Ankle",
-			"description": "<p>You go over your ankle, hurting it. Agility Tests suffer a -10 penalty for [[/r 1d10]] rounds.</p>"
+			"name": "Storta alla Caviglia",
+			"description": "<p>La caviglia si storce per il carico. Penalità di -10 alle Prove di Agilità per [[/r 1d10]] round.</p>"
 		},
 		{
 			"id": "Twisted Back",
-			"name": "Twisted Back",
-			"description": "<p>Suffer a @Compendium[wfrp4e-core.injuries.7rBhIRo96Mydo0Cv]{Torn Muscle (Minor)} injury.</p>"
+			"name": "Torsione della Schiena",
+			"description": "<p>Causa uno @Compendium[wfrp4e-core.injuries.7rBhIRo96Mydo0Cv]{Torn Muscle (Minor)}.</p>"
 		},
 		{
 			"id": "Twisted Knee",
-			"name": "Twisted Knee",
-			"description": "<p>You twist your knee too far. Agility Tests suffer a -20 penalty for [[/r 1d10]] rounds.</p>"
+			"name": "Storta al ginocchio",
+			"description": "<p>Il ginocchio viene ruotato troppo. Penalità di -20 alle Prove di Agilità per [[/r 1d10]] round.</p>"
 		},
 		{
 			"id": "Winded",
-			"name": "Winded",
-			"description": "<p>Gain a @Condition[Stunned] Condition. Make an <strong>Average (+20) Endurance </strong>Test, or gain the @Condition[Prone] Condition. Movement is halved for [[/r 1d10]] rounds as you get your breath back.</p>"
+			"name": "Fiato Mozzo",
+			"description": "<p>Causa 1 @Condition[Stunned]. Superare una <strong>Prova Media (+20) di Tempra</strong> per non cadere @Condition[Prone]. Movimento dimezzato per [[/r 1d10]] Round, mentre si riprende fiato.</p>"
 		},
 		{
 			"id": "Wrenched Arm",
-			"name": "Wrenched Arm",
-			"description": "<p>Your arm is almost pulled from its socket. Drop whatever is held in the associated hand; the arm is useless for [[/r 1d10]] Rounds.</p>"
+			"name": "Braccio Lussato",
+			"description": "<p>Il braccio viene quasi rimosso dalla sua sede. Si perde quello che si stringeva in mano e l’arto è inutilizzabile per [[/r 1d10]] Round.</p>"
 		},
 		{
 			"id": "Wrenched Collar Bone",
-			"name": "Wrenched Collar Bone",
-			"description": "<p>Randomly select one arm. Drop whatever is held in that hand; the arm is useless for [[/r 1d10]] rounds.</p>"
+			"name": "Clavicola Lussata",
+			"description": "<p>Un braccio scelto a caso lascia cadere ciò che si impugna ed è inutilizzabile per [[/r 1d10]] round.</p>"
 		}
 	]
 }

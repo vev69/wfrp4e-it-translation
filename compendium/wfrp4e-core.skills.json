@@ -202,13 +202,18 @@
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}"
 		},
 		{
+			"id": "Entertain (Act)",
+			"name": "Intrattenere (Recitare)",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}"
+		},
+		{
 			"id": "Evaluate",
 			"name": "Valutare",
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.NtJ85TY8yY3WOGHN]{Evaluate}"
 		},
 		{
 			"id": "Gamble",
-			"name": "Giocare d’Azzardo",
+			"name": "Giocare d'Azzardo",
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.JVBD7pcdOPJ4nCjq]{Gamble}"
 		},
 		{
@@ -379,6 +384,11 @@
 		{
 			"id": "Lore (Theology)",
 			"name": "Conoscenza (Teologia)",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+		},
+		{
+			"id": "Lore (Poison)",
+			"name": "Conoscenza (Veleni)",
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
 		},
 		{

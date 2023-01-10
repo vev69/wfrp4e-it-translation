@@ -1,15 +1,10 @@
 {
-	"label": "Malattie e Infezioni",
+	"label": "Diseases",
 	"entries": [
 		{
 			"id": "Blood Rot",
 			"name": "Sangue Marcio",
-			"description": "<p> Il sangue del Personaggio è infetto e il suo cuore invia il male in ogni angolo del corpo. La cura comune sono le sanguisughe, ma alcuni dottori preferiscono incisioni vicino al collo per far spurgare il sangue contaminato, mentre ne fanno bere grandi quantità per compensare. Che piaccia o no, senza una trattamento il Sangue Marcio è fatale e porta a una visita alla Gilda degli Afflitti e al Culto di Morr.</p>"
-		},
-		{
-			"id": "Bronze Fever",
-			"name": "Febbre del Bronzo",
-			"description": "<p>La Febbre del Bronzo è più diffusa nel Sud del Vecchio Mondo, in climi caldi e umidi, dove si diffonde attraverso le punture d'insetto. Molti degli afflitti si riprendono in pochi giorni, ma in alcuni casi si manifestano complicazioni che possono condurre addiritttura alla morte.</p>"
+			"description": "<p>Il sangue del Personaggio è infetto e il suo cuore invia il male in ogni angolo del corpo. La cura comune sono le sanguisughe, ma alcuni dottori preferiscono incisioni vicino al collo per far spurgare il sangue contaminato, mentre ne fanno bere grandi quantità per compensare. Che piaccia o no, senza una trattamento il Sangue Marcio è fatale e porta a una visita alla Gilda degli Afflitti e al @UUID[JournalEntry.NcH9OhleJFfaUdon.JournalEntryPage.HfmrIexylrgxIz2x]{Cult of Morr}.</p>"
 		},
 		{
 			"id": "Festering Wound",
