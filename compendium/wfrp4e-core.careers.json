@@ -10,6 +10,10 @@
 		"talents": {
 			"path": "system.talents",
 			"converter": "convertTalents"
+		},
+		"trappings": {
+			"path": "system.trappings",
+			"converter": "convertTrappings"
 		}
 	},
 	"entries": [
@@ -44,8 +48,8 @@
 		{
 			"id": "Aide",
 			"name": "Attendente",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Cancelliere}</p>",
-			"careergroup": "Cancelliere",
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Consigliere}</p>",
+			"careergroup": "Consigliere",
 			"class": "Cortigiani"
 		},
 		{
@@ -1667,7 +1671,7 @@
 		},
 		{
 			"id": "Village Elder",
-			"name": "Anziano del Villaggi",
+			"name": "Anziano del Villaggio",
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Villico}</p>",
 			"careergroup": "Villico",
 			"class": "Gente di campagna"

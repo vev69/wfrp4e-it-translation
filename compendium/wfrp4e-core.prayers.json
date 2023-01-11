@@ -1,8 +1,8 @@
 {
-	"label": "Preghiere: Benedizioni, Miracoli",
+	"label": "Preghiere",
 	"entries": [
 		{
-			"id": "An Invitation ",
+			"id": "An Invitation",
 			"name": "Un Invito",
 			"description": "<p>Il Benedetto narra uno degli indovinelli di Ranald, chiedendosi se i portali esistano anche da chiusi. Una delle chiusure di una porta, finestra o botola si apre (una serratura scatta, un paletto scivola, una fune di slega). Per ogni +2 LS un’altra chiusura si apre.</p>"
 		},
@@ -14,7 +14,7 @@
 		{
 			"id": "Animal Instincts",
 			"name": "Istinti Animali",
-			"description": "<p>Il Benedetto intona un canto che esalta i sensi sopraffini di Taal e lo chiama in suo aiuto. Il bersaglio ottiene +1 al Talento Senso Acuto (a sua scelta) e mentre riposa si sveglierà automaticamente se una minaccia si avvicina in un raggio pari alla sua Iniziativa in metri.</p>"
+			"description": "<p>Il Benedetto intona un canto che esalta i sensi sopraffini di Taal e lo chiama in suo aiuto. Il bersaglio ottiene +1 al @Compendium[wfrp4e-core.talents.9h82z72XGo9tfgQS]{Senso Acuto (a sua scelta)} e mentre riposa si sveglierà automaticamente se una minaccia si avvicina in un raggio pari alla sua Iniziativa in metri.</p>"
 		},
 		{
 			"id": "As Verena is My Witness",
@@ -29,7 +29,7 @@
 		{
 			"id": "Beacon of Righteous Virtue",
 			"name": "Faro di Giusta Virtù",
-			"description": "<p>Urlando una preghiera in nome di Sigmar, il Benedetto viene infuso dal sacro fuoco della giustizia. Tutti gli alleati in linea di vista rimuovono immediatamente ogni Condizione <em>Atterrito</em> e ottengono il Talento <em>Temerario</em> finché il Miracolo è attivo e riescono a vedere il Benedetto. Tutti i Pelleverde in linea di vista subiscono <em>Paura</em> 1.</p>"
+			"description": "<p>Urlando una preghiera in nome di Sigmar, il Benedetto viene infuso dal sacro fuoco della giustizia. Tutti gli alleati in linea di vista rimuovono immediatamente ogni Condizione <em>Atterrito</em> e ottengono il Talento @Compendium[wfrp4e-core.talents.8pVzgPkgWpTJvfhG]{Temerario} finché il Miracolo è attivo e riescono a vedere il Benedetto. Tutti i Pelleverde in linea di vista subiscono @Compendium[wfrp4e-core.traits.pTorrE0l3VybAbtn]{Paura 1}.</p>"
 		},
 		{
 			"id": "Becalm",
@@ -39,12 +39,12 @@
 		{
 			"id": "Bitter Catharsis",
 			"name": "Amara Catarsi",
-			"description": "<p>In risposta alle accorate suppliche, Shallya rimuove un veleno o malattia dal bersaglio, trasferendolo nel Benedetto. Per ogni +2 LS è possibile trasferire un ulteriore veleno o malattia. Per ogni effetto così guarito, il Benedetto subisce 1d10-Bonus Socialità Ferite, non modificate dal Bonus Resistenza o dall’Armatura.</p>"
+			"description": "<p>In risposta alle accorate suppliche, Shallya rimuove un veleno o malattia dal bersaglio, trasferendolo nel Benedetto. Per ogni +2 LS è possibile trasferire un ulteriore veleno o malattia. Per ogni effetto così guarito, il Benedetto subisce [[/r 1d10]]-Bonus Socialità Ferite, non modificate dal Bonus Resistenza o dall’Armatura.</p>"
 		},
 		{
 			"id": "Blazing Sun",
-			"name": "Sole Splendente ",
-			"description": "<p>Il Benedetto invoca Myrmidia affinché spazzi via dal campo di battaglia i nemici disonorevoli. Questo causa un lampo accecante di luce dorata, che acceca tutti i non-Myrmidiani che lo vedono, causando 1 <em>Accecato</em>. Per ogni +2 LS subiscono 1 <em>Accecato</em> in più.</p>"
+			"name": "Sole Splendente",
+			"description": "<p>Il Benedetto invoca Myrmidia affinché spazzi via dal campo di battaglia i nemici disonorevoli. Questo causa un lampo accecante di luce dorata, che acceca tutti i non-Myrmidiani che lo vedono, causando 1 @Condition[Blinded] . Per ogni +2 LS subiscono 1 @Condition[Blinded] in più.</p>"
 		},
 		{
 			"id": "Blessing of Battle",
@@ -154,7 +154,7 @@
 		{
 			"id": "Death Mask",
 			"name": "Maschera Mortuaria",
-			"description": "<p>Tramite il suo fedele, Morr oltrepassa il Portale e rende nota la propria presenza. Il volto del Benedetto assume un aspetto cadaverico, che conferisce<em> Paura</em> 1.</p>"
+			"description": "<p>Tramite il suo fedele, Morr oltrepassa il Portale e rende nota la propria presenza. Il volto del Benedetto assume un aspetto cadaverico, che conferisce @Compendium[wfrp4e-core.traits.pTorrE0l3VybAbtn]{Paura 1}</p>"
 		},
 		{
 			"id": "Destroy Undead",
@@ -164,12 +164,12 @@
 		{
 			"id": "Dooming",
 			"name": "Predestinazione",
-			"description": "<p> Mentre intona una trenodia di Morr, il Benedetto fissa negli occhi il bersaglio, mostrandogli una visione del proprio destino, quasi sempre legata alla sua morte. Questo Miracolo può essere usato solo una volta su ogni persona, la quale potrà acquistare il Talento <em>Predestinato</em> pagandolo in PE se fosse parte della sua Carriera.</p>"
+			"description": "<p>Mentre intona una trenodia di Morr, il Benedetto fissa negli occhi il bersaglio, mostrandogli una visione del proprio destino, quasi sempre legata alla sua morte. Questo Miracolo può essere usato solo una volta su ogni persona, la quale potrà acquistare il Talento @Compendium[wfrp4e-core.talents.fn8QNQQ1S2rh12Us]{Doomed} Tpagandolo in PE se fosse parte della sua Carriera.</p>"
 		},
 		{
 			"id": "Drowned Man's Face",
 			"name": "Volto dell’Annegato",
-			"description": "<p> Il Benedetto implora Manann di affogare un nemico, i cui polmoni continueranno a riempirsi d’acqua salmastra mentre il miracolo è attivo, come se avesse la testa sott’acqua. Il bersaglio subisce 1 <em>Affaticato</em> ed è soggetto ad <em>Annegare e Soffocare</em> (pag. 181) mentre l’effetto è attivo. Al termine del miracolo dovrà superare una <strong>Prova Impegnativa (+0) di Tempra</strong> o cadere <em>Prono</em>.</p>"
+			"description": "<p>Il Benedetto implora Manann di affogare un nemico, i cui polmoni continueranno a riempirsi d’acqua salmastra mentre il miracolo è attivo, come se avesse la testa sott’acqua. Il bersaglio subisce 1 @Condition[Fatigued] ed è soggetto ad @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#drowning-and-suffocation]{Drowning and Suffocation} mentre l’effetto è attivo. Al termine del miracolo dovrà superare una <strong>Prova Impegnativa (+0) di Tempra</strong> o cadere @Condition[Prone]{Prone}.</p>"
 		},
 		{
 			"id": "Eagle's Eye",
@@ -184,7 +184,7 @@
 		{
 			"id": "Fury's Call",
 			"name": "Chiamata della Furia",
-			"description": "<p> Le appassionate preghiere del Benedetto riempiono gli alleati di terribile odio verso i propri nemici. Tutti i bersagli ricevono il Tratto Psicologico <em>Odio</em> nei confronti di chi stanno affrontando in combattimento.</p>"
+			"description": "<p>Le appassionate preghiere del Benedetto riempiono gli alleati di terribile odio verso i propri nemici. Tutti i bersagli ricevono il Tratto Psicologico @Compendium[wfrp4e-core.psychologies.5hH73j2NgPdsLCZN]{Hatred}nei confronti di chi stanno affrontando in combattimento.</p>"
 		},
 		{
 			"id": "Heed Not the Witch",
@@ -199,12 +199,12 @@
 		{
 			"id": "Howl of the Wolf",
 			"name": "Ululato del Lupo",
-			"description": "<p> Il Benedetto ulula e Ulric invia un Emissario Divino nella forma di un Lupo Bianco. Per la durata dell’effetto, il lupo affronterà i nemici del Personaggio, prima di tornare ai Territori di Caccia di Ulric con un ululato spettrale. L’Emissario ha le stesse caratteristiche di un comune lupo (pag. 315) con i Tratti <em>Furia, Magico</em> e <em>Taglia (Grande)</em>.</p>"
+			"description": "<p>Il Benedetto ulula e Ulric invia un Emissario Divino nella forma di un Lupo Bianco. Per la durata dell’effetto, il lupo affronterà i nemici del Personaggio, prima di tornare ai Territori di Caccia di Ulric con un ululato spettrale. L’Emissario ha le stesse caratteristiche di un comune lupo (pag. 315) con i Tratti @Compendium[wfrp4e-core.traits.yRhhOlt18COq4e1q]{Frenzy}, @Compendium[wfrp4e-core.traits.mDgEMOoJpi8DkRYb]{Magical}, e @Compendium[wfrp4e-core.traits.8slW8CJ2oVTxeQ6q]{Size (Large)}.</p>"
 		},
 		{
 			"id": "Inspiring",
 			"name": "Ispirare",
-			"description": "<p> Questa trionfale preghiera ispira disciplina e coordinazione tra i ranghi. I bersagli ottengono +1 al Talento <em>Veterano</em>. </p>"
+			"description": "<p>Questa trionfale preghiera ispira disciplina e coordinazione tra i ranghi. I bersagli ottengono +1 al Talento @Compendium[wfrp4e-core.talents.J9MK0AIaTbvd5oF6]{Drilled}.</p>"
 		},
 		{
 			"id": "King of the Wild",
@@ -219,7 +219,7 @@
 		{
 			"id": "Leaping Stag",
 			"name": "Balzo del Cervo",
-			"description": "<p> Il Benedetto prega Padre Taal di concedergli il suo favore, donandogli forza e agilità. Ottiene +1 Movimento e +1 al Talento <em>Gambe Forti</em>. Inoltre supererà automaticamente, con un minimo di +0 LS, tutte la <strong>Prove di Atletica</strong> per saltare.</p>"
+			"description": "<p>Il Benedetto prega Padre Taal di concedergli il suo favore, donandogli forza e agilità. Ottiene +1 Movimento e +1 al Talento @Compendium[wfrp4e-core.talents.CV9btQn09S9Fn8Jk]{Strong Legs}. Inoltre supererà automaticamente, con un minimo di +0 LS, tutte la <strong>Prove di Atletica</strong> per saltare.</p>"
 		},
 		{
 			"id": "Lord of the Hunt",
@@ -249,7 +249,7 @@
 		{
 			"id": "Ranald's Grace",
 			"name": "Grazia di Ranald",
-			"description": "<p>Il Benedetto invoca Ranald per svelare l’enigma della realtà. Per la durata dell’effetto, il bersaglio ottiene +10 Agilità, +10 Nascondersi e +1 al Talento <em>Cadere in Piedi</em>.</p>"
+			"description": "<p>Il Benedetto invoca Ranald per svelare l’enigma della realtà. Per la durata dell’effetto, il bersaglio ottiene +10 Agilità, +10 Nascondersi e +1 al Talento @Compendium[wfrp4e-core.talents.g4Q6AtzZuo5iIvD4]{Catfall}.</p>"
 		},
 		{
 			"id": "Rhya's Children",
@@ -309,7 +309,7 @@
 		{
 			"id": "Sigmar's Fiery Hammer",
 			"name": "Ardente Martello di Sigmar",
-			"description": "<p> Il Benedetto intona la benedizione della forza di Sigmar. Se impugna un martello da guerra questo conta come Magico, causa Danni aggiuntivi pari al proprio Bonus Socialità e chi viene colpito subisce 1 <em>In Fiamme</em> e cade <em>Prono</em>.</p>"
+			"description": "<p>Il Benedetto intona la benedizione della forza di Sigmar. Se impugna un martello da guerra questo conta come Magico, causa Danni aggiuntivi pari al proprio Bonus Socialità e chi viene colpito subisce 1 <em> @Condition[Ablaze]</em> e cade <em>@Condition[Prone]</em>.</p>"
 		},
 		{
 			"id": "Soulfire",
@@ -329,7 +329,7 @@
 		{
 			"id": "Stay Morr's Hand",
 			"name": "Fermare la Mano di Morr",
-			"description": "<p> Il Benedetto sfiora gli occhi di un moribondo, chiedendo a Morr di guidarlo, ma di non portarlo via. Il bersaglio deve avere 0 Ferite ed essere consenziente. Per la durata del Miracolo, il bersaglio sarà <em>Privo di Sensi</em>, ma la sua condizione non potrà peggiorare, ignorerà malattie, veleni, ferite critiche e altri effetti. Il Miracolo avrà termine non appena saranno somministrate cure adeguate o l’estrema unzione. In quest’ultimo caso, che richiede circa 1 minuto, l’anima passerà per il Portale e il cadavere non potrà più essere usato per la Necromanzia. </p>"
+			"description": "<p>Il Benedetto sfiora gli occhi di un moribondo, chiedendo a Morr di guidarlo, ma di non portarlo via. Il bersaglio deve avere 0 Ferite ed essere consenziente. Per la durata del Miracolo, il bersaglio sarà @Condition[Privo di Sensi]{Unconscious}, ma la sua condizione non potrà peggiorare, ignorerà malattie, veleni, ferite critiche e altri effetti. Il Miracolo avrà termine non appena saranno somministrate cure adeguate o l’estrema unzione. In quest’ultimo caso, che richiede circa 1 minuto, l’anima passerà per il Portale e il cadavere non potrà più essere usato per la Necromanzia.</p>"
 		},
 		{
 			"id": "Sword of Justice",
@@ -339,17 +339,17 @@
 		{
 			"id": "Tanglefoot",
 			"name": "Avviluppare",
-			"description": "<p> Il Benedetto si appella a Taal per proteggere le selve e, così facendo, radici, viticci e rovi avvolgono i suoi nemici. Tutti i bersagli in un raggio di un numero in metri pari al Bonus Socialità dal punto scelto subiscono 1 <em>Afferrato</em>. Per ogni +2 LS si può aumentare il raggio di un numero in metri pari al Bonus Socialità o causare un ulteriore <em>Afferrato</em>. Questo effetto ha Forza pari alla Volontà del Benedetto per trattenere i bersagli.</p>"
+			"description": "<p>Il Benedetto si appella a Taal per proteggere le selve e, così facendo, radici, viticci e rovi avvolgono i suoi nemici. Tutti i bersagli in un raggio di un numero in metri pari al Bonus Socialità dal punto scelto subiscono 1 @Condition[Afferrato]. Per ogni +2 LS si può aumentare il raggio di un numero in metri pari al Bonus Socialità o causare un ulteriore @Condition[Afferrato]. Questo effetto ha Forza pari alla Volontà del Benedetto per trattenere i bersagli.</p>"
 		},
 		{
 			"id": "The Snow King's Judgement",
 			"name": "Giudizio del Re delle Nevi",
-			"description": "<p> Il Benedetto implora Ulric di mostrare il suo disdegno per deboli, codardi e ingannatori. Il bersaglio subisce 1d10 Ferite, ignorando il Bonus Resistenza e l’Armatura. Se il GM è convinto che il bersaglio non sia debole, vile o ingannatore, sarà il Benedetto a venire ferito.</p>"
+			"description": "<p>Il Benedetto implora Ulric di mostrare il suo disdegno per deboli, codardi e ingannatori. Il bersaglio subisce [[/r 1d10]] Ferite, ignorando il Bonus Resistenza e l’Armatura. Se il GM è convinto che il bersaglio non sia debole, vile o ingannatore, sarà il Benedetto a venire ferito.</p>"
 		},
 		{
 			"id": "Tooth and Claw",
 			"name": "Zanne e Artigli",
-			"description": "<p> Il Benedetto chiede che Taal gli conceda la terribile forza del suo regno. Ottiene i Tratti <em>Morso</em> (Bonus Forza+3) e <em>Arma</em> (Bonus Forza+4). Questi attacchi sono considerati Magici.</p>"
+			"description": "<p>Il Benedetto chiede che Taal gli conceda la terribile forza del suo regno. Ottiene i Tratti @Compendium[wfrp4e-core.traits.pLW9SVX0TVTYPiPv]{Bite} (Bonus Forza+3) e @Compendium[wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Weapon} (Bonus Forza+4). Questi attacchi sono considerati Magici.</p>"
 		},
 		{
 			"id": "Truth Will Out",
@@ -359,22 +359,22 @@
 		{
 			"id": "Twin-tailed Comet",
 			"name": "Cometa a Due Code",
-			"description": "<p> Il Benedetto intona le litanie di Sigmar per colpire i propri nemici. Una cometa a due code cade dal cielo, lasciando una scia di fuoco, e colpisce un punto visibile entro la gittata. Tutto ciò che si trova entro un numero di metri pari al Bonus Socialità del punto d’impatto subisce 1d10+LS Danni – ignorando il Bonus Resistenza e l’Armatura – e 1 <em>In Fiamme</em>. Il punto d’impatto deve essere all’aperto. Questo Miracolo può essere usato solo contro coloro che Sigmar considera nemici.</p>"
+			"description": "<p>Il Benedetto intona le litanie di Sigmar per colpire i propri nemici. Una cometa a due code cade dal cielo, lasciando una scia di fuoco, e colpisce un punto visibile entro la gittata. Tutto ciò che si trova entro un numero di metri pari al Bonus Socialità del punto d’impatto subisce 1d10+LS Danni – ignorando il Bonus Resistenza e l’Armatura – e 1 @Condition[In Fiamme]. Il punto d’impatto deve essere all’aperto. Questo Miracolo può essere usato solo contro coloro che Sigmar considera nemici.</p>"
 		},
 		{
 			"id": "Ulric's Fury",
 			"name": "Furia di Ulric",
-			"description": "<p> Con un canto furioso, il Benedetto diffonde la ferocia di Ulric. Il bersaglio ottiene il Tratto Psicologico <em>Furia</em>.</p>"
+			"description": "<p>Con un canto furioso, il Benedetto diffonde la ferocia di Ulric. Il bersaglio ottiene il Tratto Psicologico @Compendium[wfrp4e-core.psychologies.DrNUTPeodEgpWTnT]{Frenzy}.</p>"
 		},
 		{
 			"id": "Unblemished Innocence",
 			"name": "Innocenza Senza Macchia",
-			"description": "<p> Imponendo le mani su un afflitto, il Benedetto implora Shallya di purificarlo dalla corruzione. Il bersaglio cancella 1 Punto Corruzione, più un altro per +2 LS. Tuttavia, gli Dei del Caos non gradiscono un’opposizione tanto diretta. Se questo Miracolo è un Disastro, Benedetto e bersaglio accumulano 1d10 Punti Corruzione in aggiunta a ogni altro effetto. Questo Miracolo deve essere invocato entro un’ora dopo aver acquisito un Punto Corruzione.</p>"
+			"description": "<p>Imponendo le mani su un afflitto, il Benedetto implora Shallya di purificarlo dalla corruzione. Il bersaglio cancella 1 Punto Corruzione, più un altro per +2 LS. Tuttavia, gli Dei del Caos non gradiscono un’opposizione tanto diretta. Se questo Miracolo è un Disastro, Benedetto e bersaglio accumulano [[/r 1d10]] Punti Corruzione in aggiunta a ogni altro effetto. Questo Miracolo deve essere invocato entro un’ora dopo aver acquisito un Punto Corruzione.</p>"
 		},
 		{
 			"id": "Vanquish the Unrighteous",
 			"name": "Sgominare l'Ingiusto",
-			"description": "<p> Le preghiere del Benedetto instillano nei suoi alleati un odio furioso per i nemici di Sigmar. I bersagli ottengono il Tratto Psicologico <em>Odio</em> verso Pelleverde, Nonmorti e tutto ciò che è associato al Caos. </p>"
+			"description": "<p>Le preghiere del Benedetto instillano nei suoi alleati un odio furioso per i nemici di Sigmar. I bersagli ottengono il Tratto Psicologico @Compendium[wfrp4e-core.psychologies.5hH73j2NgPdsLCZN]{Hatred} verso Pelleverde, Nonmorti e tutto ciò che è associato al Caos.</p>"
 		},
 		{
 			"id": "Waterwalk",
@@ -384,12 +384,12 @@
 		{
 			"id": "Winter's Bite",
 			"name": "Morso dell'Inverno",
-			"description": "<p> Il Benedetto ruggisce una preghiera che parla di Blitzbeil, l’assetata ascia di Ulric. Se impugna un’ascia questa conterà come Magica e causerà +LS Danni. Ogni creatura vivente colpita, dovrà superare una <strong>Prova Impegnativa (+0) di Tempra</strong> o subire 1 <em>Stordito</em>. Inoltre, perderà tutti le Condizioni <em>Sanguinante</em>, mentre il suo sangue gela nelle vene. I colpi di quest’ascia non possono mai causare <em>Sanguinante</em>.</p>"
+			"description": "<p>Il Benedetto ruggisce una preghiera che parla di Blitzbeil, l’assetata ascia di Ulric. Se impugna un’ascia questa conterà come Magica e causerà +LS Danni. Ogni creatura vivente colpita, dovrà superare una <strong>Prova Impegnativa (+0) di Tempra</strong> o subire 1 @Condition[Stordito]. Inoltre, perderà tutti le Condizioni @Condition[Sanguinante], mentre il suo sangue gela nelle vene. I colpi di quest’ascia non possono mai causare <em>Sanguinante</em>.</p>"
 		},
 		{
 			"id": "Wisdom of the Owl",
 			"name": "Saggezza del Gufo",
-			"description": "<p> Il Benedetto implora Verena di infondergli la sua saggezza e conoscenza, ottenendo +20 a tutte le Prove d’Intelligenza. Inoltre, le sue pupille si dilatano, dandogli uno sguardo acuto e spaventoso: ottiene +1 ai Talenti <em>Minaccioso</em> e <em>Senso Acuto (Vista)</em>. </p>"
+			"description": "<p>Il Benedetto implora Verena di infondergli la sua saggezza e conoscenza, ottenendo +20 a tutte le Prove d’Intelligenza. Inoltre, le sue pupille si dilatano, dandogli uno sguardo acuto e spaventoso: ottiene +1 ai Talenti @Compendium[wfrp4e-core.talents.0hn6UaKq8CoZP2zD]{Menacing} e @Compendium[wfrp4e-core.talents.9h82z72XGo9tfgQS]{Acute Sense (Sight)}.</p>"
 		},
 		{
 			"id": "You Ain’t Seen Me, Right?",
