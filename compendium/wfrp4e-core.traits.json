@@ -3,12 +3,12 @@
 	"entries": [
 		{
 			"id": "# Tentacles",
-			"name": "Tentacoli (Grado)",
+			"name": "# Tentacoli",
 			"description": "<p>Ogni creatura ha un numero di tentacoli specifico indicato, e ognuno di essi può eseguire un Attacco Gratuito. Il Danno inflitto è pari al Grado e include già il Bonus Forza. Se un tentacolo causa Ferite, può infliggere anche 1 Afferrato , che dà il via a una Lotta, che viene risolta usando questo Attacco Gratuito, non l’Azione principale della creatura.</p>"
 		},
 		{
 			"id": "Afraid",
-			"name": "Spaventoso (Grado)",
+			"name": "Spaventoso",
 			"description": "<p>La creatura provoca un timore sovrannaturale, causando <em>Paura</em> pari al Grado indicato (vedere pag. 190).</p>\n<p>&nbsp;</p>\n<p><em>Paura</em> rappresenta un’estrema avversione per qualcosa. Il Grado di Paura rappresenta il LS necessario per superarla. Per farlo si effettua una <strong>Prova Prolungata di Freddezza</strong>, tirando alla fine di ogni Round. Fintanto che non viene superata con successo, si è soggetti a <em>Paura</em>.</p>\n<p>Chi è vittima di <em>Paura</em> subisce -1 LS in tutte le Prove legate alla fonte. Non ci si può avvicinare ad essa senza superare una <strong>Prova Impegnativa (+0) di Freddezza</strong>. Se, invece, è la fonte ad avvicinarsi, è necessario superare una <strong>Prova Impegnativa (+0) di Freddezza</strong> per non subire 1 <em>Atterrito</em>.</p>"
 		},
 		{
@@ -18,17 +18,17 @@
 		},
 		{
 			"id": "Animosity",
-			"name": "Animosità (Bersaglio)",
+			"name": "Animosità",
 			"description": "<p>Alla creatura non piace il Bersaglio. Vedere Animosità (pag. 190). </p>\n <p>Il Personaggio nutre ostilità verso il Bersaglio, di solito un gruppo, come ‘Nordlander’, ‘Uominibestia’ o ‘Nobili’. Quando lo incontra deve effettuare una Prova di Psicologia. Se ha successo riesce a controllarsi e subisce solo -20 alle Prove di Socialità rispetto al gruppo. In caso di fallimento è vittima dell’ <em>Animosità</em>.</p>\n<p>&nbsp;</p>\n<p>Alla fine di ogni Round successivo potrà tentare un’ulteriore Prova per controllarsi. Anche se non riesce gli effetti svaniscono naturalmente appena tutti i Bersagli visibili sono pacificati o se ne vanno, oppure se il Personaggio diviene <em>Stordito, Privo di Sensi</em> o soggetto a un altro Tratto Psicologico. </p>\n<p>&nbsp;</p>\n<p>Mentre è vittima di <em>Animosità</em>, il Personaggio deve attaccare il <em>Bersaglio</em> verbalmente (insulti e freddure) o fisicamente (di solito a pugni), come appropriato. Inoltre, ottiene +1 LS a queste aggressioni. <em>Paura</em> e <em>Terrore</em> prevalgono su <em>Animosità</em>.</p>"
 		},
 		{
 			"id": "Arboreal",
 			"name": "Arboreo",
-			"description": "<p>La creatura si sente a casa nelle foreste, dove somma il proprio Bonus Agilità al LS di tutte le Prove di Arrampicarsi e Nascondersi. </p>"
+			"description": "<p>La creatura si sente a casa nelle foreste, dove somma il proprio Bonus Agilità al LS di tutte le Prove di Arrampicarsi e Nascondersi.</p>"
 		},
 		{
 			"id": "Armour",
-			"name": "Corazzato (Grado)",
+			"name": "Corazzato",
 			"description": "<p>La creatura indossa un’armatura o ha la pelle molto coriacea. Ottiene Punti Armatura pari al Grado in tutte le Locazioni.</p>"
 		},
 		{
@@ -48,13 +48,13 @@
 		},
 		{
 			"id": "Bite",
-			"name": "Morso (Grado)",
+			"name": "Morso",
 			"description": "<p>Durante il proprio Turno, la creatura può spendere 1 Vantaggio per effettuare un Attacco Gratuito. Il Danno inflitto è pari al Grado e <em>include già il Bonus Forza</em>.</p>"
 		},
 		{
 			"id": "Blessed",
-			"name": "Benedetto (Vario)",
-			"description": "<p>La creatura è Benedetta e può usare le Benedizioni della divinità indicata tra parentesi ,</p>"
+			"name": "Benedetto",
+			"description": "<p>La creatura è Benedetta e può usare le Benedizioni della divinità indicata tra parentesi.</p>"
 		},
 		{
 			"id": "Bounce",
@@ -63,13 +63,13 @@
 		},
 		{
 			"id": "Breath",
-			"name": "Soffio (Grado) (Tipo)",
-			"description": "<p> Il soffio della creatura è un’arma micidiale. Nel proprio Turno, il mostro può spendere 2 Vantaggi per attivare il <em>Soffio</em> come Attacco Gratuito. Può scegliere un Bersaglio entro entro un numero di metri pari al suo Bonus Resistenza + 20 e colpirà tutti coloro che si trovano entro Bonus Forza metri da esso così come tutti quelli che si trovano tra la creatura e il Bersaglio. La creatura effettua una <strong>Prova Contrapposta Abilità Balistica/Schivare</strong> contro tutti i bersagli (il mostro tira una sola volta e confronta il risultato con quello di ogni avversario). Le vittime che falliscono subiscono Danno pari al Grado dell’attacco e uno dei seguenti effetti in base al Tipo (se indicato).</p>\n<p>• <strong>Corrosivo:</strong> tutte le armi e armature del Bersaglio subiscono 1 Danno.</p>\n <p>• <strong>Elettrico: </strong> le Ferite ignorano i Punti Armatura e il Bersaglio subisce 1 <em>Stordito</em>.</p>\n<p>• <strong>Freddo: </strong> il Bersaglio subisce 1 <em>Stordito</em> per ogni 5 Ferite causate dal Soffio (minimo 1).</p>\n<p>• <strong>Fuoco: </strong> le Ferite ignorano i Punti Armatura e il Bersaglio subisce 1 In <em>Fiamme</em>.</p>\n<p>• <strong>Fumo: </strong> l’area d’effetto si riempie di fumo che blocca le Linee di Vista per un numero di Round pari al suo Bonus Resistenza.</p>\n<p>• <strong>Veleno: </strong> le Ferite ignorano i Punti Armatura e il Bersaglio subisce 1 <em>Avvelenato</em>.</p>\n<p>La creatura è immune al proprio Soffio, che viene inoltre considerato un attacco <em>Magico</em>.</p>"
+			"name": "Soffio",
+			"description": "<p>Il soffio della creatura è un’arma micidiale. Nel proprio Turno, il mostro può spendere 2 Vantaggi per attivare il <em>Soffio</em> come Attacco Gratuito. Può scegliere un Bersaglio entro entro un numero di metri pari al suo Bonus Resistenza + 20 e colpirà tutti coloro che si trovano entro Bonus Forza metri da esso così come tutti quelli che si trovano tra la creatura e il Bersaglio. La creatura effettua una <strong>Prova Contrapposta Abilità Balistica/Schivare</strong> contro tutti i bersagli (il mostro tira una sola volta e confronta il risultato con quello di ogni avversario). Le vittime che falliscono subiscono Danno pari al Grado dell’attacco e uno dei seguenti effetti in base al Tipo (se indicato).</p>\n<p>• <strong>Corrosivo:</strong> tutte le armi e armature del Bersaglio subiscono 1 Danno.</p>\n <p>• <strong>Elettrico: </strong> le Ferite ignorano i Punti Armatura e il Bersaglio subisce 1 <em>Stordito</em>.</p>\n<p>• <strong>Freddo: </strong> il Bersaglio subisce 1 <em>Stordito</em> per ogni 5 Ferite causate dal Soffio (minimo 1).</p>\n<p>• <strong>Fuoco: </strong> le Ferite ignorano i Punti Armatura e il Bersaglio subisce 1 In <em>Fiamme</em>.</p>\n<p>• <strong>Fumo: </strong> l’area d’effetto si riempie di fumo che blocca le Linee di Vista per un numero di Round pari al suo Bonus Resistenza.</p>\n<p>• <strong>Veleno: </strong> le Ferite ignorano i Punti Armatura e il Bersaglio subisce 1 <em>Avvelenato</em>.</p>\n<p>La creatura è immune al proprio Soffio, che viene inoltre considerato un attacco <em>Magico</em>.</p>"
 		},
 		{
 			"id": "Brute",
 			"name": "Bruto",
-			"description": "<p>La creatura è pesante e rozza. Ottiene +10 a Forza e Resistenza, ma -1 Movimento e -10 Agilità</p>"
+			"description": "<p>La creatura è pesante e rozza. Ottiene +10 a Forza e Resistenza, ma -1 Movimento e -10 Agilità.</p>"
 		},
 		{
 			"id": "Champion",
@@ -104,22 +104,22 @@
 		{
 			"id": "Corrosive Blood",
 			"name": "Sangue Corrosivo",
-			"description": "<p>Il sangue di questa creatura è corrosivo. Ogni volta che viene Ferita, tutti gli avversari Ingaggiati vengono colpiti dagli schizzi e subiscono 1d10 Ferite (modificate dal Bonus Resistenza e dai Punti Armatura, minimo 1).</p>"
+			"description": "<p>Il sangue di questa creatura è corrosivo. Ogni volta che viene Ferita, tutti gli avversari Ingaggiati vengono colpiti dagli schizzi e subiscono [[/r 1d10]] Ferite (modificate dal Bonus Resistenza e dai Punti Armatura, minimo 1).</p>"
 		},
 		{
 			"id": "Corruption",
-			"name": "Corrotto (Grado)",
-			"description": "<p>Questa creatura è stata corrotta dal Caos e infusa di magie oscure. Il Grado di Corruzione (vedere pag. 182) è indicato tra parentesi.</p>"
+			"name": "Corrotto",
+			"description": "<p>TQuesta creatura è stata corrotta dal Caos e infusa di magie oscure. Il Grado di Corruzione (vedere pag. 182) è indicato tra parentesi (@Corruption[minor]{Minor}, @Corruption[moderate]{Moderate}, o @Corruption[major]{Major}).</p>"
 		},
 		{
 			"id": "Cunning",
 			"name": "Astuto",
-			"description": "<p>La creatura è molto astuta. Ottiene +10 a Iniziativa, Intelligenza e Socialità</p>"
+			"description": "<p>La creatura è molto astuta. Ottiene +10 a Iniziativa, Intelligenza e Socialità.</p>"
 		},
 		{
 			"id": "Daemonic",
-			"name": "Demoniaco (Grado)",
-			"description": "<p>L’essenza di questa creatura è pura magia e nelle sue ‘vene’ scorre un icore sacrilego. Un essere Demoniaco non ha bisogno del comune sostentamento, come cibo, acqua o aria.</p>\n<p>Tutti i suoi attacchi sono <em>Magici</em>. Ogni volta che subisce un colpo, il GM tira 1d10, se ottiene un valore pari o superiore al Grado, l’attacco viene ignorato. Tuttavia, se la creatura viene ridotta a 0 Ferite ritornerà immediatamente nel Reame del Caos.</p>"
+			"name": "Demoniaco",
+			"description": "<p>L’essenza di questa creatura è pura magia e nelle sue ‘vene’ scorre un icore sacrilego. Un essere Demoniaco non ha bisogno del comune sostentamento, come cibo, acqua o aria.</p>\n<p>Tutti i suoi attacchi sono <em>Magici</em>. Ogni volta che subisce un colpo, il GM tira [[/r 1d10]], se ottiene un valore pari o superiore al Grado, l’attacco viene ignorato. Tuttavia, se la creatura viene ridotta a 0 Ferite ritornerà immediatamente nel Reame del Caos.</p>"
 		},
 		{
 			"id": "Dark Vision",
@@ -133,7 +133,7 @@
 		},
 		{
 			"id": "Disease",
-			"name": "Malattia (Tipo)",
+			"name": "Malattia",
 			"description": "<p>La creatura è portatrice della malattia indicata. Chi la incontra dovrà effettuare le Prove di Contagio come indicato (vedere pag. 186).</p>"
 		},
 		{
@@ -158,18 +158,18 @@
 		},
 		{
 			"id": "Fear",
-			"name": "Timoroso (Bersaglio)",
-			"description": "<p>La creatura teme il Bersaglio, subendo <em>Paura (0)</em> da esso (vedere pag. 190).</p>\n<p>&nbsp;</p>\n<p><em>Paura</em> rappresenta un’estrema avversione per qualcosa. Il Grado di Paura rappresenta il LS necessario per superarla. Per farlo si effettua una <strong>Prova Prolungata di Freddezza</strong>, tirando alla fine di ogni Round. Fintanto che non viene superata con successo, si è soggetti a <em>Paura</em>.</p>\n<p>Chi è vittima di <em>Paura</em> subisce -1 LS in tutte le Prove legate alla fonte. Non ci si può avvicinare ad essa senza superare una <strong>Prova Impegnativa (+0) di Freddezza</strong>. Se, invece, è la fonte ad avvicinarsi, è necessario superare una <strong>Prova Impegnativa (+0) di Freddezza</strong> per non subire 1 <em>Atterrito</em>.</p>"
+			"name": "Timoroso",
+			"description": "<p>La creatura teme il Bersaglio, subendo <em>Paura (0)</em> da esso (vedere pag. 190).</p>\n<p>&nbsp;</p>\n<p><em>Paura</em> rappresenta un’estrema avversione per qualcosa. Il Grado di Paura rappresenta il LS necessario per superarla. Per farlo si effettua una <strong>Prova Prolungata di Freddezza</strong>, tirando alla fine di ogni Round. Fintanto che non viene superata con successo, si è soggetti a <em>Paura</em>.</p>\n<p>Chi è vittima di <em>Paura</em> subisce -1 LS in tutte le Prove legate alla fonte. Non ci si può avvicinare ad essa senza superare una <strong>Prova Impegnativa (+0) di Freddezza</strong>. Se, invece, è la fonte ad avvicinarsi, è necessario superare una <strong>Prova Impegnativa (+0) di Freddezza</strong> per non subire 1 @Condition[Broken].</p>"
 		},
 		{
 			"id": "Flight",
-			"name": "Volante (Grado)",
+			"name": "Volante",
 			"description": "<p>Usando la propria Manovra, questa creatura può volare fino al Grado indicato in metri. Ovviamente, ignora terreno, ostacoli o Personaggi. Alla fine della Manovra può decidere se atterrare o restare in aria. Questo Tratto può essere anche usato per Caricare. Se una creatura inizia il Turno in aria deve usare <em>Volante</em>. Se non può farlo, il GM sceglie quanto lontano la creatura precipita (vedere pagina 166).</p>\n<p>Per misurare la Gittata degli attacchi a distanza si calcola quella orizzontale come di norma e poi la si incrementa di 1 categoria (per esempio, da Lunga a Estrema). Se la Gittata è già Estrema non sarà possibile colpirlo. Mentre vola, va in picchiata o fa giravolte in cielo, la creatura subisce -20 alle Prove di attacco a distanza.</p>"
 		},
 		{
 			"id": "Frenzy",
 			"name": "Furia",
-			"description": "<p>Superando una Prova di Volontà, il Personaggio può caricarsi di rabbia, ululando, mordendo lo scudo o in altri modi. Se ha successo diviene soggetto a <em>Furia</em>. </p>\n<p>&nbsp;</p>\n<p>Mentre è in <em>Furia</em> il Personaggio diventa immune a tutti gli altri Tratti Psicologici e non fuggirà né si ritirerà per alcun motivo, anzi dovrà sempre muoversi alla massima velocità per attaccare l’avversario più vicino. In genere, le uniche Azioni che può compiere sono Prove di Abilità di Combattimento o Atletica, per raggiungerlo più in fretta. </p>\n<p>Nel corso di ogni Round potrà compiere una Prova di Mischia gratuita, dato che sta attaccando senza risparmiarsi. Infine, ottiene +1 Bonus Forza grazie a tanta ferocia. Rimane in <em>Furia</em> finché tutti i nemici visibili non sono resi innocui o finché non subisce la Condizione <em>Stordito</em> o <em>Privo di Sensi</em>. Al termine della <em>Furia</em> subisce 1 <em>Affaticato</em>. </p>"
+			"description": "<p>Superando una Prova di Volontà, il Personaggio può caricarsi di rabbia, ululando, mordendo lo scudo o in altri modi. Se ha successo diviene soggetto a <em>Furia</em>. </p>\n<p>&nbsp;</p>\n<p>Mentre è in <em>Furia</em> il Personaggio diventa immune a tutti gli altri Tratti Psicologici e non fuggirà né si ritirerà per alcun motivo, anzi dovrà sempre muoversi alla massima velocità per attaccare l’avversario più vicino. In genere, le uniche Azioni che può compiere sono Prove di Abilità di Combattimento o Atletica, per raggiungerlo più in fretta. </p>\n<p>Nel corso di ogni Round potrà compiere una Prova di Mischia gratuita, dato che sta attaccando senza risparmiarsi. Infine, ottiene +1 Bonus Forza grazie a tanta ferocia. Rimane in <em>Furia</em> finché tutti i nemici visibili non sono resi innocui o finché non subisce la condizione <em>@Condition[Stunned]</em>&nbsp;o&nbsp;<em>@Condition[Unconscious]</em>&nbsp;. Al termine della <em>Furia</em> subisce 1 a&nbsp;<em>@Condition[Fatigued]</em>&nbsp;.</p>"
 		},
 		{
 			"id": "Fury",
@@ -184,16 +184,16 @@
 		{
 			"id": "Hardy",
 			"name": "Gagliardo",
-			"description": "<p>La creatura può sopravvivere a più danni dei suoi simili. Aumenta le Ferite del valore del proprio Bonus Resistenza (prima di applicare i modificatori per la <em>Taglia</em> ).</p>"
+			"description": "<p>La creatura può sopravvivere a più danni dei suoi simili. Aumenta le Ferite del valore del proprio Bonus Resistenza (prima di applicare i modificatori per la <em>Taglia</em>).</p>"
 		},
 		{
 			"id": "Hatred",
-			"name": "Odio (Bersaglio)",
+			"name": "Odio",
 			"description": "<p>La creatura è soggetta a Odio verso il Bersaglio (vedere pag. 190). </p>\n<p>Il Personaggio è consumato dall’ <em>Odio</em> verso il <em>Bersaglio</em>, di solito un gruppo, come ‘Hochlander’, ‘Piovre di Palude’ o ‘Schiavisti’, al punto che non potrà mai interagirvi in modo pacifico. Quando lo incontra deve superare una Prova di Psicologia per trattenersi. Se fallisce sarà soggetto all’ <em>Odio</em>, e alla fine di ogni Round seguente può ritentare la Prova per porvi un freno. Gli effetti hanno termine appena tutti i <em>Bersagli</em> visibili sono morti o fuggiti, oppure se cade <em>Privo di Sensi</em>. Mentre è vittima dell’ <em>Odio</em>, il Personaggio è costretto ad aggredire il <em>Bersaglio</em> senza risparmiarsi. Ottiene +1 LS in tutte le Prove di combattimento contro di esso ed è immune a <em>Paura</em> o Intimidire provocati da questi nemici, ma non al <em>Terrore</em>.</p>"
 		},
 		{
 			"id": "Horns (Feature)",
-			"name": "Corna (Grado) (Appendice)",
+			"name": "Corna (Appendice)",
 			"description": "<p>La creatura è dotata di corna o altre appendici affilate (come indicato tra parentesi). Quando ottiene Vantaggio per aver Caricato può compiere un Attacco Gratuito con le Corna. Il Danno inflitto è pari al Grado e <em>include già il Bonus Forza</em>.</p>"
 		},
 		{
@@ -203,7 +203,7 @@
 		},
 		{
 			"id": "Immunity",
-			"name": "Immunità (Tipo)",
+			"name": "Immunità",
 			"description": "<p>La creatura è immune a un certo tipo di Danno, come veleno, magia o elettricità, che viene ignorato anche in caso di Ferite Critiche.</p>"
 		},
 		{
@@ -214,7 +214,7 @@
 		{
 			"id": "Infected",
 			"name": "Infetto",
-			"description": "<p>La creatura, o le sue armi, sono vettori di una brutta infezione. Se causa Ferite a un essere vivente, questi dovrà superare una <strong>Prova Facile (+40) di Tempra</strong> per non contrarre una <em>Ferita Purulenta</em> (vedere pag. 187).</p>"
+			"description": "<p>La creatura, o le sue armi, sono vettori di una brutta infezione. Se causa Ferite a un essere vivente, questi dovrà superare una <strong>Prova Facile (+40) di Tempra</strong> per non contrarre una @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}</p>"
 		},
 		{
 			"id": "Infestation",
@@ -224,12 +224,12 @@
 		{
 			"id": "Leader",
 			"name": "Capo",
-			"description": "<p>La creatura è un abile condottiero. Ottiene +10 a Volontà e Socialità. <strong>Nota:</strong> questo Tratto non può essere conferito a esseri <em>Bestiali</em>.</p>"
+			"description": "<p>La creatura è un abile condottiero. Ottiene +10 a Volontà e Socialità. \r\r<strong>Nota:</strong> questo Tratto non può essere conferito a esseri <em>Bestiali</em>.</p>"
 		},
 		{
 			"id": "Magic Resistance",
-			"name": "Resistente alla Magia (Grado)",
-			"description": "<p>La magia ha un effetto ridotto sulla creatura. Il LS di ogni incantesimo che la colpisce è ridotto del Grado (per esempio, Resistente alla Magia 2 riduce il LS di 2 punti). </p>"
+			"name": "Resistente alla Magia",
+			"description": "<p>La magia ha un effetto ridotto sulla creatura. Il LS di ogni incantesimo che la colpisce è ridotto del Grado (per esempio, Resistente alla Magia 2 riduce il LS di 2 punti).</p>"
 		},
 		{
 			"id": "Magical",
@@ -239,17 +239,17 @@
 		{
 			"id": "Mental Corruption",
 			"name": "Corruzione Mentale",
-			"description": "<p>La mente della creatura è stata toccata dal Caos; tirare sulla Tabella della Corruzione Mentale (pag. 185).</p>"
+			"description": "<p>La mente della creatura è stata toccata dal Caos; tirare sulla Tabella della Corruzione Mentale</p>\n<p>@Table[mutatemental]</p>\n<p>@Table[expandedmutatemental] (se il modulo EiS è installato)</p>"
 		},
 		{
 			"id": "Miracles",
-			"name": "Miracoli (Vari)",
+			"name": "Miracoli",
 			"description": "<p>La creatura può usare i Miracoli della divinità indicata tra parentesi.</p>"
 		},
 		{
 			"id": "Mutation",
 			"name": "Mutazione",
-			"description": "<p>La creatura è stata ‘consacrata’ con una Mutazione; tirare sulla Tabella della Corruzione Fisica (pag. 184).</p>"
+			"description": "<p>La creatura è stata ‘consacrata’ con una Mutazione; tirare sulla Tabella della @Table[mutatephys]{Physical Corruption Table}</p>"
 		},
 		{
 			"id": "Night Vision",
@@ -259,21 +259,21 @@
 		{
 			"id": "Painless",
 			"name": "Senza Dolore",
-			"description": "<p>Questa creatura non sente dolore o sa come resistergli. Ignora le penalità causate da Ferite Critiche, eccetto le Amputazioni, ma non le Condizioni.</p>"
+			"description": "<p>TQuesta creatura non sente dolore o sa come resistergli. Ignora le penalità causate da Ferite Critiche, eccetto le Amputazioni, ma non le Condizioni.</p>"
 		},
 		{
 			"id": "Petrifying Gaze",
 			"name": "Sguardo Pietrificante",
-			"description": "<p>Lo sguardo di questa creatura può tramutare la carne in pietra. Come Azione può spendere tutto il suo Vantaggio (minimo 1) per attivare lo sguardo compiendo una <strong>Prova Contrapposta di Abilità Balistica/Iniziativa</strong>, sommando +1 al LS per Vantaggio speso. L’avversario subisce 1 Stordito ogni 2 LS e con almeno 6 LS si tramuta in pietra per sempre. Se il bersaglio è un incantatore potrà opporsi usando Linguaggio (Magico), invece di Iniziativa, come se stesse lanciando un controincantesimo.</p>"
+			"description": "<p>Lo sguardo di questa creatura può tramutare la carne in pietra. Come Azione può spendere tutto il suo Vantaggio (minimo 1) per attivare lo sguardo compiendo una <strong>Prova Contrapposta di Abilità Balistica/Iniziativa</strong>, sommando +1 al LS per Vantaggio speso. L’avversario subisce 1 Stordito ogni 2 LS e con almeno 6 LS si tramuta in pietra per sempre.\n        \n        Se il bersaglio è un incantatore potrà opporsi usando Linguaggio (Magico), invece di Iniziativa, come se stesse lanciando un controincantesimo.</p>"
 		},
 		{
 			"id": "Prejudice",
-			"name": "Pregiudizio (Bersaglio)",
+			"name": "Pregiudizio",
 			"description": "<p>La creatura non ha alcuna simpatia per il Bersaglio (vedere pag. 190). </p>\n<p>Il Personaggio detesta il <em>Bersaglio</em>, di solito un gruppo, come ‘Ostlander’, ‘Elfi’ o ‘Maghi’. Quando lo incontra deve effettuare una Prova di Psicologia. Se la supera potrebbe accigliarsi, ma agirà in modo normale, subendo solo -10 alle Prove di Socialità relative. Se fallisce cede ai propri <em>Pregiudizi</em>. Alla fine di ogni Round seguente potrà tentare una prova per controllarsi. Se non lo fa, gli effetti hanno termine appena tutti i <em>Bersagli</em> visibili se ne sono andati, oppure se il Personaggio è <em>Stordito, Privo di Sensi</em> o soggetto a un altro Tratto Psicologico.</p>\n<p>&nbsp;</p>\n<p>Chi è vittima di <em>Pregiudizio</em deve insultare il <em>Bersaglio</em>. Subito. Ad alta voce.</p>"
 		},
 		{
 			"id": "Ranged (Range)",
-			"name": "Arma a Distanza (Grado) (Gittata)",
+			"name": "Arma a Distanza (Gittata)",
 			"description": "<p>La creatura possiede un’arma a distanza che causa Danni pari al Grado e ha la Gittata indicata in metri.</p>"
 		},
 		{
@@ -288,22 +288,22 @@
 		},
 		{
 			"id": "Size",
-			"name": "Taglia (Vario)",
+			"name": "Taglia",
 			"description": "<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\"> Questo Tratto rappresenta esseri di dimensioni molto diverse da quelle di un comune essere umano. Esistono sette gradi di Taglia, da Minuscola a Mostruosa.</p>\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">&nbsp;</p>\n<div style=\"direction: ltr;\">\n<table style=\"direction: ltr; border-color: #a3a3a3; border-width: 1pt;\" title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\"><span style=\"font-weight: bold;\">Taglia</span></p>\n</td>\n<td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\"><span style=\"font-weight: bold;\">&nbsp;Esempi</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Minuscola</p>\n</td>\n<td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Farfalla, Topo, Piccione</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Minuta</p>\n</td>\n<td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Gatto, Falco, Neonato Umano</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Piccola</p>\n</td>\n<td style=\"vertical-align: top; width: 2.1513in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Ratto Gigante, Halﬂing, Bambino Umano</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Media</p>\n</td>\n<td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Elfo, Nano, Umano</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Grande</p>\n</td>\n<td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Cavallo, Ogri, Troll</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .8875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Enorme</p>\n</td>\n<td style=\"vertical-align: top; width: 2.0625in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Grifone, Viverna, Manticora</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .8875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Mostruosa</p>\n</td>\n<td style=\"vertical-align: top; width: 2.1319in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Drago, Gigante, Principe Demone</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>&nbsp;</p>\n<h3>Usare la Taglia</h3>\n<p>&nbsp;</p>\n<p> Se si desidera usare la Taglia per ingrandire una creatura – per esempio trasformando un Ragno Gigante in uno Titanico – per ogni aumento si somma +10 a Forza e Resistenza e si sottrae -5 ad Agilità. In caso la si rimpicciolisca si fa il contrario. &nbsp;</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<h3>Modificatori al Combattimento</h3>\n<p>Se più grande:</p>\n<ul type=\"disc\">\n<li> Se la creatura è di 1 Taglia più grande le sue armi ottengono la Qualità <em>Dannosa</em>, se di 2 <em>Impatto</em>.</li>\n<li> Il danno che infligge viene moltiplicato per la differenza di taglia (per esempio 2 gradi = Danno ×2) dopo aver applicato ogni possibile modificatore.</li>\n<li> Il danno che infligge viene moltiplicato per la differenza di taglia (per esempio 2 gradi = Danno ×2) dopo aver applicato ogni possibile modificatore. </li>\n</ul>\n<p>&nbsp;</p>\n<p>Se più piccola:</p>\n<p>• La creatura ottiene +10 per colpire.</p>\n<p>&nbsp;</p>\n<h3> Difendersi contro Creature più Grandi </h3>\n<p> Per ogni Taglia di differenza il difensore subisce -2 LS alle Prove Contrapposte di Mischia per difendersi. È meglio schivare un albero manovrato da un gigante, che pararlo.</p>\n<p>&nbsp;</p>\n<h3>Attacco a Distanza</h3>\n<p> Ottieni un grosso bonus quando spari a bersagli più grandi, ma per ogni +10 che ricevi, sottrai 1 dal tuo danno. (Es. +40 per colpire un bersaglio Enorme, -4 danni).</p>\n<p>&nbsp;</p>\n<h3>Paura e Terrore</h3>\n<p> Una creatura con fare aggressivo provoca <em>Paura</em> in tutte quelle più piccole e <em>Terrore</em> se ci sono almeno 2 gradi di differenza. Il grado di <em>Paura</em> o <em>Terrore</em> è pari alla differenza di Taglia (per esempio, un mostro Grande causerà <em>Terrore</em> 2 nelle creature Piccole, vedere pag. 190).</p>\n<p>&nbsp;</p>\n<h3>Manovrare in Combattimento </h3>\n<p> Una creatura più grande può lasciare un combattimento senza Disimpegnarsi, le basta spintonare gli avversari. </p>\n<p>&nbsp;</p>\n<h3>Prove di Forza</h3>\n<p> Una creatura vince automaticamente le <strong>Prove Contrapposte di Forza</strong> (e altre simili) se è almeno di 2 Taglie più grande dell’avversario. Se la differenza è di 1 Taglia, l’avversario potrà vincere solo ottenendo un Critico, che porterà a confrontare i LS come di norma.</p>\n<p>&nbsp;</p>\n<h3>Calpestare</h3>\n<p> Una creatura più grande dei propri avversari può spendere 1 Vantaggio per Calpestarli come Attacco Gratuito, usando Mischia (Rissa). Il Danno è pari al suo Bonus Forza +0.</p>\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">&nbsp;</p>\n<div style=\"direction: ltr;\">\n<table style=\"direction: ltr; border-collapse: collapse; border: 1pt solid #A3A3A3;\" title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\"><span style=\"font-weight: bold;\">Taglia </span></p>\n</td>\n<td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\"><span style=\"font-weight: bold;\">Ferite</span></p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Minuscola</p>\n</td>\n<td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">1</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Minuta</p>\n</td>\n<td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Bonus Resistenza </p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Piccola</p>\n</td>\n<td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">(Bonus Resistenzax2) + Bonus Volontà</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Media</p>\n</td>\n<td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\"> Bonus Forza+(Bonus Resistenza×2)+Bonus Volontà</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Grande</p>\n</td>\n<td style=\"vertical-align: top; width: 4.0in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\"> 2×[Bonus Forza+(Bonus Resistenza×2)+Bonus Volontà]</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .8666in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Enorme</p>\n</td>\n<td style=\"vertical-align: top; width: 3.9812in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\"> 4×[Bonus Forza+(Bonus Resistenza×2)+Bonus Volontà]</p>\n</td>\n</tr>\n<tr>\n<td style=\"vertical-align: top; width: .8666in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Mostruosa</p>\n</td>\n<td style=\"vertical-align: top; width: 3.9812in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\"> 8×[Bonus Forza+(Bonus Resistenza×2)+Bonus Volontà]</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>"
 		},
 		{
 			"id": "Skittish",
-			"name": " Ombroso ",
-			"description": "<p>Questa creatura è spaventata dalla magia e dai rumori forti, che le causano 3 Atterrito .</p>"
+			"name": "Ombroso",
+			"description": "<p>Questa creatura è spaventata dalla magia e dai rumori forti, che le causano 3 Atterrito.</p>"
 		},
 		{
 			"id": "Spellcaster",
-			"name": "Incantatore (Vario)",
+			"name": "Incantatore",
 			"description": "<p>La creatura può lanciare Incantesimi del Sapere tra parentesi.</p>"
 		},
 		{
 			"id": "Stealthy",
-			"name": " Furtivo",
+			"name": "Furtivo",
 			"description": "<p>La creatura è molto furtiva. Somma il proprio Bonus Agilità al LS delle Prove di Nascondersi.</p>"
 		},
 		{
@@ -328,8 +328,8 @@
 		},
 		{
 			"id": "Tail Attack",
-			"name": "Coda (Grado)",
-			"description": "<p>La creatura può usare la coda per far cadere i nemici. Nel proprio Turno, spendendo 1 Vantaggio, può effettuare un Attacco Gratuito con la Coda. Il Danno inflitto è pari al Grado e <em>include già il Bonus Forza</em>. Gli avversari di <em>Taglia</em> inferiore che subiscono Ferite cadono <em>Proni</em>.</p>"
+			"name": "Coda",
+			"description": "<p>La creatura può usare la coda per far cadere i nemici. \n                \n                Nel proprio Turno, spendendo 1 Vantaggio, può effettuare un Attacco Gratuito con la Coda. Il Danno inflitto è pari al Grado e <em>include già il Bonus Forza</em>. Gli avversari di <em>Taglia</em> inferiore che subiscono Ferite cadono <em>Proni</em>.</p>"
 		},
 		{
 			"id": "Territorial",
@@ -338,12 +338,12 @@
 		},
 		{
 			"id": "Terror",
-			"name": "Terrificante (Grado)",
-			"description": "<p>La creatura provoca <em>Terrore</em> sovrannaturale con il Grado indicato (vedere pag. 190).</p>\n<p>&nbsp;</p>\n<p>Alcune creature sono talmente spaventose da provocare un profondo <em>Terrore</em> nei nemici. Chi ne incontra una deve effettuare una Prova di Freddezza. Se la supera non ci sarà alcun effetto, se fallisce subisce un numero di <em>Atterrito</em> pari al Grado di <em>Terrore</em> più il numero di LS sotto 0.</p>\n<p>&nbsp;</p>\n<p>Dopo aver risolto questa Prova di Psicologia, la creatura causerà <em>Paura</em> con Grado pari a quello di <em>Terrore</em>.</p>"
+			"name": "Terrificante",
+			"description": "<p>La creatura provoca <em>Terrore</em> sovrannaturale con il Grado indicato (vedere pag. 190).</p>\n<p>&nbsp;</p>\n<p>Alcune creature sono talmente spaventose da provocare un profondo <em>Terrore</em> nei nemici. Chi ne incontra una deve effettuare una Prova di Freddezza. Se la supera non ci sarà alcun effetto, se fallisce subisce un numero di <em>Atterrito</em> pari al Grado di <em>Terrore</em> più il numero di LS sotto 0.</p>\n<p>&nbsp;</p>\n<p>Dopo aver risolto questa Prova di Psicologia, la creatura causerà @Compendium[wfrp4e-core.traits.pTorrE0l3VybAbtn]{Fear} con Grado pari a quello di <em>Terrore</em>.</p>"
 		},
 		{
 			"id": "Tongue Attack (Range)",
-			"name": "Lingua Prensile (Grado) (Gittata)",
+			"name": "Lingua Prensile (Gittata)",
 			"description": "<p>La creatura ha una lingua prensile con cui può trascinare le proprie vittime verso una misera fine. Nel proprio Turno può spendere 1 Vantaggio per effettuare un Attacco Gratuito a distanza con la lingua. Il Danno inflitto è pari al Grado e <em>include già il Bonus Forza</em>. Chi viene colpito subisce 1 <em>Afferrato</em> e, se di Taglia inferiore, viene trascinato verso la creatura e Ingaggiato in mischia. Il mostro può decidere di rilasciare il bersaglio, effettuando un Attacco Gratuito con la propria <em>Arma</em> nel processo, o iniziare una Lotta (vedere pag. 163).</p>"
 		},
 		{
@@ -358,12 +358,12 @@
 		},
 		{
 			"id": "Trained",
-			"name": "Addestrato (Capacità)",
-			"description": "<p>Questo Tratto rappresenta un animale che è stato addestrato a compiere alcune azioni grazie all’Abilità Addestrare. Le capacità ottenute sono indicate tra parentesi. GM e Giocatori sono liberi di crearne altre.</p>\n        <p><strong>Cavalcatura</strong>: questo animale può portare un cavaliere. Alcune creature molto bellicose non accettano cavalieri privi della Specializzazione specifica. Per esempio, un Grifone richiede Cavalcare (Grifone).</p>\n        <p><strong>Domato</strong>: l’animale ignora il Tratto Bestiale e ottiene un punteggio di Socialità di 2d10.</p>\n        <p><strong>Guardia</strong>: questo animale è addestrato a fare la guardia a un luogo. Ottiene il Tratto <strong><em>Territoriale</em></strong>.</p>\n        <p><strong>Guerra</strong>: questo animale è stato selezionato per la guerra. Ottiene +10 Abilità di Combattimento e ignora l’effetto dei rumori forti per il Tratto <strong><em>Ombroso</em></strong>.</p>\n        <p><strong>Intrattenere</strong>: l’animale è addestrato a intrattenere il pubblico. Somma +10 alle prove di Esibirsi, Intrattenere o Suonare.</p>\n        <p><strong> Magia</strong>:  questo animale ignora il Tratto <strong><em>Ombroso</em></strong> quando incontra la magia. È una necessità per i cavalli dei maghi.</p>\n        <p><strong>Riporto</strong>:  l’animale sa riportare un oggetto. Di solito è una capacità riservata ai cani e altre creature simili.</p>\n        <p><strong>Ritorno</strong>:  questo animale sa come ritornare sempre a casa se si perde o viene abbandonato.</p>\n        <p><strong>Traino</strong>:  l’animale può trainare carri, carretti o altri veicoli simili.</p>"
+			"name": "Addestrato",
+			"description": "<p>Questo Tratto rappresenta un animale che è stato addestrato a compiere alcune azioni grazie all’Abilità Addestrare. Le capacità ottenute sono indicate tra parentesi. GM e Giocatori sono liberi di crearne altre.</p>\n        <p><strong>Cavalcatura</strong>: questo animale può portare un cavaliere. Alcune creature molto bellicose non accettano cavalieri privi della Specializzazione specifica. Per esempio, un Grifone richiede Cavalcare (Grifone).</p>\n        <p><strong>Domato</strong>: l’animale ignora il Tratto Bestiale e ottiene un punteggio di Socialità di [[/r 2d10]].</p>\n        <p><strong>Guardia</strong>: questo animale è addestrato a fare la guardia a un luogo. Ottiene il Tratto <strong><em>Territoriale</em></strong>.</p>\n        <p><strong>Guerra</strong>: questo animale è stato selezionato per la guerra. Ottiene +10 Abilità di Combattimento e ignora l’effetto dei rumori forti per il Tratto <strong><em>Ombroso</em></strong>.</p>\n        <p><strong>Intrattenere</strong>: l’animale è addestrato a intrattenere il pubblico. Somma +10 alle prove di Esibirsi, Intrattenere o Suonare.</p>\n        <p><strong> Magia</strong>:  questo animale ignora il Tratto <strong><em>Ombroso</em></strong> quando incontra la magia. È una necessità per i cavalli dei maghi.</p>\n        <p><strong>Riporto</strong>:  l’animale sa riportare un oggetto. Di solito è una capacità riservata ai cani e altre creature simili.</p>\n        <p><strong>Ritorno</strong>:  questo animale sa come ritornare sempre a casa se si perde o viene abbandonato.</p>\n        <p><strong>Traino</strong>:  l’animale può trainare carri, carretti o altri veicoli simili.</p>"
 		},
 		{
 			"id": "Undead",
-			"name": "Nonmorto",
+			"name": "Undead",
 			"description": "<p>I Nonmorti non sono né vivi né morti e non hanno normali necessità, come cibo, acqua o aria. Questo Tratto entra spesso in gioco a causa di Incantesimi o Miracoli mirati a tali creature</p>"
 		},
 		{
@@ -378,8 +378,8 @@
 		},
 		{
 			"id": "Venom",
-			"name": "Veleno (Difficoltà)",
-			"description": "<p>Gli attacchi di questa creatura sono velenosi. Se infligge Ferite causa 1 <em>Avvelenato</em>. Se non è indicata una Difficoltà specifica si presume che sia Impegnativa (vedere pag. 168).</p>"
+			"name": "Veleno",
+			"description": "<p>Gli attacchi di questa creatura sono velenosi. Se infligge Ferite causa 1 @Condition[Poisoned]. Se non è indicata una Difficoltà specifica si presume che sia Impegnativa (vedere pag. 168).</p>"
 		},
 		{
 			"id": "Vomit",
@@ -393,17 +393,17 @@
 		},
 		{
 			"id": "Ward",
-			"name": "Protezione (Grado)",
-			"description": "<p>Forse grazie a una magia, a un talismano o alla pura fortuna, alcuni colpi sembrano mancare la creatura. Ogni volta che subisce un colpo tirerà 1d10; se ottiene un valore pari o superiore al Grado, l’attacco viene ignorato, anche se si tratta di un Critico.</p>"
+			"name": "Protezione",
+			"description": "<p>Forse grazie a una magia, a un talismano o alla pura fortuna, alcuni colpi sembrano mancare la creatura. Ogni volta che subisce un colpo tirerà [[/r 1d10]]; se ottiene un valore pari o superiore al Grado, l’attacco viene ignorato, anche se si tratta di un Critico.</p>"
 		},
 		{
 			"id": "Weapon",
-			"name": "Arma (Grado)",
-			"description": "<p>La creatura porta un’arma da mischia o possiede zanne e artigli. L’arma causa Danno pari al Grado, che<em> include già il Bonus Forza</em>. Di solito il danno è pari a Bonus Forza +4, che rappresenta un’Arma a Una Mano.</p>"
+			"name": "Arma",
+			"description": "<p>La creatura porta un’arma da mischia o possiede zanne e artigli.\n                \n                L’arma causa Danno pari al Grado, che<em> include già il Bonus Forza</em>. Di solito il danno è pari a Bonus Forza +4, che rappresenta un’Arma a Una Mano.</p>"
 		},
 		{
 			"id": "Web",
-			"name": "Ragnatela (Grado)",
+			"name": "Ragnatela",
 			"description": "<p>La creatura può creare ragnatele per intrappolare gli ignari. Un avversario colpito subisce 1 <em>Afferrato</em> con Forza pari al Grado (vedere pag. 168).</p>"
 		}
 	]

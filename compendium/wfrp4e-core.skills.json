@@ -4,767 +4,767 @@
 		{
 			"id": "Animal Care",
 			"name": "Allevare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QZx9CbhGkIaDMQD3]{Animal Care}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QZx9CbhGkIaDMQD3]{Allevare}"
 		},
 		{
 			"id": "Animal Training ( )",
 			"name": "Addestrare ( )",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Animal Training}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Addestrare}"
 		},
 		{
 			"id": "Animal Training (Demigryph)",
 			"name": "Addestrare (Semigrifone)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Animal Training}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Addestrare}"
 		},
 		{
 			"id": "Animal Training (Dog)",
 			"name": "Addestrare (Cane)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Animal Training}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Addestrare}"
 		},
 		{
 			"id": "Animal Training (Horse)",
 			"name": "Addestrare (Cavallo)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Animal Training}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Addestrare}"
 		},
 		{
 			"id": "Animal Training (Pegasus)",
 			"name": "Addestrare (Pegaso)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Animal Training}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Addestrare}"
 		},
 		{
 			"id": "Animal Training (Pigeon)",
 			"name": "Addestrare (Piccione)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Animal Training}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Addestrare}"
 		},
 		{
 			"id": "Art ( )",
 			"name": "Arte ( )",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Arte}"
 		},
 		{
 			"id": "Art (Cartography)",
 			"name": "Arte (Cartografia)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Arte}"
 		},
 		{
 			"id": "Art (Engraving)",
 			"name": "Arte (Incisore)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Arte}"
 		},
 		{
 			"id": "Art (Mosaics)",
 			"name": "Arte (Mosaico)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Arte}"
 		},
 		{
 			"id": "Art (Painting)",
 			"name": "Arte (Pittura)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Arte}"
 		},
 		{
 			"id": "Art (Sculpture)",
 			"name": "Arte (Scultura)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Arte}"
 		},
 		{
 			"id": "Art (Tattoo)",
 			"name": "Arte (Tatuaggi)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Arte}"
 		},
 		{
 			"id": "Art (Weaving)",
 			"name": "Arte (Tessitura)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Arte}"
 		},
 		{
 			"id": "Athletics",
 			"name": "Atletica",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.Ss6Gp732GjscYke0]{Athletics}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.Ss6Gp732GjscYke0]{Atletica}"
 		},
 		{
 			"id": "Bribery",
 			"name": "Corrompere",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.IwGXgEPOkNVZ0SwI]{Bribery}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.IwGXgEPOkNVZ0SwI]{Corrompere}"
 		},
 		{
 			"id": "Channelling",
 			"name": "Incanalare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling ( )",
 			"name": "Incanalare ( )",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling (Aqshy)",
 			"name": "Incanalare (Aqshy)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling (Azyr)",
 			"name": "Incanalare (Azyr)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling (Chamon)",
 			"name": "Incanalare (Chamon)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling (Dhar)",
 			"name": "Incanalare (Dhar)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling (Ghur)",
 			"name": "Incanalare (Ghur)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling (Ghyran)",
 			"name": "Incanalare (Ghyran)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling (Hysh)",
 			"name": "Incanalare (Hysh)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling (Shyish)",
 			"name": "Incanalare (Shyish)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Channelling (Ulgu)",
 			"name": "Incanalare (Ulgu)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Channelling}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Incanalare}"
 		},
 		{
 			"id": "Charm",
 			"name": "Affascinare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.9OommpqxE34iocmg]{Charm}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.9OommpqxE34iocmg]{Affascinare}"
 		},
 		{
 			"id": "Charm Animal",
 			"name": "Domare Animali",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.1N6sOXgrqF1KkIh0]{Charm Animal}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.1N6sOXgrqF1KkIh0]{Domare Animali}"
 		},
 		{
 			"id": "Climb",
 			"name": "Arrampicarsi",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.yOONKSIBrg4FOl20]{Climb}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.yOONKSIBrg4FOl20]{Arrampicarsi}"
 		},
 		{
 			"id": "Consume Alcohol",
 			"name": "Reggere Alcolici",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Consume Alcohol}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Reggere Alcolici}"
 		},
 		{
 			"id": "Cool",
 			"name": "Freddezza",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.m14pGtefJzDYhgzW]{Cool}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.m14pGtefJzDYhgzW]{Freddezza}"
 		},
 		{
 			"id": "Dodge",
 			"name": "Schivare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.dPpyiMhPwVGJnJrv]{Dodge}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.dPpyiMhPwVGJnJrv]{Schivare}"
 		},
 		{
 			"id": "Drive",
 			"name": "Condurre Carri",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.uLPWAFSfT5Vf1zZl]{Drive}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.uLPWAFSfT5Vf1zZl]{Condurre Carri}"
 		},
 		{
 			"id": "Endurance",
 			"name": "Tempra",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.E9UyI8AMrBqgCX4a]{Endurance}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.E9UyI8AMrBqgCX4a]{Tempra}"
 		},
 		{
 			"id": "Entertain ()",
 			"name": "Intrattenere ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Intrattenere}"
 		},
 		{
 			"id": "Entertain (Comedy)",
 			"name": "Intrattenere (Commedia)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Intrattenere}"
 		},
 		{
 			"id": "Entertain (Singing)",
 			"name": "Intrattenere (Canto)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Intrattenere}"
 		},
 		{
 			"id": "Entertain (Storytelling)",
 			"name": "Intrattenere (Cantastorie)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Intrattenere}"
 		},
 		{
 			"id": "Entertain (Act)",
 			"name": "Intrattenere (Recitare)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Intrattenere}"
 		},
 		{
 			"id": "Evaluate",
 			"name": "Valutare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.NtJ85TY8yY3WOGHN]{Evaluate}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.NtJ85TY8yY3WOGHN]{Valutare}"
 		},
 		{
 			"id": "Gamble",
 			"name": "Giocare d'Azzardo",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.JVBD7pcdOPJ4nCjq]{Gamble}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.JVBD7pcdOPJ4nCjq]{Giocare d'Azzardo}"
 		},
 		{
 			"id": "Gossip",
 			"name": "Pettegolezzi",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.ns3PDbblIFcwqyQi]{Gossip}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.ns3PDbblIFcwqyQi]{Pettegolezzi}"
 		},
 		{
 			"id": "Haggle",
 			"name": "Mercanteggiare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.qSSRHdEK5P7VRmKW]{Haggle}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.qSSRHdEK5P7VRmKW]{Mercanteggiare}"
 		},
 		{
 			"id": "Heal",
 			"name": "Guarire",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.dSf8QWBvN6mlpHBF]{Heal}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.dSf8QWBvN6mlpHBF]{Guarire}"
 		},
 		{
 			"id": "Intimidate",
 			"name": "Intimidire",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mDs8HUZopZAb1fH0]{Intimidate}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mDs8HUZopZAb1fH0]{Intimidire}"
 		},
 		{
 			"id": "Intuition",
 			"name": "Intuire",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.31VEXGfn6houFutI]{Intuition}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.31VEXGfn6houFutI]{Intuire}"
 		},
 		{
 			"id": "Language ()",
 			"name": "Linguaggio ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Albion)",
 			"name": "Linguaggio (Albionese)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Battle Tongue)",
 			"name": "Linguaggio (Militare)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Bretonnian)",
 			"name": "Linguaggio (Bretonniano)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Classical)",
 			"name": "Linguaggio (Classico)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Elthárin)",
 			"name": "Linguaggio (Elthárin)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Estalian)",
 			"name": "Linguaggio (Estaliano)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Gospodarinyi)",
 			"name": "Linguaggio (Gospodarinyi)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Grumbarth)",
 			"name": "Linguaggio (Grumbarth)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Khazalid)",
 			"name": "Linguaggio (Khazalid)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Magick)",
 			"name": "Linguaggio (Magico)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Mootish)",
 			"name": "Linguaggio (Contradano)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Norse)",
 			"name": "Linguaggio (Norscano)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Queekish)",
 			"name": "Linguaggio (Queekish)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Reikspiel)",
 			"name": "Linguaggio (Reikspiel)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Thieves Tongue)",
 			"name": "Linguaggio (Gergo dei Ladri)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Tilean)",
 			"name": "Linguaggio (Tileano)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Language (Wastelander)",
 			"name": "Linguaggio (Marienburghese)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Language}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Linguaggio}"
 		},
 		{
 			"id": "Leadership",
 			"name": "Comandare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.haKq6qZXYj7Bweu4]{Leadership}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.haKq6qZXYj7Bweu4]{Comandare}"
 		},
 		{
 			"id": "Lore ()",
 			"name": "Conoscenza ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (Engineering)",
 			"name": "Conoscenza (Ingegneria)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (Geology)",
 			"name": "Conoscenza (Geologia)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (Heraldry)",
 			"name": "Conoscenza (Araldica)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (History)",
 			"name": "Conoscenza (Storia)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (Law)",
 			"name": "Conoscenza (Legge)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (Magick)",
 			"name": "Conoscenza (Magia)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (Metallurgy)",
 			"name": "Conoscenza (Metallurgia)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (Science)",
 			"name": "Conoscenza (Scienza)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (Theology)",
 			"name": "Conoscenza (Teologia)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Lore (Poison)",
 			"name": "Conoscenza (Veleni)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Lore}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Conoscenza}"
 		},
 		{
 			"id": "Melee ()",
 			"name": "Mischia ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Mischia}"
 		},
 		{
 			"id": "Melee (Basic)",
 			"name": "Mischia (Armi Base)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Mischia}"
 		},
 		{
 			"id": "Melee (Brawling)",
 			"name": "Mischia (Rissa)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Mischia}"
 		},
 		{
 			"id": "Melee (Cavalry)",
 			"name": "Mischia (Armi da Cavalleria)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Mischia}"
 		},
 		{
 			"id": "Melee (Fencing)",
 			"name": "Mischia (Scherma)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Mischia}"
 		},
 		{
 			"id": "Melee (Flail)",
 			"name": "Mischia (Flagelli)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Mischia}"
 		},
 		{
 			"id": "Melee (Parry)",
 			"name": "Mischia (Armi Difensive)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Mischia}"
 		},
 		{
 			"id": "Melee (Polearm)",
 			"name": "Mischia (Armi in Asta)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Mischia}"
 		},
 		{
 			"id": "Melee (Two-Handed)",
 			"name": "Mischia (Armi a Due Mani)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Mischia}"
 		},
 		{
 			"id": "Navigation",
 			"name": "Orientarsi",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.rf7gtZko4KJvjFaE]{Navigation}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.rf7gtZko4KJvjFaE]{Orientarsi}"
 		},
 		{
 			"id": "Outdoor Survival",
 			"name": "Sopravvivere",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.cFqWFER60SjM5Wn3]{Outdoor Survival}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.cFqWFER60SjM5Wn3]{Sopravvivere}"
 		},
 		{
 			"id": "Perception",
 			"name": "Percepire",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6Jhks0zDRpJeN6dW]{Perception}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6Jhks0zDRpJeN6dW]{Percepire}"
 		},
 		{
 			"id": "Perform ()",
 			"name": "Esibirsi ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Perform}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Esibirsi}"
 		},
 		{
 			"id": "Perform (Acrobatics)",
 			"name": "Esibirsi (Acrobazia)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Perform}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Esibirsi}"
 		},
 		{
 			"id": "Perform (Clowning)",
 			"name": "Esibirsi (Clown)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Perform}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Esibirsi}"
 		},
 		{
 			"id": "Perform (Dancing)",
 			"name": "Esibirsi (Danza)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Perform}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Esibirsi}"
 		},
 		{
 			"id": "Perform (Firebreathing)",
 			"name": "Esibirsi (Mangiafuoco)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Perform}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Esibirsi}"
 		},
 		{
 			"id": "Perform (Juggling)",
 			"name": "Esibirsi (Giocoliere)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Perform}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Esibirsi}"
 		},
 		{
 			"id": "Perform (Miming)",
 			"name": "Esibirsi (Mimo)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Perform}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Esibirsi}"
 		},
 		{
 			"id": "Perform (Rope Walking)",
 			"name": "Esibirsi (Funambolo)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Perform}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Esibirsi}"
 		},
 		{
 			"id": "Pick Lock",
 			"name": "Scassinare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.XexqYWmxO5dy2us3]{Pick Lock}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.XexqYWmxO5dy2us3]{Scassinare}"
 		},
 		{
 			"id": "Play ()",
 			"name": "Suonare ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Play}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Suonare}"
 		},
 		{
 			"id": "Play (Bagpipe)",
 			"name": "Suonare (Cornamusa)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Play}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Suonare}"
 		},
 		{
 			"id": "Play (Harpsichord)",
 			"name": "Suonare (Arpicordo)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Play}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Suonare}"
 		},
 		{
 			"id": "Play (Horn)",
 			"name": "Suonare (Corno)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Play}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Suonare}"
 		},
 		{
 			"id": "Play (Lute)",
 			"name": "Suonare (Liuto)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Play}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Suonare}"
 		},
 		{
 			"id": "Play (Violin)",
 			"name": "Suonare (Violino)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Play}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Suonare}"
 		},
 		{
 			"id": "Pray",
 			"name": "Pregare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.NRfh04q1bZBIND0A]{Pray}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.NRfh04q1bZBIND0A]{Pregare}"
 		},
 		{
 			"id": "Ranged ()",
 			"name": "Mira ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Ranged}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Mira}"
 		},
 		{
 			"id": "Ranged (Blackpowder)",
 			"name": "Mira (Armi da Fuoco)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Ranged}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Mira}"
 		},
 		{
 			"id": "Ranged (Bow)",
 			"name": "Mira (Archi)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Ranged}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Mira}"
 		},
 		{
 			"id": "Ranged (Crossbow)",
 			"name": "Mira (Balestre)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Ranged}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Mira}"
 		},
 		{
 			"id": "Ranged (Engineering)",
 			"name": "Mira (Armi Sperimentali)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Ranged}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Mira}"
 		},
 		{
 			"id": "Ranged (Entangling)",
 			"name": "Mira (Armi Intralcianti)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Ranged}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Mira}"
 		},
 		{
 			"id": "Ranged (Explosives)",
 			"name": "Mira (Armi Esplosive)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Ranged}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Mira}"
 		},
 		{
 			"id": "Ranged (Sling)",
 			"name": "Mira (Frombole)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Ranged}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Mira}"
 		},
 		{
 			"id": "Ranged (Throwing)",
 			"name": "Mira (Armi da Lancio)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Ranged}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Mira}"
 		},
 		{
 			"id": "Research",
 			"name": "Ricercare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.Nv0jexKy05qTOnuN]{Research}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.Nv0jexKy05qTOnuN]{Ricercare}"
 		},
 		{
 			"id": "Ride ()",
 			"name": "Cavalcare ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Cavalcare}"
 		},
 		{
 			"id": "Ride (Demigryph)",
 			"name": "Cavalcare (Semigrifone)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Cavalcare}"
 		},
 		{
 			"id": "Ride (Great Wolf)",
 			"name": "Cavalcare (Lupo Gigante)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Cavalcare}"
 		},
 		{
 			"id": "Ride (Griffon)",
 			"name": "Cavalcare (Grifone)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Cavalcare}"
 		},
 		{
 			"id": "Ride (Horse)",
 			"name": "Cavalcare (Cavallo)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Cavalcare}"
 		},
 		{
 			"id": "Ride (Pegasus)",
 			"name": "Cavalcare (Pegaso)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Cavalcare}"
 		},
 		{
 			"id": "Row",
 			"name": "Remare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.ACCaGYXdz9yKyxgG]{Row}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.ACCaGYXdz9yKyxgG]{Remare}"
 		},
 		{
 			"id": "Sail ()",
 			"name": "Navigare ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Sail}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Navigare}"
 		},
 		{
 			"id": "Sail (Barge)",
 			"name": "Navigare (Chiatta)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Sail}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Navigare}"
 		},
 		{
 			"id": "Sail (Caravel)",
 			"name": "Navigare (Caravella)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Sail}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Navigare}"
 		},
 		{
 			"id": "Sail (Cog)",
 			"name": "Navigare (Cocca)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Sail}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Navigare}"
 		},
 		{
 			"id": "Sail (Frigate)",
 			"name": "Navigare (Fregata)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Sail}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Navigare}"
 		},
 		{
 			"id": "Sail (Wolfship)",
 			"name": "Navigare (Navi Lupo)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Sail}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Navigare}"
 		},
 		{
 			"id": "Secret Signs ()",
 			"name": "Segni Segreti ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Secret Signs}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Segni Segreti}"
 		},
 		{
 			"id": "Secret Signs (Grey Order)",
 			"name": "Segni Segreti (Ordine Grigio)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Secret Signs}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Segni Segreti}"
 		},
 		{
 			"id": "Secret Signs (Guilder)",
 			"name": "Segni Segreti (Gilde)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Secret Signs}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Segni Segreti}"
 		},
 		{
 			"id": "Secret Signs (Ranger)",
 			"name": "Segni Segreti (Viandanti)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Secret Signs}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Segni Segreti}"
 		},
 		{
 			"id": "Secret Signs (Scout)",
 			"name": "Segni Segreti (Scout)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Secret Signs}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Segni Segreti}"
 		},
 		{
 			"id": "Secret Signs (Thief)",
 			"name": "Segni Segreti (Ladri)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Secret Signs}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Segni Segreti}"
 		},
 		{
 			"id": "Secret Signs (Vagabond)",
 			"name": "Segni Segreti (Vagabondi)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Secret Signs}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Segni Segreti}"
 		},
 		{
 			"id": "Set Trap",
 			"name": "Piazzare Trappole",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.fmMkUHUwOPwex8mj]{Set Trap}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.fmMkUHUwOPwex8mj]{Piazzare Trappole}"
 		},
 		{
 			"id": "Sleight of Hand",
 			"name": "Rapidità di Mano",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.bGqmHCju8VZ8q2Pv]{Sleight of Hand}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.bGqmHCju8VZ8q2Pv]{Rapidità di Mano}"
 		},
 		{
 			"id": "Stealth ()",
 			"name": "Nascondersi ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Nascondersi}"
 		},
 		{
 			"id": "Stealth (Rural)",
 			"name": "Nascondersi (Rurale)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Nascondersi}"
 		},
 		{
 			"id": "Stealth (Underground)",
 			"name": "Nascondersi (Sotterraneo)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Nascondersi}"
 		},
 		{
 			"id": "Stealth (Urban)",
 			"name": "Nascondersi (Urbano)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Nascondersi}"
 		},
 		{
 			"id": "Swim",
 			"name": "Nuotare",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QoWDfx8SIhpCiIX5]{Swim}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QoWDfx8SIhpCiIX5]{Nuotare}"
 		},
 		{
 			"id": "Track",
 			"name": "Seguire Tracce",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.EWHNXyzDLPBpoVxK]{Track}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.EWHNXyzDLPBpoVxK]{Seguire Tracce}"
 		},
 		{
 			"id": "Trade ()",
 			"name": "Mestiere ()",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Trade}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Mestiere}"
 		},
 		{
 			"id": "Trade (Apothecary)",
 			"name": "Mestiere (Apotecario)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Trade}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Mestiere}"
 		},
 		{
 			"id": "Trade (Calligrapher)",
 			"name": "Mestiere (Calligrafo)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Trade}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Mestiere}"
 		},
 		{
 			"id": "Trade (Carpenter)",
 			"name": "Mestiere (Carpentiere)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Trade}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Mestiere}"
 		},
 		{
 			"id": "Trade (Chandler)",
 			"name": "Mestiere (Candelaio)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Trade}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Mestiere}"
 		},
 		{
 			"id": "Trade (Cook)",
 			"name": "Mestiere (Cuoco)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Trade}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Mestiere}"
 		},
 		{
 			"id": "Trade (Embalmer)",
 			"name": "Mestiere (Imbalsamatore)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Trade}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Mestiere}"
 		},
 		{
 			"id": "Trade (Smith)",
 			"name": "Mestiere (Fabbro)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Trade}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Mestiere}"
 		},
 		{
 			"id": "Trade (Tanner)",
 			"name": "Mestiere (Conciatore)",
-			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Trade}"
+			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Mestiere}"
 		}
 	]
 }
