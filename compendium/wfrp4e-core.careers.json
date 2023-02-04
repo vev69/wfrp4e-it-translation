@@ -89,7 +89,7 @@
 		},
 		{
 			"id": "Apprentice Artist",
-			"name": "Apprenndista Artista",
+			"name": "Apprendista Artista",
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artista}</p>",
 			"careergroup": "Artista",
 			"class": "Cortigiani"
@@ -131,7 +131,7 @@
 		},
 		{
 			"id": "Bandit King",
-			"name": "Re del Banditi",
+			"name": "Re dei Banditi",
 			"description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Fuorilegge}</p>",
 			"careergroup": "Fuorilegge",
 			"class": "Furfanti"

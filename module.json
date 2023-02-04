@@ -26,14 +26,6 @@
 				}
 			},
 			{
-				"id": "translation-core-it",
-				"type": "module",
-				"manifest": "https://gitlab.com/riccisi/foundryvtt-lang-it-it/raw/master/it-IT/module.json",
-				"compatibility": {
-					"verified": "0.31"
-				}
-			},
-			{
 				"id": "wfrp4e-core",
 				"type": "module",
 				"compatibility": {}
