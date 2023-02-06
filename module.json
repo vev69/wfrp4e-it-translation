@@ -3,7 +3,7 @@
 	"name": "wfrp4e-it-translation",
 	"title": "WFRP4e Italian Translation",
 	"description": "Add Italian language to the Warhammer Fantasy Roleplay 4th edition System for FoundryVTT.",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"compatibility": {
 		"minimum": 10,
 		"verified": "10.291"
