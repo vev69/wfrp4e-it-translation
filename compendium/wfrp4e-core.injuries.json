@@ -1,140 +1,1328 @@
 {
 	"label": "Ferite",
+	"mapping": {
+		"effects": "effects"
+	},
 	"entries": [
 		{
 			"id": "Amputated Arm",
 			"name": "Amputazione (Braccio)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}</p><p><strong>Braccio</strong>: Tutte le Prove che richiedono entrambe le mani subiscono un -20. Non si possono usare armi a due mani, anche se è possibile legare uno scudo al moncherino. </p>\n<p>Se la mano persa era quella primaria, le Prove di Mischia con la secondaria subiscono il normale -20. Si può imparare a compensare: ogni 100 PE spesi riducono questa penalità di 5. Chi perde entrambe le mani dovrà imparare a lottare con gli uncini</p>\n<p> Ovviamente non si può legare uno scudo al braccio mancante.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}</p><p><strong>Braccio</strong>: Tutte le Prove che richiedono entrambe le mani subiscono un -20. Non si possono usare armi a due mani, anche se è possibile legare uno scudo al moncherino. </p>\n<p>Se la mano persa era quella primaria, le Prove di Mischia con la secondaria subiscono il normale -20. Si può imparare a compensare: ogni 100 PE spesi riducono questa penalità di 5. Chi perde entrambe le mani dovrà imparare a lottare con gli uncini</p>\n<p> Ovviamente non si può legare uno scudo al braccio mancante.</p>",
+			"effects": [
+				{
+					"_id": "qPV4jIDGN9onOAYV",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Si affida a entrambe le mani",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedarm.png",
+					"label": "Amputazione Braccio",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Amputated Ear",
 			"name": "Amputazione (Orecchio)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}</p><p><strong>Orecchio</strong>: Perdere un orecchio è doloroso, ma si impara a farne a meno. Chi li perde entrambi subisce una penalità permanente di -20 in tutte le Prove basate sull’udito. </p>\n<p>Inoltre, ogni orecchio mancante infligge una penalità di -5 in tutte le Prove di Socialità a causa del disgusto.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}</p><p><strong>Orecchio</strong>: Perdere un orecchio è doloroso, ma si impara a farne a meno. Chi li perde entrambi subisce una penalità permanente di -20 in tutte le Prove basate sull’udito. </p>\n<p>Inoltre, ogni orecchio mancante infligge una penalità di -5 in tutte le Prove di Socialità a causa del disgusto.</p>",
+			"effects": [
+				{
+					"_id": "i6SjnYZ0pNeN8SNZ",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "prefillDialog",
+							"effectApplication": "actor",
+							"script": "if (args.type == \"characteristic\" && args.item == \"fel\")\n      args.prefillModifiers.modifier -= 5\n\n    else if (args.type == \"skill\") {\n      if (args.item.characteristic.key == \"fel\")\n        args.prefillModifiers.modifier -= 5\n    }"
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedear.png",
+					"label": "Orecchio Perso",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "NjLgGWim2CMWdOL4",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Test di Percepire basato sull'udito",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							}
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedear.png",
+					"label": "Perse Entrambe le Orecchie",
+					"tint": null,
+					"transfer": false,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Amputated Eye",
 			"name": "Amputazione (Occhio)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}</p><p><strong>Occhio</strong>: Perdere un occhio è tremendo, ma si impara a compensare. Chi li perde entrambi subisce una penalità di -30 in tutte le Prove che coinvolgono la vista, come Schivare, Cavalcare o combattere. </p>\n<p>Inoltre, ogni occhio mancante infligge una penalità di -5 in tutte le Prove di Socialità a causa dell’orbita vuota.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}</p><p><strong>Occhio</strong>: Perdere un occhio è tremendo, ma si impara a compensare. Chi li perde entrambi subisce una penalità di -30 in tutte le Prove che coinvolgono la vista, come Schivare, Cavalcare o combattere. </p>\n<p>Inoltre, ogni occhio mancante infligge una penalità di -5 in tutte le Prove di Socialità a causa dell’orbita vuota.</p>",
+			"effects": [
+				{
+					"_id": "HK53YUZJx5byXmup",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Si affida alla vista",
+								"modifier": -30,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedeye.png",
+					"label": "Perso entrambi gli occhi",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "OBcPvTtXweBfzAaU",
+					"flags": {
+						"wfrp4e": {
+							"effectApplication": "actor",
+							"preventDuplicateEffects": false,
+							"effectTrigger": "prefillDialog",
+							"script": "if (args.type == \"characteristic\" && args.item == \"fel\")\n      args.prefillModifiers.modifier -= 5\n\n    else if (args.type == \"skill\") {\n      if (args.item.characteristic.key == \"fel\")\n        args.prefillModifiers.modifier -= 5\n    }"
+						}
+					},
+					"changes": [
+						{ "key": "", "value": "", "mode": 2, "priority": null }
+					],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedeye.png",
+					"label": "Occhio Perso",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Amputated Finger",
 			"name": "Amputazione (Dita della Mano)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}</p><p><strong>Dita della Mano</strong>: Perdere un dito causa una presa più debole e una maggior probabilità di Disastro con quella mano. Quando si perde il primo dito di una mano, una Prova fallita con un 1 sul dado delle unità diventa un Disastro. Con il secondo dito è un 1 o 2, e così via. </p>\n<p>Inoltre, ogni dito mancante causa una penalità di -5 in tutte le Prove che coinvolgono quella mano. Se si perdono 4 dita si seguono le regole per la mano amputata.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}</p><p><strong>Dita della Mano</strong>: Perdere un dito causa una presa più debole e una maggior probabilità di Disastro con quella mano. Quando si perde il primo dito di una mano, una Prova fallita con un 1 sul dado delle unità diventa un Disastro. Con il secondo dito è un 1 o 2, e così via. </p>\n<p>Inoltre, ogni dito mancante causa una penalità di -5 in tutte le Prove che coinvolgono quella mano. Se si perdono 4 dita si seguono le regole per la mano amputata.</p>",
+			"effects": [
+				{
+					"_id": "DaOXNCrHEMsOleGx",
+					"flags": {
+						"wfrp4e": {
+							"effectApplication": "actor",
+							"preventDuplicateEffects": false,
+							"effectTrigger": "dialogChoice",
+							"effectData": {
+								"description": "Dita perse",
+								"modifier": -5,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							}
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedfinger.png",
+					"label": "Dita perse",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Amputated Foot",
 			"name": "Amputazione (Piede)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}</p><p><strong>Piede</strong>: Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, come Schivare. Perdere entrambi i piedi rende impossibile camminare. Forse è ora di assoldare un portantino?</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}</p><p><strong>Piede</strong>: Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, come Schivare. Perdere entrambi i piedi rende impossibile camminare. Forse è ora di assoldare un portantino?</p>",
+			"effects": [
+				{
+					"_id": "vFwI36wK9QnfgLGG",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "prePrepareData",
+							"effectApplication": "actor",
+							"script": "args.actor.details.move.value /= 2",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedfoot.png",
+					"label": "Movimento Dimezzato",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "QHpPBISp2DCIRZp7",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Si basa sulla mobilità",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedfoot.png",
+					"label": "Amputazione (Piede)",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Amputated Hand",
 			"name": "Amputazione (Mano)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgery}</p><p><strong>Mano</strong>: Tutte le Prove che richiedono entrambe le mani subiscono un -20. Non si possono usare armi a due mani, anche se è possibile legare uno scudo al moncherino. </p>\n<p>Se la mano persa era quella primaria, le Prove di Mischia con la secondaria subiscono il normale -20. Si può imparare a compensare: ogni 100 PE spesi riducono questa penalità di 5. Chi perde entrambe le mani dovrà imparare a lottare con gli uncini.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}</p><p><strong>Mano</strong>: Tutte le Prove che richiedono entrambe le mani subiscono un -20. Non si possono usare armi a due mani, anche se è possibile legare uno scudo al moncherino. </p>\n<p>Se la mano persa era quella primaria, le Prove di Mischia con la secondaria subiscono il normale -20. Si può imparare a compensare: ogni 100 PE spesi riducono questa penalità di 5. Chi perde entrambe le mani dovrà imparare a lottare con gli uncini.</p>",
+			"effects": [
+				{
+					"_id": "rTIWkLVhHcMduvPJ",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Si affida a entrambe le mani",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedhand.png",
+					"label": "Amputazione (Mano)",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Amputated Leg",
 			"name": "Amputazione (Gamba)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgey}.</p><p><strong>Gamba: </strong> Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, come Schivare. Perdere entrambi i piedi rende impossibile camminare. Forse è ora di assoldare un portantino? </p>\n<p> Non si può più Schivare.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}.</p><p><strong>Gamba: </strong> Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, come Schivare. Perdere entrambi i piedi rende impossibile camminare. Forse è ora di assoldare un portantino? </p>\n<p> Non si può più Schivare.</p>",
+			"effects": [
+				{
+					"_id": "p9uFm2XY1RGrjStF",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "prePrepareData",
+							"effectApplication": "actor",
+							"script": "args.actor.details.move.value /= 2",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedleg.png",
+					"label": "Movimento Dimezzato",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "wkJy3QCy8odqGvjm",
+					"flags": {
+						"wfrp4e": {
+							"effectApplication": "actor",
+							"preventDuplicateEffects": false,
+							"effectTrigger": "dialogChoice",
+							"effectData": {
+								"description": "Si basa sulla mobilità",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							}
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatedleg.png",
+					"label": "Amputazione (Gamba)",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Amputated Nose",
 			"name": "Amputazione (Naso)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgey}.</p><p><strong>Naso: </strong> La perdita del naso è davvero orripilante. Tutte le Prove di Socialità subiscono un -20 e quelle basate sull’olfatto un -30.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}.</p><p><strong>Naso: </strong> La perdita del naso è davvero orripilante. Tutte le Prove di Socialità subiscono un -20 e quelle basate sull’olfatto un -30.</p>",
+			"effects": [
+				{
+					"_id": "OTeQYlJcacd8ID4i",
+					"flags": {
+						"wfrp4e": {
+							"effectApplication": "actor",
+							"preventDuplicateEffects": false,
+							"effectTrigger": "dialogChoice",
+							"effectData": {
+								"description": "Coinvolge l'olfatto",
+								"modifier": -30,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							}
+						}
+					},
+					"changes": [
+						{
+							"key": "system.characteristics.fel.modifier",
+							"value": "-20",
+							"mode": 2,
+							"priority": null
+						}
+					],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/amputatednose.png",
+					"label": "Amputazione (Naso)",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Amputated Teeth",
 			"name": "Amputazione (Denti)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgey}</p><p><strong>Denti: </strong> La perdita dei denti è brutta a vedersi e rende difficile mangiare. Per ogni 2 denti mancanti si perde 1 punto di Socialità. </p>\n<p>Inoltre, dopo aver perso metà dei propri denti (16 per gli Umani, 18 per gli Elfi, 20 per Nani e Halfling) diventerà difficile consumare cibo solido, raddoppiando il tempo necessario per mangiare e rendendo impossibile consumare alcuni piatti. Questo è soprattutto un dettaglio narrativo e ruolistico.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}</p><p><strong>Denti: </strong> La perdita dei denti è brutta a vedersi e rende difficile mangiare. Per ogni 2 denti mancanti si perde 1 punto di Socialità. </p>\n<p>Inoltre, dopo aver perso metà dei propri denti (16 per gli Umani, 18 per gli Elfi, 20 per Nani e Halfling) diventerà difficile consumare cibo solido, raddoppiando il tempo necessario per mangiare e rendendo impossibile consumare alcuni piatti. Questo è soprattutto un dettaglio narrativo e ruolistico.</p>"
 		},
 		{
 			"id": "Amputated Toe",
 			"name": "Amputazione (Dita del Piede)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgey}.</p><p><strong>Dita del Piede: </strong>Perdere le dita del piede compromette l’equilibrio. Per ogni dito mancante si subisce -1 ad Agilità e Abilità di Combattimento.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}.</p><p><strong>Dita del Piede: </strong>Perdere le dita del piede compromette l’equilibrio. Per ogni dito mancante si subisce -1 ad Agilità e Abilità di Combattimento.</p>",
+			"effects": [
+				{
+					"_id": "n47pJamskjv7bbXl",
+					"flags": {
+						"wfrp4e": {
+							"effectApplication": "actor",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [
+						{
+							"key": "system.characteristics.ws.modifier",
+							"value": "-1",
+							"mode": 2,
+							"priority": null
+						},
+						{
+							"key": "system.characteristics.ag.modifier",
+							"value": "-1",
+							"mode": 2,
+							"priority": null
+						}
+					],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/injury.png",
+					"label": "Amputazione (Dita del Piede)",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Amputated Tongue",
 			"name": "Amputazione (Lingua)",
-			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prone]. Un Fallimento (-2) causa anche 1 @Condition[Stunned]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Unconscious].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Surgey}.</p><p><strong>Lingua: </strong>A Perdere la lingua costringe a grugnire e a comunicare a gesti. Tutte le Prove di Linguaggio falliscono automaticamente.</p>"
+			"description": "<p>Quando si subisce una Ferita Critica che include <strong>Amputazione (Difficoltà)</strong> bisogna superare una <strong>Prova di Tempra</strong> alla Difficoltà indicata per non cadere @Condition[Prono]. Un Fallimento (-2) causa anche 1 @Condition[Stordito]; un Fallimento Impressionante (-4, o oltre) fa cadere @Condition[Privo di Sensi].</p><p>Tutte le amputazioni richiedono Chirurgia per guarire correttamente, quindi 1 Ferita non può essere recuperata senza l’aiuto di un chirurgo. Vedere @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}.</p><p><strong>Lingua: </strong>A Perdere la lingua costringe a grugnire e a comunicare a gesti. Tutte le Prove di Linguaggio falliscono automaticamente.</p>"
 		},
 		{
 			"id": "Broken Arm (Major)",
 			"name": "Braccio Fratturato (Maggiore)",
-			"description": "<p>L’osso si frattura in modo scomposto o è ridotto in schegge. Difficilmente guarirà senza cure mediche. La Locazione è inutilizzabile fino alla guarigione. </p>\n<p><span style=\"font-weight: bold;\">Braccio: </span> L’arto farà troppo male per essere usato e potrebbe richiedere una stecca. Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, e non si può più Schivare. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 40+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Impegnativa (+0) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -10 alle Prove di Agilità. </p>\n<p>Una <strong>Prova Impegnativa (+0) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Impegnativa (+0) di Guarigione</strong> per evitare quella di Tempra.</p>"
+			"description": "<p>L’osso si frattura in modo scomposto o è ridotto in schegge. Difficilmente guarirà senza cure mediche. La Locazione è inutilizzabile fino alla guarigione. </p>\n<p><span style=\"font-weight: bold;\">Braccio: </span> L’arto farà troppo male per essere usato e potrebbe richiedere una stecca. Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, e non si può più Schivare. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 40+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Impegnativa (+0) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -10 alle Prove di Agilità. </p>\n<p>Una <strong>Prova Impegnativa (+0) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Impegnativa (+0) di Guarigione</strong> per evitare quella di Tempra.</p>",
+			"effects": [
+				{
+					"_id": "m1KbLc6l2LK76961",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Il test si basa su entrambe le mani.",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false,
+							"hide": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-arm.png",
+					"label": "Braccio Fratturato",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Broken Arm (Minor)",
 			"name": "Braccio Fratturato (Minore)",
-			"description": "<p>L’osso è rotto, ma ancora allineato e può guarire da solo senza cure. La Locazione sarà inutilizzabile finché non si sarà rinsaldata.</p>\n<p><span style=\"font-weight: bold;\">Braccio: </span> L’arto farà troppo male per essere usato e potrebbe richiedere una stecca. Tutte le Prove che richiedono entrambe le mani subiscono un -20. Non si possono usare armi a due mani. Se la mano persa era quella primaria, le Prove di Mischia con la secondaria subiscono il normale -20. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 30+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Media (+20) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -5 alle Prove di Agilità. </p>\n<p>Una <strong>Prova Media (+20) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Media (+20) di Guarigione</strong> per evitare quella di Tempra.</p>"
+			"description": "<p>L’osso è rotto, ma ancora allineato e può guarire da solo senza cure. La Locazione sarà inutilizzabile finché non si sarà rinsaldata.</p>\n<p><span style=\"font-weight: bold;\">Braccio: </span> L’arto farà troppo male per essere usato e potrebbe richiedere una stecca. Tutte le Prove che richiedono entrambe le mani subiscono un -20. Non si possono usare armi a due mani. Se la mano persa era quella primaria, le Prove di Mischia con la secondaria subiscono il normale -20. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 30+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Media (+20) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -5 alle Prove di Agilità. </p>\n<p>Una <strong>Prova Media (+20) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Media (+20) di Guarigione</strong> per evitare quella di Tempra.</p>",
+			"effects": [
+				{
+					"_id": "s7ir53mI80aA1FGh",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Il test si basa su entrambe le mani.",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-arm.png",
+					"label": "Braccio Fratturato",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Broken Body (Major)",
 			"name": "Torso Fratturato (Maggiore)",
-			"description": "<p>L’osso si frattura in modo scomposto o è ridotto in schegge. Difficilmente guarirà senza cure mediche. La Locazione è inutilizzabile fino alla guarigione.</p>\n<p><span style=\"font-weight: bold;\">Torso: </span> Forza e Agilità subiscono un -30 e il Movimento è dimezzato. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 40+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Impegnativa (+0) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -10 alle Prove di Agilità Base. </p>\n<p>Una <strong>Prova Impegnativa (+0) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Impegnativa (+0) di Guarigione</strong> per evitare quella di Tempra.</p>"
+			"description": "<p>L’osso si frattura in modo scomposto o è ridotto in schegge. Difficilmente guarirà senza cure mediche. La Locazione è inutilizzabile fino alla guarigione.</p>\n<p><span style=\"font-weight: bold;\">Torso: </span> Forza e Agilità subiscono un -30 e il Movimento è dimezzato. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 40+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Impegnativa (+0) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -10 alle Prove di Agilità Base. </p>\n<p>Una <strong>Prova Impegnativa (+0) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Impegnativa (+0) di Guarigione</strong> per evitare quella di Tempra.</p>",
+			"effects": [
+				{
+					"_id": "l5W27AsBX8jj1T80",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "prePrepareData",
+							"effectApplication": "actor",
+							"script": "args.actor.details.move.value /= 2",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-body.png",
+					"label": "Movimento Dimezzato",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "qIkF1AGNf4XxzaFv",
+					"flags": {
+						"wfrp4e": {
+							"effectApplication": "actor",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [
+						{
+							"key": "system.characteristics.s.modifier",
+							"value": "-30",
+							"mode": 2,
+							"priority": null
+						},
+						{
+							"key": "system.characteristics.ag.modifier",
+							"value": "-30",
+							"mode": 2,
+							"priority": null
+						},
+						{
+							"key": "system.characteristics.s.calculationBonusModifier",
+							"value": "3",
+							"mode": 2,
+							"priority": null
+						}
+					],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-body.png",
+					"label": "Torso Fratturato",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Broken Body (Minor)",
 			"name": "Torso Fratturato (Minore)",
-			"description": "<p>L’osso è rotto, ma ancora allineato e può guarire da solo senza cure. La Locazione sarà inutilizzabile finché non si sarà rinsaldata.</p>\n<p><span style=\"font-weight: bold;\">Torso: </span> Forza e Agilità subiscono un -30 e il Movimento è dimezzato. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 30+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Media (+20) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -5 alle Prove di Agilità base. </p>\n<p>Una <strong>Prova Media (+20) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Media (+20) di Guarigione</strong> per evitare quella di Tempra.</p>"
+			"description": "<p>L’osso è rotto, ma ancora allineato e può guarire da solo senza cure. La Locazione sarà inutilizzabile finché non si sarà rinsaldata.</p>\n<p><span style=\"font-weight: bold;\">Torso: </span> Forza e Agilità subiscono un -30 e il Movimento è dimezzato. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 30+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Media (+20) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -5 alle Prove di Agilità base. </p>\n<p>Una <strong>Prova Media (+20) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Media (+20) di Guarigione</strong> per evitare quella di Tempra.</p>",
+			"effects": [
+				{
+					"_id": "YNacfIHrXFATBGcL",
+					"flags": {
+						"wfrp4e": {
+							"effectApplication": "actor",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [
+						{
+							"key": "system.characteristics.s.modifier",
+							"value": "-30",
+							"mode": 2,
+							"priority": null
+						},
+						{
+							"key": "system.characteristics.ag.modifier",
+							"value": "-30",
+							"mode": 2,
+							"priority": null
+						},
+						{
+							"key": "system.characteristics.s.calculationBonusModifier",
+							"value": "3",
+							"mode": 2,
+							"priority": null
+						}
+					],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-body.png",
+					"label": "Torso Fratturato",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "CPG7bDRJSqCHaCni",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "prePrepareData",
+							"effectApplication": "actor",
+							"script": "args.actor.details.move.value /= 2",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-body.png",
+					"label": "Penalità di Movimento",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Broken Head (Major)",
 			"name": "Testa Fratturata (Maggiore)",
-			"description": "<p>L’osso si frattura in modo scomposto o è ridotto in schegge. Difficilmente guarirà senza cure mediche. La Locazione è inutilizzabile fino alla guarigione. </p>\n<p><span style=\"font-weight: bold;\">Testa:</span><span style=\"font-weight: bold;\">&nbsp;</span> Bisognerà ridursi a seguire una dieta liquida e si subirà una penalità di -30 in tutte le Prove di Linguaggio. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 40+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Impegnativa (+0) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -10 alle Prove di Linguaggio Parlato. </p>\n<p>Una <strong>Prova Impegnativa (+0) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Impegnativa (+0) di Guarigione</strong> per evitare quella di Tempra.</p>"
+			"description": "<p>L’osso si frattura in modo scomposto o è ridotto in schegge. Difficilmente guarirà senza cure mediche. La Locazione è inutilizzabile fino alla guarigione. </p>\n<p><span style=\"font-weight: bold;\">Testa:</span><span style=\"font-weight: bold;\">&nbsp;</span> Bisognerà ridursi a seguire una dieta liquida e si subirà una penalità di -30 in tutte le Prove di Linguaggio. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 40+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Impegnativa (+0) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -10 alle Prove di Linguaggio Parlato. </p>\n<p>Una <strong>Prova Impegnativa (+0) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Impegnativa (+0) di Guarigione</strong> per evitare quella di Tempra.</p>",
+			"effects": [
+				{
+					"_id": "WLwNpLVQX79yOsdJ",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "prefillDialog",
+							"effectApplication": "actor",
+							"script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\"))))\n   args.prefillModifiers.modifier -= 30",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/head.png",
+					"label": "Testa Fratturata",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Broken Head (Minor)",
 			"name": "Testa Fratturata (Minore)",
-			"description": "<p>L’osso è rotto, ma ancora allineato e può guarire da solo senza cure. La Locazione sarà inutilizzabile finché non si sarà rinsaldata.</p>\n<p><span style=\"font-weight: bold;\">Testa:</span><span style=\"font-weight: bold;\">&nbsp;</span> Bisognerà ridursi a seguire una dieta liquida e si subirà una penalità di -30 in tutte le Prove di Linguaggio. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 30+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Media (+20) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -5 alle Prove di Linguaggio Parlato. </p>\n<p>Una <strong>Prova Media (+20) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Media (+20) di Guarigione</strong> per evitare quella di Tempra.</p>"
+			"description": "<p>L’osso è rotto, ma ancora allineato e può guarire da solo senza cure. La Locazione sarà inutilizzabile finché non si sarà rinsaldata.</p>\n<p><span style=\"font-weight: bold;\">Testa:</span><span style=\"font-weight: bold;\">&nbsp;</span> Bisognerà ridursi a seguire una dieta liquida e si subirà una penalità di -30 in tutte le Prove di Linguaggio. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 30+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Media (+20) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -5 alle Prove di Linguaggio Parlato. </p>\n<p>Una <strong>Prova Media (+20) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Media (+20) di Guarigione</strong> per evitare quella di Tempra.</p>",
+			"effects": [
+				{
+					"_id": "WtbK1vMvsJYKBbWj",
+					"flags": {
+						"wfrp4e": {
+							"effectApplication": "actor",
+							"preventDuplicateEffects": false,
+							"effectTrigger": "prefillDialog",
+							"script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\"))))\n   args.prefillModifiers.modifier -= 30"
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/head.png",
+					"label": "Testa Fratturata",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Broken Leg (Major)",
 			"name": "Gamba Fratturata (Maggiore)",
-			"description": "<p>L’osso si frattura in modo scomposto o è ridotto in schegge. Difficilmente guarirà senza cure mediche. La Locazione è inutilizzabile fino alla guarigione. </p>\n<p><span style=\"font-weight: bold;\">Gamba: </span> L’arto farà troppo male per essere usato e potrebbe richiedere una stecca. Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, e non si può più Schivare. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 40+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Impegnativa (+0) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -10 alle Prove di Agilità base. </p>\n<p>Una <strong>Prova Impegnativa (+0) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Impegnativa (+0) di Guarigione</strong> per evitare quella di Tempra.</p>"
+			"description": "<p>L’osso si frattura in modo scomposto o è ridotto in schegge. Difficilmente guarirà senza cure mediche. La Locazione è inutilizzabile fino alla guarigione. </p>\n<p><span style=\"font-weight: bold;\">Gamba: </span> L’arto farà troppo male per essere usato e potrebbe richiedere una stecca. Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, e non si può più Schivare. </p>\n<h3>Guarigione: </h3>\n<p> Per guarire una frattura richiede 40+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Impegnativa (+0) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -10 alle Prove di Agilità base. </p>\n<p>Una <strong>Prova Impegnativa (+0) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Impegnativa (+0) di Guarigione</strong> per evitare quella di Tempra.</p>",
+			"effects": [
+				{
+					"_id": "ZwCU28eoOKqibVfu",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "prePrepareData",
+							"effectApplication": "actor",
+							"script": "args.actor.details.move.value /= 2",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-leg.png",
+					"label": "Penalità di Movimento",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "tZayAMRUW6AVaa12",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Si basa sulla mobilità",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-leg.png",
+					"label": "Gamba Fratturata",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Broken Leg (Minor)",
 			"name": "Gamba Fratturata (Minore)",
-			"description": "<p>L’osso è rotto, ma ancora allineato e può guarire da solo senza cure. La Locazione sarà inutilizzabile finché non si sarà rinsaldata.</p>\n<p><span style=\"font-weight: bold;\">Gamba: </span>L’arto farà troppo male per essere usato e potrebbe richiedere una stecca. Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, e non si può più Schivare. </p>\n<h3>Guarigione: </h3>\n<p>Per guarire una frattura richiede 30+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Media (+20) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -5 alle Prove di Agilità base. </p>\n<p>Una <strong>Prova Media (+20) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Media (+20) di Guarigione</strong> per evitare quella di Tempra.</p>"
+			"description": "<p>L’osso è rotto, ma ancora allineato e può guarire da solo senza cure. La Locazione sarà inutilizzabile finché non si sarà rinsaldata.</p>\n<p><span style=\"font-weight: bold;\">Gamba: </span>L’arto farà troppo male per essere usato e potrebbe richiedere una stecca. Il Movimento viene dimezzato per sempre e si subisce una penalità di -20 in tutte le Prove che richiedono mobilità, e non si può più Schivare. </p>\n<h3>Guarigione: </h3>\n<p>Per guarire una frattura richiede 30+1d10 giorni, al termine dei quali bisogna effettuare una <strong>Prova Media (+20) di Tempra</strong>. Un successo indica che l’osso si è rinsaldato bene e non ci sono conseguenze a lungo termine. In caso di fallimento si subisce una penalità permanente di -5 alle Prove di Agilità base. </p>\n<p>Una <strong>Prova Media (+20) di Guarigione</strong> entro un’ottimana dalla frattura annulla il bisogno della Prova di Tempra, ma la parte dovrà rimanere steccata e immobile fino al recupero completo. Se la medicazione viene rimossa bisognerà effettuare un’altra <strong>Prova Media (+20) di Guarigione</strong> per evitare quella di Tempra.</p>",
+			"effects": [
+				{
+					"_id": "ZwCU28eoOKqibVfu",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "prePrepareData",
+							"effectApplication": "actor",
+							"script": "args.actor.details.move.value /= 2",
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-leg.png",
+					"label": "Penalità di Movimento",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "tZayAMRUW6AVaa12",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Si basa sulla mobilità",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/broken-leg.png",
+					"label": "Gamba Fratturata",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Torn Arm Muscle (Major)",
 			"name": "Strappo Muscolare al Braccio (Maggiore)",
-			"description": "<p>Un muscolo o tendine importante è stato danneggiato gravemente, causando molto dolore e una grave perdita di funzionalità della parte coinvolta. </p>\n<p><strong>Braccio:</strong> -20 in tutte le Prove che coinvolgono la Locazione. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span> Il muscolo guarirà parzialmente in 30-Bonus Resistenza giorni, dopo di che le penalità saranno ridotte a -10. Per una guarigione completa ci vorranno altri 30-Bonus Resistenza giorni. L’Abilità Guarire non servirà a molto, solo a capire che non bisogna sollecitare la Locazione.</p>"
+			"description": "<p>Un muscolo o tendine importante è stato danneggiato gravemente, causando molto dolore e una grave perdita di funzionalità della parte coinvolta. </p>\n<p><strong>Braccio:</strong> -20 in tutte le Prove che coinvolgono la Locazione. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span> Il muscolo guarirà parzialmente in 30-Bonus Resistenza giorni, dopo di che le penalità saranno ridotte a -10. Per una guarigione completa ci vorranno altri 30-Bonus Resistenza giorni. L’Abilità Guarire non servirà a molto, solo a capire che non bisogna sollecitare la Locazione.</p>",
+			"effects": [
+				{
+					"_id": "GUbysJIeA44LNOIq",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Usando il braccio con il muscolo strappato",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false,
+							"hide": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
+					"label": "Strappo Muscolare al Braccio",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Torn Arm Muscle (Minor)",
 			"name": "Strappo Muscolare al Braccio (Minore)",
-			"description": "<p>Un muscolo viene stirato o strappato, causando dolore. </p>\n<p><strong>Braccio:</strong> -10 in tutte le Prove che coinvolgono la Locazione. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà in 30-Bonus Resistenza giorni. Una <strong>Prova di Guarire</strong> riduce questo tempo di un giorno, più un giorno per LS (si può ottenere questo bonus solo una volta).</p>"
+			"description": "<p>Un muscolo viene stirato o strappato, causando dolore. </p>\n<p><strong>Braccio:</strong> -10 in tutte le Prove che coinvolgono la Locazione. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà in 30-Bonus Resistenza giorni. Una <strong>Prova di Guarire</strong> riduce questo tempo di un giorno, più un giorno per LS (si può ottenere questo bonus solo una volta).</p>",
+			"effects": [
+				{
+					"_id": "9rO0RdQJqsNwv9lv",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Usando il braccio con il muscolo strappato",
+								"modifier": -10,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
+					"label": "Strappo Muscolare al Braccio",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Torn Body Muscle (Major)",
 			"name": "Strappo Muscolare al Torso (Maggiore)",
-			"description": "<p>Un muscolo o tendine importante è stato danneggiato gravemente, causando molto dolore e una grave perdita di funzionalità della parte coinvolta. </p>\n<p><strong>Torso:</strong> -20 in tutte le Prove che coinvolgono la Locazione. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span> Il muscolo guarirà parzialmente in 30-Bonus Resistenza giorni, dopo di che le penalità saranno ridotte a -10. Per una guarigione completa ci vorranno altri 30-Bonus Resistenza giorni. L’Abilità Guarire non servirà a molto, solo a capire che non bisogna sollecitare la Locazione.</p>"
+			"description": "<p>Un muscolo o tendine importante è stato danneggiato gravemente, causando molto dolore e una grave perdita di funzionalità della parte coinvolta. </p>\n<p><strong>Torso:</strong> -20 in tutte le Prove che coinvolgono la Locazione. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span> Il muscolo guarirà parzialmente in 30-Bonus Resistenza giorni, dopo di che le penalità saranno ridotte a -10. Per una guarigione completa ci vorranno altri 30-Bonus Resistenza giorni. L’Abilità Guarire non servirà a molto, solo a capire che non bisogna sollecitare la Locazione.</p>",
+			"effects": [
+				{
+					"_id": "VczyyG2FDfvOQflT",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Coinvolge il corpo",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
+					"label": "Strappo Muscolare al Torso",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Torn Body Muscle (Minor)",
 			"name": "Strappo Muscolare al Torso (Minore)",
-			"description": "<p>Un muscolo viene stirato o strappato, causando dolore. </p>\n<p><strong>Torso:</strong> -10 in tutte le Prove che coinvolgono la Locazione. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà in 30-Bonus Resistenza giorni. Una <strong>Prova di Guarire</strong> riduce questo tempo di un giorno, più un giorno per LS (si può ottenere questo bonus solo una volta).</p>"
+			"description": "<p>Un muscolo viene stirato o strappato, causando dolore. </p>\n<p><strong>Torso:</strong> -10 in tutte le Prove che coinvolgono la Locazione. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà in 30-Bonus Resistenza giorni. Una <strong>Prova di Guarire</strong> riduce questo tempo di un giorno, più un giorno per LS (si può ottenere questo bonus solo una volta).</p>",
+			"effects": [
+				{
+					"_id": "Aans92KGaO90qXGV",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Coinvolge il corpo",
+								"modifier": -10,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornhead.png",
+					"label": "Strappo Muscolare al Torso",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Torn Head Muscle (Major)",
 			"name": "Strappo Muscolare alla Testa (Maggiore)",
-			"description": "<p>Un muscolo o tendine importante è stato danneggiato gravemente, causando molto dolore e una grave perdita di funzionalità della parte coinvolta. </p>\n<p><strong>Testa:</strong> -20 in tutte le Prove che coinvolgono la Locazione.</p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà parzialmente in 30-Bonus Resistenza giorni, dopo di che le penalità saranno ridotte a -10. Per una guarigione completa ci vorranno altri 30-Bonus Resistenza giorni. L’Abilità Guarire non servirà a molto, solo a capire che non bisogna sollecitare la Locazione.</p>"
+			"description": "<p>Un muscolo o tendine importante è stato danneggiato gravemente, causando molto dolore e una grave perdita di funzionalità della parte coinvolta. </p>\n<p><strong>Testa:</strong> -20 in tutte le Prove che coinvolgono la Locazione.</p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà parzialmente in 30-Bonus Resistenza giorni, dopo di che le penalità saranno ridotte a -10. Per una guarigione completa ci vorranno altri 30-Bonus Resistenza giorni. L’Abilità Guarire non servirà a molto, solo a capire che non bisogna sollecitare la Locazione.</p>",
+			"effects": [
+				{
+					"_id": "q2drpcrYvUHjZBwg",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Coinvolge la testa",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornhead.png",
+					"label": "Strappo Muscolare alla Testa",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Torn Head Muscle (Minor)",
 			"name": "Strappo Muscolare alla Testa (Minore)",
-			"description": "<p>Un muscolo viene stirato o strappato, causando dolore. </p>\n<p><strong>Testa:</strong> -10 in tutte le Prove che coinvolgono la Locazione. </p>\n    <p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà in 30-Bonus Resistenza giorni. Una <strong>Prova di Guarire</strong> riduce questo tempo di un giorno, più un giorno per LS (si può ottenere questo bonus solo una volta).</p>"
+			"description": "<p>Un muscolo viene stirato o strappato, causando dolore. </p>\n<p><strong>Testa:</strong> -10 in tutte le Prove che coinvolgono la Locazione. </p>\n    <p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà in 30-Bonus Resistenza giorni. Una <strong>Prova di Guarire</strong> riduce questo tempo di un giorno, più un giorno per LS (si può ottenere questo bonus solo una volta).</p>",
+			"effects": [
+				{
+					"_id": "y2XL7QrWlGI6aloz",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Coinvolge la testa",
+								"modifier": -10,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							}
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornhead.png",
+					"label": "Strappo Muscolare alla Testa",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Torn Leg Muscle (Major)",
 			"name": "Strappo Muscolare alla Gamba (Maggiore)",
-			"description": "<p>Un muscolo o tendine importante è stato danneggiato gravemente, causando molto dolore e una grave perdita di funzionalità della parte coinvolta. </p>\n<p><strong>Gamba:</strong> -20 in tutte le Prove che coinvolgono la Locazione. Il Movimento viene dimezzato. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span> Il muscolo guarirà parzialmente in 30-Bonus Resistenza giorni, dopo di che le penalità saranno ridotte a -10. Per una guarigione completa ci vorranno altri 30-Bonus Resistenza giorni. L’Abilità Guarire non servirà a molto, solo a capire che non bisogna sollecitare la Locazione.</p>"
+			"description": "<p>Un muscolo o tendine importante è stato danneggiato gravemente, causando molto dolore e una grave perdita di funzionalità della parte coinvolta. </p>\n<p><strong>Gamba:</strong> -20 in tutte le Prove che coinvolgono la Locazione. Il Movimento viene dimezzato. </p>\n<p><span style=\"font-weight: bold;\">Guarigione: </span> Il muscolo guarirà parzialmente in 30-Bonus Resistenza giorni, dopo di che le penalità saranno ridotte a -10. Per una guarigione completa ci vorranno altri 30-Bonus Resistenza giorni. L’Abilità Guarire non servirà a molto, solo a capire che non bisogna sollecitare la Locazione.</p>",
+			"effects": [
+				{
+					"_id": "e5BPTZkHGMJuDX2p",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Test che coinvolgono gamba con muscolo strappato",
+								"modifier": -20,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false,
+							"hide": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
+					"label": "Strappo Muscolare alla Gamba",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "t1Anp3f9yR4IJqpR",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "",
+							"effectApplication": "actor",
+							"script": "args.actor.details.move.value /= 2",
+							"preventDuplicateEffects": false,
+							"hide": false
+						}
+					},
+					"changes": [
+						{
+							"key": "system.details.move.value",
+							"mode": 1,
+							"value": "0.5",
+							"priority": null
+						}
+					],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
+					"label": "Penalità di Movimento",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		},
 		{
 			"id": "Torn Leg Muscle (Minor)",
 			"name": "Strappo Muscolare alla Gamba (Minore)",
-			"description": "<p>Un muscolo viene stirato o strappato, causando dolore. </p>\n<p><strong>Gamba:</strong> -10 in tutte le Prove che coinvolgono la Locazione. Il Movimento viene dimezzato. </p>\n    <p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà in 30-Bonus Resistenza giorni. Una <strong>Prova di Guarire</strong> riduce questo tempo di un giorno, più un giorno per LS (si può ottenere questo bonus solo una volta).</p>"
+			"description": "<p>Un muscolo viene stirato o strappato, causando dolore. </p>\n<p><strong>Gamba:</strong> -10 in tutte le Prove che coinvolgono la Locazione. Il Movimento viene dimezzato. </p>\n    <p><span style=\"font-weight: bold;\">Guarigione: </span>Il muscolo guarirà in 30-Bonus Resistenza giorni. Una <strong>Prova di Guarire</strong> riduce questo tempo di un giorno, più un giorno per LS (si può ottenere questo bonus solo una volta).</p>",
+			"effects": [
+				{
+					"_id": "73XsH9pZ8Qymz0kN",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "",
+							"effectApplication": "actor",
+							"script": "args.actor.details.move.value /= 2",
+							"preventDuplicateEffects": false,
+							"hide": false
+						}
+					},
+					"changes": [
+						{
+							"key": "system.details.move.value",
+							"mode": 1,
+							"value": "0.5",
+							"priority": null
+						}
+					],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
+					"label": "Movimento dimezzato",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				},
+				{
+					"_id": "ErAJc8kPnAwubY1m",
+					"flags": {
+						"wfrp4e": {
+							"effectTrigger": "dialogChoice",
+							"effectApplication": "actor",
+							"effectData": {
+								"description": "Coinvolge la gamba con muscolo strappato",
+								"modifier": -10,
+								"slBonus": null,
+								"successBonus": null,
+								"difficultyStep": null
+							},
+							"preventDuplicateEffects": false
+						}
+					},
+					"changes": [],
+					"disabled": false,
+					"duration": {
+						"startTime": null,
+						"seconds": null,
+						"combat": null,
+						"rounds": null,
+						"turns": null,
+						"startRound": null,
+						"startTurn": null
+					},
+					"icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
+					"label": "Strappo Muscolare alla Gamba",
+					"tint": null,
+					"transfer": true,
+					"origin": null
+				}
+			]
 		}
 	]
 }
