@@ -25,17 +25,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedarm.png",
 					"label": "Amputazione Braccio",
 					"tint": null,
@@ -58,17 +47,6 @@
 							"script": "if (args.type == \"characteristic\" && args.item == \"fel\")\n      args.prefillModifiers.modifier -= 5\n\n    else if (args.type == \"skill\") {\n      if (args.item.characteristic.key == \"fel\")\n        args.prefillModifiers.modifier -= 5\n    }"
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedear.png",
 					"label": "Orecchio Perso",
 					"tint": null,
@@ -89,17 +67,6 @@
 								"difficultyStep": null
 							}
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedear.png",
 					"label": "Perse Entrambe le Orecchie",
@@ -130,17 +97,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedeye.png",
 					"label": "Perso entrambi gli occhi",
 					"tint": null,
@@ -161,15 +117,6 @@
 						{ "key": "", "value": "", "mode": 2, "priority": null }
 					],
 					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedeye.png",
 					"label": "Occhio Perso",
 					"tint": null,
@@ -199,17 +146,6 @@
 							}
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedfinger.png",
 					"label": "Dita perse",
 					"tint": null,
@@ -233,17 +169,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedfoot.png",
 					"label": "Movimento Dimezzato",
 					"tint": null,
@@ -265,17 +190,6 @@
 							},
 							"preventDuplicateEffects": false
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedfoot.png",
 					"label": "Amputazione (Piede)",
@@ -306,17 +220,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedhand.png",
 					"label": "Amputazione (Mano)",
 					"tint": null,
@@ -340,17 +243,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedleg.png",
 					"label": "Movimento Dimezzato",
 					"tint": null,
@@ -372,17 +264,6 @@
 								"difficultyStep": null
 							}
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatedleg.png",
 					"label": "Amputazione (Gamba)",
@@ -421,16 +302,6 @@
 							"priority": null
 						}
 					],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/amputatednose.png",
 					"label": "Amputazione (Naso)",
 					"tint": null,
@@ -471,16 +342,6 @@
 							"priority": null
 						}
 					],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/injury.png",
 					"label": "Amputazione (Dita del Piede)",
 					"tint": null,
@@ -516,17 +377,6 @@
 							"hide": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-arm.png",
 					"label": "Braccio Fratturato",
 					"tint": null,
@@ -556,17 +406,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-arm.png",
 					"label": "Braccio Fratturato",
 					"tint": null,
@@ -589,17 +428,6 @@
 							"script": "args.actor.details.move.value /= 2",
 							"preventDuplicateEffects": false
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-body.png",
 					"label": "Movimento Dimezzato",
@@ -635,16 +463,6 @@
 							"priority": null
 						}
 					],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-body.png",
 					"label": "Torso Fratturato",
 					"tint": null,
@@ -686,16 +504,6 @@
 							"priority": null
 						}
 					],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-body.png",
 					"label": "Torso Fratturato",
 					"tint": null,
@@ -711,17 +519,6 @@
 							"script": "args.actor.details.move.value /= 2",
 							"preventDuplicateEffects": false
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-body.png",
 					"label": "Penalità di Movimento",
@@ -746,17 +543,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/head.png",
 					"label": "Testa Fratturata",
 					"tint": null,
@@ -779,17 +565,6 @@
 							"effectTrigger": "prefillDialog",
 							"script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\"))))\n   args.prefillModifiers.modifier -= 30"
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/head.png",
 					"label": "Testa Fratturata",
@@ -814,17 +589,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-leg.png",
 					"label": "Penalità di Movimento",
 					"tint": null,
@@ -846,17 +610,6 @@
 							},
 							"preventDuplicateEffects": false
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-leg.png",
 					"label": "Gamba Fratturata",
@@ -881,17 +634,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-leg.png",
 					"label": "Penalità di Movimento",
 					"tint": null,
@@ -913,17 +655,6 @@
 							},
 							"preventDuplicateEffects": false
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/broken-leg.png",
 					"label": "Gamba Fratturata",
@@ -955,17 +686,6 @@
 							"hide": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
 					"label": "Strappo Muscolare al Braccio",
 					"tint": null,
@@ -994,17 +714,6 @@
 							},
 							"preventDuplicateEffects": false
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
 					"label": "Strappo Muscolare al Braccio",
@@ -1035,17 +744,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
 					"label": "Strappo Muscolare al Torso",
 					"tint": null,
@@ -1074,17 +772,6 @@
 							},
 							"preventDuplicateEffects": false
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornhead.png",
 					"label": "Strappo Muscolare al Torso",
@@ -1115,17 +802,6 @@
 							"preventDuplicateEffects": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornhead.png",
 					"label": "Strappo Muscolare alla Testa",
 					"tint": null,
@@ -1153,17 +829,6 @@
 								"difficultyStep": null
 							}
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornhead.png",
 					"label": "Strappo Muscolare alla Testa",
@@ -1195,17 +860,6 @@
 							"hide": false
 						}
 					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
 					"label": "Strappo Muscolare alla Gamba",
 					"tint": null,
@@ -1231,16 +885,6 @@
 							"priority": null
 						}
 					],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
 					"label": "Penalità di Movimento",
 					"tint": null,
@@ -1273,16 +917,6 @@
 							"priority": null
 						}
 					],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
-					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
 					"label": "Movimento dimezzato",
 					"tint": null,
@@ -1304,17 +938,6 @@
 							},
 							"preventDuplicateEffects": false
 						}
-					},
-					"changes": [],
-					"disabled": false,
-					"duration": {
-						"startTime": null,
-						"seconds": null,
-						"combat": null,
-						"rounds": null,
-						"turns": null,
-						"startRound": null,
-						"startTurn": null
 					},
 					"icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
 					"label": "Strappo Muscolare alla Gamba",

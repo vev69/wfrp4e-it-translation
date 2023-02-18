@@ -1,50 +1,936 @@
 {
-	"label": "Malattie",
-	"entries": [
-		{
-			"id": "Blood Rot",
-			"name": "Sangue Marcio",
-			"description": "<p>Il sangue del Personaggio è infetto e il suo cuore invia il male in ogni angolo del corpo. La cura comune sono le sanguisughe, ma alcuni dottori preferiscono incisioni vicino al collo per far spurgare il sangue contaminato, mentre ne fanno bere grandi quantità per compensare. Che piaccia o no, senza una trattamento il Sangue Marcio è fatale e porta a una visita alla Gilda degli Afflitti e al @UUID[JournalEntry.NcH9OhleJFfaUdon.JournalEntryPage.HfmrIexylrgxIz2x]{Cult of Morr}.</p>"
-		},
-		{
-			"id": "Festering Wound",
-			"name": "Ferite Purulente",
-			"description": "<p>Tagli e ferite infette sono comuni, quindi vengono tramandati numerosi rimedi popolari: unguenti prodotti da foglie e letame, pelli di rospo e piume di colomba, oppure strofinarle con terra benedetta da Sigmar. Molti medici ridono di tali idee e preferiscono cure più scientifiche, come mescolare la bile di un bue nero con tre cucchiai di urina del paziente e mezzo di sale marino. Il composto viene poi strofinato nella ferita purulenta. Le urla del paziente non sono che la prova della sua efficacia.</p>"
-		},
-		{
-			"id": "Galloping Trots",
-			"name": "Dissenteria Fulminante",
-			"description": "<p>Si dice che solo la cucina Halfling non provochi la Dissenteria, un male molto comune nell’Impero data la scarsa cura nella preparazione del cibo. Chi ha sofferto della ‘Vendetta di Rumster’ a causa delle torte a poco prezzo in vendita ad Altdorf avrebbe da ridire… se riuscisse a lasciare la latrina per più di un minuto…</p>"
-		},
-		{
-			"id": "Itching Pox",
-			"name": "Vaiolo Pruriginoso",
-			"description": "<p>In molte città e villaggi, ogni anno appaiono focolai di questo male. La malattia provoca bolle pruriginose su tutto il corpo, ma è relativamente leggera e non ha gravi complicazioni, quindi se ne preoccupano solo genitori e nobili vanitosi. È talmente comune che molti templi di Shallya hanno a disposizione scorte di pomata bianca per ridurre il prurito.</p>"
-		},
-		{
-			"id": "Minor Infection",
-			"name": "Infezione Minore",
-			"description": "<p>Le infezioni minori – di solito ferite che non guariscono accompagnate da leggera febbre e rigonfiamenti– sono molto comuni. Molte si risolvono da sole, per cui pochi se ne preoccupano, finché non è troppo tardi e il Portale di Morr si apre.</p>"
-		},
-		{
-			"id": "Packer's Pox",
-			"name": "Vaiolo del Conciatore",
-			"description": "<p>Questa infezione – comune tra cacciatori, conciatori e mercanti – è diffusa dal bestiame infetto, comprese le loro pelli o lana, e dai cadaveri della vittime. Si presenta come una brutta eruzione cutanea, che si trasforma in bolle rosa su tutto il corpo, specie sul torace e sulle braccia. Non è la peggior malattia dell’Impero, ma dura a lungo e, a volte, può risultare fatale.</p>"
-		},
-		{
-			"id": "Ratte Fever",
-			"name": "Febbre dei Ratti",
-			"description": "<p>Causata da roditori infetti, la temuta Febbre dei Ratti causa infiammazioni e ulcere, poi febbre e spasmi. È raramente fatale, ma assai debilitante e ci vuole molto tempo a guarire, per cui le vittime sono pronte a tutto per alleviarne i sintomi. I rimedi variano dalle flagellazioni ad Altdorf – che pare diano effettivo sollievo dalle ulcere – allo spalmarsi di formaggio di capra mescolato a peperoni del ghiaccio kisleviti a Talabheim. Nelle città più grandi viene detta Febbre da Ripieno, a testimonianza di quanti usino ratti nel ripieno al posto di carni più costose.</p>"
-		},
-		{
-			"id": "The Black Plague",
-			"name": "Peste Nera",
-			"description": "<p>Gli storici sostengono che secoli fa i ratti sciamarono per l’Impero e la Peste Nera li seguì, uccidendo nove persone ogni dieci. Ancora oggi ci sono focolai inspiegabili di questo orrendo male. Le monache bianche del Culto di Shallya hanno giurato di fare tutto il possibile per sradicare questo male e, grazie ad antiche leggi, creano cordoni sanitari – marcati con corda bianca – per assicurarsi che nessuno possa andare o venire dalle zone di quarantena finché il focolaio non è contenuto e i cadaveri correttamente smaltiti.</p>"
-		},
-		{
-			"id": "The Bloody Flux",
-			"name": "Diarrea Rossa",
-			"description": "<p>La Diarrea Rossa è un problema persistente nell’Impero e considerato da molti la punizione divina per gli empi. Il paziente è costretto a evacuare in modo incontinente. Il male è endemico negli Eserciti Provinciali, dove pare faccia più vittime del nemico. Le cure più comuni includono mangiare del sanguinaccio per reintegrare gli umori persi, applicare dei ‘tappi’ o spalmare del grasso sulle parti interessate per ridurre il fastidio.</p>"
-		}
-	]
+  "label": "Malattie",
+  "mapping": {
+    "effects": "effects",
+    "symptoms": "system.symptoms.value",
+    "contraction": "system.contraction.value",
+    "permanent": "system.permanent.value",
+    "incubation": "system.incubation.value"
+  },
+  "entries": [
+    {
+      "id": "Blood Rot",
+      "name": "Sangue Marcio",
+      "description": "<p>Il sangue del Personaggio è infetto e il suo cuore invia il male in ogni angolo del corpo. La cura comune sono le sanguisughe, ma alcuni dottori preferiscono incisioni vicino al collo per far spurgare il sangue contaminato, mentre ne fanno bere grandi quantità per compensare. Che piaccia o no, senza una trattamento il Sangue Marcio è fatale e porta a una visita alla Gilda degli Afflitti e al @UUID[JournalEntry.NcH9OhleJFfaUdon.JournalEntryPage.HfmrIexylrgxIz2x]{Culto di Morr}.</p>",
+      "effects": [
+        {
+          "_id": "TH7hPoURLnjdJSSl",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Consunzione",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "invoke",
+              "symptom": true,
+              "script": "\n                        let difficulty = \"\"\n                        if (this.effect.label.includes(\"Moderate\"))\n                            difficulty = \"easy\"\n                        else if (this.effect.label.includes(\"Severe\"))\n                            difficulty = \"average\"\n                        else\n                            difficulty = \"veasy\"\n    \n                        if (this.actor.isOwner)\n                        {\n                            args.actor.setupSkill(\"Tempra\", {context : {failure : args.actor.name + \" dies from Blight\"}, absolute: {difficulty}, appendTitle : \" - Blight\"}).then(setupData => {\n                                args.actor.basicTest(setupData).then(test => \n                                    {\n                                        if (test.result.outcome == \"failure\")\n                                            args.actor.addCondition(\"dead\")\n                                    })\n                                })\n                        }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "V2oU1zPnQR94HCJQ",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Febbre (Severa)",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    \n                    if (args.type == \"weapon\")\n                        args.prefillModifiers.modifier -= 10\n                    else if (args.type == \"characteristic\")\n                    {\n                        if (applicableCharacteristics.includes(args.item))\n                            args.prefillModifiers.modifier -= 10\n                    }\n                    else if (args.type == \"skill\")\n                    {\n                        if (applicableCharacteristics.includes(args.item.characteristic.key))\n                            args.prefillModifiers.modifier -= 10\n                    }",
+              "otherEffects": ["blight", "wounded"]
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "NHyxRtRt9rsjjz4r",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Malessere",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prepareData",
+              "symptom": true,
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatigued added to \" + args.actor.name + \" which cannot be removed until the Malaise symptom is gone.\")\n                        }\n                    }\n                    "
+            }
+          },
+          "origin": null,
+          "tint": null
+        }
+      ],
+      "symptoms": "Consunzione, Febbre (Severa), Malessere",
+      "contraction": "Conseguenza di altre malattie o di Ferite Critiche",
+      "incubation": "Istantanea"
+    },
+    {
+      "id": "Festering Wound",
+      "name": "Ferite Purulente",
+      "description": "<p>Tagli e ferite infette sono comuni, quindi vengono tramandati numerosi rimedi popolari: unguenti prodotti da foglie e letame, pelli di rospo e piume di colomba, oppure strofinarle con terra benedetta da Sigmar. Molti medici ridono di tali idee e preferiscono cure più scientifiche, come mescolare la bile di un bue nero con tre cucchiai di urina del paziente e mezzo di sale marino. Il composto viene poi strofinato nella ferita purulenta. Le urla del paziente non sono che la prova della sua efficacia.</p>",
+      "effects": [
+        {
+          "_id": "InNO9elKVbhdUMyB",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Febbre",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    \n                    if (args.type == \"weapon\")\n                        args.prefillModifiers.modifier -= 10\n                    else if (args.type == \"characteristic\")\n                    {\n                        if (applicableCharacteristics.includes(args.item))\n                            args.prefillModifiers.modifier -= 10\n                    }\n                    else if (args.type == \"skill\")\n                    {\n                        if (applicableCharacteristics.includes(args.item.characteristic.key))\n                            args.prefillModifiers.modifier -= 10\n                    }",
+              "otherEffects": ["blight", "wounded"]
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "nKPv1wHQXwUsBdf7",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Persistenza (Impegnativa)",
+          "transfer": true,
+          "flags": { "wfrp4e": { "symptom": true } },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "2cuvlgkALYIx6KCh",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Malessere",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prepareData",
+              "symptom": true,
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatigued added to \" + args.actor.name + \" which cannot be removed until the Malaise symptom is gone.\")\n                        }\n                    }\n                    "
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "Bhn6hjQFNCEMU6et",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Lesioni",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "invoke",
+              "symptom": true,
+              "script": "\n                        if (this.actor.isOwner)\n                        {\n                            args.actor.setupSkill(\"Tempra\", {absolute: {difficulty : \"average\"}}).then(setupData => {\n                                args.actor.basicTest(setupData).then(test => \n                                    {\n                                        if (test.result.outcome == \"failure\")\n                                            fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\").then(disease => {\n                                                args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()])\n                                            })\n                                    })\n                                })\n                        }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        }
+      ],
+      "symptoms": "Febbre, Lesioni, Malessere, Persistenza (Impegnativa)",
+      "contraction": "Fallire una Prova Facile (+40) di Tempra dopo aver combattuto con una creatura con il Tratto Infetto. Può anche essere causato da una Infezione Minore",
+      "incubation": "1d10 giorni o istantanea se legata ad altri sintomi"
+    },
+    {
+      "id": "Galloping Trots",
+      "name": "Dissenteria Fulminante",
+      "description": "<p>Si dice che solo la cucina Halfling non provochi la Dissenteria, un male molto comune nell’Impero data la scarsa cura nella preparazione del cibo. Chi ha sofferto della ‘Vendetta di Rumster’ a causa delle torte a poco prezzo in vendita ad Altdorf avrebbe da ridire… se riuscisse a lasciare la latrina per più di un minuto…</p>",
+      "effects": [
+        {
+          "_id": "Sp93ZiJ4eq26v8UO",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Diarrea (Moderata)",
+          "transfer": true,
+          "flags": { "wfrp4e": { "symptom": true } },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "fquDNK6fxIYlnWX1",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Malessere",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prepareData",
+              "symptom": true,
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatigued added to \" + args.actor.name + \" which cannot be removed until the Malaise symptom is gone.\")\n                        }\n                    }\n                    "
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "heL1cJFCuElfQoeS",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Nausea",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "rollTest",
+              "symptom": true,
+              "script": "\n                    if (this.actor.isOwner && args.test.result.outcome == \"failure\")\n                    {\n                        let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n                        if (applicableCharacteristics.includes(args.test.characteristicKey))\n                            this.actor.addCondition(\"stunned\")\n    \n                    }\n                    "
+            }
+          },
+          "origin": null,
+          "tint": null
+        }
+      ],
+      "symptoms": "Diarrea (Moderata), Malessere, Nausea",
+      "contraction": "Fallire una Prova Facile (+40) di Tempra dopo aver mangiato alimenti infetti"
+    },
+    {
+      "id": "Itching Pox",
+      "name": "Vaiolo Pruriginoso",
+      "description": "<p>In molte città e villaggi, ogni anno appaiono focolai di questo male. La malattia provoca bolle pruriginose su tutto il corpo, ma è relativamente leggera e non ha gravi complicazioni, quindi se ne preoccupano solo genitori e nobili vanitosi. È talmente comune che molti templi di Shallya hanno a disposizione scorte di pomata bianca per ridurre il prurito.</p>",
+      "effects": [
+        {
+          "_id": "vgz3aqUkKvksDs7X",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Tosse e Starnuti",
+          "transfer": true,
+          "flags": { "wfrp4e": { "symptom": true } },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "c9ty7yoIpDJfwDqo",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Vescicole",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                       \n                        if (args.type == \"characteristic\" && args.item == \"fel\")\n                                args.prefillModifiers.modifier -= 10\n                        else if (args.type == \"skill\")\n                        {\n                            if (args.item.characteristic.key == \"fel\")\n                                args.prefillModifiers.modifier -= 10\n                        }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        }
+      ],
+      "symptoms": "Vescicole, Tosse e Starnuti",
+      "contraction": "Fallire una Prova Media (+20) di Tempra dopo essere entrati in contatto con un individuo infetto, o dopo che questi ha tossito o starnutito nelle vicinanze (massimo una Prova per ora)",
+      "permanent": "Una volta contratta la malattia si diventa immuni"
+    },
+    {
+      "id": "Minor Infection",
+      "name": "Infezione Minore",
+      "description": "<p>Le infezioni minori – di solito ferite che non guariscono accompagnate da leggera febbre e rigonfiamenti– sono molto comuni. Molte si risolvono da sole, per cui pochi se ne preoccupano, finché non è troppo tardi e il Portale di Morr si apre.</p>",
+      "effects": [
+        {
+          "_id": "FLB8zGutyEQWgRlb",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Persistenza (Facile)",
+          "transfer": true,
+          "flags": { "wfrp4e": { "symptom": true } },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "tf4IaDGr6PVsHl7w",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Malessere",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prepareData",
+              "symptom": true,
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatigued added to \" + args.actor.name + \" which cannot be removed until the Malaise symptom is gone.\")\n                        }\n                    }\n                    "
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "TbXenWmw4yRg7qlf",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Lesioni",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "invoke",
+              "symptom": true,
+              "script": "\n                        if (this.actor.isOwner)\n                        {\n                            args.actor.setupSkill(\"Tempra\", {absolute: {difficulty : \"average\"}}).then(setupData => {\n                                args.actor.basicTest(setupData).then(test => \n                                    {\n                                        if (test.result.outcome == \"failure\")\n                                            fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\").then(disease => {\n                                                args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()])\n                                            })\n                                    })\n                                })\n                        }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        }
+      ],
+      "symptoms": "Persistenza (Facile), Malessere, Lesioni",
+      "contraction": "Fallire una Prova Molto Facile (+60) di Tempra alla fine di un combattimento dove si è subita una Ferita Critica"
+    },
+    {
+      "id": "Packer's Pox",
+      "name": "Vaiolo del Conciatore",
+      "description": "<p>Questa infezione – comune tra cacciatori, conciatori e mercanti – è diffusa dal bestiame infetto, comprese le loro pelli o lana, e dai cadaveri della vittime. Si presenta come una brutta eruzione cutanea, che si trasforma in bolle rosa su tutto il corpo, specie sul torace e sulle braccia. Non è la peggior malattia dell’Impero, ma dura a lungo e, a volte, può risultare fatale.</p>",
+      "effects": [
+        {
+          "_id": "1PIxT3ieQbomnHR5",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Persistenza (Impegnativa)",
+          "transfer": true,
+          "flags": { "wfrp4e": { "symptom": true } },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "aHhqh3ReDbl1CC33",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Vescicole",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                       \n                        if (args.type == \"characteristic\" && args.item == \"fel\")\n                                args.prefillModifiers.modifier -= 10\n                        else if (args.type == \"skill\")\n                        {\n                            if (args.item.characteristic.key == \"fel\")\n                                args.prefillModifiers.modifier -= 10\n                        }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        }
+      ],
+      "symptoms": "Persistenza (Impegnativa), Vescicole",
+      "contraction": "Fallire una Prova Facile (+40) di Tempra dopo un contatto con animali, pelli o cadaveri infetti"
+    },
+    {
+      "id": "Ratte Fever",
+      "name": "Febbre dei Ratti",
+      "description": "<p>Causata da roditori infetti, la temuta Febbre dei Ratti causa infiammazioni e ulcere, poi febbre e spasmi. È raramente fatale, ma assai debilitante e ci vuole molto tempo a guarire, per cui le vittime sono pronte a tutto per alleviarne i sintomi. I rimedi variano dalle flagellazioni ad Altdorf – che pare diano effettivo sollievo dalle ulcere – allo spalmarsi di formaggio di capra mescolato a peperoni del ghiaccio kisleviti a Talabheim. Nelle città più grandi viene detta Febbre da Ripieno, a testimonianza di quanti usino ratti nel ripieno al posto di carni più costose.</p>",
+      "effects": [
+        {
+          "_id": "NZTzhqDUMfcFyOK2",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Convulsioni",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                        let modifier = 0\n                        if (this.effect.label.includes(\"Moderate\"))\n                            modifier = -20\n                        else\n                            modifier = -10\n                        \n                        let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"]\n                        if (args.type == \"weapon\")\n                            args.prefillModifiers.modifier += modifier\n                        else if (args.type == \"characteristic\")\n                        {\n                            if (applicableCharacteristics.includes(args.item))\n                                args.prefillModifiers.modifier += modifier\n                        }\n                        else if (args.type == \"skill\")\n                        {\n                            if (applicableCharacteristics.includes(args.item.characteristic.key))\n                                args.prefillModifiers.modifier += modifier\n                        }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "0Tr1JZZBjSXaP6Sa",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Febbre",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    \n                    if (args.type == \"weapon\")\n                        args.prefillModifiers.modifier -= 10\n                    else if (args.type == \"characteristic\")\n                    {\n                        if (applicableCharacteristics.includes(args.item))\n                            args.prefillModifiers.modifier -= 10\n                    }\n                    else if (args.type == \"skill\")\n                    {\n                        if (applicableCharacteristics.includes(args.item.characteristic.key))\n                            args.prefillModifiers.modifier -= 10\n                    }",
+              "otherEffects": ["blight", "wounded"]
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "PfGvYCS6yUbrcpYr",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Persistenza (Media)",
+          "transfer": true,
+          "flags": { "wfrp4e": { "symptom": true } },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "QdZZlcWkKdwev0VI",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Malessere",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prepareData",
+              "symptom": true,
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatigued added to \" + args.actor.name + \" which cannot be removed until the Malaise symptom is gone.\")\n                        }\n                    }\n                    "
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "i4ivBVyls07XXZ8h",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Vescicole",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                       \n                        if (args.type == \"characteristic\" && args.item == \"fel\")\n                                args.prefillModifiers.modifier -= 10\n                        else if (args.type == \"skill\")\n                        {\n                            if (args.item.characteristic.key == \"fel\")\n                                args.prefillModifiers.modifier -= 10\n                        }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "hUAPgI4Gb09zd1ut",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Lesioni",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "invoke",
+              "symptom": true,
+              "script": "\n                        if (this.actor.isOwner)\n                        {\n                            args.actor.setupSkill(\"Tempra\", {absolute: {difficulty : \"average\"}}).then(setupData => {\n                                args.actor.basicTest(setupData).then(test => \n                                    {\n                                        if (test.result.outcome == \"failure\")\n                                            fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\").then(disease => {\n                                                args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()])\n                                            })\n                                    })\n                                })\n                        }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        }
+      ],
+      "symptoms": "Convulsioni, Febbre, Lesioni, Malessere, Persistenza (Media), Vescicole",
+      "contraction": "Fallire una Prova Media (+20) di Tempra dopo essere stato ferito da un roditore (compresi gli Skaven) con in Tratto Infetto, oppure una Prova Facile (+40) di Tempra dopo aver ingerito cibo infetto"
+    },
+    {
+      "id": "The Black Plague",
+      "name": "Peste Nera",
+      "description": "<p>Gli storici sostengono che secoli fa i ratti sciamarono per l’Impero e la Peste Nera li seguì, uccidendo nove persone ogni dieci. Ancora oggi ci sono focolai inspiegabili di questo orrendo male. Le monache bianche del Culto di Shallya hanno giurato di fare tutto il possibile per sradicare questo male e, grazie ad antiche leggi, creano cordoni sanitari – marcati con corda bianca – per assicurarsi che nessuno possa andare o venire dalle zone di quarantena finché il focolaio non è contenuto e i cadaveri correttamente smaltiti.</p>",
+      "effects": [
+        {
+          "_id": "NKiIPNQehPO9eaxm",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Consunzione (Moderata)",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "invoke",
+              "symptom": true,
+              "script": "\n                        let difficulty = \"\"\n                        if (this.effect.label.includes(\"Moderate\"))\n                            difficulty = \"easy\"\n                        else if (this.effect.label.includes(\"Severe\"))\n                            difficulty = \"average\"\n                        else\n                            difficulty = \"veasy\"\n    \n                        if (this.actor.isOwner)\n                        {\n                            args.actor.setupSkill(\"Tempra\", {context : {failure : args.actor.name + \" dies from Blight\"}, absolute: {difficulty}, appendTitle : \" - Blight\"}).then(setupData => {\n                                args.actor.basicTest(setupData).then(test => \n                                    {\n                                        if (test.result.outcome == \"failure\")\n                                            args.actor.addCondition(\"dead\")\n                                    })\n                                })\n                        }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "NcJoF1DR82jScspx",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Bubboni",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n                    if (args.type == \"weapon\")\n                        args.prefillModifiers.modifier -= 10\n                    else if (args.type == \"characteristic\")\n                    {\n                        if (applicableCharacteristics.includes(args.item.key))\n                            args.prefillModifiers.modifier -= 10\n                    }\n                    else if (args.type == \"skill\")\n                    {\n                        if (applicableCharacteristics.includes(args.item.characteristic.key))\n                            args.prefillModifiers.modifier -= 10\n                    }\n            "
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "BdDKgmnnXyID5l9r",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Febbre",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    \n                    if (args.type == \"weapon\")\n                        args.prefillModifiers.modifier -= 10\n                    else if (args.type == \"characteristic\")\n                    {\n                        if (applicableCharacteristics.includes(args.item))\n                            args.prefillModifiers.modifier -= 10\n                    }\n                    else if (args.type == \"skill\")\n                    {\n                        if (applicableCharacteristics.includes(args.item.characteristic.key))\n                            args.prefillModifiers.modifier -= 10\n                    }",
+              "otherEffects": ["blight", "wounded"]
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "qNWBcG8TYO5QGmLk",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Cancrena",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                        if (args.type == \"characteristic\" && args.item == \"fel\")\n                        {\n                            if (args.item == \"fel\")\n                                args.prefillModifiers.modifier -= 10\n                        }\n                        else if (args.type == \"skill\")\n                        {\n                            if (args.item.characteristic.key == \"fel\")\n                                args.prefillModifiers.modifier -= 10\n                        }\n                    }"
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "1J3ape1RdCwgziZe",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Malessere",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prepareData",
+              "symptom": true,
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatigued added to \" + args.actor.name + \" which cannot be removed until the Malaise symptom is gone.\")\n                        }\n                    }\n                    "
+            }
+          },
+          "origin": null,
+          "tint": null
+        }
+      ],
+      "symptoms": "Bubboni, Cancrena, Consunzione (Moderata), Febbre, Lesioni, Malessere",
+      "contraction": "Effettuare (e fallire) una Prova Media (+20) di Tempra per ogni ora trascorsa in un'area dove sono presenti pulci infette o in caso di contatto con liquidi infetti"
+    },
+    {
+      "id": "The Bloody Flux",
+      "name": "Diarrea Rossa",
+      "description": "<p>La Diarrea Rossa è un problema persistente nell’Impero e considerato da molti la punizione divina per gli empi. Il paziente è costretto a evacuare in modo incontinente. Il male è endemico negli Eserciti Provinciali, dove pare faccia più vittime del nemico. Le cure più comuni includono mangiare del sanguinaccio per reintegrare gli umori persi, applicare dei ‘tappi’ o spalmare del grasso sulle parti interessate per ridurre il fastidio.</p>",
+      "effects": [
+        {
+          "_id": "Sc30lmNSCIJ0DGab",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Diarrea (Severa)",
+          "transfer": true,
+          "flags": { "wfrp4e": { "symptom": true } },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "DjYLhjvUbllWMrKk",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Persistenza (Impegnativa)",
+          "transfer": true,
+          "flags": { "wfrp4e": { "symptom": true } },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "KnlIy1IoRQ4KsvuV",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Febbre",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prefillDialog",
+              "symptom": true,
+              "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    \n                    if (args.type == \"weapon\")\n                        args.prefillModifiers.modifier -= 10\n                    else if (args.type == \"characteristic\")\n                    {\n                        if (applicableCharacteristics.includes(args.item))\n                            args.prefillModifiers.modifier -= 10\n                    }\n                    else if (args.type == \"skill\")\n                    {\n                        if (applicableCharacteristics.includes(args.item.characteristic.key))\n                            args.prefillModifiers.modifier -= 10\n                    }",
+              "otherEffects": ["blight", "wounded"]
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "VBP4fo86uuFd6YiW",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Malessere",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prepareData",
+              "symptom": true,
+              "script": "\n                    if (game.user.isUniqueGM)\n                    {\n                        let fatigued = args.actor.hasCondition(\"fatigued\")\n                        if (!fatigued)\n                        {\n                            args.actor.addCondition(\"fatigued\")\n                            ui.notifications.notify(\"Fatigued added to \" + args.actor.name + \" which cannot be removed until the Malaise symptom is gone.\")\n                        }\n                    }\n                    "
+            }
+          },
+          "origin": null,
+          "tint": null
+        },
+        {
+          "_id": "55OiJcxPalh86HH8",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/diseases/disease.png",
+          "label": "Nausea",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "rollTest",
+              "symptom": true,
+              "script": "\n                    if (this.actor.isOwner && args.test.result.outcome == \"failure\")\n                    {\n                        let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n                        if (applicableCharacteristics.includes(args.test.characteristicKey))\n                            this.actor.addCondition(\"stunned\")\n    \n                    }\n                    "
+            }
+          },
+          "origin": null,
+          "tint": null
+        }
+      ],
+      "symptoms": "Diarrea (Severa), Febbre, Malessere, Nausea, Persistenza (Impegnativa)",
+      "contraction": "Fallire una Prova Facile (+40) di Tempra dopo aver ingoiato alimenti o liquidi infetti"
+    }
+  ]
 }

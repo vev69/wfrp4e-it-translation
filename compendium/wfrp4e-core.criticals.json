@@ -1,7 +1,9 @@
 {
   "label": "Critici",
   "mapping": {
-    "effects": "effects"
+    "effects": "effects",
+    "location": "system.location.value",
+    "wounds": "system.wounds.value"
   },
   "entries": [
     {
@@ -10,30 +12,14 @@
       "description": "<p>Causa 4 @Condition[Sanguinante]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}, ogni ulteriore colpo al torso causerà 2 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "fcOYmx9WLncp95Sl",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 4 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "7JMNhRyCgMlmfLLK",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "takeDamage",
@@ -41,24 +27,11 @@
               "script": "if (args.opposedTest.result.hitloc.value == \"body\")\n    args.actor.addCondition(\"bleeding\", 2)"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Arteria Danneggiata (Torso)",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Arteria Danneggiata (Torso)"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Bad Cut",
@@ -66,30 +39,14 @@
       "description": "<p>Causa 2 @Condition[Sanguinante]. Superare una <strong>Prova Impegnativa (+0) di Tempra</strong> per non cadere @Condition[Prono].</p>",
       "effects": [
         {
-          "_id": "MeZJb40J14iJng8X",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "kub1YScTxM1VNLHK",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -97,24 +54,11 @@
               "script": "if (this.actor.isOwner)\n   args.actor.setupSkill(\"Tempra\").then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"prone\")\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Brutto Taglio",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Brutto Taglio"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Badly Cut Toe",
@@ -122,30 +66,14 @@
       "description": "<p>Causa 1 @Condition[Sanguinante]. Dopo l’incontro, superare una <strong>Prova Impegnativa (+0) di Tempra</strong> per non perdere il dito; @Compendium[wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx]{Amputazione (Media)}.</p>",
       "effects": [
         {
-          "_id": "2NSVzeLs6V2jWa8K",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "nlxBZY9R2qxa7bkC",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "endCombat",
@@ -155,29 +83,17 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Brutto Taglio al Dito",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Brutto Taglio al Dito"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Badly Jarred Arm",
       "name": "Tremore Grave",
-      "description": "<p>Il braccio trema per il colpo e la mano lascia cadere quello che stringeva, diventando inutilizzabile per [[/r 1d10]] - Bonus Resistenza Round (minimo 1). In questo periodo è considerata persa (vedere <strong>Amputazioni</strong>).</p>"
+      "description": "<p>Il braccio trema per il colpo e la mano lascia cadere quello che stringeva, diventando inutilizzabile per [[/r 1d10]] - Bonus Resistenza Round (minimo 1). In questo periodo è considerata persa (vedere <strong>Amputazioni</strong>).</p>",
+      "location": "Braccio"
     },
     {
       "id": "Badly Twisted Knee",
@@ -185,7 +101,6 @@
       "description": "<p>Il ginocchio viene ruotato malamente, nel tentativo di schivare l’avversario. Causa uno @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Strappo Muscolare (Maggiore)}.</p>",
       "effects": [
         {
-          "_id": "yJmV5ry9bcyqV5fL",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -195,24 +110,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Brutta Storta al Ginocchio",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Brutta Storta al Ginocchio"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Black Eye",
@@ -220,7 +122,6 @@
       "description": "<p>Un colpo molto doloroso all’occhio. Causa 2 @Condition[Accecato].</p>",
       "effects": [
         {
-          "_id": "jIlysiOZ0LFz6cgj",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -237,24 +138,11 @@
             },
             "core": { "statusId": "blinded" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/blinded.png",
-          "label": "Accecato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Accecato"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Bleeding hand",
@@ -262,29 +150,15 @@
       "description": "<p>Un brutto taglio alla mano rende la presa incerta. Causa 1 @Condition[Sanguinante] e finché non viene rimosso bisogna fare una <strong>Prova Media (+20) di Destrezza</strong> prima di ogni Azione che coinvolge stringere un oggetto in mano. In caso di fallimento lo strumento cade.</p>",
       "effects": [
         {
-          "_id": "5EOJYNGGp4ZPXIGL",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Broken Collar Bone",
@@ -292,30 +166,14 @@
       "description": "<p>Causa 1 @Condition[Stordito] che può essere rimosso solo con cure mediche, e un @Compendium[wfrp4e-core.injuries.EaqlLRQigwnsEAXX]{Osso Rotto (Maggiore)}.</p>",
       "effects": [
         {
-          "_id": "yYBsiXJGftVmMEeQ",
           "flags": {
             "wfrp4e": { "value": null },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "QaSpvCS9KAifTCNw",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -325,24 +183,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Cassa Toracica Frantumata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Cassa Toracica Frantumata"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Broken Jaw",
@@ -350,7 +195,6 @@
       "description": "<p>La mascella si rompe con uno schiocco tremendo. Causa 3 @Condition[Stordito] e richiede una <strong>Prova Impegnativa (+0) di Tempra</strong> per non subire anche @Condition[Privo di Sensi]. Provoca @Compendium[wfrp4e-core.injuries.hCadFsTRvLN9faaY]{Osso Rotto (Maggiore)}.</p>",
       "effects": [
         {
-          "_id": "wAq76bdunkcb9wTw",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -360,25 +204,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "WjHgjbRuh0M3H8g6",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -388,24 +217,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Mascella Rotta",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Mascella Rotta"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Broken Knee",
@@ -413,7 +229,6 @@
       "description": "<p>Il colpo fa a pezzi la rotula. Causa 1 @Condition[Sanguinante], 1 @Condition[Prono], e 1 @Condition[Stordito], e un @Compendium[wfrp4e-core.injuries.2iult41Jehz0F1O8]{Osso Rotto (Maggiore)}.</p>",
       "effects": [
         {
-          "_id": "VeT5PVDzmP96JWCM",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -426,25 +241,10 @@
             },
             "core": { "statusId": "prone" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/prone.png",
-          "label": "Prono",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Prono"
         },
         {
-          "_id": "frTFfaHrrJxQMQvi",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -454,25 +254,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "0wiLtR9wzYfqn7kK",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -482,47 +267,19 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Ginocchio Rotto",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Ginocchio Rotto"
         },
         {
-          "_id": "zn1gNVJsB6wLvLmH",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Broken Nose",
@@ -530,30 +287,14 @@
       "description": "<p>Un colpo in mezzo al viso causa un’emoraggia. Causa 2 @Condition[Sanguinante] e richiede una <strong>Prova Impegnativa (+0) di Tempra</strong> per non subire anche 1 @Condition[Stordito]. Una volta guarita, la ferita provoca +1/-1 LS nelle Prove sociali a meno di non riallineare il naso con la @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}.</p>",
       "effects": [
         {
-          "_id": "us244BgOUN1LRLnc",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "zYfCX8Eq2VkRFhNI",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -561,24 +302,11 @@
               "script": "if (this.actor.isOwner)\n   args.actor.setupSkill(\"Tempra\").then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"stunned\")\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Naso Rotto",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Naso Rotto"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Bruised Ribs",
@@ -586,7 +314,6 @@
       "description": "<p>Penalità di -10 in tutte le Prove basate su Agilità per [[/r 1d10]] giorni.</p>",
       "effects": [
         {
-          "_id": "vIjf5xtB3kGSjrwR",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -594,24 +321,11 @@
               "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\")\n   args.prefillModifiers.modifier -= 10\n\nif (args.type == \"characteristic\" && args.item == \"ag\")\n   args.prefillModifiers.modifier -= 10"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Livido alle Costole",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Livido alle Costole"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Brutal Dismemberment",
@@ -619,7 +333,6 @@
       "description": "<p>Il braccio viene smembrato e spruzza sangue per [[/r 1d10]]×30cm in direzione casuale (vedere @Table[scatter]{Direzione Casuale}), prima che il colpo affondi nel torace.</p>",
       "effects": [
         {
-          "_id": "Te5ujLd9jiLGSVJr",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -627,24 +340,12 @@
               "script": "this.actor.addCondition(\"dead\")"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Smembramento",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Smembramento"
         }
-      ]
+      ],
+      "location": "Braccio",
+      "wounds": "Morte"
     },
     {
       "id": "Carved Shin",
@@ -652,7 +353,6 @@
       "description": "<p>L’arma trapassa la gamba intaccando ossa e tendini. Causa 1 @Condition[Stordito] e @Condition[Prono]. Causa anche uno @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Strappo Muscolare (Maggiore)} e @Compendium[wfrp4e-core.injuries.7mCcI3q7hgWcmbBU]{Osso Rotto (Minore)}.</p>",
       "effects": [
         {
-          "_id": "RW5eRZ7NxikYNagM",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -662,25 +362,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "YS3kViPKuIu9Aaif",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -693,25 +378,10 @@
             },
             "core": { "statusId": "prone" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/prone.png",
-          "label": "Prono",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Prono"
         },
         {
-          "_id": "lanapxEmE0mai3mV",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -721,24 +391,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Tibia Intaccata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Tibia Intaccata"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Clean Break",
@@ -746,7 +403,6 @@
       "description": "<p>Il colpo causa uno schiocco ben udibile. Si perde quello che si stringeva in mano e si subisce un @Compendium[wfrp4e-core.injuries.4lj1ik958mbgAlaF]{Osso Rotto (Minore)}. Superare una <strong>Prova Difficile (-10) di Tempra</strong> per non subire 1 @Condition[Stordito].</p>",
       "effects": [
         {
-          "_id": "sVTAurntsVHWamj6",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -756,24 +412,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Frattura Netta",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Frattura Netta"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Cleft Hand",
@@ -781,30 +424,14 @@
       "description": "<p>La mano viene aperta in due. Causa 2 @Condition[Sanguinante], 1 @Condition[Stordito] e la perdita di un dito, @Compendium[wfrp4e-core.injuries.SYjWiKDzMS6CtROJ]{Ampuzione (Difficile)}. Finché non si ricevono Cure Mediche, si perde un altro dito per Round, quando finiscono si perde la mano, @Compendium[wfrp4e-core.injuries.SYjWiKDzMS6CtROJ]{Amputazione (Difficile)}.</p>",
       "effects": [
         {
-          "_id": "lSn9Mr174doheAbo",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "3rDSK76g1cKpmn40",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -814,25 +441,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "6KtIpUxSWrqIewki",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -842,24 +454,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Mano Affettata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Mano Affettata"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Concussive Blow",
@@ -867,7 +466,6 @@
       "description": "<p>Il cervello rimbalza dentro la scatola cranica. Causa 1 @Condition[Assordato], 2 @Condition[Sanguinante], e [[/r 1d10]] @Condition[Stordito]. Causa 1 @Condition[Affaticato] che dura per [[/r 1d10]] giorni. Se si subisce un’altra ferita alla testa che provoca <em>Affaticato</em>, effettuare una <strong>Prova Media (+20) di Tempra</strong> per non cadere @Condition[Privo di Sensi].</p>",
       "effects": [
         {
-          "_id": "4o8C5gO5JrPMQy7V",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -880,48 +478,18 @@
             },
             "core": { "statusId": "deafened" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/deafened.png",
-          "label": "Assordato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Assordato"
         },
         {
-          "_id": "F77tiXuPleKy6QKB",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "TYzxQVbjCM2iyLVl",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -929,25 +497,10 @@
               "script": "args.actor.addCondition(\"stunned\", (await new Roll(\"1d10\").roll()).total)"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Concussione",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Concussione"
         },
         {
-          "_id": "zirzZTdRx8xz8RI6",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "takeDamage",
@@ -955,25 +508,10 @@
               "script": "if(args.opposedTest.result.hitloc.value == \"head\" && (args.opposedTest.attackerTest.result.critical || args.actor.status.wounds.value - args.totalWoundLoss < 0))\n{\n\n  if (this.actor.isOwner) {\n    args.actor.setupSkill(\"Tempra\", { absolute: { difficulty: \"average\" } }).then(setupData => {\n      args.actor.basicTest(setupData).then(test => {\n        if (test.result.outcome == \"failure\")\n          args.actor.addCondition(\"unconscious\")\n      })\n    })\n  }\n}"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Concussione - Effetto Affaticato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Concussione - Effetto Affaticato"
         },
         {
-          "_id": "AyoqSH1wIlPXFrdJ",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -982,24 +520,11 @@
             },
             "core": { "statusId": "fatigued" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/fatigued.png",
-          "label": "Affaticato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Affaticato"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Cracked Ribs",
@@ -1007,7 +532,6 @@
       "description": "<p>Il colpo incrina una o più costole. Causa 1 @Condition[Stordito] e @Compendium[wfrp4e-core.injuries.QluSTTTq3viHJJUh]{Osso Rotto (Minore)}.</p>",
       "effects": [
         {
-          "_id": "GHwgHe9nIfj3RsTG",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1017,25 +541,10 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Costole Incrinate",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Costole Incrinate"
         },
         {
-          "_id": "vc2JuBUI00H1WZwf",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1045,24 +554,11 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Crushed Elbow",
@@ -1070,7 +566,6 @@
       "description": "<p>Il colpo distrugge ossa e cartilagini del gomito. Si perde quello che si stringeva in mano e si subisce @Compendium[wfrp4e-core.injuries.rlDZZTj5PXjuRXa2]{Osso Rotto (Maggiore)}.</p>",
       "effects": [
         {
-          "_id": "sw8YrBAP6gfhSTSH",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1080,24 +575,11 @@
               "preventDuplicateEffects": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Gomito Distrutto",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Gomito Distrutto"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Crushed Foot",
@@ -1105,30 +587,14 @@
       "description": "<p>Il piede viene spappolato. Causa 2 @Condition[Sanguinante]. Superare una <strong>Prova Media (+20) di Tempra</strong> per non cadere @Condition[Prono] e perdere un dito (più uno per LS sotto 0); @Compendium[wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx]{Amputazione (Media)}. Senza una <strong>Chirurgia</strong> entro <strong>[[/r 1d10]]</strong> giorni, si perde il piede.</p>",
       "effects": [
         {
-          "_id": "1nNGzJZNKnuXr9W7",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "nWRttvafUnh1XIZU",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1138,24 +604,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Piede Schiacciato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Piede Schiacciato"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Cut Tendon",
@@ -1163,30 +616,14 @@
       "description": "<p>Uno dei tendini principali viene reciso e la gamba collassa mentre il Personaggio urla di dolore. Causa 2 @Condition[Sanguinante], 2 @Condition[Stordito], e @Condition[Prono]. La gamba non funzionerà mai più, @Compendium[wfrp4e-core.injuries.k00PimCWkff11IA0]{Amputazione (Molto Ardua)}.</p>",
       "effects": [
         {
-          "_id": "OV1vfh4PQRfDwofO",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "URt2bkWmWumsEP1k",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1196,25 +633,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "wVKOGkIJf8YblbFA",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -1227,25 +649,10 @@
             },
             "core": { "statusId": "prone" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/prone.png",
-          "label": "Prono",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Prono"
         },
         {
-          "_id": "r5t7w5lcG1iddbUt",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1255,24 +662,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Tendini Recisi (Gamba)",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Tendini Recisi (Gamba)"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Damaged Artery",
@@ -1280,30 +674,14 @@
       "description": "<p>Causa 4 @Condition[Sanguinante]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}, ogni ulteriore colpo al braccio causerà 2 @Condition[Sanguinante].</p><blockquote class=\"foundry-note\"><p><span style=\"font-style: normal;\">L'effetto attivo per questo oggetto richiede il tuo contributo. Sostituire <span style=\"font-family: Courier\">ARM_LOCATION_HERE</span> con <span style=\"font-family: Courier\">lArm</span> o <span style=\"font-family: Courier\">rArm</span></span></p></blockquote>",
       "effects": [
         {
-          "_id": "R8yyVjVN2G9uGe1Z",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 4 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "UGeKGGNmXVJAieTa",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "takeDamage",
@@ -1311,24 +689,11 @@
               "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") // lArm or rArm\n    args.actor.addCondition(\"bleeding\", 2)"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Arteria Danneggiata (Braccio)",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Arteria Danneggiata (Braccio)"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Decapitated",
@@ -1336,7 +701,6 @@
       "description": "<p>La testa è recisa e vola nell’aria per [[/r 1d10]]x30cm in direzione casuale (vedere @Table[scatter]{Direzione Casuale}). Il corpo collassa privo di vita.</p>",
       "effects": [
         {
-          "_id": "v0B4racbne2RYIqD",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1344,24 +708,12 @@
               "script": "this.actor.addCondition(\"dead\")\nChatMessage.create({content: game.wfrp4e.tables.formatChatRoll(\"scatter\")})"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Decapitazione",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Decapitazione"
         }
-      ]
+      ],
+      "location": "Testa",
+      "wounds": "Morte"
     },
     {
       "id": "Deep Cut",
@@ -1369,30 +721,14 @@
       "description": "<p>Causa 2 @Condition[Sanguinante] 1 @Condition[Stordito] e uno @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Strappo Muscolare (Minore)}. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire 1 @Condition[Stordito].</p>",
       "effects": [
         {
-          "_id": "GlKd8FG7CTvU8JRC",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "AgeemYAqqhNVFHBz",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1402,25 +738,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "nOCDyzwdMDX9kunm",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1430,24 +751,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Taglio Profondo",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Taglio Profondo"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Devastated Eye",
@@ -1455,7 +763,6 @@
       "description": "<p>Il colpo cava un occhio con enorme dolore. Causa 3 @Condition[Accecato], 2 @Condition[Sanguinante], e 1 @Condition[Stordito]. L’occhio è perso, @Compendium[wfrp4e-core.injuries.weczkAMPlTjX7lqU]{Amputazione (Difficile)}.</p>",
       "effects": [
         {
-          "_id": "4G9KjSyQNM9UFOlS",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1472,48 +779,18 @@
             },
             "core": { "statusId": "blinded" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/blinded.png",
-          "label": "Accecato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Accecato"
         },
         {
-          "_id": "pSm6zIWXDFmFg3Zq",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "jatRx58WzHQUA31m",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1523,25 +800,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "SYIKc7QymcGfIwN9",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1551,24 +813,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Occhio Devastato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Occhio Devastato"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Disfiguring Blow",
@@ -1576,30 +825,14 @@
       "description": "<p>Il colpo distrugge l’intero volto, compresi un occhio e il naso. Causa 3 @Condition[Sanguinante], 3 @Condition[Accecato] e 2 @Condition[Stordito]. @Compendium[wfrp4e-core.injuries.weczkAMPlTjX7lqU]{Occhio} e @Compendium[wfrp4e-core.injuries.SpPRZZRHxly7uo2G]{Naso} sono persi, <strong>Amputazione (Ardua).</strong></p>",
       "effects": [
         {
-          "_id": "hawmXZ36uvoIAWpv",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 3 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "waGy0xtIvPj1cT0D",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1616,25 +849,10 @@
             },
             "core": { "statusId": "blinded" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/blinded.png",
-          "label": "Accecato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Accecato"
         },
         {
-          "_id": "348txVEUS8rth7YB",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1644,25 +862,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "7j3RINGp5K4ejLTp",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1672,24 +875,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Sfigurato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Sfigurato"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Dislocated Knee",
@@ -1697,7 +887,6 @@
       "description": "<p>Il ginocchio esce violentemente di sede. Causa @Condition[Prono]. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire 1 @Condition[Stordito], che può essere rimosso solo con Cure Mediche. Occorrono +6 LS in una <strong>Prova Prolungata Media (+20) di Guarire</strong> per rimettere a posto la gamba. Dopo di che si subirà Movimento dimezzato e -10 alle Prove basate sulla gamba per [[/r d10]] giorni.</p>",
       "effects": [
         {
-          "_id": "vGXj3JcQSik2Fof6",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1705,24 +894,11 @@
               "script": "if (this.actor.isOwner)\n    args.actor.setupSkill(\"Tempra\", {absolute: {difficulty: \"hard\"}}).then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"stunned\")\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Ginocchio Slogato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Ginocchio Slogato"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Dislocated Shoulder",
@@ -1730,7 +906,6 @@
       "description": "<p>Il braccio esce dalla sua sede. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire 1 @Condition[Stordito] e @Condition[Prono]. Si perde quello che si stringeva in mano e l’arto è considerato perso finché non viene rimesso in sede (vedere @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputazioni}). Causa un ulteriore @Condition[Stordito] che può essere rimosso solo con Cure Mediche, dopo di che occorrono +6 LS in una <strong>Prova Prolungata Media (+20) di Guarire</strong> per rimettere a posto il braccio. Dopo di che tutte le Prove che lo coinvolgono subiscono -10 per <strong>[[/r 1d10]]</strong> giorni..</p>",
       "effects": [
         {
-          "_id": "Ce9QAvROf94V16sJ",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1738,24 +913,11 @@
               "script": "if (this.actor.isOwner)\n   args.actor.setupSkill(\"Tempra\").then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            {\n                 args.actor.addCondition(\"prone\")\n                 args.actor.addCondition(\"stunned\")\n            }\n          \n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Spalla Slogata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Spalla Slogata"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Dramatic Injury",
@@ -1763,30 +925,14 @@
       "description": "<p>Un taglio su fronte o guancia. Causa 1 @Condition[Sanguinante]. Una volta guarito lascerà una grossa cicatrice, che fornisce +1 LS alle Prove sociali appropriate. Questo bonus può essere ottenuto solo una volta.</p>",
       "effects": [
         {
-          "_id": "TPyAKE9d05Y7HuxL",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "pnqEtu6lQlejU6CV",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "dialogChoice",
@@ -1800,24 +946,11 @@
               }
             }
           },
-          "changes": [],
-          "disabled": true,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Ferita Drammatica",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Ferita Drammatica"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Ear Bash",
@@ -1825,7 +958,6 @@
       "description": "<p>Provoca un fischio nell’orecchio. Causa 1 @Condition[Assordato].</p>",
       "effects": [
         {
-          "_id": "7a3L530CIhnX5cTl",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1838,24 +970,11 @@
             },
             "core": { "statusId": "deafened" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/deafened.png",
-          "label": "Assordato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Assordato"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Fractured Hip",
@@ -1863,7 +982,6 @@
       "description": "<p>Causa 1 @Condition[Stordito] e @Compendium[wfrp4e-core.injuries.QluSTTTq3viHJJUh]{Osso Rotto (Minore)}. Superare una <strong>Prova Impegnativa (+0) di Tempra</strong> per non cadere @Condition[Prono].</p>",
       "effects": [
         {
-          "_id": "EwflBBAdP3PfmQzC",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1873,25 +991,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "WHjhLJT1O6cxIv8u",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1901,24 +1004,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Anca Fratturata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Anca Fratturata"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Fractured Jaw",
@@ -1926,7 +1016,6 @@
       "description": "<p>Con un terribile scricchiolio, la mascella si frattura. Causa 2 @Condition[Stordito]. Causa un @Compendium[wfrp4e-core.injuries.nbhn2wX35b7Jrcbg]{Osso Rotto (Minore)}.</p>",
       "effects": [
         {
-          "_id": "g9ZNTiFKGxZBQkvT",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -1936,25 +1025,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "OipdUoeetMzgA4m9",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -1964,24 +1038,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Mascella Fratturata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Mascella Fratturata"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Gaping Arm Wound",
@@ -1989,30 +1050,14 @@
       "description": "<p>Il colpo lascia una grossa ferita aperta. Causa 2 @Condition[Sanguinante]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia} ogni ulteriore colpo al braccio la riaprirà causando 1 @Condition[Sanguinante].</p><blockquote class=\"foundry-note\"><p><span style=\"font-style: normal;\">L'effetto attivo per questo oggetto richiede il tuo contributo. Sostituire <span style=\"font-family: Courier\">ARM_LOCATION_HERE</span> with <span style=\"font-family: Courier\">lArm</span> o <span style=\"font-family: Courier\">rArm</span></span></p></blockquote>",
       "effects": [
         {
-          "_id": "7OVwCkJ6rgnfZn81",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "1sDNirNcv4XZnubO",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "takeDamage",
@@ -2020,24 +1065,11 @@
               "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") // lArm or rArm\n    args.actor.addCondition(\"bleeding\", 1)"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Ferita Aperta (Braccio)",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Ferita Aperta (Braccio)"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Gaping Chest Wound",
@@ -2045,30 +1077,14 @@
       "description": "<p>Causa 3 @Condition[Sanguinante]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}, ogni ulteriore colpo al torso la riaprirà causando 1 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "fcr0kAJMhiUc1n7k",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 3 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "rKSl42ZfhRErzUTS",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2076,24 +1092,11 @@
               "script": "if (args.opposedTest.result.hitloc.value == \"body\") \n    args.actor.addCondition(\"bleeding\", 1)"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Ferita Aperta (Torso)",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Ferita Aperta (Torso)"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Gut Blow",
@@ -2101,7 +1104,6 @@
       "description": "<p>Causa 1 @Condition[Stordito]. Superare una <strong>Prova Facile (+40) di Tempra</strong> per non vomitare e finire @Condition[Prono].</p>",
       "effects": [
         {
-          "_id": "cTrI8BgwwT6KbOcx",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -2111,25 +1113,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "3EKhg6lJsU12PXIN",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2137,24 +1124,11 @@
               "script": "if (this.actor.isOwner)\n   args.actor.setupSkill(\"Tempra\", {absolute: {difficulty: \"easy\"}}).then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"prone\")\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Colpo al Ventre",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Colpo al Ventre"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Gut Wound",
@@ -2162,7 +1136,6 @@
       "description": "<p>Causa una @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ferita Infetta} e 2 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "KSraZUHBV7dm7jom",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2172,47 +1145,19 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Ferita all'Addome",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Ferita all'Addome"
         },
         {
-          "_id": "4eZoTEFC5ZbQifn7",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Hacked Leg",
@@ -2220,7 +1165,6 @@
       "description": "<p>Un profondo taglio attraversa l’anca. Causa 1 @Condition[Prono] e 2 @Condition[Sanguinante], e un @Compendium[wfrp4e-core.injuries.7mCcI3q7hgWcmbBU]{Osso Rotto (Minore)}. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non cadere @Condition[Privo di Sensi] per il dolore.</p>",
       "effects": [
         {
-          "_id": "m5CJfHO2ZfBORtkr",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -2233,48 +1177,18 @@
             },
             "core": { "statusId": "prone" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/prone.png",
-          "label": "Prono",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Prono"
         },
         {
-          "_id": "SlYdtHgMRI6vCztC",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "xN966TmmV1zEtGy9",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2284,24 +1198,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Gamba Affettata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Gamba Affettata"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Internal Bleeding",
@@ -2309,30 +1210,14 @@
       "description": "<p>Causa 1 @Condition[Sanguinante] che può essere rimosso solo con @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}. Contrai @Compendium[wfrp4e-core.diseases.M8XyRs9DN12XsFTQ]{Sangue Marcio}.</p>",
       "effects": [
         {
-          "_id": "1WF2x6qda0OfmM8Y",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "bvNWTQ0W26esdMso",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2342,29 +1227,17 @@
               "preventDuplicateEffects": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Ferita Interna",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Ferita Interna"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Jarred Arm",
       "name": "Tremore",
-      "description": "<p>Si perde quello che si stringeva in mano.</p>"
+      "description": "<p>Si perde quello che si stringeva in mano.</p>",
+      "location": "Braccio"
     },
     {
       "id": "Lost Footing",
@@ -2372,7 +1245,6 @@
       "description": "<p>Nella foga si perde l’equilibrio. Superare una <strong>Prova Impegnativa (+0) di Tempra</strong> per non cadere @Condition[Prono].</p>",
       "effects": [
         {
-          "_id": "UEnlvAwvGq0076To",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2380,24 +1252,11 @@
               "script": "if (this.actor.isOwner)\n   args.actor.setupSkill(\"Tempra\").then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"prone\")\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Perdita d'Equilibrio",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Perdita d'Equilibrio"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Low Blow!",
@@ -2405,7 +1264,6 @@
       "description": "<p>Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire 3 @Condition[Stordito].</p>",
       "effects": [
         {
-          "_id": "3hbs7SBwqUyfpvFs",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2413,24 +1271,11 @@
               "script": "if (this.actor.isOwner)\n   args.actor.setupSkill(\"Tempra\", {absolute: {difficulty: \"hard\"}}).then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"stunned\", 3)\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Colpo Basso!",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Colpo Basso!"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Major Chest Wound",
@@ -2438,30 +1283,14 @@
       "description": "<p>Un colpo grave al petto stacca pelle e carne dalle ossa. Causa 4 @Condition[Sanguinante]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}, ogni ulteriore colpo al torso causerà 2 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "T2qqXZGkwHjeIG23",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 4 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "pZD9xrlAHiaRru0d",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2469,24 +1298,11 @@
               "script": "if (args.opposedTest.result.hitloc.value == \"body\") \n    args.actor.addCondition(\"bleeding\", 2)"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Ferita Grave al Petto",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Ferita Grave al Petto"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Major Ear Wound",
@@ -2494,7 +1310,6 @@
       "description": "<p>Il colpo centra l’orecchio provocando una perdita permanente di udito. Il Personaggio subisce un -20 permanente in tutte le Prove di udito. Subire questo risultato una seconda volta rende sordi. Solo la magia può intervenire.</p>",
       "effects": [
         {
-          "_id": "bpo2NXwpg23AKY9y",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "dialogChoice",
@@ -2508,24 +1323,11 @@
               }
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Ferita Grave all'Orecchio",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Ferita Grave all'Orecchio"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Major Eye Wound",
@@ -2533,30 +1335,14 @@
       "description": "<p>L’orbita oculare si frantuma. Causa 1 @Condition[Sanguinante] e 1 @Condition[Accecato]. Quest’ultimo non può essere rimosso senza Cure Mediche.</p>",
       "effects": [
         {
-          "_id": "dJsRgSNjJtohBYPc",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "749ILWkBSZeetB7y",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -2573,24 +1359,11 @@
             },
             "core": { "statusId": "blinded" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/blinded.png",
-          "label": "Accecato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Accecato"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Mangled Ear",
@@ -2598,7 +1371,6 @@
       "description": "<p>Rimane ben poco dell’orecchio. Causa 3 @Condition[Assordato] e 2 @Condition[Sanguinante]. L’orecchio è perso; @Compendium[wfrp4e-core.injuries.8piWcBKFlQ2J1E3A]{Amputazione (Media)}.</p>",
       "effects": [
         {
-          "_id": "FZuPzqtWTtFMIciJ",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -2611,48 +1383,18 @@
             },
             "core": { "statusId": "deafened" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/deafened.png",
-          "label": "Assordato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Assordato"
         },
         {
-          "_id": "lDs43plzT9i4Jxzb",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "kaAFU5cxgv0idSQZ",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2662,24 +1404,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Orecchio Spappolato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Orecchio Spappolato"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Mangled Hand",
@@ -2687,7 +1416,6 @@
       "description": "<p>La mano è ridotta a una polpetta sanguinolenta. Causa 2 @Condition[Sanguinante] e la perdita della mano, @Compendium[wfrp4e-core.injuries.zyocWSzEZEC826NS]{{Amputazione (Ardua)}. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non subire @Condition[Stordito] e @Condition[Prono].</p>",
       "effects": [
         {
-          "_id": "tyXuApNnqAV4JcJ5",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2697,24 +1425,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Mano Maciullata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Mano Maciullata"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Mangled Jaw",
@@ -2722,30 +1437,14 @@
       "description": "<p>Il colpo quasi stacca la mascella, distrugge la lingua e i denti in una pioggia di sangue. Causa 4 @Condition[Sanguinante] e 3 @Condition[Stordito]. Richiede una Prova Molto Ardua (-30) di Tempra per non cadere @Condition[Privo di Sensi]. Provoca un @Compendium[wfrp4e-core.injuries.hCadFsTRvLN9faaY]{Osso Rotto (Maggiore)} e la perdita della @Compendium[wfrp4e-core.injuries.rkJA1DlK51QuRlJy]{lingua} e <strong>[[/r 1d10]]</strong> @Compendium[wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1]{denti}&mdash; <strong>Amputazione (Ardua).</strong></p>",
       "effects": [
         {
-          "_id": "jXnxVAZFV82gebaR",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 4 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "6FBVi7EOhHnDesA0",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -2755,25 +1454,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "Ru3d8ZlbJSm8NlaU",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2783,24 +1467,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Mascella Distrutta",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Mascella Distrutta"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Mauled Bicep",
@@ -2808,30 +1479,14 @@
       "description": "<p>Il colpo quasi strappa i muscoli dalle ossa e lascia una orribile ferita che spruzza sangue sui presenti. Si perde quello che si stringeva in mano e si subisce uno @Compendium[wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Strappo Muscolare (Maggiore)}, 2 @Condition[Sanguinante] e 1 @Condition[Stordito].</p>",
       "effects": [
         {
-          "_id": "DRpsrtMYsEn6RXb4",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "1hf8KQbl7iZKhhzD",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -2841,25 +1496,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "zyFwXMjRg8797kTY",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -2869,24 +1509,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Bicipite Spappolato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Bicipite Spappolato"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Minor Arm Cut",
@@ -2894,29 +1521,15 @@
       "description": "<p>Un brutto taglio al bicipite. Causa 1 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "d2Gh2PYEwe7NdMWQ",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Minor Head Cut",
@@ -2924,29 +1537,15 @@
       "description": "<p>Un taglio sulla guancia. Causa 1 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "Bc6aSIrK2fSMoTBP",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Minor Leg Cut",
@@ -2954,29 +1553,15 @@
       "description": "<p>Causa 1 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "C28zNPsk79lesc2H",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Painful Cut",
@@ -2984,30 +1569,14 @@
       "description": "<p>Causa 2 @Condition[Sanguinante] e 1 @Condition[Stordito]. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non cadere @Condition[Privo di Sensi] a causa del dolore. Con meno di +4 LS si urlerà per la sofferenza.</p>",
       "effects": [
         {
-          "_id": "MeryWEfxh1qfb4qD",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "k8a0UhmO2dc0eg89",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -3017,25 +1586,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "oScP7BQrypeVVVbf",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3043,24 +1597,11 @@
               "script": "if (this.actor.isOwner)\n args.actor.setupSkill(\"Tempra\", {absolute: {difficulty: \"hard\"}}).then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"unconscious\")\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Taglio Doloroso",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Taglio Doloroso"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Poked Eye",
@@ -3068,7 +1609,6 @@
       "description": "<p>Un colpo vicino all’orbita oculare. Causa 1 @Condition[Accecato].</p>",
       "effects": [
         {
-          "_id": "megBKxKy2Xu8LoXg",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -3085,24 +1625,11 @@
             },
             "core": { "statusId": "blinded" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/blinded.png",
-          "label": "Accecato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Accecato"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Pulled Back",
@@ -3110,7 +1637,6 @@
       "description": "<p>Il dolore alla schiena è accecante. Causa uno @Compendium[wfrp4e-core.injuries.eWPN3CV2Eddwz8aM]{Strappo Muscolare (Maggiore)}.</p>",
       "effects": [
         {
-          "_id": "AiDPNet52D6Mwycb",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3120,24 +1646,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Strappo alla Schiena",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Strappo alla Schiena"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Ragged Wound",
@@ -3145,29 +1658,15 @@
       "description": "<p>Causa 2 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "hWDMK94Lo7Vlo7qF",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Rattling Blow",
@@ -3175,7 +1674,6 @@
       "description": "<p>Il sangue sale agli occhi, facendo vedere lampi e macchie. Causa 1 @Condition[Stordito].</p>",
       "effects": [
         {
-          "_id": "VJ0bwQJne0HNmtph",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -3185,24 +1683,11 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Ruptered Ligament",
@@ -3210,7 +1695,6 @@
       "description": "<p>Si perde quello che si stringeva in mano e si subisce @Compendium[wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Strappo Muscolare (Maggiore)}.</p>",
       "effects": [
         {
-          "_id": "MgpYZu22zgrLdxmf",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3220,24 +1704,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Legamento Rotto",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Legamento Rotto"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Ruptured Tendon",
@@ -3245,7 +1716,6 @@
       "description": "<p>Un tendine è gravemente danneggiato. Causa @Condition[Prono] e 1 @Condition[Stordito] e @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Strappo Muscolare (Maggiore)}. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non cadere @Condition[Privo di Sensi]. La gamba è inutilizzabile.</p>",
       "effects": [
         {
-          "_id": "ixCa0FfjTQFA9Th6",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3255,24 +1725,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Tendine Lesionato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Tendine Lesionato"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Severed Finger",
@@ -3280,30 +1737,14 @@
       "description": "<p>Con orrore un dito vola via. Causa 1 @Condition[Sanguinante] e @Compendium[wfrp4e-core.injuries.SYjWiKDzMS6CtROJ]{Amputazione (Media)}.</p>",
       "effects": [
         {
-          "_id": "HkPD4WDbEYIz83dy",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "rG3wXUaHLNu7IcYO",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3313,24 +1754,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Dito Tagliato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Dito Tagliato"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Severed Foot",
@@ -3338,30 +1766,14 @@
       "description": "<p>Il piede viene mozzato e cade a <strong>[[/r 1d10]]</strong>×30cm in una direzione casuale; @Compendium[wfrp4e-core.injuries.gz2xy41OSVZ8YBgI]{Amputazione (Ardua)}. Causa 3 @Condition[Sanguinante], 2 @Condition[Stordito], e 1 @Condition[Prono].</p>",
       "effects": [
         {
-          "_id": "n4NWJIGZiDU9aWt4",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 3 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "rIF8c6C0BNeSjDv2",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -3371,25 +1783,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "2ngJlZ488J7L1sD7",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -3402,25 +1799,10 @@
             },
             "core": { "statusId": "prone" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/prone.png",
-          "label": "Prono",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Prono"
         },
         {
-          "_id": "yZAbuVNb4ExBntt9",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3430,24 +1812,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Piede Amputato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Piede Amputato"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Shattered Pelvis",
@@ -3455,7 +1824,6 @@
       "description": "<p>Il colpo frantuma il bacino mutilando entrambe le gambe. Il Personaggio muore per il trauma.</p>",
       "effects": [
         {
-          "_id": "JyeUMIMAfyK0ZjUn",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3463,24 +1831,12 @@
               "script": "this.actor.addCondition(\"dead\")"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Bacino Distrutto",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Bacino Distrutto"
         }
-      ]
+      ],
+      "location": "Gamba",
+      "wounds": "Morte"
     },
     {
       "id": "Sliced Ear",
@@ -3488,7 +1844,6 @@
       "description": "<p>Un brutto colpo al lato della testa, che affetta l’orecchio. Causa 2 @Condition[Assordato] e 1 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "SbOvAmqaK31JREjI",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -3501,47 +1856,19 @@
             },
             "core": { "statusId": "deafened" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/deafened.png",
-          "label": "Assordato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Assordato"
         },
         {
-          "_id": "CwBoFiJqX5bc27F2",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Sliced Tendons",
@@ -3549,30 +1876,14 @@
       "description": "<p>I tendini vengono recisi, rendendo il braccio inutilizzabile. Causa @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputazione (Molto Ardua)}, 3 @Condition[Sanguinante], @Condition[Prono], e 1 @Condition[Stordito]. Superare una <strong>Prova Ardua (-20) di Tempra</strong> per non cadere @Condition[Privo di Sensi].</p>",
       "effects": [
         {
-          "_id": "9FdeaoISEUYHNkxv",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 3 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "3WIVf1QT93cut5OA",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -3585,25 +1896,10 @@
             },
             "core": { "statusId": "prone" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/prone.png",
-          "label": "Prono",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Prono"
         },
         {
-          "_id": "9qQs2OvZgvHzRHix",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -3613,25 +1909,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "0aCPrsOCLEVcZGxF",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3641,24 +1922,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Tendini Recisi (Braccio)",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Tendini Recisi (Braccio)"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Smashed Mouth",
@@ -3666,30 +1934,14 @@
       "description": "<p>Con un orribile suono, la bocca si riempie di frammenti di denti e di sangue. Causa 2 @Condition[Sanguinante] e la perdita di <strong>[[/r 1d10]]</strong> denti; @Compendium[wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1]{Amputazione (Facile)}.</p>",
       "effects": [
         {
-          "_id": "9qPw0U171RIZCiO4",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "N5WsBzINexkLMQVY",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3699,24 +1951,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/head.png",
-          "label": "Bocca Distrutta",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Bocca Distrutta"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Smashed Rib Cage",
@@ -3724,7 +1963,6 @@
       "description": "<p>Causa @Condition[Privo di Sensi], che può essere rimosso solo con Cure Mediche, e un @Compendium[wfrp4e-core.injuries.EaqlLRQigwnsEAXX]{Osso Rotto (Maggiore)}.</p>",
       "effects": [
         {
-          "_id": "XWadxhMkEKpv03Mk",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -3734,25 +1972,10 @@
             },
             "core": { "statusId": "unconscious" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/unconscious.png",
-          "label": "Privo di Sensi",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Privo di Sensi"
         },
         {
-          "_id": "zdZncZOvjLblz909",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3762,24 +1985,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Clavicola Spezzata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Clavicola Spezzata"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Sprain",
@@ -3787,7 +1997,6 @@
       "description": "<p>Slogatura al braccio. Causa uno @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Strappo Muscolare (Minore)}.</p>",
       "effects": [
         {
-          "_id": "Xk9jhNPT42L2nloL",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3797,24 +2006,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Slogatura",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Slogatura"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Sprained Ankle",
@@ -3822,7 +2018,6 @@
       "description": "<p>Caviglia slogata. Causa uno @Compendium[wfrp4e-core.injuries.nF5z1OEhpi4t6a6S]{Strappo Muscolare (Minore)}.</p>",
       "effects": [
         {
-          "_id": "rtWfTN6wJ4BbJslf",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3832,24 +2027,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Caviglia Slogata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Caviglia Slogata"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Struck Forehead",
@@ -3857,30 +2039,14 @@
       "description": "<p>Un colpo in mezzo alla fronte. Causa 2 @Condition[Sanguinante] e 1 @Condition[Accecato]. Quest’ultimo non può essere rimosso finché rimane <em>Sanguinante</em>.</p>",
       "effects": [
         {
-          "_id": "DhFtbgaZVeqb8kaH",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 2 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "sTAtmClXjBUnD5VO",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -3897,24 +2063,11 @@
             },
             "core": { "statusId": "blinded" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/blinded.png",
-          "label": "Accecato",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Accecato"
         }
-      ]
+      ],
+      "location": "Testa"
     },
     {
       "id": "Stubbed Toe",
@@ -3922,7 +2075,6 @@
       "description": "<p>Nello scontro un dito viene schiacciato. Superare una <strong>Prova Media (+20) di Tempra</strong> per non subire -10 alle Prove di agilità fino alla fine del Turno seguente.</p>",
       "effects": [
         {
-          "_id": "Uxp4sb58T0fiOXEB",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -3930,24 +2082,11 @@
               "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\")\n   args.prefillModifiers.modifier -= 10\n\nif (args.type == \"characteristic\" && args.item == \"ag\")\n   args.prefillModifiers.modifier -= 10"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Dito Schiacciato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Dito Schiacciato"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Thigh Strike",
@@ -3955,30 +2094,14 @@
       "description": "<p>Un colpo molto doloroso alla coscia causa 1 @Condition[Sanguinante]. Superare una <strong>Prova Media (+20) di Tempra</strong> per non cadere @Condition[Prono].</p>",
       "effects": [
         {
-          "_id": "LkPmb8RmlhPowqfB",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "HgsptGxBG4CYhlk2",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -3986,24 +2109,11 @@
               "script": "if (this.actor.isOwner)\n    args.actor.setupSkill(\"Tempra\", {absolute: {difficulty: \"average\"}}).then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"prone\")\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Colpo alla Coscia",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Colpo alla Coscia"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Tis But A Scratch!",
@@ -4011,29 +2121,15 @@
       "description": "<p>Causa 1 @Condition[Sanguinante].</p>",
       "effects": [
         {
-          "_id": "zZmnf7k6JvRb7ULV",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Torn Apart",
@@ -4041,7 +2137,6 @@
       "description": "<p>Il Personaggio viene tagliato in due. La metà superiore vola in una direzione casuale e tutti coloro che si trovano entro 2m vengono ricoperti di sangue.</p>",
       "effects": [
         {
-          "_id": "Du7cZodgpEKD8eK8",
           "flags": {
             "wfrp4e": {
               "effectApplication": "actor",
@@ -4049,24 +2144,12 @@
               "script": "this.actor.addCondition(\"dead\")"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Smembrato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Smembrato"
         }
-      ]
+      ],
+      "location": "Torso",
+      "wounds": "Morte"
     },
     {
       "id": "Torn Muscles",
@@ -4074,30 +2157,14 @@
       "description": "<p>Il colpo centra l’avambraccio. Causa 1 @Condition[Sanguinante] e uno @Compendium[wfrp4e-core.injuries.GlShFJF2TpsNh1FX]{Strappo Muscolare (Minore)}.</p>",
       "effects": [
         {
-          "_id": "kYbKdoUQIYq3zSTN",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 1 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "AdMOpRguQRPZCjVm",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -4107,24 +2174,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornarm.png",
-          "label": "Muscoli Strappati",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Muscoli Strappati"
         }
-      ]
+      ],
+      "location": "Braccio"
     },
     {
       "id": "Torn Thigh",
@@ -4132,30 +2186,14 @@
       "description": "<p>L’arma squarcia la coscia. Causa 3 @Condition[Sanguinante]. Superare una <strong>Prova Impegnativa (+0) di Tempra</strong> per non cadere @Condition[Prono]. Senza una @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia} ogni ulteriore colpo alla gamba causerà 1 @Condition[Sanguinante].</p><blockquote class=\"foundry-note\"><p>L'effetto attivo per questo oggetto richiede il tuo contributo. Sostituire <span style=\"font-family: Courier\">LEG_LOCATION HERE</span> con <span style=\"font-family: Courier\">lLeg</span> o <span style=\"font-family: Courier\">rLeg</span></p></blockquote>",
       "effects": [
         {
-          "_id": "RorPd1gHCj5K5e5E",
           "flags": {
             "wfrp4e": { "trigger": "endRound", "value": 3 },
             "core": { "statusId": "bleeding" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/bleeding.png",
-          "label": "Sanguinante",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Sanguinante"
         },
         {
-          "_id": "jYEOUXmmtfU0bnjS",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "takeDamage",
@@ -4163,25 +2201,10 @@
               "script": "if (args.opposedTest.result.hitloc.value == \"LEG_LOCATION_HERE\") // rLeg or lLeg\n    args.actor.addCondition(\"bleeding\", 1)"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Coscia Lacerata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Coscia Lacerata"
         },
         {
-          "_id": "53D0C2BXQCCAMXSu",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -4189,24 +2212,11 @@
               "script": "if (this.actor.isOwner)\n   args.actor.setupSkill(\"Tempra\").then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"prone\")\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Coscia Lacerata",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Coscia Lacerata"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Twisted Ankle",
@@ -4214,7 +2224,6 @@
       "description": "<p>La caviglia si storce per il carico. Penalità di -10 alle Prove di Agilità per [[/r 1d10]] round.</p>",
       "effects": [
         {
-          "_id": "9dEo6xx3LZwu32td",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -4222,24 +2231,11 @@
               "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\")\n   args.prefillModifiers.modifier -= 10\n\nif (args.type == \"characteristic\" && args.item == \"ag\")\n   args.prefillModifiers.modifier -= 10"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Storta alla Caviglia",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Storta alla Caviglia"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Twisted Back",
@@ -4247,7 +2243,6 @@
       "description": "<p>Causa uno @Compendium[wfrp4e-core.injuries.7rBhIRo96Mydo0Cv]{Strappo Muscolare (Minore)}.</p>",
       "effects": [
         {
-          "_id": "qfUJIoRqhr1u8ODw",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -4257,24 +2252,11 @@
               "hide": false
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Torsione della Schiena",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Torsione della Schiena"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Twisted Knee",
@@ -4282,7 +2264,6 @@
       "description": "<p>Il ginocchio viene ruotato troppo. Penalità di -20 alle Prove di Agilità per [[/r 1d10]] round.</p>",
       "effects": [
         {
-          "_id": "BjIyeZdTw8TPV9qC",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prefillDialog",
@@ -4290,24 +2271,11 @@
               "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\")\n   args.prefillModifiers.modifier -= 20\n\nif (args.type == \"characteristic\" && args.item == \"ag\")\n   args.prefillModifiers.modifier -= 20"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornleg.png",
-          "label": "Storta al ginocchio",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Storta al ginocchio"
         }
-      ]
+      ],
+      "location": "Gamba"
     },
     {
       "id": "Winded",
@@ -4315,7 +2283,6 @@
       "description": "<p>Causa 1 @Condition[Stordito]. Superare una <strong>Prova Media (+20) di Tempra</strong> per non cadere @Condition[Prono]. Movimento dimezzato per [[/r 1d10]] Round, mentre si riprende fiato.</p>",
       "effects": [
         {
-          "_id": "NrZ8LRI1dsP46RmJ",
           "flags": {
             "wfrp4e": {
               "trigger": "endRound",
@@ -4325,25 +2292,10 @@
             },
             "core": { "statusId": "stunned" }
           },
-          "changes": [],
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "systems/wfrp4e/icons/conditions/stunned.png",
-          "label": "Stordito",
-          "transfer": true,
-          "disabled": false,
-          "origin": null,
-          "tint": null
+          "label": "Stordito"
         },
         {
-          "_id": "uaaFc96JlTCALmeJ",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "oneTime",
@@ -4351,25 +2303,10 @@
               "script": "if (this.actor.isOwner)\n   args.actor.setupSkill(\"Tempra\", {absolute: {difficulty: \"average\"}}).then(setupData => {\n       args.actor.basicTest(setupData).then(test => \n        {\n            if (test.result.outcome == \"failure\")\n            args.actor.addCondition(\"prone\")\n        })\n     })"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Fiato Mozzo",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Fiato Mozzo"
         },
         {
-          "_id": "5A8VfGUQYx8Q0M0G",
           "flags": {
             "wfrp4e": {
               "effectTrigger": "prePrepareData",
@@ -4377,34 +2314,23 @@
               "script": "args.actor.details.move.value /= 2"
             }
           },
-          "changes": [],
-          "disabled": false,
-          "duration": {
-            "startTime": null,
-            "seconds": null,
-            "combat": null,
-            "rounds": null,
-            "turns": null,
-            "startRound": null,
-            "startTurn": null
-          },
           "icon": "modules/wfrp4e-core/icons/injuries/tornbody.png",
-          "label": "Movimento Dimezzato",
-          "tint": null,
-          "transfer": true,
-          "origin": null
+          "label": "Movimento Dimezzato"
         }
-      ]
+      ],
+      "location": "Torso"
     },
     {
       "id": "Wrenched Arm",
       "name": "Braccio Lussato",
-      "description": "<p>Il braccio viene quasi rimosso dalla sua sede. Si perde quello che si stringeva in mano e l’arto è inutilizzabile per [[/r 1d10]] Round.</p>"
+      "description": "<p>Il braccio viene quasi rimosso dalla sua sede. Si perde quello che si stringeva in mano e l’arto è inutilizzabile per [[/r 1d10]] Round.</p>",
+      "location": "Braccio"
     },
     {
       "id": "Wrenched Collar Bone",
       "name": "Clavicola Lussata",
-      "description": "<p>Un braccio scelto a caso lascia cadere ciò che si impugna ed è inutilizzabile per [[/r 1d10]] round.</p>"
+      "description": "<p>Un braccio scelto a caso lascia cadere ciò che si impugna ed è inutilizzabile per [[/r 1d10]] round.</p>",
+      "location": "Torso"
     }
   ]
 }
