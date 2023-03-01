@@ -7,7 +7,7 @@
 			"description": ""
 		},
 		{
-			"id": "Career - Dwarf",
+			"id": "OT9tBLUxvNWc62i1",
 			"name": "Career - Dwarf",
 			"description": "",
 			"results": {
@@ -61,7 +61,7 @@
 			}
 		},
 		{
-			"id": "Career - Halfling",
+			"id": "RQ0G7UVPeXR3jp2J",
 			"name": "Career - Halfling",
 			"description": "",
 			"results": {
@@ -116,7 +116,7 @@
 			}
 		},
 		{
-			"id": "Career - High Elf",
+			"id": "wDt3rHbbBVUfX6nw",
 			"name": "Career - High Elf",
 			"description": "",
 			"results": {
@@ -158,8 +158,8 @@
 			}
 		},
 		{
-			"id": "Career - Human (Reiklander)",
-			"name": "Career - Human (Reiklander)",
+			"id": "0vV4bJ7fhZzuPkVh",
+			"name": "Career - Human",
 			"description": "",
 			"results": {
 				"1-1": "@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Apotecario}",
@@ -228,7 +228,7 @@
 			}
 		},
 		{
-			"id": "Career - Wood Elf",
+			"id": "sHYQ3gGxjpOJNxId",
 			"name": "Career - Wood Elf",
 			"description": "",
 			"results": {
