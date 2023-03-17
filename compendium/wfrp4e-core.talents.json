@@ -1,180 +1,588 @@
 {
   "label": "Talenti",
+  "mapping": {
+    "effects": "effects",
+    "tests": "system.tests.value"
+  },
   "entries": [
     {
       "id": "Accurate Shot",
       "name": "Tiro Accurato",
-      "description": "<p>Il Personaggio è un tiratore eccezionale, capace di causare il massimo danno. Somma il grado di questo Talento a tutti i Danni provocati con armi a distanza.</p>"
+      "description": "<p>Il Personaggio è un tiratore eccezionale, capace di causare il massimo danno. Somma il grado di questo Talento a tutti i Danni provocati con armi a distanza.</p>",
+      "effects": [
+        {
+          "_id": "ors3yseo6f4uQCgq",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prePrepareItems",
+              "effectApplication": "actor",
+              "script": "args.actor.flags.rangedDamageIncrease += 1"
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/accurate-shot.png",
+          "label": "Tiro Accurato",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Acute Sense",
       "name": "Senso Acuto (Senso)",
-      "description": "<p>Uno dei cinque sensi del Personaggio è molto sviluppato e gli permette di notare cose che altri non percepiscono. A discrezione del GM, può effettuare Prove di Percepire per notare dettagli impercettibili con il senso associato (per esempio: un’aquila che vola alta nel cielo, un veleno quasi inodore, il respiro di un topo oltre un muro, un’incisione ormai erosa o due birre dello stesso produttore che provengono da botti diverse).</p>"
+      "description": "<p>Uno dei cinque sensi del Personaggio è molto sviluppato e gli permette di notare cose che altri non percepiscono. A discrezione del GM, può effettuare Prove di Percepire per notare dettagli impercettibili con il senso associato (per esempio: un’aquila che vola alta nel cielo, un veleno quasi inodore, il respiro di un topo oltre un muro, un’incisione ormai erosa o due birre dello stesso produttore che provengono da botti diverse).</p>",
+      "tests": "Percepire (Senso)"
     },
     {
       "id": "Aethyric Attunement",
       "name": "Sintonia Aethyrica",
-      "description": "<p>L’esperienza o il talento del Personaggio gli permettono di manipolare in sicurezza i Venti della Magia. Non subisce Incidenti Magici se supera una Prova d’Incanalare ottenendo un doppio.</p>"
+      "description": "<p>L’esperienza o il talento del Personaggio gli permettono di manipolare in sicurezza i Venti della Magia. Non subisce Incidenti Magici se supera una Prova d’Incanalare ottenendo un doppio.</p>",
+      "effects": [
+        {
+          "_id": "mqSUg3ORIh2YCotB",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollChannellingTest",
+              "effectApplication": "actor",
+              "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0)\n{\n    delete args.test.result.minormis\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0)\n{\n    delete args.test.result.majormis\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\")\n}",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/aethyric-attunement.png",
+          "label": "Sintonia Aethyrica",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Incanalare (qualsiasi)"
     },
     {
       "id": "Alley Cat",
       "name": "Randagio",
-      "description": "Il Personaggio si sente a casa tra i vicoli. Può invertire il dado sulle Prove fallite di Nascondersi (Urbano), se il nuovo risultato dovesse essere un successo."
+      "description": "<p>Il Personaggio si sente a casa tra i vicoli. Può invertire il dado sulle Prove fallite di Nascondersi (Urbano), se il nuovo risultato dovesse essere un successo.</p>",
+      "effects": [
+        {
+          "_id": "kS7RdyolGOxATaC3",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "preRollTest",
+              "effectApplication": "actor",
+              "script": "if (args.test.item && args.test.item.name == \"Stealth (Urban)\")\n    args.test.preData.canReverse = true",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/alley-cat.png",
+          "label": "Randagio",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Nascondersi (Urbano)"
     },
     {
       "id": "Ambidextrous",
       "name": "Ambidestro",
-      "description": "<p>Per natura o allenamento, il Personaggio può usare la mano secondaria meglio degli altri. Nelle Prove dove usa solo la mano secondaria subisce -10 invece di -20. Se acquisisce questo Talento due volte non avrà più penalità.</p>"
+      "description": "<p>Per natura o allenamento, il Personaggio può usare la mano secondaria meglio degli altri. Nelle Prove dove usa solo la mano secondaria subisce -10 invece di -20. Se acquisisce questo Talento due volte non avrà più penalità.</p>",
+      "effects": [
+        {
+          "_id": "jc0qgnuBJlMsA5Yn",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "effectTrigger": "prepareData",
+              "script": "args.actor.flags.ambi+= 1"
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/ambidextrous.png",
+          "label": "Ambidestro",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Animal Affinity",
       "name": "Affinità Animale",
-      "description": "Gli animali selvatici sono a proprio agio vicino al Personaggio e spesso eseguono i suoi ordini. Tutte le creature con il Tratto Bestiale non addestrate per essere aggressive resteranno calme in sua presenza a meno di casi particolari (per esempio, se sono ferite o sotto attacco, o mentre difendono i propri piccoli, saranno naturalmente ostili)."
+      "description": "<p>Gli animali selvatici sono a proprio agio vicino al Personaggio e spesso eseguono i suoi ordini. Tutte le creature con il Tratto Bestiale non addestrate per essere aggressive resteranno calme in sua presenza a meno di casi particolari (per esempio, se sono ferite o sotto attacco, o mentre difendono i propri piccoli, saranno naturalmente ostili).</p>",
+      "tests": "Domare Animali"
     },
     {
       "id": "Arcane Magic",
       "name": "Magia Arcana (Sapere)",
-      "description": "<p>&nbsp;</p>\n<p>Il Personaggio ha studiato uno degli otto Aspetti del Sapere della Magia – Bestie, Empireo, Fuoco, Luce, Metallo, Morte, Ombre o Vita – oppure uno di quelli meno noti come Soglia o Necromanzia. Può memorizzare gli incantesimi relativi ai costi seguenti.</p>\n<p>&nbsp;</p>\n<div>\n<table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td>\n<p>N° di Incantesimi Conosciutip>\n</td>\n<td>\n<p>Costo PE nuovo Incantesimo</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Fino a Bonus Intelligenza x 1&nbsp;</p>\n</td>\n<td>\n<p>100 PE</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Fino a Bonus Intelligenza x </p>\n</td>\n<td>\n<p>200 PE</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Fino a Bonus Intelligenza x 3</p>\n</td>\n<td>\n<p>300 PE</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Fino a Bonus Intelligenza x 4</p>\n</td>\n<td>\n<p>400 PE</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>&nbsp;e così via...</p>\n<p>&nbsp;</p>\n<p>Se avesse un Bonus Intelligenza di 4 pagherebbe 100 PE per i primi 4 incantesimi, 200 PE per i successivi 4 e così via. Le regole complete si trovano nel <strong>Capitolo 8: Magia</strong>. In circostanze normali questo Talento può essere acquistato solo una volta e preclude la possibilità di acquisire Benedizione o Invocazione. È possibile disimparare Magia Arcana e tutti gli Incantesimi associati pagando 100 PE.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
+      "description": "<p>&nbsp;</p>\n<p>Il Personaggio ha studiato uno degli otto Aspetti del Sapere della Magia – Bestie, Empireo, Fuoco, Luce, Metallo, Morte, Ombre o Vita – oppure uno di quelli meno noti come Soglia o Necromanzia. Può memorizzare gli incantesimi relativi ai costi seguenti.</p>\n<p>&nbsp;</p>\n<div>\n<table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td>\n<p>N° di Incantesimi Conosciuti</p>\n</td>\n<td>\n<p>Costo PE nuovo Incantesimo</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Fino a Bonus Intelligenza x 1&nbsp;</p>\n</td>\n<td>\n<p>100 PE</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Fino a Bonus Intelligenza x </p>\n</td>\n<td>\n<p>200 PE</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Fino a Bonus Intelligenza x 3</p>\n</td>\n<td>\n<p>300 PE</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>Fino a Bonus Intelligenza x 4</p>\n</td>\n<td>\n<p>400 PE</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>&nbsp;e così via...</p>\n<p>&nbsp;</p>\n<p>Se avesse un Bonus Intelligenza di 4 pagherebbe 100 PE per i primi 4 incantesimi, 200 PE per i successivi 4 e così via. Le regole complete si trovano nel <strong>Capitolo 8: Magia</strong>. In circostanze normali questo Talento può essere acquistato solo una volta e preclude la possibilità di acquisire Benedizione o Invocazione. È possibile disimparare Magia Arcana e tutti gli Incantesimi associati pagando 100 PE.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>"
     },
     {
       "id": "Argumentative",
       "name": "Polemico",
-      "description": "Il Personaggio è abituato a vincere le discussioni. Quando, durante un dibattito, ha successo in una Prova di Affascinare può usare il LS normale o il valore del dado delle unità. Quindi un tiro di 24 potrebbe equivalere a +4 LS."
+      "description": "<p>Il Personaggio è abituato a vincere le discussioni. Quando, durante un dibattito, ha successo in una Prova di Affascinare può usare il LS normale o il valore del dado delle unità. Quindi un tiro di 24 potrebbe equivalere a +4 LS.</p>",
+      "effects": [
+        {
+          "_id": "oAsvKkgS9pLtavj7",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollTest",
+              "effectApplication": "actor",
+              "script": "if (args.test.item && args.test.item.name == \"Charm\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target))\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if debating.`)\n}",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/argumentative.png",
+          "label": "Polemico",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Affascinare durante discussioni o dibattiti"
     },
     {
       "id": "Artistic",
       "name": "Artista",
-      "description": "Il Personaggio ha un talento naturale per l’arte e sa realizzare bozzetti molto precisi con un po’ di tempo e materiali adatti. Questa capacità ha molti usi, che vanno dal realizzare manifesti e identikit alle illustrazioni d’archivio e può fornire bonus a discrezione del GM. Inoltre, aggiunge Arte (qualsiasi) a tutte le Carriere in cui entra; se questo è già presente dà uno sconto di 5 PE su ogni Avanzamento."
+      "description": "<p>Il Personaggio ha un talento naturale per l’arte e sa realizzare bozzetti molto precisi con un po’ di tempo e materiali adatti. Questa capacità ha molti usi, che vanno dal realizzare manifesti e identikit alle illustrazioni d’archivio e può fornire bonus a discrezione del GM. Inoltre, aggiunge Arte (qualsiasi) a tutte le Carriere in cui entra; se questo è già presente dà uno sconto di 5 PE su ogni Avanzamento.</p>",
+      "tests": "Arte (qualsiasi)"
     },
     {
       "id": "Attractive",
       "name": "Attraente",
-      "description": "<p>Il Personaggio sa sfruttare al massimo ciò che gli dèi gli hanno donato, che sia uno sguardo magnetico, un fisico robusto o dei denti perfetti. Quando usa con successo Affascinare per influenzare chi è attratto da lui può usare il LS normale o il valore del dado delle unità. Quindi un tiro di 38 potrebbe equivalere a +8 LS.</p>"
+      "description": "<p>Il Personaggio sa sfruttare al massimo ciò che gli dèi gli hanno donato, che sia uno sguardo magnetico, un fisico robusto o dei denti perfetti. Quando usa con successo Affascinare per influenzare chi è attratto da lui può usare il LS normale o il valore del dado delle unità. Quindi un tiro di 38 potrebbe equivalere a +8 LS.</p>",
+      "effects": [
+        {
+          "_id": "pq0wuLa5jebvLTGR",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollTest",
+              "effectApplication": "actor",
+              "script": "if (args.test.item && args.test.item.name == \"Charm\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target))\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if target is attracted to you.`)\n}",
+              "preventDuplicateEffects": true,
+              "hide": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/attractive.png",
+          "label": "Attraente",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Affascinare nei confronti di chi è attratto dal Personaggio"
     },
     {
       "id": "Battle Rage",
       "name": "Furia da Battaglia",
-      "description": "Il Personaggio riesce a controllare la propria Furia e a interromperla superando una Prova di Freddezza alla fine del Round."
+      "description": "<p>Il Personaggio riesce a controllare la propria Furia e a interromperla superando una Prova di Freddezza alla fine del Round.</p>",
+      "tests": "Abilità di Combattimento mentre è soggetto alla Furia"
     },
     {
       "id": "Beat Blade",
       "name": "Botta",
-      "description": "<p>Il Personaggio è addestrato a dare colpi controllati all’arma dell’avversario per creare aperture o deflettere attacchi. Come Azione, prima di tirare, può decidere di eseguire una Botta, ossia una Prova di Abilità di Combattimento, non Contrapposta. In caso di successo l’avversario perde 1 Vantaggio, più un altro per LS. Questo Talento non ha effetto se il nemico è disarmato o di Taglia superiore (vedere pag. 342).</p>"
+      "description": "<p>Il Personaggio è addestrato a dare colpi controllati all’arma dell’avversario per creare aperture o deflettere attacchi. Come Azione, prima di tirare, può decidere di eseguire una Botta, ossia una Prova di Abilità di Combattimento, non Contrapposta. In caso di successo l’avversario perde 1 Vantaggio, più un altro per LS. Questo Talento non ha effetto se il nemico è disarmato o di Taglia superiore (vedere pag. 342).</p>",
+      "tests": "Abilità di Combattimento per usare questo Talento"
     },
     {
       "id": "Beneath Notice",
       "name": "Insignificante",
-      "description": "<p>Il Personaggio non viene mai considerato dai grandi e dai potenti. Se abbigliato in modo adatto e in un luogo consono, chi ha Status superiore non lo noterà, a meno che la sua presenza divenga inappropriata. Tutto questo rende molto facile origliare. Inoltre, chi ha Status superiore non ottiene alcun Vantaggio dal colpirlo o danneggiarlo in combattimento, perché non c’è gloria nel prendere a calci un cane randagio.</p>"
+      "description": "<p>Il Personaggio non viene mai considerato dai grandi e dai potenti. Se abbigliato in modo adatto e in un luogo consono, chi ha Status superiore non lo noterà, a meno che la sua presenza divenga inappropriata. Tutto questo rende molto facile origliare. Inoltre, chi ha Status superiore non ottiene alcun Vantaggio dal colpirlo o danneggiarlo in combattimento, perché non c’è gloria nel prendere a calci un cane randagio.</p>",
+      "tests": "Nascondersi in piena vista"
     },
     {
       "id": "Berserk Charge",
       "name": "Carica del Berserker",
-      "description": "Il Personaggio si getta contro i nemici senza timore, sfruttando l’impeto per potenziare i propri colpi. Quando Carica, somma +1 Danno a tutti gli attacchi in mischia per grado di questo Talento."
+      "description": "<p>Il Personaggio si getta contro i nemici senza timore, sfruttando l’impeto per potenziare i propri colpi. Quando Carica, somma +1 Danno a tutti gli attacchi in mischia per grado di questo Talento.</p>",
+      "effects": [
+        {
+          "_id": "6dxDagVXzDKL4vgR",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollWeaponTest",
+              "effectApplication": "actor",
+              "script": "if (args.test.result.charging)\n{\n   args.test.result.damage += 1\n   args.test.result.additionalDamage += 1\n}",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/berserk-charge.png",
+          "label": "Carica del Berserker",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Mischia nel Round di Carica"
     },
     {
       "id": "Blather",
       "name": "Blaterare",
-      "description": "<p>Nel Nordland si dice ‘aprire la bocca per farle prendere aria’, nell’Ostland ‘dire idiozie’. Blaterare comporta di parlare rapidamente o a lungo, usando non-sense per confondere l’interlocutore. Per farlo si effettua una <strong>Prova Contrapposta di Affascinare/Intelligenza</strong>. Un successo causa all’avversario una Condizione <em>Stordito</em>, più un’altra per grado di questo Talento. La vittima resta senza parole e con gli occhi sbarrati, mentre tenta di capire cosa il Personaggio abbia detto. Quando l’ultimo <em>Stordito</em> viene rimosso, potrà rispondere e potrebbe non apprezzare di essere stata preso per i fondelli. Se il Personaggio smette di parlate tutti gli <em>Stordito</em> provocati da questo Talento vengono subito rimossi. In generale, si può usare Blaterare solo una volta per scena – o più a lungo a discrezione del GM – per avversario, dato che dopo un po’ questi si renderà conto dei trucchi del Personaggio.</p>\n<p>&nbsp;</p>"
+      "description": "<p>Nel Nordland si dice ‘aprire la bocca per farle prendere aria’, nell’Ostland ‘dire idiozie’. Blaterare comporta di parlare rapidamente o a lungo, usando non-sense per confondere l’interlocutore. Per farlo si effettua una <strong>Prova Contrapposta di Affascinare/Intelligenza</strong>. Un successo causa all’avversario una Condizione <em>Stordito</em>, più un’altra per grado di questo Talento. La vittima resta senza parole e con gli occhi sbarrati, mentre tenta di capire cosa il Personaggio abbia detto. Quando l’ultimo <em>Stordito</em> viene rimosso, potrà rispondere e potrebbe non apprezzare di essere stata preso per i fondelli. Se il Personaggio smette di parlate tutti gli <em>Stordito</em> provocati da questo Talento vengono subito rimossi. In generale, si può usare Blaterare solo una volta per scena – o più a lungo a discrezione del GM – per avversario, dato che dopo un po’ questi si renderà conto dei trucchi del Personaggio.</p>\n<p>&nbsp;</p>",
+      "tests": "Affascinare per usare questo Talento"
     },
     {
       "id": "Bless",
       "name": "Benedizione (Sapere Divino)",
-      "description": "Il Personaggio è protetto da una divinità, che concede potere alle sue preghiere e gli dà accesso alle proprie Benedizioni, elencate nel <strong>Capitolo 7: Religione e Fede</strong>. In circostanze normali si può conoscere una sola Sapere Divino con questo Talento."
+      "description": "<p>Il Personaggio è protetto da una divinità, che concede potere alle sue preghiere e gli dà accesso alle proprie Benedizioni, elencate nel <strong>Capitolo 7: Religione e Fede</strong>. In circostanze normali si può conoscere una sola Sapere Divino con questo Talento.</p>"
     },
     {
       "id": "Bookish",
       "name": "Topo di Biblioteca",
-      "description": "Il Personaggio è a proprio agio nelle biblioteche come un vecchio lupo di mare in una cambusa. Può invertire il dado sulle Prove fallite di Ricercare, se il nuovo risultato dovesse essere un successo."
+      "description": "<p>Il Personaggio è a proprio agio nelle biblioteche come un vecchio lupo di mare in una cambusa. Può invertire il dado sulle Prove fallite di Ricercare, se il nuovo risultato dovesse essere un successo.</p>",
+      "effects": [
+        {
+          "_id": "LKDNluFVNLBNUH4N",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "preRollTest",
+              "effectApplication": "actor",
+              "script": "if (args.test.item && args.test.item.name == \"Research\")\n    args.test.preData.canReverse = true",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/bookish.png",
+          "label": "Topo di Biblioteca",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Ricercare"
     },
     {
       "id": "Break and Enter",
       "name": "Sfondare",
-      "description": "Il Personaggio è un esperto nello sfondare porte e negli ingressi forzati. Aggiunge +1 Danno per grado di questo Talento ai danni inflitti a oggetti inanimati, come finestre, bauli e porte."
+      "description": "<p>Il Personaggio è un esperto nello sfondare porte e negli ingressi forzati. Aggiunge +1 Danno per grado di questo Talento ai danni inflitti a oggetti inanimati, come finestre, bauli e porte.</p>",
+      "tests": "Mischia per sfondare o rompere oggetti inanimati"
     },
     {
       "id": "Briber",
       "name": "Corruttore",
-      "description": "Il Personaggio è molto abile a corrompere. Il GM dovrebbe ridurre il costo di ogni tangente del 10% per grado di questo Talento (minimo 10% del valore iniziale)."
+      "description": "<p>Il Personaggio è molto abile a corrompere. Il GM dovrebbe ridurre il costo di ogni tangente del 10% per grado di questo Talento (minimo 10% del valore iniziale).</p>",
+      "tests": "Corrompere"
     },
     {
       "id": "Cardsharp",
       "name": "Baro (Carte)",
-      "description": "Il Personaggio sa come giocare, e vincere, a carte, anche se potrebbe qualche volta barare. Durante una partita a carte, se ha successo in una Prova di Giocare d’Azzardo o Rapidità di Mano, può usare il LS normale o il valore del dado delle unità (per esempio, un tiro di 28 potrebbe equivalere a +8 LS). Se il gruppo gioca davvero a carte al tavolo, a ogni distribuzione il Personaggio riceverà tante carte aggiuntive quanto è il grado di questo Talento e dovrà poi scegliere quali scartare fino a raggiungere il numero previsto dalle regole."
+      "description": "<p>Il Personaggio sa come giocare, e vincere, a carte, anche se potrebbe qualche volta barare. Durante una partita a carte, se ha successo in una Prova di Giocare d’Azzardo o Rapidità di Mano, può usare il LS normale o il valore del dado delle unità (per esempio, un tiro di 28 potrebbe equivalere a +8 LS). Se il gruppo gioca davvero a carte al tavolo, a ogni distribuzione il Personaggio riceverà tante carte aggiuntive quanto è il grado di questo Talento e dovrà poi scegliere quali scartare fino a raggiungere il numero previsto dalle regole.</p>",
+      "tests": "Giocare d’Azzardo e Rapidità di mano quando si gioca a carte"
     },
     {
       "id": "Careful Strike",
       "name": "Colpo Misurato",
-      "description": "<p>Sia in mischia che a distanza, il Personaggio è abile nel colpire gli avversari esattamente dove desidera. Può modificare la Locazione di +/-10 per grado di questo Talento. Per esempio, avendo 2 gradi, una Locazione 34 (Braccio Destro), potrebbe essere ridotta fino a 14 (Braccio Sinistro) o aumentata fino a 54 (Torso). Vedere pag. 159.</p>"
+      "description": "<p>Sia in mischia che a distanza, il Personaggio è abile nel colpire gli avversari esattamente dove desidera. Può modificare la Locazione di +/-10 per grado di questo Talento. Per esempio, avendo 2 gradi, una Locazione 34 (Braccio Destro), potrebbe essere ridotta fino a 14 (Braccio Sinistro) o aumentata fino a 54 (Torso). Vedere pag. 159.</p>",
+      "effects": [
+        {
+          "_id": "c66r2RrClNOTONMB",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollWeaponTest",
+              "effectApplication": ""
+            }
+          },
+          "changes": [],
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/careful-strike.png",
+          "label": "Colpo Misurato",
+          "transfer": true,
+          "disabled": false,
+          "origin": null,
+          "tint": null
+        }
+      ]
     },
     {
       "id": "Carouser",
       "name": "Beone",
-      "description": "Il Personaggio è un bevitore incallito e sa come darci dentro. Può invertire il dado sulle Prove fallite di Reggere Alcolici, se il nuovo risultato dovesse essere un successo."
+      "description": "<p>Il Personaggio è un bevitore incallito e sa come darci dentro. Può invertire il dado sulle Prove fallite di Reggere Alcolici, se il nuovo risultato dovesse essere un successo.</p>",
+      "effects": [
+        {
+          "_id": "rdiV37QZ38bf5z2P",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": false,
+              "effectTrigger": "preRollTest",
+              "script": "if (args.test.item && args.test.item.name == \"Consume Alcohol\")\n    args.test.preData.canReverse = true"
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/carouser.png",
+          "label": "Beone",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Affascinare e Pettegolezzi durante le feste, Reggere Alcolici"
     },
     {
       "id": "Cat-tongued",
       "name": "Lingua di Gatto",
-      "description": "<p>Come Ranald, Dio dell’Inganno, il Personaggio mescola liberamente verità e bugia. Quando usa Affascinare per mentire, gli ascoltatori non possono tirare automaticamente Intuire per notare le incongruenze.</p>"
+      "description": "<p>Come Ranald, Dio dell’Inganno, il Personaggio mescola liberamente verità e bugia. Quando usa Affascinare per mentire, gli ascoltatori non possono tirare automaticamente Intuire per notare le incongruenze.</p>",
+      "tests": "Affascinare quando si mente"
     },
     {
       "id": "Catfall",
       "name": "Cadere in Piedi",
-      "description": "Il Personaggio è agile come un gatto e può cadere da grande altezza senza subire danni. Quando ciò avviene, può effettuare una Prova di Atletica. Un successo riduce la caduta di 1m, più 1m per LS, ai fini del calcolo dei Danni."
+      "description": "<p>Il Personaggio è agile come un gatto e può cadere da grande altezza senza subire danni. Quando ciò avviene, può effettuare una Prova di Atletica. Un successo riduce la caduta di 1m, più 1m per LS, ai fini del calcolo dei Danni.</p>",
+      "tests": "Atletica quando si cade"
     },
     {
       "id": "Chaos Magic",
       "name": "Magia del Caos (Sapere)",
-      "description": "Uno degli Dei Oscuri possiede un pezzo dell’anima del Personaggio, che ora può praticare la maligna Magia del Caos. Il suo patrono (di solito Nurgle, Slaanesh o Tzeentch) concede subito un incantesimo della propria Sfera, che si insinua nella mente del Personaggio causando 1 Punto Corruzione. Ogni grado di questo Talento costa sempre 100 PE, invece del normale valore, e fornisce un ulteriore incantesimo del Sapere prescelto e 1 Punto Corruzione. Per maggiori informazioni vedere il <strong>Capitolo 8: Magia</strong>. In condizioni normali si può conoscere solo un Sapere del Caos."
+      "description": "<p>Uno degli Dei Oscuri possiede un pezzo dell’anima del Personaggio, che ora può praticare la maligna Magia del Caos. Il suo patrono (di solito Nurgle, Slaanesh o Tzeentch) concede subito un incantesimo della propria Sfera, che si insinua nella mente del Personaggio causando 1 Punto Corruzione. Ogni grado di questo Talento costa sempre 100 PE, invece del normale valore, e fornisce un ulteriore incantesimo del Sapere prescelto e 1 Punto Corruzione. Per maggiori informazioni vedere il <strong>Capitolo 8: Magia</strong>. In condizioni normali si può conoscere solo un Sapere del Caos.</p>"
     },
     {
       "id": "Combat Aware",
       "name": "Vigile",
-      "description": "<p>Il Personaggio è abituato a vigilare durante gli scontri e a prendere decisioni rapide quando le sorti cambiano. Può ignorare la Sorpresa superando una <strong>Prova Impegnativa (+0) di Percepire</strong>, modificata dalle circostanze.</p>"
+      "description": "<p>Il Personaggio è abituato a vigilare durante gli scontri e a prendere decisioni rapide quando le sorti cambiano. Può ignorare la Sorpresa superando una <strong>Prova Impegnativa (+0) di Percepire</strong>, modificata dalle circostanze.</p>",
+      "tests": "Percepire durante una mischia"
     },
     {
       "id": "Combat Master",
       "name": "Veterano",
-      "description": "Gli anni di esperienza permettono al Personaggio di tenere a bada gli avversari da poco. Quando si trova in inferiorità numerica, ogni grado di questo Talento viene considerato come una persona in più per determinare eventuali bonus o penalità (vedere pag. 162)."
+      "description": "<p>Gli anni di esperienza permettono al Personaggio di tenere a bada gli avversari da poco. Quando si trova in inferiorità numerica, ogni grado di questo Talento viene considerato come una persona in più per determinare eventuali bonus o penalità (vedere pag. 162).</p>"
     },
     {
       "id": "Combat Reflexes",
       "name": "Riflessi da Combattimento",
-      "description": "<p>Il personaggio è veloce come un fulmine. Aggiunge +10 alla propria Iniziativa per grado di questo Talento per determinare l’Ordine d’Iniziativa in combattimento.</p>"
+      "description": "<p>Il personaggio è veloce come un fulmine. Aggiunge +10 alla propria Iniziativa per grado di questo Talento per determinare l’Ordine d’Iniziativa in combattimento.</p>",
+      "effects": [
+        {
+          "_id": "7i8RGItRAF5GLESP",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "getInitiativeFormula",
+              "effectApplication": "actor",
+              "script": "let initiativeSetting = game.settings.get(\"wfrp4e\", \"initiativeRule\")\n\nswitch (initiativeSetting) {\n  case \"default\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"sl\":\n    args.initiative += \"+1\"\n    break;\n\n  case \"d10Init\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"d10InitAgi\":\n    args.initiative += \"+1\"\n    break;\n}",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/combat-reflexes.png",
+          "label": "Riflessi da Combattimento",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Commanding Presence",
       "name": "Presenza Maestosa",
-      "description": "La sola presenza del Personaggio causa timore e ammirazione. Il suo carisma è tale che chi ha uno Status inferiore non può opporsi al suo Comandare usando Volontà. Ovviamente, i nemici non saranno propensi a rispettarlo od obbedirgli, ma la gente comune non gli darà noie."
+      "description": "<p>La sola presenza del Personaggio causa timore e ammirazione. Il suo carisma è tale che chi ha uno Status inferiore non può opporsi al suo Comandare usando Volontà. Ovviamente, i nemici non saranno propensi a rispettarlo od obbedirgli, ma la gente comune non gli darà noie.</p>",
+      "tests": "Comandare"
     },
     {
       "id": "Concoct",
       "name": "Mescere",
-      "description": "Il Personaggio è abile nel creare al volo pozioni, filtri e decotti. Può compiere una singola Impresa <em>Artigianato</em> gratuita usando Conoscenza (Apotecario) senza bisogno di un Laboratorio. Le altre seguono le regole normali."
+      "description": "<p>Il Personaggio è abile nel creare al volo pozioni, filtri e decotti. Può compiere una singola Impresa <em>Artigianato</em> gratuita usando Conoscenza (Apotecario) senza bisogno di un Laboratorio. Le altre seguono le regole normali.</p>",
+      "tests": "Mestiere (Apotecario)"
     },
     {
       "id": "Contortionist",
       "name": "Contorsionista",
-      "description": "Il Personaggio può piegare il proprio corpo in modi apparentemente innaturali. Questo gli permette di scivolare in minuscoli pertugi o compiere strani movimenti (bonus a discrezione del GM, che può richiedere una Prova di Agilità per ottenerli)."
+      "description": "<p>Il Personaggio può piegare il proprio corpo in modi apparentemente innaturali. Questo gli permette di scivolare in minuscoli pertugi o compiere strani movimenti (bonus a discrezione del GM, che può richiedere una Prova di Agilità per ottenerli).</p>",
+      "tests": "Esibirsi o Agilità quando contorcersi è d’aiuto"
     },
     {
       "id": "Coolheaded",
       "name": "Razionale",
-      "description": "Il Personaggio ottiene +5 alla propria Volontà base (non conta per gli Avanzamenti)."
+      "description": "<p>Il Personaggio ottiene +5 alla propria Volontà base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "QTmmZBqgkJMBn9KT",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.wp.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/coolheaded.png",
+          "label": "Razionale",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Crack the Whip",
       "name": "Schiocco di Frusta",
-      "description": "Il Personaggio sa come spronare gli animali. Quando impugna una frusta, tutti gli animali che controlla ottengono +1 Movimento per Correre o Scappare."
+      "description": "<p>Il Personaggio sa come spronare gli animali. Quando impugna una frusta, tutti gli animali che controlla ottengono +1 Movimento per Correre o Scappare.</p>",
+      "tests": "Condurre Carri o Cavalcare quando si è in fuga o si corre"
     },
     {
       "id": "Craftsman",
       "name": "Artigiano (Mestiere)",
-      "description": "Il Personaggio ha un vero talento. Aggiunge l’Abilità Mestiere scelta a tutte le Carriere in cui entra; se questa è già presente ha uno sconto di 5 PE su ogni Avanzamento."
+      "description": "<p>Il Personaggio ha un vero talento. Aggiunge l’Abilità Mestiere scelta a tutte le Carriere in cui entra; se questa è già presente ha uno sconto di 5 PE su ogni Avanzamento.</p>",
+      "tests": "Mestiere (qualsiasi)"
     },
     {
       "id": "Criminal",
       "name": "Criminale",
-      "description": "<p>Il Personaggio si guadagna da vivere in modo illegale e non ne fa mistero. Quando deve calcolare il proprio Guadagno in partita o con l’Impresa <em>Profitto</em> fare riferimento alla tabella seguente:</p>\n<p>&nbsp;</p>\n<div>\n<table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td>\n<p>Livello di Carriera</p>\n</td>\n<td>\n<p>Denaro Bonus per grado di Talento</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>1</p>\n</td>\n<td>\n<p>+2d10 penny d’ottone</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2</p>\n</td>\n<td>\n<p>+1d10 scellini d’argento</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>3&nbsp;</p>\n</td>\n<td>\n<p>+2d10 scellini d’argento</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>4</p>\n</td>\n<td>\n<p>+1 corona d’oro</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>&nbsp;</p>\n<p>A causa della natura illecita di queste attività, chiunque non abbia il Talento Criminale considera il Personaggio di Status più basso del normale, forse a causa di un tatuaggio di una banda o altri segni di riconoscimento. Per questo le autorità locali sono sempre sospettose nei suoi confronti e più gradi ha nel Talento più le cose diventano per lui difficili. Chi infrange la legge senza questo Talento otterrà molto meno denaro, ma manterrà il proprio Status, dato che non ha una fama tanto cattiva. Con il permesso del GM è possibile rimuovere gradi di Criminale allo stesso costo in PE che avrebbe acquisirli. </p>"
+      "description": "<p>Il Personaggio si guadagna da vivere in modo illegale e non ne fa mistero. Quando deve calcolare il proprio Guadagno in partita o con l’Impresa <em>Profitto</em> fare riferimento alla tabella seguente:</p>\n<p>&nbsp;</p>\n<div>\n<table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td>\n<p>Livello di Carriera</p>\n</td>\n<td>\n<p>Denaro Bonus per grado di Talento</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>1</p>\n</td>\n<td>\n<p>+2d10 penny d’ottone</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2</p>\n</td>\n<td>\n<p>+1d10 scellini d’argento</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>3&nbsp;</p>\n</td>\n<td>\n<p>+2d10 scellini d’argento</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>4</p>\n</td>\n<td>\n<p>+1 corona d’oro</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n<p>&nbsp;</p>\n<p>A causa della natura illecita di queste attività, chiunque non abbia il Talento Criminale considera il Personaggio di Status più basso del normale, forse a causa di un tatuaggio di una banda o altri segni di riconoscimento. Per questo le autorità locali sono sempre sospettose nei suoi confronti e più gradi ha nel Talento più le cose diventano per lui difficili. Chi infrange la legge senza questo Talento otterrà molto meno denaro, ma manterrà il proprio Status, dato che non ha una fama tanto cattiva. Con il permesso del GM è possibile rimuovere gradi di Criminale allo stesso costo in PE che avrebbe acquisirli. </p>",
+      "effects": [
+        {
+          "_id": "tS0NjO6ujjQH6sV9",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollIncomeTest",
+              "effectApplication": "actor",
+              "script": "console.log(args)",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/criminal.png",
+          "label": "Criminale",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Deadeye Shot",
@@ -184,182 +592,547 @@
     {
       "id": "Dealmaker",
       "name": "Affarista",
-      "description": "<p>Il Personaggio è un abile mercante. Quando usa Mercanteggiare può incrementare o ridurre il prezzo finale del 10%.</p>\n<p>&nbsp;</p>\n<p><strong>Nota:</strong> Il GM può imporre un limite minimo, affinché nessuno venda sottocosto. </p>"
+      "description": "<p>Il Personaggio è un abile mercante. Quando usa Mercanteggiare può incrementare o ridurre il prezzo finale del 10%.</p>\n<p>&nbsp;</p>\n<p><strong>Nota:</strong> Il GM può imporre un limite minimo, affinché nessuno venda sottocosto.</p>",
+      "tests": "Mercanteggiare"
     },
     {
       "id": "Detect Artefact",
       "name": "Percepire Artefatti",
-      "description": "Il Personaggio è in grado di percepire la magia all’interno degli artefatti. Quando ne tocca uno può effettuare una Prova di Intuire. Un successo gli permette di percepirne il potere e ogni LS darà informazioni su eventuali regole speciali. Di solito, questa prova può essere eseguita solo una volta per artefatto."
+      "description": "<p>Il Personaggio è in grado di percepire la magia all’interno degli artefatti. Quando ne tocca uno può effettuare una Prova di Intuire. Un successo gli permette di percepirne il potere e ogni LS darà informazioni su eventuali regole speciali. Di solito, questa prova può essere eseguita solo una volta per artefatto.</p>",
+      "tests": "Intuire per localizzare artefatti magici"
     },
     {
       "id": "Diceman",
       "name": "Baro (Dadi)",
-      "description": "Il Personaggio è un genio dei dadi, chi lo chiama baro è solo un invidioso. Durante una partita a dadi, se ha successo in una Prova di Giocare d’Azzardo o Rapidità di Mano, può usare il LS normale o il valore del dado delle unità (per esempio, un tiro di 06 potrebbe equivalere a +6 LS). Se il gruppo gioca davvero a dadi al tavolo, a ogni mano, il Personaggio può tirare un numero di dadi in più pari al grado di questo Talento e dovrà poi scegliere quali scartare per formare una combinazione regolamentare."
+      "description": "<p>Il Personaggio è un genio dei dadi, chi lo chiama baro è solo un invidioso. Durante una partita a dadi, se ha successo in una Prova di Giocare d’Azzardo o Rapidità di Mano, può usare il LS normale o il valore del dado delle unità (per esempio, un tiro di 06 potrebbe equivalere a +6 LS). Se il gruppo gioca davvero a dadi al tavolo, a ogni mano, il Personaggio può tirare un numero di dadi in più pari al grado di questo Talento e dovrà poi scegliere quali scartare per formare una combinazione regolamentare.</p>",
+      "tests": "Giocare d’Azzardo e Rapidità di mano quando si gioca a dadi"
     },
     {
       "id": "Dirty Fighting",
       "name": "Gioco Sporco",
-      "description": "Il Personaggio conosce tutti i trucchi più sporchi della lotta a mani nude. Quando colpisce con Mischia (Rissa), infligge +1 Danno per grado di questo Talento. Nota: usare questo Talento in uno scontro formale è considerato sleale."
+      "description": "<p>Il Personaggio conosce tutti i trucchi più sporchi della lotta a mani nude. Quando colpisce con Mischia (Rissa), infligge +1 Danno per grado di questo Talento. Nota: usare questo Talento in uno scontro formale è considerato sleale.</p>",
+      "effects": [
+        {
+          "_id": "NznDJLYiqbwPzhZt",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/dirty-fighting.png",
+          "label": "Gioco Sporco",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prePrepareItem",
+              "effectApplication": "actor",
+              "script": "if (args.item.type == \"weapon\" && args.item.weaponGroup.value == \"brawling\")\n    args.item.damage.value += \" + 1\"",
+              "hide": false,
+              "preventDuplicateEffects": false
+            }
+          },
+          "tint": null,
+          "origin": null
+        }
+      ],
+      "tests": "Mischia (Rissa)"
     },
     {
       "id": "Disarm",
       "name": "Disarmare",
-      "description": "<p>Il Personaggio è capace di disarmare un avversario con uno scatto del polso o un colpo alla mano. Come Azione può tentare una <strong>Prova Contrapposta Mischia/Mischia</strong>. Se vince, l’avversario perde la presa sull’arma che cade a 1d10×30cm in una direzione casuale (con eventuali altri effetti decisi dal GM). Se vince di 2 LS, il Personaggio può decidere la distanza di caduta invece di tirare; con 4 LS può scegliere anche la direzione; con 6 LS può afferrare al volo l’arma se ha una mano libera. Questo Talento non ha effetto se l’avversario è disarmato o di Taglia superiore (vedere pag. 342).</p>"
+      "description": "<p>Il Personaggio è capace di disarmare un avversario con uno scatto del polso o un colpo alla mano. Come Azione può tentare una <strong>Prova Contrapposta Mischia/Mischia</strong>. Se vince, l’avversario perde la presa sull’arma che cade a 1d10×30cm in una direzione casuale (con eventuali altri effetti decisi dal GM). Se vince di 2 LS, il Personaggio può decidere la distanza di caduta invece di tirare; con 4 LS può scegliere anche la direzione; con 6 LS può afferrare al volo l’arma se ha una mano libera. Questo Talento non ha effetto se l’avversario è disarmato o di Taglia superiore (vedere pag. 342).</p>",
+      "tests": "Mischia per Disarmare"
     },
     {
       "id": "Distract",
       "name": "Distrarre",
-      "description": "<p>Il Personaggio è abile nell’usare piccoli movimenti per provocare o nascondere le sue vere intenzioni. Può usare la propria Manovra per Distrarre, effettuando una <strong>Prova Contrapposta Atletica/ Freddezza</strong>. Se vince, l’avversario non potrà guadagnare Vantaggio fino al termine del Round seguente.</p>"
+      "description": "<p>Il Personaggio è abile nell’usare piccoli movimenti per provocare o nascondere le sue vere intenzioni. Può usare la propria Manovra per Distrarre, effettuando una <strong>Prova Contrapposta Atletica/ Freddezza</strong>. Se vince, l’avversario non potrà guadagnare Vantaggio fino al termine del Round seguente.</p>",
+      "tests": "Atletica per Distrarre"
     },
     {
       "id": "Doomed",
       "name": "Predestinato",
-      "description": "All’età di dieci anni, un Profeta di Morr ha predetto la morte del Personaggio, durante la cerimonia di ingresso all’età adulta, detta Predestinazione. Giocatore e GM dovrebbero definire insieme questa predizione e se il Personaggio dovesse morire in accordo con essa, il prossimo otterrà un bonus pari a metà dei suoi PE totali."
+      "description": "<p>All’età di dieci anni, un Profeta di Morr ha predetto la morte del Personaggio, durante la cerimonia di ingresso all’età adulta, detta Predestinazione. Giocatore e GM dovrebbero definire insieme questa predizione e se il Personaggio dovesse morire in accordo con essa, il prossimo otterrà un bonus pari a metà dei suoi PE totali.</p>"
     },
     {
       "id": "Drilled",
       "name": "Addestrato",
-      "description": "<p>Il Personaggio si è allenato a combattere in formazione. Se un nemico gli causa una perdita di Vantaggio, ma il Personaggio è accanto a un alleato Addestrato, potrà conservare 1 Vantaggio per grado di questo Talento.</p>"
+      "description": "<p>Il Personaggio si è allenato a combattere in formazione. Se un nemico gli causa una perdita di Vantaggio, ma il Personaggio è accanto a un alleato Addestrato, potrà conservare 1 Vantaggio per grado di questo Talento.</p>",
+      "tests": "Mischia quando ci si batte accanto a un alleato Addestrato"
     },
     {
       "id": "Dual Wielder",
       "name": "Stile a Doppia Arma",
-      "description": "<p>Quando impugna un’arma per mano, il Personaggio può attaccare con entrambe in una singola Azione. Prima di tutto tira per colpire con l’arma principale e, se va a segno, infligge i Danni normali. Quindi inverte il risultato del primo attacco per determinare se anche la seconda arma colpisce (un 34 sul primo colpo diventa 43 sul secondo). Questo nuovo attacco subisce un -20 (a meno di essere <em>Ambidestro</em>), viene Contrapposto da un tiro di difesa separato e causa il Danno normale. L’unica eccezione è se il primo attacco era un Critico. In tal caso, il risultato sulla Tabella del Critico viene usato come tiro per colpire del secondo colpo (un 56 alla Testa, ossia una Ferita Grave all’Occhio, sarà anche un tiro di attacco di 56). Chi decide di usare questo Talento subisce -10 su tutti i tiri di difesa fino al suo Turno seguente e non ottiene Vantaggio dai colpi a segno o dalle Ferite a meno di colpire con entrambe le armi.</p>"
+      "description": "<p>Quando impugna un’arma per mano, il Personaggio può attaccare con entrambe in una singola Azione. Prima di tutto tira per colpire con l’arma principale e, se va a segno, infligge i Danni normali. Quindi inverte il risultato del primo attacco per determinare se anche la seconda arma colpisce (un 34 sul primo colpo diventa 43 sul secondo). Questo nuovo attacco subisce un -20 (a meno di essere <em>Ambidestro</em>), viene Contrapposto da un tiro di difesa separato e causa il Danno normale. L’unica eccezione è se il primo attacco era un Critico. In tal caso, il risultato sulla Tabella del Critico viene usato come tiro per colpire del secondo colpo (un 56 alla Testa, ossia una Ferita Grave all’Occhio, sarà anche un tiro di attacco di 56). Chi decide di usare questo Talento subisce -10 su tutti i tiri di difesa fino al suo Turno seguente e non ottiene Vantaggio dai colpi a segno o dalle Ferite a meno di colpire con entrambe le armi.</p>",
+      "tests": "Mischia o Mira quando si attacca con due armi"
     },
     {
       "id": "Embezzle",
       "name": "Intascare",
-      "description": "<p>Il Personaggio è abile nel sottrarre denaro ai propri padroni senza farsi notare. Ogni volta che ottiene un Guadagno (durante il gioco o con l’Impresa <em>Profitto</em>), può effettuare una <strong>Prova Contrapposta d’Intelligenza</strong> contro il proprio datore di lavoro. Se vince intasca 2d10+LS penny, 1d10+LS scellini o 1+LS corone (a seconda del volume d’affari deciso dal GM). Se il datore di lavoro ottiene almeno 6 LS, il Personaggio sottrae il denaro, ma l’ammanco viene scoperto. Ogni altro risultato è un semplice fallimento.</p>"
+      "description": "<p>Il Personaggio è abile nel sottrarre denaro ai propri padroni senza farsi notare. Ogni volta che ottiene un Guadagno (durante il gioco o con l’Impresa <em>Profitto</em>), può effettuare una <strong>Prova Contrapposta d’Intelligenza</strong> contro il proprio datore di lavoro. Se vince intasca 2d10+LS penny, 1d10+LS scellini o 1+LS corone (a seconda del volume d’affari deciso dal GM). Se il datore di lavoro ottiene almeno 6 LS, il Personaggio sottrae il denaro, ma l’ammanco viene scoperto. Ogni altro risultato è un semplice fallimento.</p>",
+      "tests": "Intelligenza per usare questo Talento"
     },
     {
       "id": "Enclosed Fighter",
       "name": "Lottatore da Vicolo",
-      "description": "Il Personaggio è abile nel combattere in spazi chiusi – come tunnel, trincee o pozzi – e ne ignora le penalità in Mischia. Inoltre può usare Schivare anche quando non sarebbe possibile per mancanza di spazio."
+      "description": "<p>Il Personaggio è abile nel combattere in spazi chiusi – come tunnel, trincee o pozzi – e ne ignora le penalità in Mischia. Inoltre può usare Schivare anche quando non sarebbe possibile per mancanza di spazio.</p>",
+      "tests": "Schivare in spazi ristretti"
     },
     {
       "id": "Etiquette",
       "name": "Etichetta (Gruppo)",
-      "description": "<p>Il Personaggio sa mescolarsi a un certo gruppo, purché indossi abiti adeguati. Alcuni possibili gruppi includono: Accademici, Criminali, Fedeli, Gilde, Nobili, Servitori e Soldati. Chi non ha questo Talento sarà chiaramente in imbarazzo in un ambiente poco familiare. Questo effetto è prima di tutto legato all’interpretazione ma, a discrezione del GM, può fornire bonus alle Prove di Socialità.</p>"
+      "description": "<p>Il Personaggio sa mescolarsi a un certo gruppo, purché indossi abiti adeguati. Alcuni possibili gruppi includono: Accademici, Criminali, Fedeli, Gilde, Nobili, Servitori e Soldati. Chi non ha questo Talento sarà chiaramente in imbarazzo in un ambiente poco familiare. Questo effetto è prima di tutto legato all’interpretazione ma, a discrezione del GM, può fornire bonus alle Prove di Socialità.</p>",
+      "tests": "Affascinare e Pettegolezzi (limitati al gruppo scelto)"
     },
     {
       "id": "Fast Hands",
       "name": "Mani Veloci",
-      "description": "Il Personaggio muove le mani con incredibile destrezza. I testimoni non possono tirare automaticamente Percepire per notare quando usa Rapidità di Mano a meno che non siano già all’erta e sospettosi. Inoltre, ottiene +10 per grado del Talento alle Prove di Mischia (Rissa) per toccare un avversario."
+      "description": "<p>Il Personaggio muove le mani con incredibile destrezza. I testimoni non possono tirare automaticamente Percepire per notare quando usa Rapidità di Mano a meno che non siano già all’erta e sospettosi. Inoltre, ottiene +10 per grado del Talento alle Prove di Mischia (Rissa) per toccare un avversario.</p>",
+      "tests": "Rapidità di Mano, Mischia (Rissa) per toccare un avversario"
     },
     {
       "id": "Fast Shot",
       "name": "Tiro Rapido",
-      "description": "Quando ha un’arma a distanza carica, il Personaggio può sparare prima che gli avversari reagiscano nel Round seguente, ignorando l’Ordine d’Iniziativa. <em>Tiro Rapido</em> è soggetto a tutti i normali modificatori e consuma sia Azione che Manovra del Turno successivo. Se due Personaggi hanno questo Talento, chi ha più gradi spara per primo, in caso di pareggio il tiro è simultaneo."
+      "description": "<p>Quando ha un’arma a distanza carica, il Personaggio può sparare prima che gli avversari reagiscano nel Round seguente, ignorando l’Ordine d’Iniziativa. <em>Tiro Rapido</em> è soggetto a tutti i normali modificatori e consuma sia Azione che Manovra del Turno successivo. Se due Personaggi hanno questo Talento, chi ha più gradi spara per primo, in caso di pareggio il tiro è simultaneo.</p>",
+      "tests": "Mira per usare questo Talento"
     },
     {
       "id": "Fearless",
       "name": "Temerario (Nemico)",
-      "description": "<p>Che sia coraggio o follia, il Personaggio non teme più un certo nemico. Con una singola <strong>Prova Media (+20) di Freddezza</strong> può ignorarne Intimidire, <em>Paura</em> e <em>Terrore</em>. Alcuni possibili nemici includono: Uominibestia, Pelleverde, Fuorilegge, Vampiri, Miliziani e Streghe.</p>"
+      "description": "<p>Che sia coraggio o follia, il Personaggio non teme più un certo nemico. Con una singola <strong>Prova Media (+20) di Freddezza</strong> può ignorarne Intimidire, <em>Paura</em> e <em>Terrore</em>. Alcuni possibili nemici includono: Uominibestia, Pelleverde, Fuorilegge, Vampiri, Miliziani e Streghe.</p>",
+      "tests": "Freddezza per resistere a Intimidire, Paura e Terrore causati dal nemico scelto"
     },
     {
       "id": "Feint",
       "name": "Finta",
-      "description": "Il Personaggio è addestrato nel simulare attacchi per ingannare i nemici. Contro un avversario armato, può usare la sua Azione per compiere una Finta, effettuando una <strong>Prova Contrapposta Mischia (Scherma)/Mischia</strong>. Se vince, può sommare il LS di Finta a quello del prossimo attacco contro il medesimo avversario, purché lo effettui entro la fine del Round seguente."
+      "description": "<p>Il Personaggio è addestrato nel simulare attacchi per ingannare i nemici. Contro un avversario armato, può usare la sua Azione per compiere una Finta, effettuando una <strong>Prova Contrapposta Mischia (Scherma)/Mischia</strong>. Se vince, può sommare il LS di Finta a quello del prossimo attacco contro il medesimo avversario, purché lo effettui entro la fine del Round seguente.</p>",
+      "tests": "Mischia (Scherma) per Fintare"
     },
     {
       "id": "Field Dressing",
       "name": "Pronto Soccorso",
-      "description": "Il Personaggio è abile nel trattare le ferite rapidamente. Mentre usa delle Bende, può invertire il dado sulle Prove fallite di Guarire, se il nuovo risultato dovesse essere un successo, ma potrà ottenere al massimo +1 LS, perché privilegerà rapidità a precisione."
+      "description": "<p>Il Personaggio è abile nel trattare le ferite rapidamente. Mentre usa delle Bende, può invertire il dado sulle Prove fallite di Guarire, se il nuovo risultato dovesse essere un successo, ma potrà ottenere al massimo +1 LS, perché privilegerà rapidità a precisione.</p>",
+      "tests": "Guarire in combattimento"
     },
     {
       "id": "Fisherman",
       "name": "Pescatore",
-      "description": "Il Personaggio è un esperto pescatore che conosce tutti i trucchi. Trascorrendo almeno un’ora con canna e lenza presso uno specchio d’acqua abbastanza grande riuscirà sempre a pescare a sufficienza per nutrire se stesso e un numero di persone pari al grado in questo Talento. Per procurarsi più pesce seguire le normali regole (vedere pag. 129)."
+      "description": "<p>Il Personaggio è un esperto pescatore che conosce tutti i trucchi. Trascorrendo almeno un’ora con canna e lenza presso uno specchio d’acqua abbastanza grande riuscirà sempre a pescare a sufficienza per nutrire se stesso e un numero di persone pari al grado in questo Talento. Per procurarsi più pesce seguire le normali regole (vedere pag. 129).</p>",
+      "tests": "Tutte quelle legate alla pesca"
     },
     {
       "id": "Flagellant",
       "name": "Flagellante",
-      "description": "Il Personaggio mortifica il proprio corpo in nome del suo dio. Ogni giorno può trascorrere mezz’ora a fustigarsi, subendo o conservando un numero di Ferite pari al grado in questo Talento. Così facendo otterrà il Talento <em>Furia</em> finché non si addormenterà e potrà attivarlo senza Prove. Inoltre, aggiunge il Talento <em>Furia</em> a tutte le Carriere in cui entra. Se non dovesse riuscire a fustigarsi ogni giorno o la carne guarisse non potrà spendere Resilienza o Risolutezza, finché non si sarà flagellato di nuovo."
+      "description": "<p>Il Personaggio mortifica il proprio corpo in nome del suo dio. Ogni giorno può trascorrere mezz’ora a fustigarsi, subendo o conservando un numero di Ferite pari al grado in questo Talento. Così facendo otterrà il Talento <em>Furia</em> finché non si addormenterà e potrà attivarlo senza Prove. Inoltre, aggiunge il Talento <em>Furia</em> a tutte le Carriere in cui entra. Se non dovesse riuscire a fustigarsi ogni giorno o la carne guarisse non potrà spendere Resilienza o Risolutezza, finché non si sarà flagellato di nuovo.</p>",
+      "tests": "Tutte quelle per resistere ai Poteri Perniciosi"
     },
     {
       "id": "Flee!",
       "name": "Fuga!",
-      "description": "Quando la sua vita è in pericolo, il Personaggio è capace di incredibili scatti. Se esegue l’Azione Fuga aumenta il proprio Movimento di 1 (vedere pag. 165)."
+      "description": "<p>Quando la sua vita è in pericolo, il Personaggio è capace di incredibili scatti. Se esegue l’Azione Fuga aumenta il proprio Movimento di 1 (vedere pag. 165).</p>",
+      "tests": "Atletica quando è in Fuga"
     },
     {
       "id": "Fleet Footed",
       "name": "Piè Veloce",
-      "description": "Il personaggio ha +1 Movimento."
+      "description": "<p>Il personaggio ha +1 Movimento.</p>",
+      "effects": [
+        {
+          "_id": "3fOs9R0x04viu1cj",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "",
+              "effectApplication": "actor",
+              "script": "args.actor.details.move.value += 1",
+              "preventDuplicateEffects": false,
+              "hide": false
+            }
+          },
+          "changes": [
+            {
+              "key": "system.details.move.value",
+              "mode": 2,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/fleet-footed.png",
+          "label": "Piè Veloce",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Frenzy",
       "name": "Furia",
-      "description": "<p>Il Personaggio può andare in <em>Furia</em>, come descritto a pag. 190. </p>\n<p>Superando una Prova di Volontà, il Personaggio può caricarsi di rabbia, ululando, mordendo lo scudo o in altri modi. Se ha successo diviene soggetto a <em>Furia</em>. </p>\n<p>Mentre è in <em>Furia</em> il Personaggio diventa immune a tutti gli altri Tratti Psicologici e non fuggirà né si ritirerà per alcun motivo, anzi dovrà sempre muoversi alla massima velocità per attaccare l’avversario più vicino. In genere, le uniche Azioni che può compiere sono Prove di Abilità di Combattimento o Atletica, per raggiungerlo più in fretta. </p>\n<p>Nel corso di ogni Round potrà compiere una Prova di Mischia gratuita, dato che sta attaccando senza risparmiarsi. Infine, ottiene +1 Bonus Forza grazie a tanta ferocia. Rimane in <em>Furia</em> finché tutti i nemici visibili non sono resi innocui o finché non subisce la Condizione <em>Stordito</em> o <em>Privo di Sensi</em>. Al termine della Furia subisce 1 <em>Affaticato</em>. </p>"
+      "description": "<p>Il Personaggio può andare in <em>Furia</em>, come descritto a pag. 190. </p>\n<p>Superando una Prova di Volontà, il Personaggio può caricarsi di rabbia, ululando, mordendo lo scudo o in altri modi. Se ha successo diviene soggetto a <em>Furia</em>. </p>\n<p>Mentre è in <em>Furia</em> il Personaggio diventa immune a tutti gli altri Tratti Psicologici e non fuggirà né si ritirerà per alcun motivo, anzi dovrà sempre muoversi alla massima velocità per attaccare l’avversario più vicino. In genere, le uniche Azioni che può compiere sono Prove di Abilità di Combattimento o Atletica, per raggiungerlo più in fretta. </p>\n<p>Nel corso di ogni Round potrà compiere una Prova di Mischia gratuita, dato che sta attaccando senza risparmiarsi. Infine, ottiene +1 Bonus Forza grazie a tanta ferocia. Rimane in <em>Furia</em> finché tutti i nemici visibili non sono resi innocui o finché non subisce la Condizione <em>Stordito</em> o <em>Privo di Sensi</em>. Al termine della Furia subisce 1 <em>Affaticato</em>. </p>",
+      "effects": [
+        {
+          "_id": "y1pfxqA1jLh5Ywca",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prePrepareItems",
+              "effectApplication": "actor",
+              "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1",
+              "preventDuplicateEffects": false,
+              "hide": false
+            }
+          },
+          "changes": [],
+          "disabled": true,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/frenzy.png",
+          "label": "Furia",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Frightening",
       "name": "Spaventoso",
-      "description": "Nessuno sano di mente affronterebbe il Personaggio. Se lo desidera può causare <em>Paura</em> (vedere pag. 190) con grado pari a questo Talento."
+      "description": "<p>Nessuno sano di mente affronterebbe il Personaggio. Se lo desidera può causare <em>Paura</em> (vedere pag. 190) con grado pari a questo Talento.</p>"
     },
     {
       "id": "Furious Assault",
       "name": "Assalto Furioso",
-      "description": "Il Personaggio fa piovere colpi sui nemici con la furia di Ulric. Una volta per Round, se colpisce un avversario in mischia, può spendere immediatamente 1 Vantaggio o la propria Manovra (se disponibile) per effettuare un attacco aggiuntivo."
+      "description": "<p>Il Personaggio fa piovere colpi sui nemici con la furia di Ulric. Una volta per Round, se colpisce un avversario in mischia, può spendere immediatamente 1 Vantaggio o la propria Manovra (se disponibile) per effettuare un attacco aggiuntivo.</p>",
+      "tests": "Mischia quando si effettuano attacchi multipli"
     },
     {
       "id": "Gregarious",
       "name": "Amichevole",
-      "description": "Al Personaggio piace conversare e gli altri ricambiano il sentimento. Può invertire il dado sulle Prove fallite di Pettegolezzi, se il nuovo risultato dovesse essere un successo."
+      "description": "<p>Al Personaggio piace conversare e gli altri ricambiano il sentimento. Può invertire il dado sulle Prove fallite di Pettegolezzi, se il nuovo risultato dovesse essere un successo.</p>",
+      "effects": [
+        {
+          "_id": "TFSgPCFx1KpFepgz",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "preRollTest",
+              "effectApplication": "actor",
+              "script": "if (args.test.item && args.test.item.name == \"Gossip\")\n    args.test.preData.canReverse = true",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/gregarious.png",
+          "label": "Amichevole",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Pettegolezzi con i viaggiatori"
     },
     {
       "id": "Gunner",
       "name": "Fuciliere",
-      "description": "Il Personaggio è esperto nel ricaricare le armi da fuoco e quando lo fa somma il grado di questo Talento al LS della Prova."
+      "description": "<p>Il Personaggio è esperto nel ricaricare le armi da fuoco e quando lo fa somma il grado di questo Talento al LS della Prova.</p>",
+      "effects": [
+        {
+          "_id": "SVUtglybdq15RZEK",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prefillDialog",
+              "effectApplication": "actor",
+              "script": "if (args.options.reload && args.options.weapon && args.options.weapon.weaponGroup.value == \"blackpowder\")\n   args.prefillModifiers.slBonus += 1",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/gunner.png",
+          "label": "Fuciliere",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Hardy",
       "name": "Gagliardo",
-      "description": "Il Personaggio aumenta le proprie Ferite di un valore pari al suo Bonus Resistenza. Se questo dovesse aumentare, altrettanto farà il bonus di questo Talento."
+      "description": "<p>Il Personaggio aumenta le proprie Ferite di un valore pari al suo Bonus Resistenza. Se questo dovesse aumentare, altrettanto farà il bonus di questo Talento.</p>",
+      "effects": [
+        {
+          "_id": "REeG0AV5Sm4fTAIJ",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "preWoundCalc",
+              "effectApplication": "actor",
+              "script": "args.multiplier.tb += 1",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/hardy.png",
+          "label": "Gagliardo",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Hatred",
       "name": "Odio (Gruppo)",
-      "description": "Il Personaggio è consumato dall’Odio nei confronti di qualcuno o qualcosa (vedere pag. 190). Ogni grado di questo Talento permette di aggiungere un nuovo Gruppo. Possibili esempi includono: Uominibestia, Pelleverde, Mostri, Fuorilegge, Sigmariti, Nonmorti e Streghe."
+      "description": "<p>Il Personaggio è consumato dall’Odio nei confronti di qualcuno o qualcosa (vedere pag. 190). Ogni grado di questo Talento permette di aggiungere un nuovo Gruppo. Possibili esempi includono: Uominibestia, Pelleverde, Mostri, Fuorilegge, Sigmariti, Nonmorti e Streghe.</p>",
+      "effects": [
+        {
+          "_id": "3vgrN50Ul3S5T2j6",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/hatred.png",
+          "label": "Odio",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "dialogChoice",
+              "effectApplication": "actor",
+              "effectData": {
+                "description": "Combat Test vs Hated Group",
+                "modifier": null,
+                "slBonus": 1,
+                "successBonus": null,
+                "difficultyStep": null
+              },
+              "hide": false,
+              "preventDuplicateEffects": false
+            }
+          },
+          "tint": null,
+          "origin": null
+        }
+      ],
+      "tests": "Volontà per contrastare il Gruppo scelto"
     },
     {
       "id": "Holy Hatred",
       "name": "Odio Sacro",
-      "description": "Le preghiere del Personaggio trasudano odio verso i nemici. I suoi Miracoli infliggono +1 Danno per grado di questo Talento."
+      "description": "<p>Le preghiere del Personaggio trasudano odio verso i nemici. I suoi Miracoli infliggono +1 Danno per grado di questo Talento.</p>",
+      "effects": [
+        {
+          "_id": "3f87V2dvHVJTzwC7",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prePrepareItem",
+              "effectApplication": "actor",
+              "script": "if (args.item.type == \"prayer\" && (args.item.damage.value || args.item.damage.dice))\n    args.item.damage.value += \"+1\"",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/holy-hatred.png",
+          "label": "Odio Sacro",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Holy Visions",
       "name": "Visioni Mistiche",
-      "description": "Il Personaggio può vedere chiaramente l’opera degli dèi. Sa automaticamente quando è su Suolo Consacrato e può effettuare una Prova d’Intuire per ricevere visioni su eventi significativi avvenuti nell’area circostante (spesso oscure e limitate dal paradigma del proprio credo). "
+      "description": "<p>Il Personaggio può vedere chiaramente l’opera degli dèi. Sa automaticamente quando è su Suolo Consacrato e può effettuare una Prova d’Intuire per ricevere visioni su eventi significativi avvenuti nell’area circostante (spesso oscure e limitate dal paradigma del proprio credo).</p>",
+      "tests": "Intuire quando è su suolo consacrato"
     },
     {
       "id": "Hunter's Eye",
       "name": "Occhio del Cacciatore",
-      "description": "Il Personaggio è un abile cacciatore, che conosce tutti i trucchi. Mentre viaggia in territori ricchi di selvaggina – e avendo gli strumenti adatti – riesce sempre a procacciare carne sufficiente a se stesso e a un numero di persone pari al grado di questo Talento. Per procurarsi più carne seguire le normali regole (vedere pag. 129)."
+      "description": "<p>Il Personaggio è un abile cacciatore, che conosce tutti i trucchi. Mentre viaggia in territori ricchi di selvaggina – e avendo gli strumenti adatti – riesce sempre a procacciare carne sufficiente a se stesso e a un numero di persone pari al grado di questo Talento. Per procurarsi più carne seguire le normali regole (vedere pag. 129).</p>",
+      "tests": "Tutte quelle per trovare e catturare una preda"
     },
     {
       "id": "Impassioned Zeal",
       "name": "Fervore",
-      "description": "<p>Quando parla della propria causa o fede, le parole del Personaggio ardono di passione. In tali circostanze raddoppia il proprio Bonus Socialità per calcolare il numero di persone influenzate dal Talento <em>Oratore</em> (vedere pag. 140).</p>"
+      "description": "<p>Quando parla della propria causa o fede, le parole del Personaggio ardono di passione. In tali circostanze raddoppia il proprio Bonus Socialità per calcolare il numero di persone influenzate dal Talento <em>Oratore</em> (vedere pag. 140).</p>",
+      "tests": "Affascinare quando si parla della propria causa"
     },
     {
       "id": "Implacable",
       "name": "Implacabile",
-      "description": "<p>È difficile dare il colpo di grazia al Personaggio. Per ogni grado di questo Talento, ignora 1 Ferita causata dalle Condizioni <em>Sanguinante</em>. </p>"
+      "description": "<p>È difficile dare il colpo di grazia al Personaggio. Per ogni grado di questo Talento, ignora 1 Ferita causata dalle Condizioni <em>Sanguinante</em>. </p>",
+      "effects": [
+        {
+          "_id": "O6qLwcpRh7LjEm4o",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "preApplyCondition",
+              "effectApplication": "actor",
+              "script": "args.effect.flags.wfrp4e.value -= 1",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/implacable.png",
+          "label": "Implacabile",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "In-fighter",
       "name": "Gioco Stretto",
-      "description": "<p>Il Personaggio è un esperto nel portarsi in corpo a corpo. Non subisce penalità quando affronta avversari con armi più lunghe. Inoltre, se si usano le regole opzionali per il Gioco Stretto (vedere pag. 297) ottiene +10 agli attacchi.</p>"
+      "description": "<p>Il Personaggio è un esperto nel portarsi in corpo a corpo. Non subisce penalità quando affronta avversari con armi più lunghe. Inoltre, se si usano le regole opzionali per il Gioco Stretto (vedere pag. 297) ottiene +10 agli attacchi.</p>",
+      "effects": [
+        {
+          "_id": "Eu8Ajiixpb7rdqVW",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/in-fighter.png",
+          "label": "Gioco Stretto",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prefillDialog",
+              "effectApplication": "actor",
+              "hide": false,
+              "preventDuplicateEffects": true,
+              "script": "if (args.type == \"weapon\" && this.actor.hasSystemEffect(\"infighting\"))\n{\n     args.prefillModifiers.modifier += 10\n}"
+            }
+          },
+          "tint": null,
+          "origin": null
+        }
+      ],
+      "tests": "Mischia per entrare o battersi in gioco stretto"
     },
     {
       "id": "Inspiring",
       "name": "Ispiratore",
-      "description": "<p>Le parole del Personaggio possono cambiare il corso delle battaglie. Quando è in guerra, riferirsi alla tabella sottostante per vedere quante persone può influenzare con l’Abilità Comandare.</p>\n<p>&nbsp;</p>\n<div>\n<table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td>\n<p>Grado nel Talento</p>\n</td>\n<td>\n<p>Numero di soldati influenzati</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>1</p>\n</td>\n<td>\n<p>Normale × 5</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2</p>\n</td>\n<td>\n<p>Normale × 10</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>3</p>\n</td>\n<td>\n<p>&nbsp;Normale × 20</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>4</p>\n</td>\n<td>\n<p>&nbsp;Normale × 50</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>5</p>\n</td>\n<td>\n<p>&nbsp;Normale × 100</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>6</p>\n</td>\n<td>\n<p>&nbsp;Normale × 200</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>7</p>\n</td>\n<td>\n<p>&nbsp;Normale × 500</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>8</p>\n</td>\n<td>\n<p>&nbsp;Normale × 1000</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>9</p>\n</td>\n<td>\n<p>&nbsp;tutti quelli che posso udirlo</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>"
+      "description": "<p>Le parole del Personaggio possono cambiare il corso delle battaglie. Quando è in guerra, riferirsi alla tabella sottostante per vedere quante persone può influenzare con l’Abilità Comandare.</p>\n<p>&nbsp;</p>\n<div>\n<table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n<tbody>\n<tr>\n<td>\n<p>Grado nel Talento</p>\n</td>\n<td>\n<p>Numero di soldati influenzati</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>1</p>\n</td>\n<td>\n<p>Normale × 5</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>2</p>\n</td>\n<td>\n<p>Normale × 10</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>3</p>\n</td>\n<td>\n<p>&nbsp;Normale × 20</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>4</p>\n</td>\n<td>\n<p>&nbsp;Normale × 50</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>5</p>\n</td>\n<td>\n<p>&nbsp;Normale × 100</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>6</p>\n</td>\n<td>\n<p>&nbsp;Normale × 200</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>7</p>\n</td>\n<td>\n<p>&nbsp;Normale × 500</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>8</p>\n</td>\n<td>\n<p>&nbsp;Normale × 1000</p>\n</td>\n</tr>\n<tr>\n<td>\n<p>9</p>\n</td>\n<td>\n<p>&nbsp;tutti quelli che posso udirlo</p>\n</td>\n</tr>\n</tbody>\n</table>\n</div>",
+      "tests": "Comandare in guerra"
     },
     {
       "id": "Instinctive Diction",
       "name": "Dizione Istintiva",
-      "description": "<p>Il Personaggio comprende istintivamente la parlata Magica ed è in grado di articolare frasi complesse senza errori. Se ha successo con un doppio in una Prova di Linguaggio (Magico) non subisce Incidenti Magici.</p>"
+      "description": "<p>Il Personaggio comprende istintivamente la parlata Magica ed è in grado di articolare frasi complesse senza errori. Se ha successo con un doppio in una Prova di Linguaggio (Magico) non subisce Incidenti Magici.</p>",
+      "effects": [
+        {
+          "_id": "PixW61vvKOev7oHu",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollCastTest",
+              "effectApplication": "actor",
+              "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0)\n{\n    delete args.test.result.minormis\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0)\n{\n    delete args.test.result.majormis\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\")\n}",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/instinctive-diction.png",
+          "label": "Dizione Istintiva",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Linguaggio (Magico) per lanciare incantesimi"
     },
     {
       "id": "Invoke",
@@ -369,12 +1142,14 @@
     {
       "id": "Iron Jaw",
       "name": "Mascella di Ferro",
-      "description": "<p>Il Personaggio è un duro e può resistere a colpi tremendi. Quando subisce una o più Condizioni <em>Stordito</em> può effettuare immediatamente una Prova Impegnativa (+0) di Tempra per annullarne una, più un’altra per LS.</p>"
+      "description": "<p>Il Personaggio è un duro e può resistere a colpi tremendi. Quando subisce una o più Condizioni <em>Stordito</em> può effettuare immediatamente una Prova Impegnativa (+0) di Tempra per annullarne una, più un’altra per LS.</p>",
+      "tests": "Tempra per resistere a Stordito"
     },
     {
       "id": "Iron Will",
       "name": "Volontà di Ferro",
-      "description": "Il Personaggio ha una volontà indomabile e non si piegherà mai di fronte a un nemico. È immune alla <em>Paura</em> causata dalle Prove di Intimidire e non potrà essere costretto a tacere."
+      "description": "<p>Il Personaggio ha una volontà indomabile e non si piegherà mai di fronte a un nemico. È immune alla <em>Paura</em> causata dalle Prove di Intimidire e non potrà essere costretto a tacere.</p>",
+      "tests": "Freddezza per opporsi a Intimidire"
     },
     {
       "id": "Jump Up",
@@ -384,22 +1159,58 @@
     {
       "id": "Kingpin",
       "name": "Capoccia",
-      "description": "Nonostante i suoi affari sporchi, il Personaggio ha un’aria rispettabile. Non subisce la perdita di Status causata dal Talento <em>Criminale</em>."
+      "description": "<p>Nonostante i suoi affari sporchi, il Personaggio ha un’aria rispettabile. Non subisce la perdita di Status causata dal Talento <em>Criminale</em>.</p>"
     },
     {
       "id": "Lightning Reflexes",
       "name": "Riflessi Fulminei",
-      "description": "Il Personaggio ottiene +5 alla propria Agilità base (non conta per gli Avanzamenti). "
+      "description": "<p>Il Personaggio ottiene +5 alla propria Agilità base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "Zz5EI68iOab1vbmQ",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.ag.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/lightning-reflexes.png",
+          "label": "Riflessi Fulminei",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Linguistics",
       "name": "Linguista",
-      "description": "<p>Il Personaggio ha un’affinità naturale per le lingue. Dopo aver ascoltato un linguaggio per un mese può effettuare una Prova di Intelligenza. Se la supera l’Abilità relativa diventa un’Abilità Base (massimo un tentativo al mese). <strong>Nota</strong>: questo Talento funziona solo con le lingue usate per comunicare normalmente, non con quella Magica.</p>"
+      "description": "<p>Il Personaggio ha un’affinità naturale per le lingue. Dopo aver ascoltato un linguaggio per un mese può effettuare una Prova di Intelligenza. Se la supera l’Abilità relativa diventa un’Abilità Base (massimo un tentativo al mese). <strong>Nota</strong>: questo Talento funziona solo con le lingue usate per comunicare normalmente, non con quella Magica.</p>",
+      "tests": "Lingue (Tutte)"
     },
     {
       "id": "Lip Reading",
       "name": "Leggere le Labbra",
-      "description": "<p>Il Personaggio può comprendere cosa dicono gli altri solo osservando le labbra, senza bisogno di udirli. Se non ci sono ostacoli può effettuare una <strong>Prova di Percepire</strong> per riuscirci.</p>"
+      "description": "<p>Il Personaggio può comprendere cosa dicono gli altri solo osservando le labbra, senza bisogno di udirli. Se non ci sono ostacoli può effettuare una <strong>Prova di Percepire</strong> per riuscirci.</p>",
+      "tests": "Percepire per leggere le labbra"
     },
     {
       "id": "Luck",
@@ -409,107 +1220,291 @@
     {
       "id": "Magic Resistance",
       "name": "Resistente alla Magia",
-      "description": "Il Personaggio è resistente alla magia e riduce il LS di ogni incantesimo che lo colpisce di 2 per grado di questo Talento (gli effetti ad area vengono ridotti del LS più alto tra i bersagli). Questo Talento preclude <em>Benedizione , Invocazione , Magia Arcana , Magia Minore e Strega!</em>"
+      "description": "<p>Il Personaggio è resistente alla magia e riduce il LS di ogni incantesimo che lo colpisce di 2 per grado di questo Talento (gli effetti ad area vengono ridotti del LS più alto tra i bersagli). Questo Talento preclude <em>Benedizione, Invocazione, Magia Arcana, Magia Minore e Strega!</em></p>",
+      "effects": [
+        {
+          "_id": "EsoBJtVEVYxCXdRb",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "targetPrefillDialog",
+              "effectApplication": "actor",
+              "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/magic-resistance.png",
+          "label": "Resistente alla Magia",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Magical Sense",
       "name": "Senso Magico",
-      "description": "<p>Il Personaggio può percepire i Venti della Magia negli altri. Quando incontra un incantatore può effettuare una <strong>Prova Media (+20) d’Intuire</strong>. Se ha successo capirà se l’altro è una Strega. Un Successo Incredibile permette anche di determinare la Specializzazione di Canalizzare più alta che possiede.</p>"
+      "description": "<p>Il Personaggio può percepire i Venti della Magia negli altri. Quando incontra un incantatore può effettuare una <strong>Prova Media (+20) d’Intuire</strong>. Se ha successo capirà se l’altro è una Strega. Un Successo Incredibile permette anche di determinare la Specializzazione di Canalizzare più alta che possiede.</p>",
+      "tests": "Intuire per individuare i maghi"
     },
     {
       "id": "Magnum Opus",
       "name": "Magnum Opus",
-      "description": "Il Personaggio è un maestro riconosciuto nel proprio campo, capace di creare opere tanto complesse da lasciare di stucco. Ogni volta che acquisisce questo Talento potrà realizzare un capolavoro usando Arte o Mestiere. Questa sarà un’opera unica, irripetibile e impressionante. I bonus forniti sono a discrezione del GM, ma di solito legati a Socialità. Vendere il capolavoro frutta 10 volte il prezzo normale, o anche di più."
+      "description": "<p>Il Personaggio è un maestro riconosciuto nel proprio campo, capace di creare opere tanto complesse da lasciare di stucco. Ogni volta che acquisisce questo Talento potrà realizzare un capolavoro usando Arte o Mestiere. Questa sarà un’opera unica, irripetibile e impressionante. I bonus forniti sono a discrezione del GM, ma di solito legati a Socialità. Vendere il capolavoro frutta 10 volte il prezzo normale, o anche di più.</p>"
     },
     {
       "id": "Marksman",
       "name": "Tiratore",
-      "description": "Il Personaggio ottiene +5 alla propria Abilità Balistica base (non conta per gli Avanzamenti). "
+      "description": "<p>Il Personaggio ottiene +5 alla propria Abilità Balistica base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "o9nh6cysRfyobzdc",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.bs.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/marksman.png",
+          "label": "Tiratore",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Master Orator",
       "name": "Abile Oratore",
-      "description": "Il Personaggio è abile nell’arringare la folla. Somma il grado di questo Talento al LS di tutte le Prove di Affascinare quando usa il Talento Oratore."
+      "description": "<p>Il Personaggio è abile nell’arringare la folla. Somma il grado di questo Talento al LS di tutte le Prove di Affascinare quando usa il Talento Oratore.</p>",
+      "effects": [
+        {
+          "_id": "6m85TVcbkk2geHrE",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "dialogChoice",
+              "effectApplication": "actor",
+              "effectData": {
+                "description": "Using Charm when Public Speaking before a crowd",
+                "modifier": null,
+                "slBonus": 1,
+                "successBonus": null,
+                "difficultyStep": null
+              },
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/master-orator.png",
+          "label": "Abile Oratore",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Master Tradesman",
       "name": "Mastro Artigiano (Mestiere)",
-      "description": "Il Personaggio è molto abile nella propria professione. Può sottrarre il grado di questo Talento dal LS richiesto dalle Prove Prolungate di Mestiere. "
+      "description": "<p>Il Personaggio è molto abile nella propria professione. Può sottrarre il grado di questo Talento dal LS richiesto dalle Prove Prolungate di Mestiere. </p>",
+      "tests": "Prove Prolungate del Mestiere scelto"
     },
     {
       "id": "Master of Disguise",
       "name": "Maestro del Travestimento",
-      "description": "Il Personaggio è un esperto nell’imitare l’aspetto e i modi altrui. È capace di cambiare e camuffarsi senza bisogno di strumenti, gli basta cambiare postura, abiti e deformare i lineamenti."
+      "description": "<p>Il Personaggio è un esperto nell’imitare l’aspetto e i modi altrui. È capace di cambiare e camuffarsi senza bisogno di strumenti, gli basta cambiare postura, abiti e deformare i lineamenti.</p>",
+      "tests": "Intrattenere (Recitare) per impersonare qualcun altro"
     },
     {
       "id": "Menacing",
       "name": "Minaccioso",
-      "description": "Il Personaggio ha una presenza imponente. Somma il grado di questo Talento al LS delle Prove di Intimidire."
+      "description": "<p>Il Personaggio ha una presenza imponente. Somma il grado di questo Talento al LS delle Prove di Intimidire.</p>",
+      "effects": [
+        {
+          "_id": "IRRiQjVGZiHjLnxt",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": false,
+              "effectTrigger": "prefillDialog",
+              "effectData": {
+                "description": "Intimidate",
+                "modifier": null,
+                "slBonus": 1,
+                "successBonus": null,
+                "difficultyStep": null
+              },
+              "hide": false,
+              "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Intimidate\"))\n{\n    args.prefillModifiers.slBonus += 1\n}"
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/menacing.png",
+          "label": "Minaccioso",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Intimidire"
     },
     {
       "id": "Mimic",
       "name": "Imitatore",
-      "description": "Il Personaggio ha orecchio per accenti e dialetti e sa riprodurli fedelmente. Dopo avere ascoltato un accento per un giorno può effettuare una Prova di Iniziativa per riuscire a imitarlo (massimo un tentativo al giorno). Se ha successo potrà ingannare chiunque. "
+      "description": "<p>Il Personaggio ha orecchio per accenti e dialetti e sa riprodurli fedelmente. Dopo avere ascoltato un accento per un giorno può effettuare una Prova di Iniziativa per riuscire a imitarlo (massimo un tentativo al giorno). Se ha successo potrà ingannare chiunque.</p>",
+      "tests": "Intrattenere (Recitare) quando gli accenti sono importanti"
     },
     {
       "id": "Night Vision",
       "name": "Vista Notturna",
-      "description": "<p>Il Personaggio vede bene al buio. Se c’è almeno un po’ di luce (come quella delle stelle, della luna o muschi fosforescenti) può vedere chiaramente fino a 20m per grado di questo Talento. Inoltre l’efficacia di ogni fonte di luce è aumentata della medesima distanza.&nbsp;</p>"
+      "description": "<p>Il Personaggio vede bene al buio. Se c’è almeno un po’ di luce (come quella delle stelle, della luna o muschi fosforescenti) può vedere chiaramente fino a 20m per grado di questo Talento. Inoltre l’efficacia di ogni fonte di luce è aumentata della medesima distanza.&nbsp;</p>",
+      "tests": "Percepire in condizioni di scarsa illuminazione"
     },
     {
       "id": "Nimble Fingered",
       "name": "Dita Agili",
-      "description": "Il Personaggio ottiene +5 alla propria Destrezza base (non conta per gli Avanzamenti)."
+      "description": "<p>Il Personaggio ottiene +5 alla propria Destrezza base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "iT6aqNkxEikCpTEY",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.dex.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/nimble-fingered.png",
+          "label": "Dita Agili",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Noble Blood",
       "name": "Sangue Blu",
-      "description": "Il Personaggio è nato nobile o si è elevato durante la partita. Se è vestito in modo appropriato, sarà sempre considerato di Status più alto da chiunque non abbia questo Talento. Tra Sangue Blu lo Status funziona normalmente."
+      "description": "<p>Il Personaggio è nato nobile o si è elevato durante la partita. Se è vestito in modo appropriato, sarà sempre considerato di Status più alto da chiunque non abbia questo Talento. Tra Sangue Blu lo Status funziona normalmente.</p>",
+      "tests": "Tutte le Prove che influenzano il tuo Status"
     },
     {
       "id": "Nose for Trouble",
       "name": "Fiutare Pericolo",
-      "description": "<p>Il Personaggio è abituato a mettersi nei guai e uscirne. Può effettuare una Prova d’Intuire per scovare eventuali pericoli o avversari anche quando non sarebbe permesso (a causa di Talenti o Incantesimi). Questa Prova sarà Contrapposta da chi si nasconde e il GM potrebbe decidere di effettuarla in segreto così che il Giocatore non sappia se ha avuto successo. Se questi avversari danno il via a uno scontro, il Personaggio non sarà <em>Sorpreso</em>.</p>"
+      "description": "<p>Il Personaggio è abituato a mettersi nei guai e uscirne. Può effettuare una Prova d’Intuire per scovare eventuali pericoli o avversari anche quando non sarebbe permesso (a causa di Talenti o Incantesimi). Questa Prova sarà Contrapposta da chi si nasconde e il GM potrebbe decidere di effettuarla in segreto così che il Giocatore non sappia se ha avuto successo. Se questi avversari danno il via a uno scontro, il Personaggio non sarà <em>Sorpreso</em>.</p>",
+      "tests": "Tutte quelle per individuare facinorosi"
     },
     {
       "id": "Numismatics",
       "name": "Numismatico",
-      "description": "<p>Il Personaggio conosce le monete del Vecchio Mondo. Sa giudicarne il valore senza bisogno di Prove e può identificare i falsi con una <strong>Prova Semplice di Valutare</strong>, senza applicare il LS del falsario.</p>"
+      "description": "<p>Il Personaggio conosce le monete del Vecchio Mondo. Sa giudicarne il valore senza bisogno di Prove e può identificare i falsi con una <strong>Prova Semplice di Valutare</strong>, senza applicare il LS del falsario.</p>",
+      "tests": "Valutare per stabilire il valore delle monete"
     },
     {
       "id": "Old Salt",
       "name": "Lupo di Mare",
-      "description": "Il Personaggio è un marinaio di lungo corso. Quando è in mare può ignorare tutti i modificatori negativi alle Prove dovuti al clima, al rollio e altri simili. Inoltre, conta come 2 marinai per calcolare l’equipaggio minimo di una imbarcazione marittima."
+      "description": "<p>Il Personaggio è un marinaio di lungo corso. Quando è in mare può ignorare tutti i modificatori negativi alle Prove dovuti al clima, al rollio e altri simili. Inoltre, conta come 2 marinai per calcolare l’equipaggio minimo di una imbarcazione marittima.</p>",
+      "tests": "Navigare (Navi adatte al mare)"
     },
     {
       "id": "Orientation",
       "name": "Senso dell'Orientamento",
-      "description": "Il Personaggio ha un ottimo senso per i punti cardinali. Da semplici dettagli (come le stelle o il muschio) sa sempre dov’è il nord."
+      "description": "<p>Il Personaggio ha un ottimo senso per i punti cardinali. Da semplici dettagli (come le stelle o il muschio) sa sempre dov’è il nord.</p>",
+      "tests": "Orientarsi"
     },
     {
       "id": "Panhandle",
       "name": "Mendicare",
-      "description": "Il Personaggio è un abile mendicante, capace di impietosire anche i cuori più duri. Quando mendica, può effettuare una Prova di Affascinare ogni 30 minuti, invece di 1 ora (vedere pag. 139).  "
+      "description": "<p>Il Personaggio è un abile mendicante, capace di impietosire anche i cuori più duri. Quando mendica, può effettuare una Prova di Affascinare ogni 30 minuti, invece di 1 ora (vedere pag. 139).</p>",
+      "tests": "Affascinare (Mendicare)"
     },
     {
       "id": "Perfect Pitch",
       "name": "Tono Perfetto",
-      "description": "Il Personaggio ha una perfetta intonazione ed è capace di identificare e replicare perfettamente le note senza bisogno di Prove. Aggiunge Intrattenere (Canto) a tutte le Carriere in cui entra; se questa Abilità è già presente ha uno sconto di 5 PE su ogni Avanzamento."
+      "description": "<p>Il Personaggio ha una perfetta intonazione ed è capace di identificare e replicare perfettamente le note senza bisogno di Prove. Aggiunge Intrattenere (Canto) a tutte le Carriere in cui entra; se questa Abilità è già presente ha uno sconto di 5 PE su ogni Avanzamento.</p>",
+      "tests": "Intrattenere (Canto), Linguaggio (lingue tonali, come Eltharin, Cataiano e Magico)"
     },
     {
       "id": "Petty Magic",
       "name": "Magia Minore",
-      "description": "<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Il Personaggio ha il dono della magia e ha imparato a controllarla al livello di base. Quando acquista questo Talento può memorizzare e manifestare un numero di Incantesimi Minori pari al proprio Bonus Volontà. Acquisirne ulteriori ha un costo in PE.</p>\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">&nbsp;</p>\n  <div style=\"direction: ltr;\">\n  <table style=\"direction: ltr; border-collapse: collapse; border: 1pt solid #A3A3A3;\" title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n  <tbody>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">N° di Incantesimi Minori</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5833in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"><span style=\"mso-spacerun: yes;\">&nbsp;</span>Costo PE nuovo Incantesimo</p>\n  </td>\n  </tr>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Fino a Bonus Volontà × 1</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">50 PE</p>\n  </td>\n  </tr>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Fino a Bonus Volontà × 2</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">100 PE</p>\n  </td>\n  </tr>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Fino a Bonus Volontà × 3</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">150 Pe</p>\n  </td>\n  </tr>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Fino a Bonus Volontà × 4</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">200 PE</p>\n  </td>\n  </tr>\n  </tbody>\n  </table>\n  </div>\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">e così va...</p>\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">&nbsp;</p>\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Di conseguenza, avendo un Bonus Volontà di 3 e 3 incantesimi conosciuti, il primo gli costerà 50 PE, ognuno dei 3 successivi 100 PE e così via. Le regole sull’apprendimento di nuovi incantesimi si trovano nel <strong>Capitolo 8: Magia</strong>.</p>"
+      "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Il Personaggio ha il dono della magia e ha imparato a controllarla al livello di base. Quando acquista questo Talento può memorizzare e manifestare un numero di Incantesimi Minori pari al proprio Bonus Volontà. Acquisirne ulteriori ha un costo in PE.</p>\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">&nbsp;</p>\n  <div style=\"direction: ltr;\">\n  <table style=\"direction: ltr; border-collapse: collapse; border: 1pt solid #A3A3A3;\" title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">\n  <tbody>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">N° di Incantesimi Minori</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5833in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"><span style=\"mso-spacerun: yes;\">&nbsp;</span>Costo PE nuovo Incantesimo</p>\n  </td>\n  </tr>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Fino a Bonus Volontà × 1</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">50 PE</p>\n  </td>\n  </tr>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Fino a Bonus Volontà × 2</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">100 PE</p>\n  </td>\n  </tr>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Fino a Bonus Volontà × 3</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">150 Pe</p>\n  </td>\n  </tr>\n  <tr>\n  <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Fino a Bonus Volontà × 4</p>\n  </td>\n  <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">200 PE</p>\n  </td>\n  </tr>\n  </tbody>\n  </table>\n  </div>\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">e così va...</p>\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">&nbsp;</p>\n  <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Di conseguenza, avendo un Bonus Volontà di 3 e 3 incantesimi conosciuti, il primo gli costerà 50 PE, ognuno dei 3 successivi 100 PE e così via. Le regole sull’apprendimento di nuovi incantesimi si trovano nel <strong>Capitolo 8: Magia</strong>.</p>"
     },
     {
       "id": "Pharmacist",
       "name": "Farmacista",
-      "description": " Il Personaggio è un esperto farmacista, capace di produrre pillole, unguenti, oli e creme. Può invertire il dado sulle Prove fallite di Mestiere (Apotecario), se il nuovo risultato dovesse essere un successo. "
+      "description": "<p>Il Personaggio è un esperto farmacista, capace di produrre pillole, unguenti, oli e creme. Può invertire il dado sulle Prove fallite di Mestiere (Apotecario), se il nuovo risultato dovesse essere un successo.</p>",
+      "tests": "Mestiere (Apotecario)"
     },
     {
       "id": "Pilot",
       "name": "Timoniere",
-      "description": "Il Personaggio è abile nel condurre natanti in acque pericolose. Quando fallisce una Prova in tali condizioni, può invertire il dado, se il nuovo risultato dovesse essere un successo. Tuttavia, non potrà ottenere più di +1 LS, perché noterà il pericolo all’ultimo momento."
+      "description": "<p>Il Personaggio è abile nel condurre natanti in acque pericolose. Quando fallisce una Prova in tali condizioni, può invertire il dado, se il nuovo risultato dovesse essere un successo. Tuttavia, non potrà ottenere più di +1 LS, perché noterà il pericolo all’ultimo momento.</p>",
+      "tests": "Navigare o Remare in acque traditrici"
     },
     {
       "id": "Public Speaker",
@@ -519,252 +1514,926 @@
     {
       "id": "Pure Soul",
       "name": "Anima Pura",
-      "description": "L’anima del Personaggio è pura e refrattaria al potere del Caos. Può accumulare un numero di Punti Corruzione aggiuntivi pari al grado di questo Talento prima di dover tirare per non essere corrotto."
+      "description": "<p>L’anima del Personaggio è pura e refrattaria al potere del Caos. Può accumulare un numero di Punti Corruzione aggiuntivi pari al grado di questo Talento prima di dover tirare per non essere corrotto.</p>",
+      "effects": [
+        {
+          "_id": "2COWvsyLyfHXDcJJ",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prepareData",
+              "effectApplication": "actor",
+              "script": "args.actor.status.corruption.max += 1",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/pure-soul.png",
+          "label": "Anima Pura",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Rapid Reload",
       "name": "Ricarica Rapida",
-      "description": "Il Personaggio ricarica le armi con grande destrezza. Somma il grado in questo Talento al LS per ricaricare le armi a distanza."
+      "description": "<p>Il Personaggio ricarica le armi con grande destrezza. Somma il grado in questo Talento al LS per ricaricare le armi a distanza.</p>",
+      "effects": [
+        {
+          "_id": "nwmflkSKJ3gH7INJ",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prefillDialog",
+              "effectApplication": "actor",
+              "script": "if (args.options.reload && args.options.weapon)\n   args.prefillModifiers.slBonus += 1",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/rapid-reload.png",
+          "label": "Ricarica Rapida",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Reaction Strike",
       "name": "Colpo Reattivo",
-      "description": "<p>I riflessi del Personaggio gli permettono di uccidere molti nemici prima che possano colpirlo. Quando è vittima di una Carica, può effettuare una <strong>Prova Impegnativa (+0) d’Iniziativa</strong> per eseguire un Attacco Gratuito immediato, fuori del normale Ordine d’Iniziativa, con l’arma che stringe nella mano dominante. Durante un Round, questo Talento può essere usato una volta per grado, ma solo una contro ogni avversario.</p>"
+      "description": "<p>I riflessi del Personaggio gli permettono di uccidere molti nemici prima che possano colpirlo. Quando è vittima di una Carica, può effettuare una <strong>Prova Impegnativa (+0) d’Iniziativa</strong> per eseguire un Attacco Gratuito immediato, fuori del normale Ordine d’Iniziativa, con l’arma che stringe nella mano dominante. Durante un Round, questo Talento può essere usato una volta per grado, ma solo una contro ogni avversario.</p>",
+      "tests": "Iniziativa relativa a questo Talento"
     },
     {
       "id": "Read/Write",
       "name": "Leggere/Scrivere",
-      "description": "Il Personaggio è uno dei rari individui del Vecchio Mondo non analfabeta. È in grado di leggere e scrivere (se appropriato) tutte le lingue che conosce."
+      "description": "<p>Il Personaggio è uno dei rari individui del Vecchio Mondo non analfabeta. È in grado di leggere e scrivere (se appropriato) tutte le lingue che conosce.</p>"
     },
     {
       "id": "Relentless",
       "name": "Inesorabile",
-      "description": "Nulla può impedire al Personaggio di raggiungere i suoi obiettivi. Quando usa Vantaggio per Disimpegnarsi può conservare un numero di Vantaggi pari al grado di questo Talento. Inoltre, può usare Vantaggio per Disimpegnarsi anche se ne ha meno degli avversari."
+      "description": "<p>Nulla può impedire al Personaggio di raggiungere i suoi obiettivi. Quando usa Vantaggio per Disimpegnarsi può conservare un numero di Vantaggi pari al grado di questo Talento. Inoltre, può usare Vantaggio per Disimpegnarsi anche se ne ha meno degli avversari.</p>"
     },
     {
       "id": "Resistance",
       "name": "Resistente (Minaccia)",
-      "description": "La robusta costituzione del Personaggio gli permette di sopravvivere ad alcuni pericoli. In ogni sessione, supera automaticamente la prima Prova per resistere a una determinata minaccia (Magia, Veleni, Malattie, Mutazioni, ecc.). Se il LS è rilevante, sarà considerato pari al suo Bonus Resistenza."
+      "description": "<p>La robusta costituzione del Personaggio gli permette di sopravvivere ad alcuni pericoli. In ogni sessione, supera automaticamente la prima Prova per resistere a una determinata minaccia (Magia, Veleni, Malattie, Mutazioni, ecc.). Se il LS è rilevante, sarà considerato pari al suo Bonus Resistenza.</p>",
+      "tests": "Tutte quelle per resistere alla Minaccia scelta"
     },
     {
       "id": "Resolute",
       "name": "Determinato",
-      "description": "Il Personaggio va all’assalto con tetra determinazione. Quando Carica, somma il grado di questo Talento al Danno inflitto."
+      "description": "<p>Il Personaggio va all’assalto con tetra determinazione. Quando Carica, somma il grado di questo Talento al Danno inflitto.</p>",
+      "effects": [
+        {
+          "_id": "CTK46A6miFIRTbVG",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollWeaponTest",
+              "effectApplication": "actor",
+              "script": "if (args.test.result.charging)\n{\n   args.test.result.damage += 1\n   args.test.result.additionalDamage += 1\n}",
+              "preventDuplicateEffects": false,
+              "hide": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/resolute.png",
+          "label": "Determinato",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Reversal",
       "name": "Ribaltamento",
-      "description": "<p>Il Personaggio è abituato agli scontri disperati e sa ribaltarli a proprio vantaggio. Quando vince una <strong>Prova Contrapposta di Mischia</strong>, invece di ottenere +1 Vantaggio può rubare tutto quello dell’avversario. Se lo fa non causa alcun Danno, neppure se era l’attaccante.</p>"
+      "description": "<p>Il Personaggio è abituato agli scontri disperati e sa ribaltarli a proprio vantaggio. Quando vince una <strong>Prova Contrapposta di Mischia</strong>, invece di ottenere +1 Vantaggio può rubare tutto quello dell’avversario. Se lo fa non causa alcun Danno, neppure se era l’attaccante.</p>",
+      "tests": "Mischia in difesa"
     },
     {
       "id": "Riposte",
       "name": "Contrattacco",
-      "description": "<p>Fedele al principio che ‘la miglior difesa è l’attacco’, il Personaggio risponde a ogni aggressione con rapidi contrattacchi. Quando impugna un’arma Rapida, può causare Danno in difesa come se fosse il suo Turno. Durante un Round, questo Talento può essere usato un numero di volte pari al suo grado.</p>"
+      "description": "<p>Fedele al principio che ‘la miglior difesa è l’attacco’, il Personaggio risponde a ogni aggressione con rapidi contrattacchi. Quando impugna un’arma Rapida, può causare Danno in difesa come se fosse il suo Turno. Durante un Round, questo Talento può essere usato un numero di volte pari al suo grado.</p>",
+      "tests": "Mischia in difesa"
     },
     {
       "id": "River Guide",
       "name": "Pilota Fluviale",
-      "description": "<p>Il Personaggio conosce tutti i trucchi per navigare lungo i fiumi. Può superare automaticamente i punti pericolosi (fino a una Difficoltà di -10). Inoltre, se possiede una Conoscenza (locale) appropriata, ha automaticamente successo in tutte le Prove di Navigare in acque pericolose. Si immagina che conosca la rotta a menadito.</p>"
+      "description": "<p>Il Personaggio conosce tutti i trucchi per navigare lungo i fiumi. Può superare automaticamente i punti pericolosi (fino a una Difficoltà di -10). Inoltre, se possiede una Conoscenza (locale) appropriata, ha automaticamente successo in tutte le Prove di Navigare in acque pericolose. Si immagina che conosca la rotta a menadito.</p>",
+      "tests": "Ogni Prova relativa ai fiumi"
     },
     {
       "id": "Robust",
       "name": "Robusto",
-      "description": "<p>Il Personaggio è una vecchia pellaccia e ignora le ferite. Riduce il Danno subito del proprio grado in questo Talento (fino a un minimo di 1 Ferita), anche se si tratta di effetti che normalmente non sono evitabili.</p>"
+      "description": "<p>Il Personaggio è una vecchia pellaccia e ignora le ferite. Riduce il Danno subito del proprio grado in questo Talento (fino a un minimo di 1 Ferita), anche se si tratta di effetti che normalmente non sono evitabili.</p>",
+      "effects": [
+        {
+          "_id": "yTGSEMqLFPOts08w",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "takeDamage",
+              "effectApplication": "actor",
+              "script": "args.totalWoundLoss -= 1\nargs.messageElements.push(\"1 Robust\")\n\nif (args.totalWoundLoss <= 0)\n{\nlet weapon = args.opposedTest.attackerTest.weapon\nif \n(weapon && weapon.properties.flaws.undamaging)\n   args.totalWoundLoss = 0\nelse\n  args.totalWoundLoss = 1\n}",
+              "preventDuplicateEffects": false,
+              "hide": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/robust.png",
+          "label": "Robusto",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Roughrider",
       "name": "Nato in Sella",
-      "description": "<p>Il Personaggio è a suo agio in sella anche nelle circostanze peggiori e sa controllare la cavalcatura negli scontri. Se possiede l’Abilità Cavalcare, può ordinare all’animale di compiere un’Azione, non solo una Manovra, senza alcuna Prova.</p>"
+      "description": "<p>Il Personaggio è a suo agio in sella anche nelle circostanze peggiori e sa controllare la cavalcatura negli scontri. Se possiede l’Abilità Cavalcare, può ordinare all’animale di compiere un’Azione, non solo una Manovra, senza alcuna Prova.</p>",
+      "tests": "Cavalcare (Cavallo) in combattimento"
     },
     {
       "id": "Rover",
       "name": "Girovago",
-      "description": "Il Personaggio è a casa nelle selve. Quando usa Nascondersi in ambienti rurali, i presenti non possono tirare automaticamente Percepire per notare il suo passaggio, a meno che non siano già all’erta."
+      "description": "<p>Il Personaggio è a casa nelle selve. Quando usa Nascondersi in ambienti rurali, i presenti non possono tirare automaticamente Percepire per notare il suo passaggio, a meno che non siano già all’erta.</p>",
+      "tests": "Nascondersi in ambiente rurale"
     },
     {
       "id": "Savant",
       "name": "Genio (conoscenza)",
-      "description": "Il Personaggio è eccezionalmente colto e possiede grande esperienza in un particolare campo. In questioni legate alla materia scelta, può ricordare un numero di informazioni corrette pari al grado di questo Talento senza bisogno di Prove. Come sempre, tirare può fornire ulteriori informazioni, a discrezione del GM."
+      "description": "<p>Il Personaggio è eccezionalmente colto e possiede grande esperienza in un particolare campo. In questioni legate alla materia scelta, può ricordare un numero di informazioni corrette pari al grado di questo Talento senza bisogno di Prove. Come sempre, tirare può fornire ulteriori informazioni, a discrezione del GM.</p>",
+      "tests": "Conoscenza (materia scelta)"
     },
     {
       "id": "Savvy",
       "name": "Buon Senso",
-      "description": "Il Personaggio ottiene +5 alla propria Intelligenza base (non conta per gli Avanzamenti)."
+      "description": "<p>Il Personaggio ottiene +5 alla propria Intelligenza base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "sx7NGIdCYniQHaHi",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.int.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/savvy.png",
+          "label": "Buon Senso",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Scale Sheer Surface",
       "name": "Scalatore",
-      "description": "Il Personaggio è un alpinista eccezionale, capace di scalare superfici impossibili come le mura di una fortezza, lastroni di ghiaccio o pareti intonacate. Ignora tutte le penalità ad Arrampicarsi dovute alla difficoltà della parete."
+      "description": "<p>Il Personaggio è un alpinista eccezionale, capace di scalare superfici impossibili come le mura di una fortezza, lastroni di ghiaccio o pareti intonacate. Ignora tutte le penalità ad Arrampicarsi dovute alla difficoltà della parete.</p>",
+      "tests": "Arrampicarsi"
     },
     {
       "id": "Schemer",
       "name": "Cospiratore",
-      "description": "Il Personaggio è un politicante nato e vede cospirazioni dietro ogni angolo. Una volta per sessione, può porre al GM una domanda sulla situazione politica o i legami sociali. Il GM effettua una Prova d’Intelligenza segreta e fornisce informazioni in base al LS."
+      "description": "<p>Il Personaggio è un politicante nato e vede cospirazioni dietro ogni angolo. Una volta per sessione, può porre al GM una domanda sulla situazione politica o i legami sociali. Il GM effettua una Prova d’Intelligenza segreta e fornisce informazioni in base al LS.</p>",
+      "tests": "Intelligenza per usare questo Talento"
     },
     {
       "id": "Sea Legs",
       "name": "Gambe da Marinaio",
-      "description": "Il Personaggio è abituato a rollio e beccheggio e dà di stomaco solo nelle peggiori tempeste. In condizioni normali non deve mai effettuare Prove per resistere al mal di mare. In casi eccezionali (come una tempesta o un effetto magico), ignora tutti i modificatori negativi alla Prova."
+      "description": "<p>Il Personaggio è abituato a rollio e beccheggio e dà di stomaco solo nelle peggiori tempeste. In condizioni normali non deve mai effettuare Prove per resistere al mal di mare. In casi eccezionali (come una tempesta o un effetto magico), ignora tutti i modificatori negativi alla Prova.</p>",
+      "tests": "Tutte quelle per resistere al mal di mare"
     },
     {
       "id": "Seasoned Traveller",
       "name": "Viaggiatore Esperto",
-      "description": "<p>Il Personaggio ha un animo curioso e ha viaggiato in lungo e in largo, imparando molto. Aggiunge Conoscenza (locale) a tutte le Carriere in cui entra; se l’Abilità è già presente può acquisire due Specializzazioni diverse – per esempio, Altdorf e Ubersreik – con uno sconto di 5 PE su ogni Avanzamento.</p>"
+      "description": "<p>Il Personaggio ha un animo curioso e ha viaggiato in lungo e in largo, imparando molto. Aggiunge Conoscenza (locale) a tutte le Carriere in cui entra; se l’Abilità è già presente può acquisire due Specializzazioni diverse – per esempio, Altdorf e Ubersreik – con uno sconto di 5 PE su ogni Avanzamento.</p>",
+      "tests": "Tutte le Prove di Conoscenza relative a particolari locali"
     },
     {
       "id": "Second Sight",
       "name": "Seconda Vista",
-      "description": "Il Personaggio può percepire i mutevoli Venti della Magia che soffiano dai Portali del Caos ai poli del mondo. Possiede la Vista (vedere pag. 229). "
+      "description": "<p>Il Personaggio può percepire i mutevoli Venti della Magia che soffiano dai Portali del Caos ai poli del mondo. Possiede la Vista (vedere pag. 229).</p>",
+      "tests": "Tutte le Prove per percepire i Venti della Magia"
     },
     {
       "id": "Secret Identity",
       "name": "Identità segreta",
-      "description": "Il Personaggio ha un’identità segreta che gli permette di fingersi più ricco o povero. Può scegliere una Carriera, con il benestare del GM, e usarne lo Status, finché si veste in modo appropriato. Questo modifica le Prove di Socialità e permette di ignorare gli effetti del Talento Criminale. Tuttavia, mantenere questa identità fittizia richiede Prove di Intrattenere (Recitare) quando incontra persone capaci di smascherarlo. Per ogni grado in questo Talento si può creare un’ulteriore identità segreta."
+      "description": "<p>Il Personaggio ha un’identità segreta che gli permette di fingersi più ricco o povero. Può scegliere una Carriera, con il benestare del GM, e usarne lo Status, finché si veste in modo appropriato. Questo modifica le Prove di Socialità e permette di ignorare gli effetti del Talento Criminale. Tuttavia, mantenere questa identità fittizia richiede Prove di Intrattenere (Recitare) quando incontra persone capaci di smascherarlo. Per ogni grado in questo Talento si può creare un’ulteriore identità segreta.</p>",
+      "tests": "Intrattenere (Recitare) per mantenere una doppia identità"
     },
     {
       "id": "Shadow",
       "name": "Ombra",
-      "description": "Il Personaggio è abile nel pedinare senza essere notato. Può usare le regole di pag. 126 senza bisogno di una Prova Combinata, sfruttando invece l’Abilità più alta tra Nascondersi e Percepire."
+      "description": "<p>Il Personaggio è abile nel pedinare senza essere notato. Può usare le regole di pag. 126 senza bisogno di una Prova Combinata, sfruttando invece l’Abilità più alta tra Nascondersi e Percepire.</p>",
+      "tests": "Tutte le Prove per pedinare"
     },
     {
       "id": "Sharp",
       "name": "Acuto",
-      "description": "Il Personaggio ottiene +5 alla propria Iniziativa base (non conta per gli Avanzamenti). "
+      "description": "<p>Il Personaggio ottiene +5 alla propria Iniziativa base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "brTadWGpAAr78Pwx",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.i.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/sharp.png",
+          "label": "Acuto",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Sharpshooter",
       "name": "Tiratore Scelto",
-      "description": "Il Personaggio ha una mira eccezionale. Ignora i modificatori negativi alle Prove di Mira dovuti alla Taglia del bersaglio."
+      "description": "<p>Il Personaggio ha una mira eccezionale. Ignora i modificatori negativi alle Prove di Mira dovuti alla Taglia del bersaglio.</p>",
+      "effects": [
+        {
+          "_id": "AdXR6L7rmxEgkVlB",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/sharpshooter.png",
+          "label": "Tiratore Scelto",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prefillDialog",
+              "effectApplication": "actor",
+              "hide": false,
+              "preventDuplicateEffects": true,
+              "script": "if (args.options.sizeModifier < 0)\n   args.prefillModifiers.modifier -= args.options.sizeModifier"
+            }
+          },
+          "tint": null,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Shieldsman",
       "name": "Esperto con lo Scudo",
-      "description": "Il Personaggio è abile nell’impiegare lo scudo in combattimento, specie in situazioni disperate. Quando si difende con uno scudo e perde la Prova Contrapposta, ottiene un numero di Vantaggi pari al grado in questo Talento."
+      "description": "<p>Il Personaggio è abile nell’impiegare lo scudo in combattimento, specie in situazioni disperate. Quando si difende con uno scudo e perde la Prova Contrapposta, ottiene un numero di Vantaggi pari al grado in questo Talento.</p>",
+      "effects": [
+        {
+          "_id": "W5gSfWrnLHp2SYLA",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "opposedDefender",
+              "effectApplication": "actor",
+              "script": "if (args.opposedTest.result.winner == \"attacker\") {\n  if (args.opposedTest.defenderTest.weapon && args.opposedTest.defenderTest.item.properties.qualities.shield) {\n    ui.notifications.notify(`<b>${this.effect.label}</b>: Gained ${this.item.Advances} Advantage`)\n    this.actor.setAdvantage(this.item.Advances)\n  }\n}",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/shieldsman.png",
+          "label": "Esperto con lo Scudo",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Tutte le Prove per difendersi con uno scudo"
     },
     {
       "id": "Sixth Sense",
       "name": "Sesto Senso",
-      "description": "Quando il Personaggio è in pericolo ha una sorta di presentimento e può reagire di conseguenza. Il GM – di solito dopo una Prova d’Intuire segreta – lo avviserà di minacce incombenti. Inoltre, può ignorare la Sorpresa superando una Prova d’Intuire. "
+      "description": "<p>Quando il Personaggio è in pericolo ha una sorta di presentimento e può reagire di conseguenza. Il GM – di solito dopo una Prova d’Intuire segreta – lo avviserà di minacce incombenti. Inoltre, può ignorare la Sorpresa superando una Prova d’Intuire.</p>",
+      "tests": "Intuire legate a questo Talento"
     },
     {
       "id": "Slayer",
       "name": "Sventratore",
-      "description": "<p>Quando calcola il Danno inflitto il Personaggio usa il Bonus Resistenza del bersaglio se questo è più alto del proprio Bonus Forza. La modifica va calcolata prima di applicare qualsiasi modificatore a Forza o al Bonus Forza. Inoltre, se il bersaglio è di Taglia superiore e il Personaggio ottiene un Critico in mischia (vedere pag. 159) il Danno viene moltiplicato per la differenza tra le Taglie (2 gradi= ×2; 3 gradi= ×3 ecc.). Questa moltiplicazione viene effettuata dopo avere aggiunto ogni altro bonus. Vedere pag. 342 per maggiori informazioni sulla <em>Taglia</em>.</p>"
+      "description": "<p>Quando calcola il Danno inflitto il Personaggio usa il Bonus Resistenza del bersaglio se questo è più alto del proprio Bonus Forza. La modifica va calcolata prima di applicare qualsiasi modificatore a Forza o al Bonus Forza. Inoltre, se il bersaglio è di Taglia superiore e il Personaggio ottiene un Critico in mischia (vedere pag. 159) il Danno viene moltiplicato per la differenza tra le Taglie (2 gradi= ×2; 3 gradi= ×3 ecc.). Questa moltiplicazione viene effettuata dopo avere aggiunto ogni altro bonus. Vedere pag. 342 per maggiori informazioni sulla <em>Taglia</em>.</p>",
+      "effects": [
+        {
+          "_id": "ScsXdMC7SqNirMwx",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "calculateOpposedDamage",
+              "effectApplication": "actor",
+              "script": "if (args.sizeDiff <= -2 && args.opposedTest.attackerTest.result.critical)\n        args.damageMultiplier = Math.abs(args.sizeDiff)\n\n      let sBonusDiff = args.opposedTest.defenderTest.actor.characteristics.t.bonus - args.opposedTest.attackerTest.actor.characteristics.s.bonus\n     let weapon = args.opposedTest.attackerTest.item\n      if (sBonusDiff > 0 && weapon && weapon.damage.value.includes(\"SB\"))\n        args.damage += sBonusDiff",
+              "preventDuplicateEffects": false,
+              "hide": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/slayer.png",
+          "label": "Sventratore",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Small",
       "name": "Piccolo",
-      "description": "<p>Il Personaggio è molto più basso della maggioranza degli abitanti del Vecchio Mondo. Vedere pag. 342 per maggiori informazioni sulla Taglia. <br><br></p>"
+      "description": "<p>Il Personaggio è molto più basso della maggioranza degli abitanti del Vecchio Mondo. Vedere pag. 342 per maggiori informazioni sulla Taglia. <br><br></p>",
+      "effects": [
+        {
+          "label": "Piccolo",
+          "icon": "modules/wfrp4e-core/icons/talents/small.png",
+          "transfer": true,
+          "_id": "keKRZ1nmziD1BMXg",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "origin": null,
+          "tint": null,
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "calculateSize",
+              "effectApplication": "actor",
+              "hide": false,
+              "preventDuplicateEffects": false,
+              "script": "args.size = \"sml\""
+            }
+          }
+        }
+      ]
     },
     {
       "id": "Sniper",
       "name": "Cecchino",
-      "description": "<p>La distanza non significa nulla per il Personaggio, che è capace di colpire bersagli vicini e lontani con la stessa facilità. Non subisce penalità quando spara a Gittata Lunga e dimezza le penalità di quella Estrema.</p>"
+      "description": "<p>La distanza non significa nulla per il Personaggio, che è capace di colpire bersagli vicini e lontani con la stessa facilità. Non subisce penalità quando spara a Gittata Lunga e dimezza le penalità di quella Estrema.</p>",
+      "effects": [
+        {
+          "_id": "AVhPxHHlKUolT589",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prepareItem",
+              "effectApplication": "actor",
+              "script": "if (args.item.range && args.item.range.bands)\n{\nargs.item.range.bands[game.i18n.localize(\"Long Range\")].modifier = 0\nargs.item.range.bands[game.i18n.localize(\"Extreme\")].modifier /= 2\n}",
+              "hide": false,
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/sniper.png",
+          "label": "Cecchino",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Mira a Gittata Lunga o Estrema"
     },
     {
       "id": "Speedreader",
       "name": "Lettura veloce",
-      "description": " Il Personaggio è un lettore vorace. Può invertire il dado sulle Prove fallite di Ricercare, se il nuovo risultato dovesse essere un successo. Inoltre, se la velocità di lettura è importante, in un Round, superando una <strong>Prova di Linguaggio</strong>, potrà comprendere perfettamente un numero di pagine pari al LS più il grado di questo Talento (minimo 1 anche in caso di fallimento)."
+      "description": "<p>Il Personaggio è un lettore vorace. Può invertire il dado sulle Prove fallite di Ricercare, se il nuovo risultato dovesse essere un successo. Inoltre, se la velocità di lettura è importante, in un Round, superando una <strong>Prova di Linguaggio</strong>, potrà comprendere perfettamente un numero di pagine pari al LS più il grado di questo Talento (minimo 1 anche in caso di fallimento).</p>",
+      "tests": "Ricercare e Linguaggio quando la rapidità nel leggere è importante"
     },
     {
       "id": "Sprinter",
       "name": "Velocista",
-      "description": "Il Personaggio è un velocista. Il suo Movimento è considerato maggiore di 1 quando Corre."
+      "description": "<p>Il Personaggio è un velocista. Il suo Movimento è considerato maggiore di 1 quando Corre.</p>",
+      "effects": [
+        {
+          "_id": "SjJdt6yUkEkPqDgF",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prepareData",
+              "effectApplication": "actor",
+              "script": "args.actor.details.move.run += 4",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/sprinter.png",
+          "label": "Velocista",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Atletica quando Corre"
     },
     {
       "id": "Step Aside",
       "name": "Farsi da Parte",
-      "description": "Il Personaggio è abile nell’evitare i colpi nemici. Quando usa con successo Schivare per difendersi può spostarsi di 2m e non è più considerato Ingaggiato. Nessun avversario ottiene Attacchi Gratuiti in questa circostanza."
+      "description": "<p>Il Personaggio è abile nell’evitare i colpi nemici. Quando usa con successo Schivare per difendersi può spostarsi di 2m e non è più considerato Ingaggiato. Nessun avversario ottiene Attacchi Gratuiti in questa circostanza.</p>",
+      "tests": "Schivare relative a questo Talento"
     },
     {
       "id": "Stone Soup",
       "name": "Zuppa di Sasso",
-      "description": "Il Personaggio è abituato a vivere con poco. Può sopravvivere con metà del cibo di una persona normale senza penalità (a parte essere davvero affamato) e deve effettuare Prove per resistere alla Fame ogni 3 giorni invece di 2 (vedere pag. 181). "
+      "description": "<p>Il Personaggio è abituato a vivere con poco. Può sopravvivere con metà del cibo di una persona normale senza penalità (a parte essere davvero affamato) e deve effettuare Prove per resistere alla Fame ogni 3 giorni invece di 2 (vedere pag. 181).</p>",
+      "tests": "Tempra per resistere alla fame"
     },
     {
       "id": "Stout-hearted",
       "name": "Cuore Impavido",
-      "description": "<p>Non importa quanto le cose siano terribili, il Personaggio non rinuncia. Può effettuare una Prova di Freddezza per rimuovere la Condizione Atterrito alla fine di ogni suo Turno oltre che alla fine del Round (vedere pag. 168). </p>"
+      "description": "<p>Non importa quanto le cose siano terribili, il Personaggio non rinuncia. Può effettuare una Prova di Freddezza per rimuovere la Condizione Atterrito alla fine di ogni suo Turno oltre che alla fine del Round (vedere pag. 168). </p>",
+      "tests": "Freddezza per rimuovere la Condizione Atterrito"
     },
     {
       "id": "Strider",
       "name": "Passo Lungo (Terreno)",
-      "description": "Il Personaggio è abile ad attraversare terreni difficili. Ignora tutte le penalità quando si muove nell’ambiente prescelto. Tipiche specializzazioni includono: Coste, Deserti, Paludi, Monti, Tundra e Foreste."
+      "description": "<p>Il Personaggio è abile ad attraversare terreni difficili. Ignora tutte le penalità quando si muove nell’ambiente prescelto. Tipiche specializzazioni includono: Coste, Deserti, Paludi, Monti, Tundra e Foreste.</p>",
+      "tests": "Atletica per attraversare il terreno scelto"
     },
     {
       "id": "Strike Mighty Blow",
       "name": "Colpo Poderoso",
-      "description": "Il Personaggio sa come colpire davvero <em>forte</em>! Somma il grado di questo Talento a tutti i Danni che infligge con armi da mischia."
+      "description": "<p>Il Personaggio sa come colpire davvero <em>forte</em>! Somma il grado di questo Talento a tutti i Danni che infligge con armi da mischia.</p>",
+      "effects": [
+        {
+          "_id": "1FkIE179oDa65hOI",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prePrepareItems",
+              "effectApplication": "actor",
+              "script": "args.actor.flags.meleeDamageIncrease += 1",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/strike-mighty-blow.png",
+          "label": "Colpo Poderoso",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Strike to Injure",
       "name": "Colpo Crudele",
-      "description": "<p>Il Personaggio è uno specialista nel colpire i punti deboli. Quando causa una Ferita Critica somma il grado di questo Talento alle Ferite causate.</p>"
+      "description": "<p>Il Personaggio è uno specialista nel colpire i punti deboli. Quando causa una Ferita Critica somma il grado di questo Talento alle Ferite causate.</p>",
+      "effects": [
+        {
+          "_id": "3HTxEPAJdtbQaygL",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollWeaponTest",
+              "effectApplication": "actor",
+              "script": "if(args.test.result.critical)\n{\n   args.test.result.damage +=1 \n   args.test.result.additionalDamage += 1\n}",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/strike-to-injure.png",
+          "label": "Colpo Crudele",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Strike to Stun",
       "name": "Colpo Stordente",
-      "description": "<p> Il Personaggio è in grado di colpire gli avversari per stenderli in fretta. Quando usa un’arma da mischia con la Qualità <em>Percuotere</em> (vedere pag. 298) ignora le penalità per i ‘Colpi Mirati’ alla Testa. Inoltre considera tutte le Armi Improvvisate come se avessero <em>Percuotere</em>. </p>"
+      "description": "<p> Il Personaggio è in grado di colpire gli avversari per stenderli in fretta. Quando usa un’arma da mischia con la Qualità <em>Percuotere</em> (vedere pag. 298) ignora le penalità per i ‘Colpi Mirati’ alla Testa. Inoltre considera tutte le Armi Improvvisate come se avessero <em>Percuotere</em>.</p>",
+      "tests": "Mischia per infliggere colpi stordenti"
     },
     {
       "id": "Strong Back",
       "name": "Spalle Forti",
-      "description": "<p>Il Personaggio ha le spalle forti ed è abituato alla fatica. Somma il grado in questo Talento al LS delle Prove Contrapposte di Forza e alla quantità di Ingombro che può trasportare (vedere pag. 293).</p>"
+      "description": "<p>Il Personaggio ha le spalle forti ed è abituato alla fatica. Somma il grado in questo Talento al LS delle Prove Contrapposte di Forza e alla quantità di Ingombro che può trasportare (vedere pag. 293).</p>",
+      "effects": [
+        {
+          "_id": "V6DfeSCAubOnx2rs",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "dialogChoice",
+              "effectApplication": "actor",
+              "effectData": {
+                "description": "Opposed Strength Tests",
+                "modifier": null,
+                "slBonus": 1,
+                "successBonus": null,
+                "difficultyStep": null
+              },
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/strong-back.png",
+          "label": "Bonus Contrapposto",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        },
+        {
+          "_id": "J5IUFXDMXgCJSPXW",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prePrepareItems",
+              "effectApplication": "actor",
+              "script": "args.actor.status.encumbrance.max += 1",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/strong-back.png",
+          "label": "Spalle Forti",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Nuotare e Remare"
     },
     {
       "id": "Strong Legs",
       "name": "Gambe Forti",
-      "description": "Il Personaggio ha gambe forti, che gli permettono di saltare più lontano del normale. Somma il grado di questo Talento al LS delle Prove di Atletica per Saltare (vedere pag. 166)."
+      "description": "<p>Il Personaggio ha gambe forti, che gli permettono di saltare più lontano del normale. Somma il grado di questo Talento al LS delle Prove di Atletica per Saltare (vedere pag. 166).</p>",
+      "effects": [
+        {
+          "_id": "VaILgn8RaKpqAueV",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "dialogChoice",
+              "effectApplication": "actor",
+              "effectData": {
+                "description": "Athletics Tests involving Leaping",
+                "modifier": null,
+                "slBonus": 1,
+                "successBonus": null,
+                "difficultyStep": null
+              },
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/strong-legs.png",
+          "label": "Gambe Forti",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Strong Swimmer",
       "name": "Nuotatore",
-      "description": "Il Personaggio è abituato a nuotare e trattenere il respiro sott’acqua. Somma il grado di questo Talento al proprio Bonus Resistenza per trattenere il fiato."
+      "description": "<p>Il Personaggio è abituato a nuotare e trattenere il respiro sott’acqua. Somma il grado di questo Talento al proprio Bonus Resistenza per trattenere il fiato.</p>",
+      "tests": "Nuotare"
     },
     {
       "id": "Strong-minded",
       "name": "Risoluto",
-      "description": "Il Personaggio è l’incarnazione della determinazione. Somma il grado di questo Talento alla sua riserva di Risolutezza."
+      "description": "<p>Il Personaggio è l’incarnazione della determinazione. Somma il grado di questo Talento alla sua riserva di Risolutezza.</p>"
     },
     {
       "id": "Sturdy",
       "name": "Vigoroso",
-      "description": "Il Personaggio ha un fisico possente ed è abituato a trasportare carichi. Somma il doppio del grado di questo Talento all’Ingombro che può trasportare."
+      "description": "<p>Il Personaggio ha un fisico possente ed è abituato a trasportare carichi. Somma il doppio del grado di questo Talento all’Ingombro che può trasportare.</p>",
+      "effects": [
+        {
+          "_id": "JGnq108l9XA1xAWM",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prePrepareItems",
+              "effectApplication": "actor",
+              "script": "args.actor.status.encumbrance.max += 2",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/sturdy.png",
+          "label": "Vigoroso",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Forza per sollevare pesi"
     },
     {
       "id": "Suave",
       "name": "Cortese",
-      "description": "Il Personaggio ottiene +5 alla propria Socialità base (non conta per gli Avanzamenti)."
+      "description": "<p>Il Personaggio ottiene +5 alla propria Socialità base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "KtcX1mblPyZZwVBC",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.fel.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/suave.png",
+          "label": "Cortese",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Super Numerate",
       "name": "Genio Matematico",
-      "description": "<p>Il Personaggio ha un dono per i numeri e riesce a risolvere facilmente complesse equazioni. Il Giocatore può usare una calcolatrice per rappresentare queste facoltà.</p>"
+      "description": "<p>Il Personaggio ha un dono per i numeri e riesce a risolvere facilmente complesse equazioni. Il Giocatore può usare una calcolatrice per rappresentare queste facoltà.</p>",
+      "tests": "Giocare d’Azzardo, Valutare"
     },
     {
       "id": "Supportive",
       "name": "Solidale",
-      "description": "<p>Il Personaggio sa quando e come parlare per impressionare i propri superiori. Se ha successo in una Prova sociale verso uno di essi può usare il LS normale o il valore del dado delle unità. Quindi un tiro di 46 potrebbe equivalere a +6 LS.</p>"
+      "description": "<p>Il Personaggio sa quando e come parlare per impressionare i propri superiori. Se ha successo in una Prova sociale verso uno di essi può usare il LS normale o il valore del dado delle unità. Quindi un tiro di 46 potrebbe equivalere a +6 LS.</p>",
+      "effects": [
+        {
+          "_id": "S487mwxmDJh9rULA",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "rollTest",
+              "effectApplication": "actor",
+              "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target))\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if influencing those with a higher status.`)\n}",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/supportive.png",
+          "label": "Solidale",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Prove sociali per influenzare un superiore"
     },
     {
       "id": "Sure Shot",
       "name": "Mira Sicura",
-      "description": "<p>Il Personaggio è un esperto nel trovare i punti deboli nelle armature. Quando colpisce con un’arma a distanza può ignorare un numero di Punti Armatura pari al grado di questo Talento.</p>"
+      "description": "<p>Il Personaggio è un esperto nel trovare i punti deboli nelle armature. Quando colpisce con un’arma a distanza può ignorare un numero di Punti Armatura pari al grado di questo Talento.</p>",
+      "effects": [
+        {
+          "_id": "FT9ngGg2C68sBxzc",
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/sure-shot.png",
+          "label": "Mira Sicura",
+          "transfer": true,
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "applyDamage",
+              "effectApplication": "actor",
+              "hide": false,
+              "preventDuplicateEffects": true,
+              "script": "if(args.opposedTest.attackerTest.weapon.attackType == \"ranged\")\n{\n    let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL)\n\n\n    let AP = args.AP\n\n    if (applyAP) {\n        newUsed = Math.max(AP.used - this.item.Advances, 0)\n        args.totalWoundLoss += (AP.used - newUsed)\n\n    let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")))\n    args.messageElements[apIndex] = newUsed + \"/\" + AP.value + \" \" + game.i18n.localize(\"AP\")\n    }\n}"
+            }
+          },
+          "tint": null,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Surgery",
       "name": "Chirurgia",
-      "description": "<p>Il Personaggio è un chirurgo, esperto nell’aprire e chiudere ferite. Può trattare le Ferite Critiche che richiedono Chirurgia ed eseguire altre procedure effettuando <strong>Prove Prolungate Impegnative (+0) di Guarire</strong> con un LS deciso dal GM (di solito 5-10) in base alla complessità. Ogni Prova causerà 1d10 Ferite e una Condizione <em>Sanguinante</em>, per cui l’intervento ha buone possibilità di uccidere il paziente se non si sta attenti. Al termine, il paziente dovrà superare una <strong>Prova Media (+20) di Tempra</strong> per non contrarre un’ <em>Infezione Minore</em>.</p>"
+      "description": "<p>Il Personaggio è un chirurgo, esperto nell’aprire e chiudere ferite. Può trattare le Ferite Critiche che richiedono Chirurgia ed eseguire altre procedure effettuando <strong>Prove Prolungate Impegnative (+0) di Guarire</strong> con un LS deciso dal GM (di solito 5-10) in base alla complessità. Ogni Prova causerà 1d10 Ferite e una Condizione <em>Sanguinante</em>, per cui l’intervento ha buone possibilità di uccidere il paziente se non si sta attenti. Al termine, il paziente dovrà superare una <strong>Prova Media (+20) di Tempra</strong> per non contrarre un’ <em>Infezione Minore</em>.</p>",
+      "tests": "Guarire fuori dal combattimento (cioè quando si ha tempo di lavorare per bene)"
     },
     {
       "id": "Tenacious",
       "name": "Tenace",
-      "description": "Il Personaggio non si arrende mai. Quando supera una Prova di Tempra può sopportare un’avversità due volte più a lungo del normale. Questo include estenuanti cavalcate, il clima e i rituali."
+      "description": "<p>Il Personaggio non si arrende mai. Quando supera una Prova di Tempra può sopportare un’avversità due volte più a lungo del normale. Questo include estenuanti cavalcate, il clima e i rituali.</p>",
+      "tests": "Tempra per sopportare le avversità"
     },
     {
       "id": "Tinker",
       "name": "Trafficone",
-      "description": "Il Personaggio è un tuttofare capace di improvvisare riparazioni. Considera tutte le Abilità di Mestiere non magiche come Base per compiere riparazioni."
+      "description": "<p>Il Personaggio è un tuttofare capace di improvvisare riparazioni. Considera tutte le Abilità di Mestiere non magiche come Base per compiere riparazioni.</p>",
+      "tests": "Mestiere per riparare oggetti"
     },
     {
       "id": "Tower of Memories",
@@ -774,52 +2443,189 @@
     {
       "id": "Trapper",
       "name": "Esperto in Trappole",
-      "description": "Il Personaggio è abile nel piazzare e localizzare trappole. Ha diritto a una Prova di Percepire per individuarle anche se non ha dichiarato al GM di essere all’erta. Alcuni GM preferiscono fare questa Prova in segreto."
+      "description": "<p>Il Personaggio è abile nel piazzare e localizzare trappole. Ha diritto a una Prova di Percepire per individuarle anche se non ha dichiarato al GM di essere all’erta. Alcuni GM preferiscono fare questa Prova in segreto.</p>",
+      "tests": "Percepire per individuare trappole, Piazzare Trappole"
     },
     {
       "id": "Trick Riding",
       "name": "Volteggio in Sella",
-      "description": "Il Personaggio è capace di incredibili evoluzioni a cavallo. Mentre è in sella può usare tutte le Specializzazioni di Esibirsi e Schivare senza penalità. Inoltre potrà eseguire la propria Manovra all’Inizio del Round invece che nel suo Turno."
+      "description": "<p>Il Personaggio è capace di incredibili evoluzioni a cavallo. Mentre è in sella può usare tutte le Specializzazioni di Esibirsi e Schivare senza penalità. Inoltre potrà eseguire la propria Manovra all’Inizio del Round invece che nel suo Turno.</p>",
+      "effects": [
+        {
+          "_id": "HRSjpI6pAoSuf9tl",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prefillDialog",
+              "effectApplication": "actor",
+              "script": "if (args.type == \"characteristic\") {\n      if (args.options.dodge && this.actor.isMounted)\n          args.prefillModifiers.modifier += 20\n    }\n\n    if (args.type == \"skill\") {\n      if (args.item.name == game.i18n.localize(\"NAME.Dodge\") && this.actor.isMounted)\n        args.prefillModifiers.modifier += 20\n\n    }",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/trick-riding.png",
+          "label": "Volteggio in Sella",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ],
+      "tests": "Cavalcare (Cavallo), Schivare in sella"
     },
     {
       "id": "Tunnel Rat",
       "name": "Topo di Fogna",
-      "description": "Il Personaggio si sente a casa nei tunnel, nelle fogne e in altri sotterranei. Quando usa Nascondersi in questi ambienti, i presenti non possono tirare automaticamente Percepire per notare il suo passaggio, a meno che non siano già all’erta."
+      "description": "<p>Il Personaggio si sente a casa nei tunnel, nelle fogne e in altri sotterranei. Quando usa Nascondersi in questi ambienti, i presenti non possono tirare automaticamente Percepire per notare il suo passaggio, a meno che non siano già all’erta.</p>",
+      "tests": "Nascondersi (sotterraneo)"
     },
     {
       "id": "Unshakable",
       "name": "Nervi d'Acciaio",
-      "description": "<p>Il Personaggio è un veterano che è sopravvissuto a numerose scariche di piombo. Se viene mancato, non deve effettuare la Prova di Freddezza per resistere alla Condizione <em>Atterrito</em> causata da un’Arma da Fuoco.</p>"
+      "description": "<p>Il Personaggio è un veterano che è sopravvissuto a numerose scariche di piombo. Se viene mancato, non deve effettuare la Prova di Freddezza per resistere alla Condizione <em>Atterrito</em> causata da un’Arma da Fuoco.</p>",
+      "tests": "Freddezza per resistere al panico causato dalle Armi da Fuoco"
     },
     {
       "id": "Very Resilient",
       "name": "Saldo",
-      "description": "Il Personaggio ottiene +5 alla propria Resistenza base (non conta per gli Avanzamenti). "
+      "description": "<p>Il Personaggio ottiene +5 alla propria Resistenza base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "vntOVrHSurqI8lbG",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": true
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.t.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/very-resilient.png",
+          "label": "Saldo",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Very Strong",
       "name": "Forzuto",
-      "description": "Il Personaggio ottiene +5 alla propria Forza base (non conta per gli Avanzamenti)."
+      "description": "<p>Il Personaggio ottiene +5 alla propria Forza base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "4dEzF6K4pP539zRF",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.s.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/very-strong.png",
+          "label": "Forzuto",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "War Leader",
       "name": "Condottiero",
-      "description": "<p>Lo sguardo deciso e le parole ispiratrici del Personaggio spingono i soldati a battersi sino all’ultimo. Una volta per Round ogni suo sottoposto che è in grado di vederlo somma il grado di questo Talento al LS di una Prova di Volontà. Questo bonus non è cumulativo.</p>"
+      "description": "<p>Lo sguardo deciso e le parole ispiratrici del Personaggio spingono i soldati a battersi sino all’ultimo. Una volta per Round ogni suo sottoposto che è in grado di vederlo somma il grado di questo Talento al LS di una Prova di Volontà. Questo bonus non è cumulativo.</p>",
+      "tests": "Comandare in guerra"
     },
     {
       "id": "War Wizard",
       "name": "Mago della Guerra",
-      "description": "Il Personaggio è addestrato a lanciare incantesimi in mezzo alla battaglia. Nel proprio Turno può lanciare un Incantesimo con un Valore di Lancio di 5 o meno senza usare la propria Azione. Tuttavia non potrà invocarne un altro nel corso del Turno."
+      "description": "<p>Il Personaggio è addestrato a lanciare incantesimi in mezzo alla battaglia. Nel proprio Turno può lanciare un Incantesimo con un Valore di Lancio di 5 o meno senza usare la propria Azione. Tuttavia non potrà invocarne un altro nel corso del Turno.</p>"
     },
     {
       "id": "Warrior Born",
       "name": "Guerriero Nato",
-      "description": "<p>Il Personaggio ottiene +5 alla propria Abilità di Combattimento base (non conta per gli Avanzamenti).</p>"
+      "description": "<p>Il Personaggio ottiene +5 alla propria Abilità di Combattimento base (non conta per gli Avanzamenti).</p>",
+      "effects": [
+        {
+          "_id": "yjOMm9SFJOK8QBvQ",
+          "flags": {
+            "wfrp4e": {
+              "effectApplication": "actor",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [
+            {
+              "key": "system.characteristics.ws.initial",
+              "value": "5",
+              "mode": 2,
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/talents/warrior-born.png",
+          "label": "Guerriero Nato",
+          "tint": null,
+          "transfer": true,
+          "origin": null
+        }
+      ]
     },
     {
       "id": "Waterman",
       "name": "Battelliere",
-      "description": "Il Personaggio è un esperto nel manovrare imbarcazioni fluviali. Quando naviga su un fiume può ignorare tutti i modificatori negativi alle Prove dovuti al clima, al rollio e altri simili. Inoltre, conta come due marinai per calcolare l’equipaggio minimo di una nave fluviale."
+      "description": "<p>Il Personaggio è un esperto nel manovrare imbarcazioni fluviali. Quando naviga su un fiume può ignorare tutti i modificatori negativi alle Prove dovuti al clima, al rollio e altri simili. Inoltre, conta come due marinai per calcolare l’equipaggio minimo di una nave fluviale.</p>",
+      "tests": "Navigare su imbarcazioni da fiume"
     },
     {
       "id": "Wealthy",
@@ -834,7 +2640,7 @@
     {
       "id": "Witch!",
       "name": "Strega!",
-      "description": "Il Personaggio è un incantatore autodidatta, che ha imparato a prove ed errori. Aggiunge Linguaggio (Magico) a tutte le Carriere in cui entra; se l’Abilità è già presente ottiene uno sconto di 5 PE su ogni Avanzamento. Inoltre, spendendo 1 Punto Resilienza può manifestare un incantesimo di qualsiasi Sapere Arcano (e memorizzarlo permanentemente per 0 PE),  fino a un totale pari al Grado in questo Talento."
+      "description": "<p>Il Personaggio è un incantatore autodidatta, che ha imparato a prove ed errori. Aggiunge Linguaggio (Magico) a tutte le Carriere in cui entra; se l’Abilità è già presente ottiene uno sconto di 5 PE su ogni Avanzamento. Inoltre, spendendo 1 Punto Resilienza può manifestare un incantesimo di qualsiasi Sapere Arcano (e memorizzarlo permanentemente per 0 PE),  fino a un totale pari al Grado in questo Talento.</p>"
     }
   ]
 }
