@@ -1,0 +1,39 @@
+{
+	"label": "Journals (Core)",
+	"entries": {
+		"Bestiary": {
+			"name": "Bestiario",
+			"pages": {
+				"Bestiary": {
+					"name": "Bestiario",
+					"text": "<blockquote><p>‘Adversity with the monster makes the man. Prosperity with the man makes the monster.’</p><p style=\"text-align:right\"><em>– Albrecht Zweistein, Middenlander Professor</em></p></blockquote><p>Le creature presented in the Bestiary are generic, typical starter examples of their ilk. You are encouraged to customise them and create your own, using the statistics found here and adding Skills and Talents as you feel are necessary, perhaps even using the full Career system to create terrifying opponents. The quickest way to create fast NPC adversaries is to use Creature Traits; all creatures come with one or more Creature Traits as standard, but additional ones can be added as required, and they can be mixed with @UUID[JournalEntry.6zOdTLv3YeYeJ4hR]{Skills and Talents} as you see fit.</p><blockquote class=\"foundry-note\"><p>Drag and drop careers onto NPC and Creature sheets to automatically apply advances based on that career for quick NPC creation.</p></blockquote><p>The Optional traits listed alongside each creature presents some of the most commonly found variants of the species. However, you may choose to apply any trait to any creature if it fits what you want to represent in your game.</p><blockquote class=\"foundry-note\"><p>You can find <strong>Optional Traits</strong> in the Notes tab of a creature sheet, where they can be toggled on and off.</p></blockquote><p>For Creature Trait rules, refer to @UUID[.vUPuF2ZsWvNKUCWy]{Creature Traits}.</p><blockquote class=\"sidebar\"><h3 style=\"text-align:center;text-transform:uppercase\" class=\"sidebar-title\"><em>Generic Creature Traits</em></h3><p><em>Generic Creature Traits add extra variety to your NPCs. The following traits are appended to the Optional list of all creatures.</em></p><p><em>@UUID[Compendium.wfrp4e-core.traits.4CMKeDTDrRQZbPIJ]{Afraid}, @UUID[Compendium.wfrp4e-core.traits.0VpT5yubw4UL7j6f]{Animosity}, @UUID[Compendium.wfrp4e-core.traits.VUJUZVN3VYhOaPjj]{Armour}, @UUID[Compendium.wfrp4e-core.traits.a8MC97PLzl10WocT]{Big}, @UUID[Compendium.wfrp4e-core.traits.15ENOMf345S5AL68]{Brute}, @UUID[Compendium.wfrp4e-core.traits.Ni4hNAPv3LhTpgMA]{Clever}, @UUID[Compendium.wfrp4e-core.traits.3WI8mhTinC8inxyj]{Cunning}, @UUID[Compendium.wfrp4e-core.traits.9NROryHer1uXAKwY]{Elite}, @UUID[Compendium.wfrp4e-core.traits.9MjH4xyVrd3Inzak]{Fast}, @UUID[Compendium.wfrp4e-core.talents.zImcTgEl2XNnbu5W]{Hardy}, @UUID[Compendium.wfrp4e-core.talents.E98mVLZgE8bX5vQW]{Hatred}, @UUID[Compendium.wfrp4e-core.traits.wGTD2LezlI6Atyy0]{Leader}, @UUID[Compendium.wfrp4e-core.traits.GwjvDLZz3PvK6xgs]{Prejudice}, @UUID[Compendium.wfrp4e-core.traits.k9539MBTFplxsysT]{Tough}, @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Weapon}</em></p><p><em>Note: Most creatures have a suggested Weapon included, and maybe Armour too, but that doesn’t preclude them from being changed as you see fit.</em></p></blockquote><blockquote class=\"sidebar\"><h3 style=\"text-align:center;text-transform:uppercase\" class=\"sidebar-title no-toc\"><em>Random Creatures and Custom PC Species</em></h3><p><em>The Bestiary presents Characteristics as a round number, such as 20, 25, or 30. Obviously, in practice, the numbers vary significantly from individual to individual. If you wish to randomly create Characteristics, subtract –10, then add 2d10. So, a Characteristic of 30 translates to 2d10+20. If a Characteristic starts at 5, roll just 1d10 to randomise it. This can even be used to create PCs out of traditionally NPC species by using random Characteristics and adding an appropriate career, creating, say, an Ogre soldier, Skaven engineer, or Vampire noble. Obviously, this will take a little bending of the rules to work, but if you are interested in playing characters like this, it’s not difficult to do.</em></p><blockquote class=\"foundry-note\"><p>You can click the <span style=\"font-family:Courier\"><strong>C</strong></span> randomization button at the top of an NPC or Creature sheet to randomize its characteristics.</p></blockquote></blockquote><h2>Creature Hit Locations</h2><p>At some point you may need to determine a Hit Location for a non-Human-shaped creature. Normally, this is simple. For quadrupeds, simply make arm hits foreleg hits, and leg hits rear-leg hits. Or for birds, make arm hits equate to wing hits. However, some require special attention, such as Snakes and Spiders. For those, use Alternative Hit Locations.</p><p>For any creature 2 steps larger than you (see @UUID[Compendium.wfrp4e-core.traits.8slW8CJ2oVTxeQ6q]{Size}), choose a location to hit according to what’s closest to you (or in Line-of-Sight for shooting).</p><p>If an animal has a Hit Location without a Critical Table, such as a tentacle, tail, or wing, roll on the Arm table and describe the results in an appropriate way.</p><blockquote class=\"sidebar\"><h3 style=\"text-align:center;text-transform:uppercase\" class=\"sidebar-title no-toc\"><em>Alternative Hit Locations</em></h3><p><em>@UUID[RollTable.YWzuhQN0d9orIm2h]{Hit Location - Snake}</em></p><p><em>@UUID[RollTable.bF4KEpOxadDG0wS7]{Hit Location - Spider}</em></p><blockquote class=\"foundry-note\"><p><em>You can change what Hit Location table an Actor uses in the Actor Configuration menu, accessed by the <strong>Configure</strong> button at the top of an Actor Sheet</em></p></blockquote></blockquote>"
+				},
+				"Peoples of the Reikland": {
+					"name": "Genti del Reikland",
+					"text": "<p>@UUID[JournalEntry.IQ0PgoJihQltCBUU]{Character} traduzione the primary peoples of the Reikland. This section explains how to create fast NPC equivalents, and also introduces Ogres. </p><p>For important characters in your campaign, you may want to use the full character creation rules. However, sometimes you just want a fast NPC. To quickly create an NPC, use one of the following standard profiles and apply @UUID[.vUPuF2ZsWvNKUCWy]{Creature Traits} as required, with those listed in @UUID[.UyUu4g8GQRp16paM#generic-creature-traits]{Generic Creature Traits} being the best initial choices.</p><p>@UUID[Compendium.wfrp4e-core.bestiary.7ihBjcHcewZ2Obul]{Human}</p><p>@UUID[Compendium.wfrp4e-core.bestiary.ImdVnI8mEiOmKriI]{Dwarf}</p><p>@UUID[Compendium.wfrp4e-core.bestiary.r70e6JNM3MjWIb7N]{Halfling}</p><p>@UUID[Compendium.wfrp4e-core.bestiary.QutqbzpxKqsjQ6yN]{High Elf}</p><p>@UUID[Compendium.wfrp4e-core.bestiary.5wl3KH6hXsGwUcZa]{Wood Elf}</p><p>@UUID[Compendium.wfrp4e-core.bestiary.nPvDzBcqDGuRaS7x]{Ogre}</p><h3>Examples</h3><p>Below are two examples of Human NPCs created using just Creature Traits and standard random Characteristics.</p><div style=\"display:flex;justify-content:space-evenly\"><img style=\"border:none\" src=\"modules/wfrp4e-core/art/bestiary/black-bella.webp\" width=\"200\" height=\"278\" /><img style=\"border:none\" src=\"modules/wfrp4e-core/art/bestiary/pol-dankels.webp\" width=\"194\" height=\"275\" /></div><div style=\"display:flex;justify-content:space-evenly\"><p style=\"text-align:center\">@UUID[Compendium.wfrp4e-core.bestiary.2lvE7Ypir9uuRjVT]{Black Bella}</p><p style=\"text-align:center\">@UUID[Compendium.wfrp4e-core.bestiary.YavXt2NP9N8Puxse]{Pol Dankels}</p></div><p></p>"
+				},
+				"Beasts of the Reikland": {
+					"name": "Animali del Reikland",
+					"text": "ciao"
+				}
+			}
+		},
+		"Between Adventures": {
+			"name": "Tra le avventure",
+			"pages": {
+				"Between Adventures": {
+					"name": "Tra le avventure",
+					"text": "ciao 2"
+				},
+				"Events": {
+					"name": "Eventi",
+					"text": "ciao 3"
+				},
+				"Endeavours": {
+					"name": "Bohhhhhh",
+					"text": "ciao 3"
+				}
+			}
+		}
+	}
+}
