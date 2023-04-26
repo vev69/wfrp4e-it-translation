@@ -24,12 +24,12 @@
     {
       "id": "Animal Trap",
       "name": "Trappola per Animali",
-      "description": "<p>Usata per catturare piccole prede (see @Compendium[wfrp4e-core.skills.os4NKy5Oy6sRt1eh]{Sopravvivere})</p>"
+      "description": "<p>Usata per catturare piccole prede (vedi @Compendium[wfrp4e-core.skills.os4NKy5Oy6sRt1eh]{Sopravvivere}).</p>"
     },
     {
       "id": "Antitoxin Kit",
       "name": "Kit Antitossine",
-      "description": "<p>Contiene un coltellino, erbe e una giara di sanguisughe. Superando una Prova di Guarire permette di rimuovere tutte le Condizioni di Avvelenato da un paziente. Il trattamento richiede almeno 2 Round</p>"
+      "description": "<p>Contiene un coltellino, erbe e una giara di sanguisughe. Superando una Prova di Guarire permette di rimuovere tutte le Condizioni di Avvelenato da un paziente. Il trattamento richiede almeno 2 Round.</p>"
     },
     {
       "id": "Arrow",
@@ -184,7 +184,7 @@
     {
       "id": "Bugman’s XXXXXX Ale, pint",
       "name": "Birra, Bugman XXXXXX, pinta",
-      "description": "<p>Mercanti di tutto il Vecchio Mondo acquistano questa potente birra Nanica dal famoso birrificio fondato da Josef Burgman e la rivendono nelle grandi città. Un boccale di Burgman's conta come quattro di birra comune ai fini dell'ubriacatura (see @UUID[JournalEntry.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Consume Alcohol}), e fornisce immunità alle Prove di Paura per 1d10 ore.</p>"
+      "description": "<p>Mercanti di tutto il Vecchio Mondo acquistano questa potente birra Nanica dal famoso birrificio fondato da Josef Burgman e la rivendono nelle grandi città. Un boccale di Burgman's conta come quattro di birra comune ai fini dell'ubriacatura (vedi @UUID[JournalEntry.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Reggere Alcolici}), e fornisce immunità alle Prove di Paura per 1d10 ore.</p>"
     },
     {
       "id": "Bullet and Powder",
@@ -889,7 +889,7 @@
     {
       "id": "Pole (3 yards)",
       "name": "Palo (3 metri)",
-      "description": "<p>Un lungo palo usato per governare le chiatte; conta come un @Compendium[wfrp4e-core.trappings.mRU10yAWWWs5WoKt]{Improvised Weapon}</p>"
+      "description": "<p>Un lungo palo usato per governare le chiatte; conta come un @Compendium[wfrp4e-core.trappings.mRU10yAWWWs5WoKt]{Arma Improvvisata}</p>"
     },
     {
       "id": "Pony",
@@ -994,7 +994,7 @@
     {
       "id": "Row Boat",
       "name": "Barca a Remi",
-      "description": "<p>One rower is standard.</p>"
+      "description": "<p>Richiede almeno un rematore.</p>"
     },
     {
       "id": "Sack",
