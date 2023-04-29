@@ -18,7 +18,7 @@
     {
       "id": "vofOA5XiwV4qimbt",
       "name": "Rivelare la Bellezza Interiore",
-      "description": "<p>Il Mago fa deteriorare rapidamente un oggetto o un individuo toccato. Se inorganico, questo Incantesimo rende l’oggetto fragile e inadatto all’uso. Se organico, il soggetto matura rapidamente fino a quando non inizia a guastarsi, spaccandosi e riversando il suo contenuto puzzolente ovunque. Un essere vivente deve effettuare una <strong>Prova Difficile (+0) di Resistenza</strong>per resistere a questo Incantesimo. In caso di fallimento, il bersaglio invecchia di [[/r 2d10]] anni e perde permanentemente -[[/r 1d10]]% delle seguenti Caratteristiche: Abilità in Combattimento, Abilità Balistica, Forza, Resistenza, Agilità e Destrezza.</p>",
+      "description": "<p>Il Mago fa deteriorare rapidamente un oggetto o un individuo toccato. Se inorganico, questo Incantesimo rende l’oggetto fragile e inadatto all’uso. Se organico, il soggetto matura rapidamente fino a quando non inizia a guastarsi, spaccandosi e riversando il suo contenuto puzzolente ovunque. Un essere vivente deve effettuare una <strong>Prova Difficile (+0) di Resistenza</strong> per resistere a questo Incantesimo. In caso di fallimento, il bersaglio invecchia di [[/r 2d10]] anni e perde permanentemente -[[/r 1d10]]% delle seguenti Caratteristiche: Abilità in Combattimento, Abilità Balistica, Forza, Resistenza, Agilità e Destrezza.</p>",
       "effects": [
         {
           "_id": "U76EYFL7a5udrGVc",
