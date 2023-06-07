@@ -609,7 +609,7 @@
         "72-73": "<p><strong>Venditore Ambulante</strong>: Arriva un vecchio venditore ambulante, che ama spettegolare. In cambio di un boccale di birra @Pay[3bp]{3p}, il Personaggio ottiene +10 all’Attività @UUID[JournalEntry.gLDW6JBuoYuzCoya.JournalEntryPage.Ujg3N2RiGC4RNSvH]{Ultime Notizie}.</p>",
         "74-76": "<p><strong>Animale Appestato</strong>: Uno degli animali del Personaggio si ammala. Superando una <strong>Prova Impegnativa (+0) di Allevare</strong> lo salva. Se il Personaggio non ha animali sarà perseguitato da terribili presagi definiti dal GM.</p>",
         "77-79": "<p><strong>Saccheggio</strong>: Prima che possa compiere l’Attività @UUID[JournalEntry.gLDW6JBuoYuzCoya.JournalEntryPage.OqE6vzTEebofbX92]{Banca}, i risparmi del Personaggio vengono rubati. Se ammontavano a meno di 1 corona, i ladri gli rubano anche il suo Avere più prezioso.</p>",
-        "80-82": "<p><strong>Rivolte</strong>: La popolazione è furiosa! I Cortigiani non possono intraprendere l’Attività <em>Profitto</em>; non importa quante guardie assoldino, la zona per loro non è sicura. Inoltre, chi ha soldi in @UUID[JournalEntry.gLDW6JBuoYuzCoya.JournalEntryPage.OqE6vzTEebofbX92]{Banca} deve verificare se la rivolta ha spinto l’istituto a chiudere i battenti. Tuttavia, i Personaggi ottengono +10 alle Prove legate all’Attività @UUID[JournalEntry.gLDW6JBuoYuzCoya.JournalEntryPage.RHsuOsC5DpoD4bkR]{Fomentare Dissenso} Endeavour receive +10 bonus to all related Tests.</p>",
+        "80-82": "<p><strong>Rivolte</strong>: La popolazione è furiosa! I Cortigiani non possono intraprendere l’Attività <em>Profitto</em>; non importa quante guardie assoldino, la zona per loro non è sicura. Inoltre, chi ha soldi in @UUID[JournalEntry.gLDW6JBuoYuzCoya.JournalEntryPage.OqE6vzTEebofbX92]{Banca} deve verificare se la rivolta ha spinto l’istituto a chiudere i battenti. Tuttavia, i Personaggi ottengono +10 alle Prove legate all’Attività @UUID[JournalEntry.gLDW6JBuoYuzCoya.JournalEntryPage.RHsuOsC5DpoD4bkR]{Fomentare Dissenso}.</p>",
         "83-85": "<p><strong>Dita Lunghe</strong>: Il Personaggio è stato borseggiato! Perde metà del denaro che aveva alla fine dell’ultima avventura.</p>",
         "86-88": "<p><strong>Sospetto di Eresia</strong>: Un cacciatore di streghe sospetta che il Personaggio si sia associato a Mutanti, Cultisti o molto peggio durante le sue cosiddette ‘avventure’. Convincerlo della propria innocenza richiede una <strong>Prova Molto Ardua (-30) di Affascinare</strong>. In caso di fallimento, il cacciatore diventerà una nemesi implacabile che di certo in futuro creerà problemi...</p>",
         "89-91": "<p><strong>Insoliti Sospetti</strong>: I viaggi irregolari e l’improvvisa ricchezza del gruppo hanno attirato dei sospetti. Tutti i Personaggi devono rinunciare a un’Attività, tenendo un profilo basso o dimostrando la propria innocenza. I Furfanti non possono intraprendere l’Attività @UUID[JournalEntry.gLDW6JBuoYuzCoya.JournalEntryPage.JX9ifRlgzzGrU2zh]{Profitto} fino alla fine dell’avventura seguente.</p>",
@@ -766,8 +766,7 @@
       "results": {
         "2-2": "Biondo platino",
         "3-3": "Biondo oro",
-        "4-4": "Biondo ramato",
-        "5-7": "Marrone dorato",
+        "4-7": "Biondo ramato",
         "8-11": "Marrone chiaro",
         "12-14": "Marrone scuro",
         "15-17": "Nero",
