@@ -53,8 +53,8 @@
     },
     {
       "id": "Barrel",
-      "name": "Barile",
-      "description": "<p>Capacità: 45 l.</p>\n<p>&nbsp;</p>"
+      "name": "Botte",
+      "description": "<p>Capacità: 145 l.</p>\n<p>&nbsp;</p>"
     },
     {
       "id": "Bastard Sword",
@@ -208,8 +208,8 @@
     },
     {
       "id": "Cask",
-      "name": "Botte",
-      "description": "<p>Capacità: 145 l.</p>\n<p>&nbsp;</p>"
+      "name": "Barile",
+      "description": "<p>Capacità: 45 l.</p>\n<p>&nbsp;</p>"
     },
     {
       "id": "Cavalry Hammer",
