@@ -24,8 +24,8 @@
     },
     {
       "id": "Afraid",
-      "name": "Spaventoso",
-      "description": "<p>La creatura provoca un timore sovrannaturale, causando <em>Paura</em> pari al Grado indicato (vedere pag. 190).</p>\n<p>&nbsp;</p>\n<p><em>Paura</em> rappresenta un’estrema avversione per qualcosa. Il Grado di Paura rappresenta il LS necessario per superarla. Per farlo si effettua una <strong>Prova Prolungata di Freddezza</strong>, tirando alla fine di ogni Round. Fintanto che non viene superata con successo, si è soggetti a <em>Paura</em>.</p>\n<p>Chi è vittima di <em>Paura</em> subisce -1 LS in tutte le Prove legate alla fonte. Non ci si può avvicinare ad essa senza superare una <strong>Prova Impegnativa (+0) di Freddezza</strong>. Se, invece, è la fonte ad avvicinarsi, è necessario superare una <strong>Prova Impegnativa (+0) di Freddezza</strong> per non subire 1 <em>Atterrito</em>.</p>",
+      "name": "Timoroso",
+      "description": "<p>La creatura teme il Bersaglio, subendo <em>Paura (0)</em> da esso (vedere pag. 190).</p>\n<p>&nbsp;</p>\n<p><em>Paura</em> rappresenta un’estrema avversione per qualcosa. Il Grado di Paura rappresenta il LS necessario per superarla. Per farlo si effettua una <strong>Prova Prolungata di Freddezza</strong>, tirando alla fine di ogni Round. Fintanto che non viene superata con successo, si è soggetti a <em>Paura</em>.</p>\n<p>Chi è vittima di <em>Paura</em> subisce -1 LS in tutte le Prove legate alla fonte. Non ci si può avvicinare ad essa senza superare una <strong>Prova Impegnativa (+0) di Freddezza</strong>. Se, invece, è la fonte ad avvicinarsi, è necessario superare una <strong>Prova Impegnativa (+0) di Freddezza</strong> per non subire 1 @Condition[Atterrito].</p>",
       "specification": "Bersaglio"
     },
     {
@@ -543,8 +543,8 @@
     },
     {
       "id": "Fear",
-      "name": "Timoroso",
-      "description": "<p>La creatura teme il Bersaglio, subendo <em>Paura (0)</em> da esso (vedere pag. 190).</p>\n<p>&nbsp;</p>\n<p><em>Paura</em> rappresenta un’estrema avversione per qualcosa. Il Grado di Paura rappresenta il LS necessario per superarla. Per farlo si effettua una <strong>Prova Prolungata di Freddezza</strong>, tirando alla fine di ogni Round. Fintanto che non viene superata con successo, si è soggetti a <em>Paura</em>.</p>\n<p>Chi è vittima di <em>Paura</em> subisce -1 LS in tutte le Prove legate alla fonte. Non ci si può avvicinare ad essa senza superare una <strong>Prova Impegnativa (+0) di Freddezza</strong>. Se, invece, è la fonte ad avvicinarsi, è necessario superare una <strong>Prova Impegnativa (+0) di Freddezza</strong> per non subire 1 @Condition[Atterrito].</p>",
+      "name": "Spaventoso",
+      "description": "<p>La creatura provoca un timore sovrannaturale, causando <em>Paura</em> pari al Grado indicato (vedere pag. 190).</p>\n<p>&nbsp;</p>\n<p><em>Paura</em> rappresenta un’estrema avversione per qualcosa. Il Grado di Paura rappresenta il LS necessario per superarla. Per farlo si effettua una <strong>Prova Prolungata di Freddezza</strong>, tirando alla fine di ogni Round. Fintanto che non viene superata con successo, si è soggetti a <em>Paura</em>.</p>\n<p>Chi è vittima di <em>Paura</em> subisce -1 LS in tutte le Prove legate alla fonte. Non ci si può avvicinare ad essa senza superare una <strong>Prova Impegnativa (+0) di Freddezza</strong>. Se, invece, è la fonte ad avvicinarsi, è necessario superare una <strong>Prova Impegnativa (+0) di Freddezza</strong> per non subire 1 <em>Atterrito</em>.</p>",
       "effects": [
         {
           "_id": "ODxbsuuS0splmVEN",
