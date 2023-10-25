@@ -4743,7 +4743,11 @@
           "origin": null,
           "tint": null
         }
-      ]
+      ],
+      "lore": "Ombre",
+      "range": "Sè stessi",
+      "duration": "Bonus Volontà Round",
+      "target": "Sè stessi"
     },
     {
       "id": "Corrosive Blood (Witchcraft)",
@@ -6684,7 +6688,7 @@
           "tint": null
         }
       ],
-      "lore": "Stregoneria",
+      "lore": "Ombre",
       "range": "Sè stessi",
       "duration": "Bonus Intelligenza minuti",
       "target": "Sè stessi"
@@ -8757,7 +8761,7 @@
     {
       "id": "Feather of Lead",
       "name": "Piume di Piombo",
-      "description": "<p>Il Mago richiama il Vento d’Oro per aumentare o ridurre la densità di alcuni oggetti. Per ogni creatura all’interno dell’Area d’Effetto è possibile applicare una delle seguenti opzioni:&nbsp;</p>\n<ul type=\"disc\">\n<li>Il bersaglio conta 2 gradi più Sovraccarico.</li>\n<li>Il bersaglio non conta come Sovraccarico.</li>\n</ul></p><p>\n\n <b>Sapere:</b> Il Mago può infliggere a piacere 1 @Condition[Accecato] a uno o più bersagli, che non possiedano il Talento <em>Magia Arcana (Luce)</em>. I bersagli con i Tratti @Compendium[wfrp4e-core.traits.v3uzEthcq0JRar0J]{Demoniaco} o @Compendium[wfrp4e-core.traits.PFTD9gDvRWW9uh5g]{Nonmorto} subiscono Danni aggiuntivi pari al Bonus Intelligenza del Mago, ignorando il Bonus Resistenza e l’Armatura.<p>",
+      "description": "<p>Il Mago richiama il Vento d’Oro per aumentare o ridurre la densità di alcuni oggetti. Per ogni creatura all’interno dell’Area d’Effetto è possibile applicare una delle seguenti opzioni:&nbsp;</p>\n<ul type=\"disc\">\n<li>Il bersaglio conta 2 gradi più Sovraccarico.</li>\n<li>Il bersaglio non conta come Sovraccarico.</li>\n</ul></p><p>\n\n <b>Sapere:</b> Gli effetti che causano Danno ignorano le armature metalliche e provocano Danni aggiuntivi pari ai Punti Armatura metallici della Locazione. Per esempio, se un braccio protetto da 2 PA di maglia di ferro venisse colpito subirebbe +2 Danni, ignorando la protezione.<p>",
       "effects": [
         {
           "_id": "dThQOqhp4tned27Q",
@@ -10336,7 +10340,11 @@
     {
       "id": "Light",
       "name": "Luce",
-      "description": "<p>Il Mago crea una piccola luce, all’incirca potente quanto una torcia, nella mano, sul proprio bastone o da un’altra parte della sua persona. Per la durata, può effettuare una Prova Media (+20) d’Incanalare per aumentarne la luminosità a quella di una lanterna o ridurla a quella di una candela.</p><p>\n\n <b>Sapere:</b> Nessuno<p>"
+      "description": "<p>Il Mago crea una piccola luce, all’incirca potente quanto una torcia, nella mano, sul proprio bastone o da un’altra parte della sua persona. Per la durata, può effettuare una Prova Media (+20) d’Incanalare per aumentarne la luminosità a quella di una lanterna o ridurla a quella di una candela.</p><p>\n\n <b>Sapere:</b> Nessuno<p>",
+      "lore": "Minore",
+      "range": "Sè stessi",
+      "duration": "Volontà minuti",
+      "target": "Sè stessi"
     },
     {
       "id": "Magic Flame",
@@ -10479,7 +10487,7 @@
     },
     {
       "id": "Magic Shield (Heavens)",
-      "name": "Scudo Magico (Empireo))",
+      "name": "Scudo Magico (Empireo)",
       "description": "<p>Il Mago si protegge con bande d’energia. Per la durata dell’effetto, somma il proprio Bonus Volontà al LS di ogni tentativo di Dispersione che compie.</p><p>\n\n <b>Sapere:</b> Gli Incantesimi che causano Danni ignorano le armature metalliche e si scaricano contro tutti i bersagli entro 2m, eccetto chi possiede il Talento <em>Magia Arcana (Empireo)</em>,causando Danni pari al Bonus Volontà, come un <em>proiettile magico</em>.<p>",
       "effects": [
         {
@@ -11138,7 +11146,7 @@
     {
       "id": "Mundane Aura",
       "name": "Aura Mondana",
-      "description": "<p>Il Mago rimuove tutti i Venti della Magia da sé e dai proprio oggetti, cancellandone l’aura magica. Per la durata dell’effetto la sua natura sovrannaturale sarà impercettibile al Talento <em>Senso Magico</em> e altri effetti simili. Tuttavia, sarà anche privato dei propri poteri e non potrà usare Incantesimi. Questo effetto ha termine se il Mago compie una Prova d’Incanalare..</p>",
+      "description": "<p>Il Mago rimuove tutti i Venti della Magia da sé e dai proprio oggetti, cancellandone l’aura magica. Per la durata dell’effetto la sua natura sovrannaturale sarà impercettibile al Talento <em>Senso Magico</em> e altri effetti simili. Tuttavia, sarà anche privato dei propri poteri e non potrà usare Incantesimi. Questo effetto ha termine se il Mago compie una Prova d’Incanalare.</p>",
       "range": "Sè stessi",
       "duration": "Volontà minuti",
       "target": "Sè stessi"
@@ -11230,7 +11238,7 @@
     },
     {
       "id": "Mundane Aura (Fire)",
-      "name": "Aura Mondana (Fuoco)",
+      "name": "",
       "description": "<p>Il Mago rimuove tutti i Venti della Magia da sé e dai proprio oggetti, cancellandone l’aura magica. Per la durata dell’effetto la sua natura sovrannaturale sarà impercettibile al Talento <em>Senso Magico</em> e altri effetti simili. Tuttavia, sarà anche privato dei propri poteri e non potrà usare Incantesimi. Questo effetto ha termine se il Mago compie una Prova d’Incanalare.</p><p>\n\n <b>Sapere:</b> Il Mago può causare, a piacere, 1 @Condition[In Fiamme] a tutti i bersagli, a meno che non possiedano a propria volta il Talento <em>Magia Arcana (Fuoco)</em>. Inoltre, ogni condizione <em>In Fiamme</em> entro un numero di metri pari al suo Bonus Volontà dal Mago gli conferisce +10 alle Prove di Lancio o Incanalare legate ad <em>Aqshy</em>.<p>",
       "effects": [
         {
@@ -11565,7 +11573,7 @@
       "lore": "Ombre",
       "range": "Volontà metri",
       "duration": "Bonus Volontà round",
-      "target": "Bonus Iniziativa metri"
+      "target": "Bonus Volontà metri"
     },
     {
       "id": "Nepenthe",
@@ -11742,7 +11750,7 @@
       "lore": "Demonologia",
       "range": "Tocco",
       "duration": "Volontà minuti",
-      "target": "diametro massimo pari al bonus Volontà in metri"
+      "target": "Diametro massimo pari al bonus Volontà in metri"
     },
     {
       "id": "Open Lock",
@@ -13065,7 +13073,7 @@
       "id": "Swift Passing",
       "name": "Rapido Trapasso",
       "description": "<p>Il Mago concede una fine rapida a una persona ferita a morte. Toccando un bersaglio con 0 Ferite e almeno 2 Ferite Critiche, questi morirà sul colpo e non potrà risorgere come Nonmorto.</p><p>\n\n <b>Sapere:</b> Chi viene colpito da un Incantesimo del Sapere della Morte è prosciugato della vita; il Mago può assegnare a piacere 1 @Condition[Affaticato] a ogni bersaglio vivente affetto dagli Incantesimi di questo Sapere. E' possibile accumulare solo un <em>Affaticato</em> alla volta in questo modo.<p>",
-      "lore": "Minore",
+      "lore": "Morte",
       "range": "Tocco",
       "duration": "Istantanea",
       "target": "Speciale"
@@ -14382,7 +14390,7 @@
       "range": "Sè stessi",
       "duration": "Bonus Iniziativa Round",
       "target": "Sè stessi",
-      "overcast": "Punto Fortuna"
+      "overcast": "Punti Fortuna"
     },
     {
       "id": "The Second Portent of Amul",
@@ -14449,7 +14457,7 @@
       "range": "Sè stessi",
       "duration": "Bonus Iniziativa Round",
       "target": "Sè stessi",
-      "overcast": "Punto Fortuna"
+      "overcast": "Punti Fortuna"
     },
     {
       "id": "The Third Portent of Amul",
