@@ -1149,40 +1149,54 @@ var trappings = {
 // COMPATIBILITÀ v12 - Usa 'ready' invece di 'init'
 Hooks.once('ready', async () => {
 	if (typeof Babele !== 'undefined') {
-		// Verifica che Babele sia completamente inizializzato
-		await Babele.get().register({
-			module: 'wfrp4e-it-translation',
-			lang: 'it',
-			dir: 'compendium',
-		});
+		try {
+			// Registra senza specificare dir, lo gestiamo manualmente
+			await Babele.get().register({
+				module: 'wfrp4e-it-translation',
+				lang: 'it',
+				dir: '' // Vuoto per evitare che aggiunga /it automaticamente
+			});
+			
+			// Forza il path corretto per i compendium
+			const module = game.modules.get('wfrp4e-it-translation');
+			if (module) {
+				Babele.get().translations.set('it', {
+					module: 'wfrp4e-it-translation',
+					lang: 'it',
+					dir: `${module.path}/compendium` // Path assoluto
+				});
+			}
 
-		Babele.get().registerConverters({
-			convertSkills: (values) => {
-				let data = [];
-				values.map((skill) => {
-					data.push(skills[skill] ? skills[skill] : skill);
-				});
-				return data;
-			},
-			convertTalents: (values) => {
-				let data = [];
-				values.map((talent) => {
-					data.push(talents[talent] ? talents[talent] : talent);
-				});
-				return data;
-			},
-			convertTrappings: (values) => {
-				let data = [];
-				values.map((trapping) => {
-					data.push(
-						trappings[trapping] ? trappings[trapping] : trapping
-					);
-				});
-				return data;
-			},
-		});
-		
-		console.log('WFRP4e Italian Translation: Babele registrato con successo');
+			Babele.get().registerConverters({
+				convertSkills: (values) => {
+					let data = [];
+					values.map((skill) => {
+						data.push(skills[skill] ? skills[skill] : skill);
+					});
+					return data;
+				},
+				convertTalents: (values) => {
+					let data = [];
+					values.map((talent) => {
+						data.push(talents[talent] ? talents[talent] : talent);
+					});
+					return data;
+				},
+				convertTrappings: (values) => {
+					let data = [];
+					values.map((trapping) => {
+						data.push(
+							trappings[trapping] ? trappings[trapping] : trapping
+						);
+					});
+					return data;
+				},
+			});
+			
+			console.log('WFRP4e Italian Translation: Babele registrato con successo');
+		} catch(error) {
+			console.error('WFRP4e Italian Translation: Errore durante registrazione Babele', error);
+		}
 	} else {
 		console.error('WFRP4e Italian Translation: Babele non trovato!');
 	}
