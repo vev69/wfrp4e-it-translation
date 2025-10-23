@@ -1,58 +1,59 @@
 {
-  "id": "wfrp4e-it-translation",
-  "name": "wfrp4e-it-translation",
-  "title": "WFRP4e Italian Translation",
-  "description": "Add Italian language to the Warhammer Fantasy Roleplay 4th edition System for FoundryVTT.",
-  "version": "1.1.3",
-  "compatibility": {
-    "minimum": 10,
-    "verified": "10.291"
-  },
-  "relationships": {
-    "systems": [
-      {
-        "id": "wfrp4e",
-        "type": "system",
-        "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json"
-      }
-    ],
-    "requires": [
-      {
-        "id": "babele",
-        "type": "module",
-        "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
-        "compatibility": {
-          "verified": "2.3.4"
+    "id": "wfrp4e-it-translation",
+    "title": "WFRP4e Italian Translation",
+    "description": "Add Italian language to the Warhammer Fantasy Roleplay 4th edition System for FoundryVTT.",
+    "authors": [
+        {
+            "name": "vev69",
+            "flags": {}
         }
-      },
-      {
-        "id": "wfrp4e-core",
-        "type": "module",
-        "compatibility": {}
-      }
-    ]
-  },
-  "authors": [
-    {
-      "name": "Heyrold",
-      "discord": "Heyrold#4406",
-      "flags": {}
-    }
-  ],
-  "esmodules": ["babele-register.js"],
-  "scripts": [],
-  "styles": [],
-  "packs": [],
-
-  "languages": [
-    {
-      "lang": "it",
-      "name": "Italian",
-      "path": "it.json"
-    }
-  ],
-
-  "url": "https://github.com/heyrold73/wfrp4e-it-translation",
-  "manifest": "https://github.com/heyrold73/wfrp4e-it-translation/releases/latest/download/module.json",
-  "download": "https://github.com/heyrold73/wfrp4e-it-translation/releases/latest/download/module.zip"
+    ],
+    "url": "https://github.com/vev69/wfrp4e-it-translation",
+    "flags": {},
+    "media": [],
+    "version": "1.2.0",
+    "compatibility": {
+        "minimum": "11",
+        "verified": "12"
+    },
+    "scripts": [],
+    "esmodules": [
+        "babele-register.js"
+    ],
+    "styles": [],
+    "languages": [
+        {
+            "lang": "it",
+            "name": "Italian",
+            "path": "it.json",
+            "flags": {}
+        }
+    ],
+    "packs": [],
+    "packFolders": [],
+    "relationships": {
+        "systems": [
+            {
+                "id": "wfrp4e",
+                "type": "system",
+                "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
+                "compatibility": {}
+            }
+        ],
+        "requires": [
+            {
+                "id": "babele",
+                "type": "module",
+                "manifest": "https://gitlab.com/riccisi/foundryvtt-babele/raw/master/module/module.json",
+                "compatibility": {}
+            },
+            {
+                "id": "wfrp4e-core",
+                "type": "module",
+                "compatibility": {}
+            }
+        ]
+    },
+    "manifest": "https://github.com/vev69/wfrp4e-it-translation/releases/latest/download/module.json",
+    "download": "https://github.com/vev69/wfrp4e-it-translation/releases/latest/download/module.zip"
 }
