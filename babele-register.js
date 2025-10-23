@@ -1146,9 +1146,11 @@ var trappings = {
 	'Pestle and Mortar': 'Mortaio e Pestello',
 };
 
-Hooks.once('init', () => {
+// COMPATIBILITÀ v12 - Usa 'ready' invece di 'init'
+Hooks.once('ready', async () => {
 	if (typeof Babele !== 'undefined') {
-		Babele.get().register({
+		// Verifica che Babele sia completamente inizializzato
+		await Babele.get().register({
 			module: 'wfrp4e-it-translation',
 			lang: 'it',
 			dir: 'compendium',
@@ -1179,6 +1181,10 @@ Hooks.once('init', () => {
 				return data;
 			},
 		});
+		
+		console.log('WFRP4e Italian Translation: Babele registrato con successo');
+	} else {
+		console.error('WFRP4e Italian Translation: Babele non trovato!');
 	}
 });
 
